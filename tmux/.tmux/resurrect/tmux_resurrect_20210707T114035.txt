@@ -1,0 +1,13 @@
+pane	0	1	:nvim	1	:*	0	:/home/illumiko	1	nvim	:/snap/nvim/323/usr/bin/nvim Documents/Projects/Course/brad_traversy/
+pane	0	2	:html	0	:-	0	:/home/illumiko	1	nvim	:/snap/nvim/323/usr/bin/nvim Documents/Projects/Course/
+pane	0	3	:nvim	0	:	0	:/home/illumiko	1	nvim	:/snap/nvim/323/usr/bin/nvim .config/nvim/init.vim
+pane	0	4	:node	0	:	0	:/home/illumiko/Documents/Projects/Course/brad_traversy/NewsLetter	1	node	:node /usr/local/bin/live-server ./dev/ --watch
+pane	0	4	:node	0	:	1	:/home/illumiko/Documents/Projects/Course/brad_traversy/NewsLetter	0	npm	:npm run build:scss
+pane	0	5	:bash	0	:	0	:/home/illumiko	1	bash	:
+pane	0	5	:bash	0	:	1	:/home/illumiko	0	node	:node /usr/local/bin/live-server Documents/webDev practice/HTML & CSS & JS/beginners mistakes/practice css 1.html --watch
+window	0	1	1	:*	57b5,147x21,0,0,16
+window	0	2	0	:-	57af,147x21,0,0,10
+window	0	3	0	:	57b4,147x21,0,0,15
+window	0	4	0	:	26b4,147x21,0,0[147x10,0,0,3,147x10,0,11,6]
+window	0	5	0	:	6a6d,147x21,0,0[147x17,0,0,11,147x3,0,18,13]
+state	0	

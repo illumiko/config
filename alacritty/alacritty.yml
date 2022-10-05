@@ -1,0 +1,51 @@
+env:
+  TERM: xterm-256color
+
+window:
+  opacity: 0.6
+  dimensions:
+    columns: 0
+    lines: 0
+  padding:
+    x: 1
+    y: 1
+font:
+  size: 9
+  offset:
+    x: 1
+    y: 5
+  normal:
+    family: Hurmit Nerd Font
+    style: Normal
+      #   family: Comic Code Ligatures Nerd font
+      #   style: Normal
+  bold:
+    family: Hurmit Nerd Font
+    style: Bold
+      #   family: Comic Code Ligatures Nerd Font
+      #   style: Bold
+  italic:
+  # family: Comic Code Ligatures Nerd Font
+  # style: italic
+    family: Hurmit Nerd Font
+    style: italic
+shell:
+  program: /bin/zsh
+colors:
+  normal:
+    black:   "#414868"
+    red:     "#f7768e"
+    blue:   "#FFFFFF"
+    yellow:  "#e0af68"
+    green:    "#7aa2f7"
+    magenta: "#bb9af7"
+    cyan:    "#c0caf5"
+    white:   "#7dcfff"
+
+
+
+
+
+
+
+
