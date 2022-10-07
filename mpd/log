@@ -532,3 +532,87 @@ Oct 05 13:06 : player: played "hMMmmm/jp/【Hatsune Miku】Solitary Hide-and-See
 Oct 05 13:06 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
 Oct 05 13:30 : player: played "hMMmmm/Nightcore/「Nightcore」 drivers license - Olivia Rodrigo ♡ (Lyrics).mp3"
 Oct 05 15:13 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Oct 05 19:10 : player: played "hMMmmm/Nightcore/「Nightcore」 drivers license - Olivia Rodrigo ♡ (Lyrics).mp3"
+Oct 05 19:11 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 05 19:11 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 05 19:12 : update: added youtubeDl/【HD】Fate⧸Grand Order - 絕對魔獸戰線巴比倫尼亞 - ED3 - milet - Tell me【中日字幕】.mp3
+Oct 05 19:12 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 05 19:16 : player: played "youtubeDl/【HD】Fate⧸Grand Order - 絕對魔獸戰線巴比倫尼亞 - ED3 - milet - Tell me【中日字幕】.mp3"
+Oct 05 19:21 : player: played "hMMmmm/jp/【アイネクライネ】歌ってみた 【ぽこた】.mp3"
+Oct 05 19:22 : update: added youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3
+Oct 05 19:22 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 05 19:22 : update: added youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3
+Oct 05 19:22 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 05 19:27 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 05 19:31 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 05 19:36 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 05 19:40 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 05 19:44 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 05 19:49 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 05 19:53 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 05 19:57 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 05 20:02 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 05 20:06 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 05 20:11 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 05 20:15 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 05 20:19 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 05 20:24 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 05 20:28 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 05 20:32 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 05 20:36 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 05 20:37 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 05 20:42 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 05 20:46 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 05 20:50 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 05 20:55 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 05 20:59 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 05 21:04 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 05 21:07 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 06 06:06 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 06 06:50 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 06 17:36 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Oct 06 18:18 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 06 18:19 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 06 18:23 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 06 18:27 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 06 18:32 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 06 18:36 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 06 18:40 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 06 18:45 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 06 18:49 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 06 18:54 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 06 18:58 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 06 19:02 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 06 19:07 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 06 19:11 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 06 19:14 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 06 19:14 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 06 19:18 : player: played "youtubeDl/【HD】Fate⧸Grand Order - 絕對魔獸戰線巴比倫尼亞 - ED3 - milet - Tell me【中日字幕】.mp3"
+Oct 06 19:18 : player: played "youtubeDl/【HD】Fate⧸Grand Order - 絕對魔獸戰線巴比倫尼亞 - ED3 - milet - Tell me【中日字幕】.mp3"
+Oct 06 19:18 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 06 19:21 : player: played "hMMmmm/Nightcore/Nightcore - when was it over (Sasha Sloan) (Sam Hunt) - (Lyrics).mp3"
+Oct 06 19:22 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 06 19:24 : player: played "hMMmmm/Nightcore/Nightcore - Unexpectedly - (Lyrics).mp3"
+Oct 06 19:27 : player: played "hMMmmm/Nightcore/Nightcore - Unexpectedly - (Lyrics).mp3"
+Oct 06 19:30 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 06 19:30 : player: played "hMMmmm/Nightcore/Nightcore - when was it over (Sasha Sloan) (Sam Hunt) - (Lyrics).mp3"
+Oct 06 19:34 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 06 19:34 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 06 19:34 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 06 19:37 : player: played "hMMmmm/Nightcore/Nightcore - Truth Be Told (Mathew West) - (Lyrics).mp3"
+Oct 06 19:40 : player: played "hMMmmm/Nightcore/Nightcore - Unexpectedly - (Lyrics).mp3"
+Oct 06 19:41 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 06 19:44 : player: played "hMMmmm/Nightcore/「Nightcore」→ CWJBHN - (Can We Just Be Happy Now_Switching Vocals).mp3"
+Oct 06 19:47 : player: played "hMMmmm/Nightcore/Nightcore - Truth Be Told (Mathew West) - (Lyrics).mp3"
+Oct 06 19:50 : player: played "hMMmmm/Nightcore/Nightcore - Unexpectedly - (Lyrics).mp3"
+Oct 06 19:53 : player: played "hMMmmm/Nightcore/Nightcore - when was it over (Sasha Sloan) (Sam Hunt) - (Lyrics).mp3"
+Oct 06 19:56 : player: played "hMMmmm/Nightcore/Nightcore - Truth Be Told (Mathew West) - (Lyrics).mp3"
+Oct 06 19:59 : player: played "hMMmmm/Nightcore/Nightcore - Unbreakable (Lyrics).mp3"
+Oct 06 19:59 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 06 19:59 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 06 20:04 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 06 20:15 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 07 17:34 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Oct 07 18:39 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 07 18:42 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 07 18:46 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
