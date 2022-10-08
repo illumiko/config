@@ -1,4 +1,4 @@
-local map = vim.api.nvim_set_keymap
+local map = vim.keymap.set
 local ls = require("luasnip")
 local opts = { noremap = true, silent = true }
 map("n", "<Space>", "<NOP>", opts)
@@ -7,9 +7,8 @@ vim.g.mapleader = " "
 -- vim.cmd([[inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"]])
 --[===[normal mode]===]
 --[[highlight Str]]
-map("v", "<F3>", ":<C-U>HSHighlight" .. vim.v.count .. "<CR>", opts)
--- map("n", "G", ":<C-u> echo" .. vim.v.count .. "<Cr>", { noremap = false, silent = false })
-map("v", "<F4>", "<cmd>HSRmHighlight<CR>", opts)
+map("v", "<F3>", ":<cmd>HSHighlight" .. 1 .."<CR><esc>", opts)
+map("v", "<F4>", "<cmd>HSRmHighlight<CR><esc>", opts)
 --[[Source config]]
 map("n", "<leader>R", ":source %<cr>", opts)
 --[[specs effect on search movement]]

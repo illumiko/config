@@ -1,8 +1,8 @@
 sw_volume: 100
 audio_device_state:1:default detected output
-state: play
+state: pause
 current: 0
-time: 120.070000
+time: 145.922000
 random: 1
 repeat: 1
 single: 0
