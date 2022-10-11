@@ -623,3 +623,21 @@ Oct 07 18:59 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Gould
 Oct 07 19:04 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
 Oct 08 07:32 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
 Oct 08 07:35 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 08 11:07 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 08 11:09 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 08 11:13 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 08 11:17 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 08 11:22 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 08 11:26 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 08 11:31 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 08 11:35 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 08 11:39 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 08 11:44 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 08 12:26 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 08 21:21 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Oct 08 21:22 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 08 21:22 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 08 21:24 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 08 21:51 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 09 18:37 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 11 10:49 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM

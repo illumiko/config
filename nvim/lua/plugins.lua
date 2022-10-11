@@ -473,7 +473,9 @@ return require("packer").startup(function(use)
 		lock = true,
 		{ "catppuccin/nvim" },
 		"Mofiqul/adwaita.nvim",
-		{ "shaunsingh/nord.nvim" },
+		{
+			"andersevenrud/nordic.nvim",
+		},
 		"clpi/cyu.lua",
 		"folke/tokyonight.nvim", -- tokyoNight
 		"tiagovla/tokyodark.nvim",

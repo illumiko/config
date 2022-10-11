@@ -31,4 +31,4 @@ require("nvim_context_vt").setup({
 	-- Default: {}
 	min_rows_ft = {},
 })
-vim.cmd([[hi CustomContextVt guifg=#949494]])
+vim.cmd([[hi CustomContextVt guifg=#3c4e71]])

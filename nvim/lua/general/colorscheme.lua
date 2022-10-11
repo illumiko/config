@@ -212,11 +212,34 @@ require("gruvqueen").setup({
 	},
 }) --}}} ]]
 --{{{ --nord
-vim.g.nord_contrast = true
-vim.g.nord_borders = true
-vim.g.nord_disable_background = false
-vim.g.nord_italic = false
-vim.g.nord_uniform_diff_background = false
 
+-- The table used in this example contains the default settings.
+-- Modify or remove these to your liking (this also applies to alternatives below):
+require("nordic").colorscheme({
+	-- Underline style used for spelling
+	-- Options: 'none', 'underline', 'undercurl'
+	underline_option = "none",
+
+	-- Italics for certain keywords such as constructors, functions,
+	-- labels and namespaces
+	italic = false,
+
+	-- Italic styled comments
+	italic_comments = true,
+
+	-- Minimal mode: different choice of colors for Tabs and StatusLine
+	minimal_mode = true,
+
+	-- Darker backgrounds for certain sidebars, popups, etc.
+	-- Options: true, false, or a table of explicit names
+	-- Supported: terminal, qf, vista_kind, packer, nvim-tree, telescope, whichkey
+	alternate_backgrounds = true,
+
+	-- Callback function to define custom color groups
+	-- See 'lua/nordic/colors/example.lua' for example defitions
+	custom_colors = function(c, s, cs)
+		return {}
+	end,
+})
 -- Load the colorscheme
-vim.cmd([=[colorscheme nord]=])--}}}
+vim.cmd([=[colorscheme nordic]=]) --}}}
