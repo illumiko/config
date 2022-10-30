@@ -90,20 +90,20 @@ vim.g.material_style = "oceanic"
 vim.cmd([=[
     colorscheme material
 ]=]) --}}} ]]
--- -- rasmus{{{
--- vim.cmd([=[
--- colorscheme rasmus
--- hi BufferVisible guibg=#444444 guifg=#666666
--- hi BufferVisibleSign guibg=#444444 guifg=#666666
--- hi BufferVisibleIndex guibg=#444444 guifg=#666666
--- hi PmenuSel guibg=#7bb099
--- hi LspReferenceRead guibg=#4b4b49 guifg=none
--- hi LspReferenceText guibg=#4b4b49 guifg=none
--- hi LspReferenceWrite guibg=#4b4b49 guifg=none
--- hi CmpItemKindSnippet guifg=#7bb099
--- hi CmpItemKindText guifg=#d1d1d1
--- hi CmpItemKindKeyword guifg=#ffc591
--- ]=]) --}}}
+--[[ -- rasmus{{{
+vim.cmd([=[
+colorscheme rasmus
+hi BufferVisible guibg=#444444 guifg=#666666
+hi BufferVisibleSign guibg=#444444 guifg=#666666
+hi BufferVisibleIndex guibg=#444444 guifg=#666666
+hi PmenuSel guibg=#7bb099
+hi LspReferenceRead guibg=#4b4b49 guifg=none
+hi LspReferenceText guibg=#4b4b49 guifg=none
+hi LspReferenceWrite guibg=#4b4b49 guifg=none
+hi CmpItemKindSnippet guifg=#7bb099
+hi CmpItemKindText guifg=#d1d1d1
+hi CmpItemKindKeyword guifg=#ffc591
+]=]) --}}} ]]
 --[[ --catppuccin--{{{
 local catppuccin = require("catppuccin")
 catppuccin.setup({
@@ -179,7 +179,7 @@ catppuccin.setup({
 vim.g.catppuccin_flavour = "macchiato"
 vim.cmd([=[colorscheme catppuccin]=])
 --}}} ]]
---[[ --kanagawa{{{
+--kanagawa{{{
 require("kanagawa").setup({
 	undercurl = false, -- enable undercurls
 	commentStyle = { italic = true },
@@ -194,7 +194,9 @@ require("kanagawa").setup({
 	dimInactive = true, -- dim inactive window `:h hl-NormalNC`
 	colors = {},
 	overrides = {},
-})--}}} ]]
+})
+vim.cmd([[colorscheme kanagawa]])
+--}}}
 --[[ -- gruvbox{{{
 vim.o.background = "dark" -- or light if you so prefer
 
@@ -211,7 +213,7 @@ require("gruvqueen").setup({
 		-- bg_color = "black",
 	},
 }) --}}} ]]
---{{{ --nord
+--[[ --{{{ --nord
 
 -- The table used in this example contains the default settings.
 -- Modify or remove these to your liking (this also applies to alternatives below):
@@ -242,4 +244,5 @@ require("nordic").colorscheme({
 	end,
 })
 -- Load the colorscheme
-vim.cmd([=[colorscheme nordic]=]) --}}}
+vim.cmd([=[colorscheme nordic]=]) --}}} ]]
+vim.cmd([[colorscheme arctic]])

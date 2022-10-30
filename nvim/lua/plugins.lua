@@ -42,6 +42,26 @@ packer.init({
 })
 
 return require("packer").startup(function(use)
+	--[[neoscroll]]
+	use({
+		"karb94/neoscroll.nvim",
+		config = function()
+			require("neoscroll").setup({
+				-- All these keys will be mapped to their corresponding default scrolling animation
+				mappings = { "<C-u>", "<C-d>", "<C-b>", "<C-f>", "<C-y>", "<C-e>", "zt", "zz", "zb" },
+				hide_cursor = false, -- Hide cursor while scrolling
+				stop_eof = true, -- Stop at <EOF> when scrolling downwards
+				respect_scrolloff = false, -- Stop scrolling when the cursor reaches the scrolloff margin of the file
+				cursor_scrolls_alone = true, -- The cursor will keep on scrolling even if the window cannot scroll further
+				easing_function = nil, -- Default easing function
+				pre_hook = nil, -- Function to run before the scrolling animation starts
+				post_hook = nil, -- Function to run after the scrolling animation ends
+				performance_mode = false, -- Disable "Performance Mode" on all buffers.
+			})
+		end,
+	})
+	--[[nvim ide like folds]]
+	use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
 	--[[scoped tabs]]
 	use({
 		"tiagovla/scope.nvim",
@@ -133,40 +153,6 @@ return require("packer").startup(function(use)
 	})
 	--[[multi cursor]]
 	use({ "mg979/vim-visual-multi" })
-	--[[pretty folds]]
-	use({
-		"anuvyklack/pretty-fold.nvim",
-		requires = "anuvyklack/nvim-keymap-amend", -- only for preview
-		config = function() --{{{
-			require("pretty-fold").setup({
-				keep_indentation = false,
-				fill_char = "━",
-				sections = {
-					left = {
-						"━ ",
-						function()
-							return string.rep("*", vim.v.foldlevel)
-						end,
-						" ━┫",
-						"content",
-						"┣",
-					},
-					right = {
-						"┫ ",
-						"number_of_folded_lines",
-						": ",
-						"percentage",
-						" ┣━━",
-					},
-				},
-			})
-			require("pretty-fold.preview").setup({
-				key = "h", -- choose 'h' or 'l' key
-				border = "rounded",
-				-- border = {"╔", "═" ,"╗", "║", "╝", "═", "╚", "║"},
-			})
-		end, --}}}
-	})
 	--[[whcich Key]]
 	use({
 		"folke/which-key.nvim",
@@ -409,13 +395,13 @@ return require("packer").startup(function(use)
 				show_jumps = true,
 				min_jump = 10,
 				popup = {
-					delay_ms = 4, -- delay before popup displays
-					inc_ms = 5, -- time increments used for fade/resize effects
-					blend = 20, -- starting blend, between 0-100 (fully transparent), see :h winblend
-					width = 5,
-					winhl = "TermCursor",
-					fader = require("specs").exp_fader,
-					resizer = require("specs").slide_resizer,
+					delay_ms = 0, -- delay before popup displays
+					inc_ms = 40, -- time increments used for fade/resize effects
+					blend = 10, -- starting blend, between 0-100 (fully transparent), see :h winblend
+					width = 10,
+					winhl = "PMenu",
+					fader = require("specs").linear_fader,
+					resizer = require("specs").shrink_resizer,
 				},
 				ignore_filetypes = {},
 				ignore_buftypes = {
@@ -470,6 +456,7 @@ return require("packer").startup(function(use)
 
 	--[[colorscheme]]
 	use({
+		"rockyzhang24/arctic.nvim",
 		lock = true,
 		{ "catppuccin/nvim" },
 		"Mofiqul/adwaita.nvim",
@@ -497,7 +484,6 @@ return require("packer").startup(function(use)
 	--[[treesitter]]
 	use({
 		"nvim-treesitter/nvim-treesitter",
-		commit = "668de0951a36ef17016074f1120b6aacbe6c4515",
 		run = ":TSUpdate",
 	})
 	use({ "nvim-treesitter/playground" })

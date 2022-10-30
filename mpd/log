@@ -641,3 +641,242 @@ Oct 08 21:24 : output: Failed to open mixer for 'default detected output': no su
 Oct 08 21:51 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
 Oct 09 18:37 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
 Oct 11 10:49 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Oct 11 12:19 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 11 12:23 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 11 12:27 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 11 12:32 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 11 12:36 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 11 12:40 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 11 12:45 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 11 13:01 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 11 13:03 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 11 13:08 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 11 13:12 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 11 13:16 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 11 13:21 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 11 13:25 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 11 13:29 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 11 13:34 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 11 13:38 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 11 13:43 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 11 13:47 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 11 13:51 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 11 13:56 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 11 14:00 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 11 14:04 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 11 14:09 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 11 14:13 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 13 20:14 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 16 05:14 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Oct 16 05:33 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 16 05:36 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 16 05:40 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 16 05:44 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Oct 16 05:49 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 16 05:53 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Oct 17 20:09 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 19 16:09 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 19 16:10 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 19 16:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 19 16:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 19 16:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 19 16:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 19 16:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 19 16:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 19 16:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 21 11:50 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 21 11:51 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 22 11:11 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 22 11:11 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 22 11:11 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 23 14:38 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 23 14:43 : player: played "hMMmmm/lofiCompilation-rain/3 HOURS of GENTLE NIGHT RAIN, Rain Sounds to Sleep, Study, Relax, Reduce Stress, help insomnia.mp3"
+Oct 23 14:43 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 23 14:43 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 23 14:43 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 26 08:17 : player: played "hMMmmm/lofiCompilation-rain/3 HOURS of GENTLE NIGHT RAIN, Rain Sounds to Sleep, Study, Relax, Reduce Stress, help insomnia.mp3"
+Oct 26 09:33 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Oct 26 10:43 : update: added youtubeDl/সুভা - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:43 : update: added youtubeDl/সুভা - মূল ভাব - ১ [SSC].mp4
+Oct 26 10:43 : update: added youtubeDl/সুভা - মূল ভাব - ২ [SSC].mp4
+Oct 26 10:44 : update: added youtubeDl/বই পড়া - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:44 : update: added youtubeDl/বই পড়া - মূল ভাব - ১ [SSC].mp4
+Oct 26 10:44 : update: added youtubeDl/অভাগীর স্বর্গ - লেখক পরিচিতি [SSC].mp4
+Oct 26 10:44 : update: added youtubeDl/বই পড়া - মূল ভাব - ২ [SSC].mp4
+Oct 26 10:45 : update: added youtubeDl/অভাগীর স্বর্গ - পাঠ-পরিচিতি [SSC].mp4
+Oct 26 10:45 : update: added youtubeDl/অভাগীর স্বর্গ - পর্ব ১ [SSC].mp4
+Oct 26 10:45 : update: added youtubeDl/অভাগীর স্বর্গ - পর্ব ২ [SSC].mp4
+Oct 26 10:45 : update: added youtubeDl/অভাগীর স্বর্গ - পর্ব ৩ [SSC].mp4
+Oct 26 10:45 : update: added youtubeDl/অভাগীর স্বর্গ - পর্ব ৪ [SSC].mp4
+Oct 26 10:46 : update: added youtubeDl/অভাগীর স্বর্গ - পর্ব ৫ [SSC].mp4
+Oct 26 10:46 : update: added youtubeDl/অভাগীর স্বর্গ - পর্ব ৬ [SSC].mp4
+Oct 26 10:46 : update: added youtubeDl/পল্লিসাহিত্য - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:46 : update: added youtubeDl/পল্লিসাহিত্য - মূল ভাব - ১ [SSC].mp4
+Oct 26 10:47 : update: added youtubeDl/পল্লিসাহিত্য - মূল ভাব - ২ [SSC].mp4
+Oct 26 10:47 : update: added youtubeDl/আম-আঁটির ভেঁপু - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:47 : update: added youtubeDl/আম-আঁটির ভেঁপু - মূল ভাব - ১ [SSC].mp4
+Oct 26 10:47 : update: added youtubeDl/আম-আঁটির ভেঁপু - মূল ভাব - ২ [SSC].mp4
+Oct 26 10:48 : update: added youtubeDl/আম-আঁটির ভেঁপু - মূল ভাব - ৩ ও অনুশীলনী [SSC].mp4
+Oct 26 10:48 : update: added youtubeDl/মানুষ মুহাম্মদ (স.) - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:48 : update: added youtubeDl/মানুষ মুহাম্মদ (স.) - মূল ভাব - ১ [SSC].mp4
+Oct 26 10:49 : update: added youtubeDl/মানুষ মুহাম্মদ (স.) - মূল ভাব - ২ ও অনুশীলনী [SSC].mp4
+Oct 26 10:49 : update: added youtubeDl/নিম গাছ - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:49 : update: added youtubeDl/নিম গাছ - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 10:49 : update: added youtubeDl/উপেক্ষিত শক্তির উদ্বোধন - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:50 : update: added youtubeDl/উপেক্ষিত শক্তির উদ্বোধন - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 10:50 : update: added youtubeDl/শিক্ষা ও মনুষ্যত্ব - মূল ভাব, বহুনির্বাচনি প্রশ্ন [SSC].mp4
+Oct 26 10:50 : update: added youtubeDl/শিক্ষা ও মনুষ্যত্ব - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:50 : update: added youtubeDl/প্রবাস বন্ধু - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:50 : update: added youtubeDl/প্রবাস বন্ধু - মূল ভাব - ১ [SSC].mp4
+Oct 26 10:51 : update: added youtubeDl/প্রবাস বন্ধু - মূল ভাব - ২ [SSC].mp4
+Oct 26 10:51 : update: added youtubeDl/মমতাদি - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:51 : update: added youtubeDl/মমতাদি - মূল ভাব - ১ [SSC].mp4
+Oct 26 10:52 : update: added youtubeDl/মমতাদি - মূল ভাব - ২ [SSC].mp4
+Oct 26 10:52 : update: added youtubeDl/একাত্তরের দিনগুলি - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:52 : update: added youtubeDl/একাত্তরের দিনগুলি - মূল ভাব - ১ [SSC].mp4
+Oct 26 10:53 : update: added youtubeDl/একাত্তরের দিনগুলি - মূল ভাব - ২ [SSC].mp4
+Oct 26 10:53 : update: added youtubeDl/পয়লা বৈশাখ - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:53 : update: added youtubeDl/পয়লা বৈশাখ - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 10:53 : update: added youtubeDl/সাহিত্যের রূপ ও রীতি - মূল ভাব - ১ [SSC].mp4
+Oct 26 10:53 : update: added youtubeDl/সাহিত্যের রূপ ও রীতি - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:54 : update: added youtubeDl/সাহিত্যের রূপ ও রীতি - মূল ভাব - ২ [SSC].mp4
+Oct 26 10:54 : update: added youtubeDl/নিয়তি - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:54 : update: added youtubeDl/নিয়তি - মূল ভাব - ১ [SSC].mp4
+Oct 26 10:54 : update: added youtubeDl/নিয়তি - মূল ভাব - ২, বহুনির্বাচনি প্রশ্ন [SSC].mp4
+Oct 26 10:54 : update: added youtubeDl/বঙ্গবাণী - কবি পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:55 : update: added youtubeDl/বঙ্গবাণী - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 10:55 : update: added youtubeDl/কপোতাক্ষ নদ - কবি পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:55 : update: added youtubeDl/কপোতাক্ষ নদ - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 10:55 : update: added youtubeDl/জীবন সংগীত - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:55 : update: added youtubeDl/জীবন সংগীত - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 10:56 : update: added youtubeDl/মানুষ - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:56 : update: added youtubeDl/মানুষ - মূল ভাব [SSC].mp4
+Oct 26 10:56 : update: added youtubeDl/পল্লিজননী - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:57 : update: added youtubeDl/পল্লিজননী - মূল ভাব [SSC].mp4
+Oct 26 10:57 : update: added youtubeDl/সেই দিন এই মাঠ - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:57 : update: added youtubeDl/সেই দিন এই মাঠ - মূল ভাব [SSC].mp4
+Oct 26 10:57 : update: added youtubeDl/জুতা আবিষ্কার - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:58 : update: added youtubeDl/জুতা আবিষ্কার - মূল ভাব [SSC].mp4
+Oct 26 10:58 : update: added youtubeDl/ঝর্ণার গান - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:58 : update: added youtubeDl/ঝর্ণার গান - মূল ভাব  [SSC].mp4
+Oct 26 10:58 : update: added youtubeDl/আমি কোনো আগন্তুক নই - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:58 : update: added youtubeDl/আমি কোনো আগন্তুক নই - মূল ভাব [SSC].mp4
+Oct 26 10:59 : update: added youtubeDl/আশা - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:59 : update: added youtubeDl/আশা - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 10:59 : update: added youtubeDl/রানার - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 10:59 : update: added youtubeDl/রানার - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 11:00 : update: added youtubeDl/তোমাকে পাওয়ার জন্যে, হে স্বাধীনতা - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:00 : update: added youtubeDl/তোমাকে পাওয়ার জন্যে, হে স্বাধীনতা - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 11:00 : update: added youtubeDl/আমার পরিচয় - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:01 : update: added youtubeDl/আমার পরিচয় - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 11:01 : update: added youtubeDl/কাকতাড়ুয়া ： ভূমিকা - উপন্যাসের ধারণা, উপন্যাসের আঙ্গিক ও গঠন কৌশল [SSC].mp4
+Oct 26 11:02 : update: added youtubeDl/কাকতাড়ুয়া ： ভূমিকা - উপন্যাস ও ঔপন্যাসিক পরিচিতি ： সেলিনা পারভিন [SSC].mp4
+Oct 26 11:02 : update: added youtubeDl/কাকতাড়ুয়া - মূল ভাব - ১ [SSC].mp4
+Oct 26 11:02 : update: added youtubeDl/কাকতাড়ুয়া - মূল ভাব - ২ [SSC].mp4
+Oct 26 11:03 : update: added youtubeDl/কাকতাড়ুয়া - মূল ভাব - ৩, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 11:03 : update: added youtubeDl/নাটকের সংজ্ঞা ও ধারণা, আঙ্গিক ও গঠনকৌশল, বাংলা নাটকের সংক্ষিপ্ত ইতিহাস [SSC].mp4
+Oct 26 11:04 : update: added youtubeDl/বহিপীর (নাটক)： ভূমিকা - বহিপীর নাটক ও নাট্যকার পরিচিতি： সৈয়দ ওয়ালীউল্লাহ [SSC].mp4
+Oct 26 11:04 : update: added youtubeDl/বহিপীর (নাটক)： ভূমিকা - নাটকের চরিত্র পরিচিতি [SSC].mp4
+Oct 26 11:04 : update: added youtubeDl/বহিপীর - মূল ভাব - ১ [SSC].mp4
+Oct 26 11:04 : update: added youtubeDl/বহিপীর - মূল ভাব - ২ [SSC].mp4
+Oct 26 11:05 : update: added youtubeDl/বহিপীর - মূল ভাব - ৩, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/অভাগীর স্বর্গ - পর্ব ৪ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/অভাগীর স্বর্গ - পর্ব ৩ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/অভাগীর স্বর্গ - পর্ব ২ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/অভাগীর স্বর্গ - পর্ব ১ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/মানুষ মুহাম্মদ (স.) - মূল ভাব - ১ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/মানুষ - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/মানুষ - মূল ভাব [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/মমতাদি - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/মমতাদি - মূল ভাব - ২ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/মমতাদি - মূল ভাব - ১ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/বহিপীর (নাটক)： ভূমিকা - বহিপীর নাটক ও নাট্যকার পরিচিতি： সৈয়দ ওয়ালীউল্লাহ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/বহিপীর (নাটক)： ভূমিকা - নাটকের চরিত্র পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/বহিপীর - মূল ভাব - ৩, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/বহিপীর - মূল ভাব - ২ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/বহিপীর - মূল ভাব - ১ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/বঙ্গবাণী - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/বঙ্গবাণী - কবি পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/বই পড়া - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/বই পড়া - মূল ভাব - ২ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/বই পড়া - মূল ভাব - ১ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/প্রবাস বন্ধু - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/প্রবাস বন্ধু - মূল ভাব - ২ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/প্রবাস বন্ধু - মূল ভাব - ১ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/পল্লিসাহিত্য - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/পল্লিসাহিত্য - মূল ভাব - ২ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/পল্লিসাহিত্য - মূল ভাব - ১ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/পল্লিজননী - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/পল্লিজননী - মূল ভাব [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/পয়লা বৈশাখ - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/পয়লা বৈশাখ - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/নিয়তি - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/নিয়তি - মূল ভাব - ২, বহুনির্বাচনি প্রশ্ন [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/নিয়তি - মূল ভাব - ১ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/নিম গাছ - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/নিম গাছ - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/নাটকের সংজ্ঞা ও ধারণা, আঙ্গিক ও গঠনকৌশল, বাংলা নাটকের সংক্ষিপ্ত ইতিহাস [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/তোমাকে পাওয়ার জন্যে, হে স্বাধীনতা - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/তোমাকে পাওয়ার জন্যে, হে স্বাধীনতা - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/ঝর্ণার গান - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/ঝর্ণার গান - মূল ভাব  [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/জুতা আবিষ্কার - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/জুতা আবিষ্কার - মূল ভাব [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/জীবন সংগীত - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/জীবন সংগীত - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/কাকতাড়ুয়া ： ভূমিকা - উপন্যাসের ধারণা, উপন্যাসের আঙ্গিক ও গঠন কৌশল [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/কাকতাড়ুয়া ： ভূমিকা - উপন্যাস ও ঔপন্যাসিক পরিচিতি ： সেলিনা পারভিন [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/কাকতাড়ুয়া - মূল ভাব - ৩, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/কাকতাড়ুয়া - মূল ভাব - ২ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/কাকতাড়ুয়া - মূল ভাব - ১ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/কপোতাক্ষ নদ - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/কপোতাক্ষ নদ - কবি পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/একাত্তরের দিনগুলি - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/একাত্তরের দিনগুলি - মূল ভাব - ২ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/একাত্তরের দিনগুলি - মূল ভাব - ১ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/উপেক্ষিত শক্তির উদ্বোধন - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/উপেক্ষিত শক্তির উদ্বোধন - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/আশা - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/আশা - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/আমি কোনো আগন্তুক নই - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/আমি কোনো আগন্তুক নই - মূল ভাব [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/আমার পরিচয় - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/আমার পরিচয় - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/আম-আঁটির ভেঁপু - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/আম-আঁটির ভেঁপু - মূল ভাব - ৩ ও অনুশীলনী [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/আম-আঁটির ভেঁপু - মূল ভাব - ২ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/আম-আঁটির ভেঁপু - মূল ভাব - ১ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/অভাগীর স্বর্গ - লেখক পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/অভাগীর স্বর্গ - পাঠ-পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/অভাগীর স্বর্গ - পর্ব ৬ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/অভাগীর স্বর্গ - পর্ব ৫ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/সেই দিন এই মাঠ - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/সেই দিন এই মাঠ - মূল ভাব [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/সুভা - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/সুভা - মূল ভাব - ২ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/সুভা - মূল ভাব - ১ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/সাহিত্যের রূপ ও রীতি - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/সাহিত্যের রূপ ও রীতি - মূল ভাব - ২ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/সাহিত্যের রূপ ও রীতি - মূল ভাব - ১ [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/শিক্ষা ও মনুষ্যত্ব - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/শিক্ষা ও মনুষ্যত্ব - মূল ভাব, বহুনির্বাচনি প্রশ্ন [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/রানার - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/রানার - মূল ভাব, বহুনির্বাচনি প্রশ্ন, সৃজনশীল প্রশ্ন [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/মানুষ মুহাম্মদ (স.) - লেখক পরিচিতি, শব্দার্থ ও টীকা, পাঠ পরিচিতি [SSC].mp4
+Oct 26 11:44 : update: removing youtubeDl/মানুষ মুহাম্মদ (স.) - মূল ভাব - ২ ও অনুশীলনী [SSC].mp4
+Oct 26 16:15 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 26 16:20 : player: played "hMMmmm/lofiCompilation-rain/3 HOURS of GENTLE NIGHT RAIN, Rain Sounds to Sleep, Study, Relax, Reduce Stress, help insomnia.mp3"
+Oct 26 16:20 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 26 16:39 : player: played "hMMmmm/lofi/RAINING IN OSAKA.mp3"
+Oct 26 17:06 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 26 17:08 : player: played "hMMmmm/lofi/RAINING IN OSAKA.mp3"
+Oct 26 17:27 : player: played "hMMmmm/lofi/RAINING IN OSAKA.mp3"
+Oct 26 17:47 : player: played "hMMmmm/lofi/RAINING IN OSAKA.mp3"
+Oct 29 09:55 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 29 10:09 : player: played "hMMmmm/lofi/RAINING IN OSAKA.mp3"
+Oct 29 10:28 : player: played "hMMmmm/lofi/RAINING IN OSAKA.mp3"
+Oct 29 10:48 : player: played "hMMmmm/lofi/RAINING IN OSAKA.mp3"
+Oct 29 10:49 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 29 11:07 : player: played "hMMmmm/lofi/RAINING IN OSAKA.mp3"
+Oct 29 11:26 : player: played "hMMmmm/lofi/RAINING IN OSAKA.mp3"
+Oct 29 12:58 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM

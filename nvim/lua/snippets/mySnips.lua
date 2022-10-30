@@ -58,48 +58,71 @@ ls.add_snippets(nil, {
 			i(1, "1 "),
 			f(function()
 				result = {}
-				result.start_hour = os.date("%I") -- defining start hour
+				-- result.start_hour = os.date("%I") -- defining start hour
+				result.start_hour = os.date("%I")
 				result.start_min = os.date("%M") -- defining start min
-				result.status = function()
-					return os.date("%p") -- finding wheter pm or am
+				result.status = function(hour, min)
+					local time = os.time({ day = 1, year = 1, month = 1, hour = hour, min = min })
+					return os.date("%p", time)
 				end
-				result.format = function(ses)
-					local hour = tonumber(result.end_hour)
-					local min = tonumber(result.end_min)
-
-					if hour < 10 then
-						-- result.end_hour = string.sub(tostring(result.end_hour),2,2)
-						result.start_hour = string.sub(tostring(result.start_hour), 2, 2)
+				result.format_below10 = function(time) --time refers to hour/min
+					return "0" .. tostring(time)
+				end
+				result.format_min_past60 = function(hour, min)
+					min = min - 60
+					hour = hour + 1
+					return hour, min
+				end
+				result.format_hour_past12 = function(hour)
+					return hour - 12
+				end
+				result.format = function(hour, min)
+					if min < 10 then
+						result.end_min = result.format_below10(min)
 					end
 					if min >= 60 then
-						result.end_min = min - 60
-						result.end_hour = 1 + hour
+						result.end_hour, result.end_min = result.format_min_past60(hour, min)
+						print(result.end_hour)
 					end
-					if tonumber(result.end_min) < 10 then
-						print("hello")
-						result.end_min = "0" .. result.end_min
+					--as the end_hour gets modifed in the upper cond, i need to check for the global val
+					--instead of the value passed as a param
+					if result.end_hour > 12 then
+						result.end_hour = result.format_hour_past12(result.end_hour)
 					end
-					print(result.end_min)
-					return "{" .. ses .. " H}" .. " [ " .. result.start_time() .. " -> " .. result.end_time() .. " ]"
+					return result.end_time()
 				end
-				result.adder = function()
-					local time = vim.fn.input("Enter session time (H:M) = ")
-					local hour = string.sub(time, 1, 1)
-					local min = string.sub(time, 3, 4)
-					result.end_hour = tonumber(result.start_hour) + tonumber(hour)
-					result.end_min = tonumber(result.start_min) + tonumber(min)
-					return result.format(time)
+				result.adder = function(session_duration)
+					local ses_hour = string.sub(session_duration, 1, 1)
+					local ses_min = string.sub(session_duration, 3, 4)
+					return tonumber(result.start_hour) + tonumber(ses_hour),
+						tonumber(result.start_min) + tonumber(ses_min)
 					-- result.format(result.end_hour,result.end_min)
 				end
 				result.end_time = function()
-					return result.end_hour .. ":" .. result.end_min .. result.status()
+					return result.end_hour .. ":" .. result.end_min .. result.status(result.end_hour, result.end_min)
 				end
 				result.start_time = function()
-					return result.start_hour .. ":" .. result.start_min .. result.status()
+					return result.start_hour
+						.. ":"
+						.. result.start_min
+						.. result.status(result.start_hour, result.start_min)
 				end
-				return " " .. result.adder()
+				result.init = function()
+					local session_duration = vim.fn.input("Enter session duration (H:M) = ")
+					result.end_hour, result.end_min = result.adder(session_duration)
+					local end_time = result.format(result.end_hour, result.end_min)
+					return " {"
+						.. session_duration
+						.. " H}"
+						.. " [ "
+						.. result.start_time()
+						.. " -> "
+						.. end_time
+						.. " ]"
+				end
+				return result.init()
 			end),
-			t({ "", "> " }),
+            t({ "", "" }),
 			i(0),
 		}), --}}}
 		--session past{{{
@@ -108,45 +131,69 @@ ls.add_snippets(nil, {
 			i(1, "1 "),
 			f(function()
 				result = {}
-				result.end_hour = os.date("%I") -- defining start hour
-				result.end_min = os.date("%M") -- defining start min
-				result.status = function()
-					return os.date("%p") -- finding wheter pm or am
+				-- result.start_hour = os.date("%I") -- defining start hour
+				result.start_hour = os.date("%I")
+				result.start_min = os.date("%M") -- defining start min
+				result.status = function(hour, min)
+					local time = os.time({ day = 1, year = 1, month = 1, hour = hour, min = min })
+					return os.date("%p", time)
 				end
-				result.format = function(ses)
-					local hour = tonumber(result.start_hour)
-					local min = tonumber(result.start_min)
-
-					if hour < 10 then
-						-- result.end_hour = string.sub(tostring(result.end_hour),2,2)
-						result.end_hour = string.sub(tostring(result.end_hour), 2, 2)
-					end
-					if min < 0 then
-						result.start_min = 60 + min -- as min a negative value
-						result.start_hour = hour - 1
-						print(result.start_min)
-					end
-					if result.start_min < 10 then
-						result.start_min = "0" .. result.start_min
-					end
-					return "{" .. ses .. " H}" .. " [ " .. result.start_time() .. " -> " .. result.end_time() .. " ]"
+				result.format_below10 = function(time) --time refers to hour/min
+					return "0" .. tostring(time)
 				end
-				result.adder = function()
-					local time = vim.fn.input("Enter session time (H:M) = ")
-					local hour = string.sub(time, 1, 1)
-					local min = string.sub(time, 3, 4)
-					result.start_hour = tonumber(result.end_hour) - tonumber(hour)
-					result.start_min = tonumber(result.end_min) - tonumber(min)
-					return result.format(time)
+				result.format_min_past60 = function(hour, min)
+					min = min - 60
+					hour = hour + 1
+					return hour, min
+				end
+				result.format_hour_past12 = function(hour)
+					return hour - 12
+				end
+				result.format = function(hour, min)
+					if min < 10 then
+						result.end_min = result.format_below10(min)
+					end
+					if min >= 60 then
+						result.end_hour, result.end_min = result.format_min_past60(hour, min)
+						print(result.end_hour)
+					end
+					--as the end_hour gets modifed in the upper cond, i need to check for the global val
+					--instead of the value passed as a param
+					if result.end_hour > 12 then
+						result.end_hour = result.format_hour_past12(result.end_hour)
+					end
+					return result.end_time()
+				end
+				result.adder = function(session_duration)
+					local ses_hour = string.sub(session_duration, 1, 1)
+					local ses_min = string.sub(session_duration, 3, 4)
+					return tonumber(result.start_hour) - tonumber(ses_hour),
+						tonumber(result.start_min) - tonumber(ses_min)
 					-- result.format(result.end_hour,result.end_min)
 				end
 				result.end_time = function()
-					return result.end_hour .. ":" .. result.end_min .. result.status()
+					return result.end_hour .. ":" .. result.end_min .. result.status(result.end_hour, result.end_min)
 				end
 				result.start_time = function()
-					return result.start_hour .. ":" .. result.start_min .. result.status()
+					return result.start_hour
+						.. ":"
+						.. result.start_min
+						.. result.status(result.start_hour, result.start_min)
 				end
-				return " " .. result.adder()
+				result.init = function()
+					local session_duration = vim.fn.input("Enter session duration (H:M) = ")
+					result.end_hour, result.end_min = result.adder(session_duration)
+					local end_time = result.format(result.end_hour, result.end_min)
+					return " {"
+						.. session_duration
+						.. " H}"
+						.. " [ "
+						.. result.start_time()
+						.. " -> "
+						.. end_time
+						.. " ]"
+				end
+				return result.init()
 			end),
 			t({ "", "> " }),
 			i(0),
@@ -237,7 +284,7 @@ ls.add_snippets(nil, {
 				{
 					c(1, { fmta("<>", { i(1) }), fmta("<>,", i(1, "Respond")) }),
 					i(2),
-					c(3, { fmta("log.Fatal(<>)", { i(1,"err") }), fmta("<>", i(1, "Handle")) }),
+					c(3, { fmta("log.Fatal(<>)", { i(1, "err") }), fmta("<>", i(1, "Handle")) }),
 				}
 			)
 		), --}}}
@@ -248,7 +295,8 @@ ls.add_snippets(nil, {
         http.HandleFunc("/", handleIndex)
         http.Handle("/favicon.ico", http.NotFoundHandler())
         http.ListenAndServe(":8080", nil)
-      ]=],{}--<--required
+      ]=],
+				{} --<--required
 			)
 		), --}}}
 		s(
@@ -260,9 +308,7 @@ ls.add_snippets(nil, {
 				{ i(1, "text") }
 			)
 		), --}}}
-
 	},
-
 })
 --[==[[
 

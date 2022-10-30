@@ -21,7 +21,8 @@ require("neorg").setup({
 		["core.norg.journal"] = {
 			config = { -- Note that this table is optional and doesn't need to be provided
 				-- Configuration here
-				jornal_folder = "../journal/",
+                workspace = "default",
+				jornal_folder = "./gtd/journal",
 				strategy = "flat",
 			},
 		},
@@ -29,39 +30,39 @@ require("neorg").setup({
 		["core.norg.dirman"] = { -- Manage your directories with Neorg
 			config = {
 				workspaces = {
-					my_workspace = "~/Documents/norg/gtd",
+					default = "/home/illumiko/Documents/norg/gtd",
 					example_gtd = "~/Documents/norg/example_workspaces/gtd/",
 				},
 				autochdir = true, -- Automatically change the directory to the current workspace's root every time
 				index = "index.norg", -- The name of the main (root) .norg file
-				last_workspace = vim.fn.stdpath("cache") .. "/neorg_last_workspace.txt", -- The location to write and read the workspace cache file 
+                open_last_workspace = true
 			},
 		},
-		["core.gtd.base"] = {
-			config = {
-				workspace = "my_workspace",
-				default_lists = {
-					inbox = "inbox.norg",
-				},
-				syntax = {
-					context = "#contexts",
-					start = "#time.start",
-					due = "#time.due",
-					waiting = "#waiting.for",
-				},
-				displayers = {
-					projects = {
-						show_completed_projects = true,
-						show_projects_without_tasks = true,
-					},
-				},
-				exclude = {
-					"journal",
-					"progress",
-				},
-				custom_tag_completion = true,
-			},
-		},
+		-- ["core.gtd.base"] = {
+		-- 	config = {
+		-- 		workspace = "my_workspace",
+		-- 		default_lists = {
+		-- 			inbox = "inbox.norg",
+		-- 		},
+		-- 		syntax = {
+		-- 			context = "#contexts",
+		-- 			start = "#time.start",
+		-- 			due = "#time.due",
+		-- 			waiting = "#waiting.for",
+		-- 		},
+		-- 		displayers = {
+		-- 			projects = {
+		-- 				show_completed_projects = true,
+		-- 				show_projects_without_tasks = true,
+		-- 			},
+		-- 		},
+		-- 		exclude = {
+		-- 			"journal",
+		-- 			"progress",
+		-- 		},
+		-- 		custom_tag_completion = true,
+		-- 	},
+		-- },
 	},
 })
 

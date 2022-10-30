@@ -5,6 +5,7 @@ require("general.keymaps") --keymaps
 require("plugin.session_manager")
 require("plugin.autosave")
 require("plugin.LSP") --Language server xD
+require("plugin.ufo_settings")
 require("plugin.explorer") --file manager
 require("plugin.which_key")
 require("plugin.barbar") --buffer like tabs
