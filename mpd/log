@@ -880,3 +880,13 @@ Oct 29 10:49 : output: Failed to open mixer for 'default detected output': no su
 Oct 29 11:07 : player: played "hMMmmm/lofi/RAINING IN OSAKA.mp3"
 Oct 29 11:26 : player: played "hMMmmm/lofi/RAINING IN OSAKA.mp3"
 Oct 29 12:58 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Oct 31 05:59 : player: played "hMMmmm/lofi/RAINING IN OSAKA.mp3"
+Oct 31 06:05 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Nov 02 07:17 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Nov 02 07:22 : player: played "hMMmmm/lofiCompilation-rain/3 HOURS of GENTLE NIGHT RAIN, Rain Sounds to Sleep, Study, Relax, Reduce Stress, help insomnia.mp3"
+Nov 02 07:27 : player: played "hMMmmm/lofiCompilation-rain/3 HOURS of GENTLE NIGHT RAIN, Rain Sounds to Sleep, Study, Relax, Reduce Stress, help insomnia.mp3"
+Nov 02 07:32 : player: played "hMMmmm/lofiCompilation-rain/3 HOURS of GENTLE NIGHT RAIN, Rain Sounds to Sleep, Study, Relax, Reduce Stress, help insomnia.mp3"
+Nov 02 07:48 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Nov 02 07:51 : player: played "hMMmmm/lofiCompilation-rain/3 HOURS of GENTLE NIGHT RAIN, Rain Sounds to Sleep, Study, Relax, Reduce Stress, help insomnia.mp3"
+Nov 02 07:56 : player: played "hMMmmm/lofiCompilation-rain/3 HOURS of GENTLE NIGHT RAIN, Rain Sounds to Sleep, Study, Relax, Reduce Stress, help insomnia.mp3"
+Nov 03 00:36 : player: played "hMMmmm/lofiCompilation-rain/3 HOURS of GENTLE NIGHT RAIN, Rain Sounds to Sleep, Study, Relax, Reduce Stress, help insomnia.mp3"

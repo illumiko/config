@@ -354,9 +354,9 @@ client.background       $bg
     # exec_always feh --scale-down Pictures/Wallpaper/bg-2.png
     #for mouse prop
     exec_always xinput set-prop 10 301 0.5
-    exec alacritty -e nvim ~/Documents/norg/gtd/index.norg
+    exec alacritty -e tmux -u -c "nvim /home/illumiko/Documents/norg/index.norg"
     #exec_always indicator-stickynotes
-    #exec_always codium ~/Documents/Notes/thingsToDo(longTerm)/longTerm.todo.md 
+    #exec_always codium ~/Documents/Notes/thingsToDo(longTerm)/longTerm.todo.md
     # exec_always nm-applet   #for mint wifi icon
     #exec_always xrandr --output HDMI-A-0 --brightness 0.8   #for brightness
   

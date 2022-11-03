@@ -393,10 +393,10 @@ return require("packer").startup(function(use)
 		config = function()
 			require("specs").setup({
 				show_jumps = true,
-				min_jump = 10,
+				min_jump = 15,
 				popup = {
 					delay_ms = 0, -- delay before popup displays
-					inc_ms = 40, -- time increments used for fade/resize effects
+					inc_ms = 10, -- time increments used for fade/resize effects
 					blend = 10, -- starting blend, between 0-100 (fully transparent), see :h winblend
 					width = 10,
 					winhl = "PMenu",
@@ -456,17 +456,22 @@ return require("packer").startup(function(use)
 
 	--[[colorscheme]]
 	use({
-		"rockyzhang24/arctic.nvim",
 		lock = true,
+		"EdenEast/nightfox.nvim",
+		"adisen99/apprentice.nvim",
+		"ishan9299/nvim-solarized-lua",
+		"kvrohit/mellow.nvim",
+		"kdheepak/monochrome.nvim",
+		"rockyzhang24/arctic.nvim",
+		{
+			"catppuccin/nvim",
+			as = "catppuccin",
+		},
 		{ "catppuccin/nvim" },
 		"Mofiqul/adwaita.nvim",
-		{
-			"andersevenrud/nordic.nvim",
-		},
+		{ "andersevenrud/nordic.nvim" },
 		"clpi/cyu.lua",
 		"folke/tokyonight.nvim", -- tokyoNight
-		"tiagovla/tokyodark.nvim",
-		{ "Murtaza-Udaipurwala/gruvqueen" },
 		"kvrohit/rasmus.nvim",
 		{
 			"mcchrish/zenbones.nvim",
@@ -476,7 +481,6 @@ return require("packer").startup(function(use)
 			-- In Vim, compat mode is turned on as Lush only works in Neovim.
 		},
 		-- {'olimorris/onedarkpro.nvim'}, -- onedarkpro
-		{ "navarasu/onedark.nvim" },
 		{ "marko-cerovac/material.nvim" },
 		{ "rebelot/kanagawa.nvim" }, -- kangawa}}}
 	})
