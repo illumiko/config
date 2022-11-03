@@ -1,0 +1,27 @@
+{
+	"all": {
+		"changeLogs": {
+			"BDFDB": "2.9.3",
+			"CompleteTimestamps": "1.6.1",
+			"GameActivityToggle": "1.1.7",
+			"PinDMs": "1.9.4",
+			"PluginRepo": "2.3.9",
+			"ReadAllNotificationsButton": "1.7.3",
+			"SplitLargeMessages": "1.7.9",
+			"SpotifyControls": "1.2.9"
+		},
+		"choices": {
+			"toastPosition": "right"
+		},
+		"general": {
+			"shareData": true,
+			"showToasts": true,
+			"showSupportBadges": false,
+			"useChromium": false
+		},
+		"hashes": {
+			"0BDFDB.data.json": "7c441b11e557b9e793fbd35cdb868f79207475d3",
+			"0BDFDB.raw.css": "141c8ed61c0a328bfdea5e9491afb0e2bf77530f"
+		}
+	}
+}
