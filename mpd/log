@@ -890,3 +890,15 @@ Nov 02 07:48 : output: Failed to open mixer for 'default detected output': no su
 Nov 02 07:51 : player: played "hMMmmm/lofiCompilation-rain/3 HOURS of GENTLE NIGHT RAIN, Rain Sounds to Sleep, Study, Relax, Reduce Stress, help insomnia.mp3"
 Nov 02 07:56 : player: played "hMMmmm/lofiCompilation-rain/3 HOURS of GENTLE NIGHT RAIN, Rain Sounds to Sleep, Study, Relax, Reduce Stress, help insomnia.mp3"
 Nov 03 00:36 : player: played "hMMmmm/lofiCompilation-rain/3 HOURS of GENTLE NIGHT RAIN, Rain Sounds to Sleep, Study, Relax, Reduce Stress, help insomnia.mp3"
+Nov 03 16:52 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Nov 04 08:48 : player: played "hMMmmm/lofiCompilation-rain/3 HOURS of GENTLE NIGHT RAIN, Rain Sounds to Sleep, Study, Relax, Reduce Stress, help insomnia.mp3"
+Nov 04 08:49 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Nov 04 19:34 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Nov 04 19:34 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Nov 04 19:34 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Nov 04 19:34 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Nov 04 19:39 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Nov 04 19:42 : player: played "youtubeDl/【HD】Fate⧸Grand Order - 絕對魔獸戰線巴比倫尼亞 - ED3 - milet - Tell me【中日字幕】.mp3"
+Nov 04 19:47 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Nov 04 19:51 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Nov 04 19:55 : player: played "youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"

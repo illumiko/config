@@ -42,24 +42,12 @@ packer.init({
 })
 
 return require("packer").startup(function(use)
-	--[[neoscroll]]
+	--[[fucntion context]]
 	use({
-		"karb94/neoscroll.nvim",
-		config = function()
-			require("neoscroll").setup({
-				-- All these keys will be mapped to their corresponding default scrolling animation
-				mappings = { "<C-u>", "<C-d>", "<C-b>", "<C-f>", "<C-y>", "<C-e>", "zt", "zz", "zb" },
-				hide_cursor = false, -- Hide cursor while scrolling
-				stop_eof = true, -- Stop at <EOF> when scrolling downwards
-				respect_scrolloff = false, -- Stop scrolling when the cursor reaches the scrolloff margin of the file
-				cursor_scrolls_alone = true, -- The cursor will keep on scrolling even if the window cannot scroll further
-				easing_function = nil, -- Default easing function
-				pre_hook = nil, -- Function to run before the scrolling animation starts
-				post_hook = nil, -- Function to run after the scrolling animation ends
-				performance_mode = false, -- Disable "Performance Mode" on all buffers.
-			})
-		end,
+		"SmiteshP/nvim-navic",
+		requires = "neovim/nvim-lspconfig",
 	})
+	use({ "fgheng/winbar.nvim" })
 	--[[nvim ide like folds]]
 	use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
 	--[[scoped tabs]]
@@ -457,6 +445,9 @@ return require("packer").startup(function(use)
 	--[[colorscheme]]
 	use({
 		lock = true,
+		"rktjmp/lush.nvim",
+		"glepnir/zephyr-nvim",
+		"RishabhRD/gruvy",
 		"EdenEast/nightfox.nvim",
 		"adisen99/apprentice.nvim",
 		"ishan9299/nvim-solarized-lua",
@@ -468,18 +459,9 @@ return require("packer").startup(function(use)
 			as = "catppuccin",
 		},
 		{ "catppuccin/nvim" },
-		"Mofiqul/adwaita.nvim",
 		{ "andersevenrud/nordic.nvim" },
-		"clpi/cyu.lua",
-		"folke/tokyonight.nvim", -- tokyoNight
 		"kvrohit/rasmus.nvim",
-		{
-			"mcchrish/zenbones.nvim",
-			requires = "rktjmp/lush.nvim",
-			-- Optionally install Lush. Allows for more configuration or extending the colorscheme
-			-- If you don't want to install lush, make sure to set g:zenbones_compat = 1
-			-- In Vim, compat mode is turned on as Lush only works in Neovim.
-		},
+		"mcchrish/zenbones.nvim",
 		-- {'olimorris/onedarkpro.nvim'}, -- onedarkpro
 		{ "marko-cerovac/material.nvim" },
 		{ "rebelot/kanagawa.nvim" }, -- kangawa}}}

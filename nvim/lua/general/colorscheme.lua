@@ -83,6 +83,6 @@ vim.g.solarized_visibility = "high"
 -- vim.g.solarized_statusline = "flat"}}} ]]
 
 vim.api.nvim_command([[
-colorscheme terafox
-hi NormalNc guibg=#091416
+colorscheme zephyr
+hi NormalNc guibg=#16181c
 ]])

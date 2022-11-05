@@ -53,7 +53,13 @@ local function lsp_highlight_document(client)
 	illuminate.on_attach(client)
 	-- end
 end
-
+local function nav(client, bufnr)
+	local status_ok, navic = pcall(require, "nvim-navic")
+	if not status_ok then
+		return
+	end
+    navic.attach(client,bufnr)
+end
 local function lsp_keymaps(bufnr)
 	-- local opts = { noremap = true, silent = true }
 	local map = vim.api.nvim_buf_set_keymap
@@ -64,7 +70,6 @@ local function lsp_keymaps(bufnr)
 		local winid = require("ufo").peekFoldedLinesUnderCursor()
 		if not winid then
 			-- choose one of coc.nvim and nvim lsp
-			vim.fn.CocActionAsync("definitionHover") -- coc.nvim
 			vim.lsp.buf.hover()
 		end
 	end)
@@ -99,6 +104,7 @@ M.on_attach = function(client, bufnr)
 	if client.name == "tsserver" then
 		client.resolved_capabilities.document_formatting = false
 	end
+    nav(client,bufnr)
 	lsp_keymaps(bufnr)
 	lsp_highlight_document(client)
 end

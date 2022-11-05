@@ -6,6 +6,12 @@ vim.g.mapleader = " "
 
 -- vim.cmd([[inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"]])
 --[===[normal mode]===]
+--[[toggle term]]
+--opens toggle term in a the dir of the working buffer
+vim.keymap.set("n", "<C-\\>", function ()
+    local path = vim.fn.expand('%:p:h')
+    return vim.cmd('ToggleTerm dir=' .. path)
+end, opts)
 --[[highlight Str]]
 map("v", "<F3>", ":<cmd>HSHighlight" .. 1 .."<CR><esc>", opts)
 map("v", "<F4>", "<cmd>HSRmHighlight<CR><esc>", opts)

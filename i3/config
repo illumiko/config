@@ -376,5 +376,5 @@ client.background       $bg
     gaps outer 10
     # smart_gaps on
   #for moving to switched window from switched window
-    workspace_auto_back_and_forth yes
+    workspace_auto_back_and_forth no
     smart_borders on

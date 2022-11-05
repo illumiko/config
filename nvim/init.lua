@@ -24,6 +24,7 @@ require("general.colorscheme")
 require("plugin.cursor_context")
 require("general.highlights")
 require("plugin.telescope_conf") --telescope
+vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
 if vim.g.neovide then
 	vim.cmd([[
         set guifont=Comic\ Code\ Ligatures:h13

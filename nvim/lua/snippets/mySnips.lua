@@ -59,8 +59,8 @@ ls.add_snippets(nil, {
 			f(function()
 				result = {}
 				-- result.start_hour = os.date("%I") -- defining start hour
-				result.end_hour = os.date("%I")
-				result.end_min = os.date("%M") -- defining start min
+				result.start_hour = os.date("%I")
+				result.start_min = os.date("%M") -- defining start min
 				result.status = function(hour, min)
 					if os.date("%p") == "am" then
 						local time = os.time({ day = 1, year = 1, month = 1, hour = hour, min = min })
@@ -81,9 +81,10 @@ ls.add_snippets(nil, {
 				result.format_hour_past12 = function(hour)
 					return hour - 12
 				end
+                -- result.end_min is used as we are calc-ing it
 				result.format = function(hour, min)
-					if min < 10 then
-						result.end_min = result.format_below10(min)
+					if result.end_min < 10 then
+						result.end_min = result.format_below10(result.end_min)
 					end
 					if min >= 60 then
 						result.end_hour, result.end_min = result.format_min_past60(hour, min)
@@ -99,14 +100,14 @@ ls.add_snippets(nil, {
 				result.adder = function(session_duration)
 					local ses_hour = string.sub(session_duration, 1, 1)
 					local ses_min = string.sub(session_duration, 3, 4)
-					return tonumber(result.end_hour) + tonumber(ses_hour), tonumber(result.end_min) + tonumber(ses_min)
+					return tonumber(result.start_hour) + tonumber(ses_hour), tonumber(result.start_min) + tonumber(ses_min)
 					-- result.format(result.end_hour,result.end_min)
 				end
 				result.end_time = function()
 					return result.end_hour .. ":" .. result.end_min .. result.status(result.end_hour, result.end_min)
 				end
 				result.start_time = function()
-					return result.end_hour .. ":" .. result.end_min .. result.status(result.end_hour, result.end_min)
+					return result.start_hour .. ":" .. result.start_min .. result.status(result.start_hour, result.start_min)
 				end
 				result.init = function()
 					local session_duration = vim.fn.input("Enter session duration (H:M) = ")
@@ -147,9 +148,9 @@ ls.add_snippets(nil, {
 				result.format_below10 = function(time) --time refers to hour/min
 					return "0" .. tostring(time)
 				end
-				result.format_min_past60 = function(hour, min)
-					min = min - 60
-					hour = hour + 1
+				result.format_min_below60 = function(hour, min) --when you substract things you go below
+					min = min + 60
+					hour = hour - 1
 					return hour, min
 				end
 				result.format_hour_past12 = function(hour)
@@ -157,11 +158,11 @@ ls.add_snippets(nil, {
 				end
 				-- the value that gets modified by result.adder is to be used when chaning the variable
 				result.format = function(hour, min)
-					if min < 10 then
-						result.start_min = result.format_below10(min)
+					if result.start_min < 10 then
+						result.start_min = result.format_below10(result.start_min)
 					end
-					if min >= 60 then
-						result.start_hour, result.start_min = result.format_min_past60(hour, min)
+					if min < 0 then
+						result.start_hour, result.start_min = result.format_min_below60(hour, min)
 					end
 					--as the end_hour gets modifed in the upper cond, i need to check for the global val
 					--instead of the value passed as a param
@@ -182,17 +183,17 @@ ls.add_snippets(nil, {
 					return result.start_hour
 						.. ":"
 						.. result.start_min
-						.. result.status(result.end_hour, result.end_min)
+						.. result.status(result.start_hour, result.start_min)
 				end
 				result.init = function()
 					local session_duration = vim.fn.input("Enter session duration (H:M) = ")
 					result.start_hour, result.start_min = result.adder(session_duration)
-					local end_time = result.format(result.start_hour, result.start_min)
+					local start_time = result.format(result.start_hour, result.start_min)
 					return " {"
 						.. session_duration
 						.. " H}"
 						.. " [ "
-						.. result.start_time()
+						.. start_time
 						.. " -> "
 						.. result.end_time()
 						.. " ]"
