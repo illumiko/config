@@ -42,6 +42,8 @@ packer.init({
 })
 
 return require("packer").startup(function(use)
+    --[[devdocs]]
+    use"romainl/vim-devdocs"
 	--[[fucntion context]]
 	use({
 		"SmiteshP/nvim-navic",

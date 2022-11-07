@@ -200,7 +200,7 @@ ls.add_snippets(nil, {
 				end
 				return result.init()
 			end),
-			t({ "", "> " }),
+			t({ "", "" }),
 			i(0),
 		}), --}}}
 		--}}}
@@ -305,10 +305,28 @@ ls.add_snippets(nil, {
 			)
 		), --}}}
 		s(
-			"lgf", --{{{
+			"logF", --{{{
 			fmta(
 				[=[
           log.Fatal(<>)
+      ]=],
+				{ i(1, "text") }
+			)
+		), --}}}
+		s(
+			"print", --{{{
+			fmta(
+				[=[
+          fmt.Println(<>)
+      ]=],
+				{ i(1, "text") }
+			)
+		), --}}}
+		s(
+			"printF", --{{{
+			fmta(
+				[=[
+          fmt.Printf(<>)
       ]=],
 				{ i(1, "text") }
 			)
