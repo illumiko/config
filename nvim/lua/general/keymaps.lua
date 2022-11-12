@@ -6,27 +6,34 @@ vim.g.mapleader = " "
 
 -- vim.cmd([[inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"]])
 --[===[normal mode]===]
+
 --[[toggle term]]
 --opens toggle term in a the dir of the working buffer
-vim.keymap.set("n", "<C-\\>", function ()
-    local path = vim.fn.expand('%:p:h')
-    return vim.cmd('ToggleTerm dir=' .. path)
+vim.keymap.set("n", "<C-\\>", function()
+	local path = vim.fn.expand("%:p:h")
+	return vim.cmd("ToggleTerm dir=" .. path)
 end, opts)
+
 --[[highlight Str]]
-map("v", "<F3>", ":<cmd>HSHighlight" .. 1 .."<CR><esc>", opts)
+map("v", "<F3>", ":<cmd>HSHighlight" .. 1 .. "<CR><esc>", opts)
 map("v", "<F4>", "<cmd>HSRmHighlight<CR><esc>", opts)
+
 --[[Source config]]
 map("n", "<leader>R", ":source %<cr>", opts)
+
 --[[specs effect on search movement]]
 map("n", "n", 'n:lua require("specs").show_specs()<CR>', opts)
 map("n", "N", 'N:lua require("specs").show_specs()<CR>', opts)
+
 --[[focus Management]]
 map("n", "<C-f>", ":FocusMaximise <CR>", opts)
+
 --[[hjkl movement in colemak]]
 map("n", "<C-h>", "h", opts) --{{{
 map("n", "<C-n>", "j", opts)
 map("n", "<C-e>", "k", opts)
 map("n", "<C-i>", "l", opts) --}}}
+
 -- [[better window movemnt]]
 map("n", "<leader>w", ":lua require('nvim-window').pick()<CR>", opts)
 -- [[Norg]]
@@ -48,17 +55,18 @@ map("n", "<leader>ffg", "<cmd>lua require('telescope.builtin').live_grep()<CR>",
 map("n", "<leader><Tab>", "<cmd>lua require('telescope.builtin').buffers()<CR>", opts) --  opening telescope in config folder
 -- map("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 -- [[lsp]]
-map("n", "gdD", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
 --[[ map("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
 map("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
 map("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts) ]]
-map("n", "]d", "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>", opts)
-map("n", "[d", "<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>", opts)
---[[goto def float]]
-map("n", "gdd", ":lua require('goto-preview').goto_preview_definition()<cr>", opts)
-map("n", "gdi", ":lua require('goto-preview').goto_preview_implementation()<cr>", opts)
-map("n", "gdc", ":lua require('goto-preview').close_all_win()<cr>", opts)
-map("n", "gdr", ":lua require('goto-preview').goto_preview_references()<cr>", opts)
+---[[goto def float]]
+map("n", "<space>ld", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
+map("n", "<space>lpd", ":lua require('goto-preview').goto_preview_definition()<cr>", opts)
+map("n", "<space>lpi", ":lua require('goto-preview').goto_preview_implementation()<cr>", opts)
+map("n", "<space>lpc", ":lua require('goto-preview').close_all_win()<cr>", opts)
+map("n", "<space>lpr", ":lua require('goto-preview').goto_preview_references()<cr>", opts)
+---
+-- map("n", "<Space>lr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
+map("n", "K", function() vim.lsp.buf.hover() end, opts)
 
 -- [[packer stuff]]
 map("n", "<leader>Pi", ":PackerInstall<CR>", opts)
@@ -94,9 +102,11 @@ map("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 --[[tabline]]
 map("n", "<A-h>", "<cmd>tabprevious<CR>", opts)
 map("n", "<A-l>", ":tabnext<CR>", opts)
+
 -- [[bufferline]]
 map("n", "<S-h>", ":BufferPrevious<CR>", opts)
 map("n", "<S-l>", ":BufferNext<CR>", opts)
+
 --[[Goto buffer in position...]]
 map("n", "<A-1>", ":BufferGoto 1<CR>", opts)
 map("n", "<A-2>", ":BufferGoto 2<CR>", opts)
@@ -108,8 +118,10 @@ map("n", "<A-7>", ":BufferGoto 7<CR>", opts)
 map("n", "<A-8>", ":BufferGoto 8<CR>", opts)
 map("n", "<A-9>", ":BufferGoto 9<CR>", opts)
 map("n", "<A-0>", ":BufferLast<CR>", opts)
+
 -- Close buffer
 map("n", "<A-c>", ":BufferClose<CR>", opts)
+
 -- Sort automatically by...
 map("n", "<S-Tab>", "<cmd>lua require('telescope.builtin').buffers()<CR>", opts) --bufferPicker
 --[===[insert mode]===]
@@ -141,13 +153,16 @@ vim.keymap.set("i", "<c-e>", function()
 		ls.change_choice(-1)
 	end
 end)
+
 --better ESC
 map("i", "jk", "<cmd>LuaSnipUnlinkCurrent<CR><ESC>", opts)
+
 map("i", "<", "<", opts)
 --[===[visiual mode]===]
 --better indenting
 map("v", "<", "<gv", opts)
 map("v", ">", ">gv", opts)
+
 --[===[visual block]===]
 -- map('x', '<leader>c',':Commentary<CR>', opts)
 --moving blocks of code
