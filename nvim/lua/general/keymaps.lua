@@ -92,16 +92,12 @@ map("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 map("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 --[[tabline]]
-map("n", "<A-h>", ":tabprevious<CR>", opts)
+map("n", "<A-h>", "<cmd>tabprevious<CR>", opts)
 map("n", "<A-l>", ":tabnext<CR>", opts)
-
 -- [[bufferline]]
 map("n", "<S-h>", ":BufferPrevious<CR>", opts)
 map("n", "<S-l>", ":BufferNext<CR>", opts)
--- Re-order to previous/next
-map("n", "<A-<>", ":BufferMovePrevious<CR>", opts)
-map("n", "<A->>", " :BufferMoveNext<CR>", opts)
--- Goto buffer in position...
+--[[Goto buffer in position...]]
 map("n", "<A-1>", ":BufferGoto 1<CR>", opts)
 map("n", "<A-2>", ":BufferGoto 2<CR>", opts)
 map("n", "<A-3>", ":BufferGoto 3<CR>", opts)
@@ -115,17 +111,7 @@ map("n", "<A-0>", ":BufferLast<CR>", opts)
 -- Close buffer
 map("n", "<A-c>", ":BufferClose<CR>", opts)
 -- Sort automatically by...
-map("n", "<Space>bb", ":BufferOrderByBufferNumber<CR>", opts)
-map("n", "<Space>bd", ":BufferOrderByDirectory<CR>", opts)
-map("n", "<Space>bl", ":BufferOrderByLanguage<CR>", opts)
 map("n", "<S-Tab>", "<cmd>lua require('telescope.builtin').buffers()<CR>", opts) --bufferPicker
-
---vertical split
-map("n", "<Leader>v", ":vsp<CR>", opts)
-
---split
-map("n", "<Leader>v", ":sp<CR>", opts)
-
 --[===[insert mode]===]
 --[[
         map('i', '<A-Up>', '<C-\\><C-N><C-w>k', {noremap = true, silent = true})
@@ -156,20 +142,14 @@ vim.keymap.set("i", "<c-e>", function()
 	end
 end)
 --better ESC
-map("i", "jj", "<cmd>LuaSnipUnlinkCurrent<CR><ESC>", opts)
 map("i", "jk", "<cmd>LuaSnipUnlinkCurrent<CR><ESC>", opts)
-map("i", "kj", "<cmd>LuaSnipUnlinkCurrent<CR><ESC>", opts)
-map("i", "<C-ne>", "<ESC>", opts)
 map("i", "<", "<", opts)
 --[===[visiual mode]===]
 --better indenting
 map("v", "<", "<gv", opts)
 map("v", ">", ">gv", opts)
-map("v", "<leader>c", ":Commentary<CR>", opts)
-
 --[===[visual block]===]
 -- map('x', '<leader>c',':Commentary<CR>', opts)
-
 --moving blocks of code
 map("x", "K", ":move '<-2<CR>gv-gv", opts)
 map("x", "J", ":move '>+1<CR>gv-gv", opts)

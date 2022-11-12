@@ -64,10 +64,10 @@ ls.add_snippets(nil, {
 				result.status = function(hour, min)
 					if os.date("%p") == "am" then
 						local time = os.time({ day = 1, year = 1, month = 1, hour = hour, min = min })
-                        return os.date("%p", time)
+						return os.date("%p", time)
 					else
 						local time = os.time({ day = 1, year = 1, month = 1, hour = hour + 12, min = min })
-                        return os.date("%p", time)
+						return os.date("%p", time)
 					end
 				end
 				result.format_below10 = function(time) --time refers to hour/min
@@ -81,7 +81,7 @@ ls.add_snippets(nil, {
 				result.format_hour_past12 = function(hour)
 					return hour - 12
 				end
-                -- result.end_min is used as we are calc-ing it
+				-- result.end_min is used as we are calc-ing it
 				result.format = function(hour, min)
 					if result.end_min < 10 then
 						result.end_min = result.format_below10(result.end_min)
@@ -100,14 +100,18 @@ ls.add_snippets(nil, {
 				result.adder = function(session_duration)
 					local ses_hour = string.sub(session_duration, 1, 1)
 					local ses_min = string.sub(session_duration, 3, 4)
-					return tonumber(result.start_hour) + tonumber(ses_hour), tonumber(result.start_min) + tonumber(ses_min)
+					return tonumber(result.start_hour) + tonumber(ses_hour),
+						tonumber(result.start_min) + tonumber(ses_min)
 					-- result.format(result.end_hour,result.end_min)
 				end
 				result.end_time = function()
 					return result.end_hour .. ":" .. result.end_min .. result.status(result.end_hour, result.end_min)
 				end
 				result.start_time = function()
-					return result.start_hour .. ":" .. result.start_min .. result.status(result.start_hour, result.start_min)
+					return result.start_hour
+						.. ":"
+						.. result.start_min
+						.. result.status(result.start_hour, result.start_min)
 				end
 				result.init = function()
 					local session_duration = vim.fn.input("Enter session duration (H:M) = ")
@@ -139,10 +143,10 @@ ls.add_snippets(nil, {
 				result.status = function(hour, min)
 					if os.date("%p") == "am" then
 						local time = os.time({ day = 1, year = 1, month = 1, hour = hour, min = min })
-                        return os.date("%p", time)
+						return os.date("%p", time)
 					else
 						local time = os.time({ day = 1, year = 1, month = 1, hour = hour + 12, min = min })
-                        return os.date("%p", time)
+						return os.date("%p", time)
 					end
 				end
 				result.format_below10 = function(time) --time refers to hour/min
@@ -278,7 +282,7 @@ ls.add_snippets(nil, {
 	},
 	go = {
 		s(
-			"fnc", --{{{
+			"rfunc", --{{{
 			fmta(
 				[=[
         <1> err := <2>
@@ -294,6 +298,20 @@ ls.add_snippets(nil, {
 			)
 		), --}}}
 		s(
+			"tfunc", --{{{
+			fmta(
+				[=[
+                func <1>(t *testing.T) {
+                <2>
+                }
+      ]=],
+				{
+					i(1),
+					i(2),
+				}
+			)
+		), --}}}
+		s(
 			"lisn", --{{{
 			fmta(
 				[=[
@@ -305,7 +323,7 @@ ls.add_snippets(nil, {
 			)
 		), --}}}
 		s(
-			"logF", --{{{
+			"flog", --{{{
 			fmta(
 				[=[
           log.Fatal(<>)
@@ -314,7 +332,7 @@ ls.add_snippets(nil, {
 			)
 		), --}}}
 		s(
-			"print", --{{{
+			"prin", --{{{
 			fmta(
 				[=[
           fmt.Println(<>)
@@ -323,12 +341,21 @@ ls.add_snippets(nil, {
 			)
 		), --}}}
 		s(
-			"printF", --{{{
+			"fprin", --{{{
 			fmta(
 				[=[
           fmt.Printf(<>)
       ]=],
 				{ i(1, "text") }
+			)
+		), --}}}
+		s(
+			"tferr", --{{{
+			fmta(
+				[=[
+          t.Errorf(<>)
+      ]=],
+				{ c(1, { fmta("<>", { i(1) }), fmta("<>", i(1, "'got: %v \\n wanted: %v \\n'")) }) }
 			)
 		), --}}}
 	},

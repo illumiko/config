@@ -2,7 +2,7 @@ env:
   TERM: xterm-256color
 
 window:
-  opacity: 1
+  opacity: 0.6
   dimensions:
     columns: 0
     lines: 0
@@ -10,7 +10,7 @@ window:
     x: 1
     y: 1
 font:
-  size: 9
+  size: 10
   offset:
     x: 1
     y: 5
@@ -31,21 +31,58 @@ font:
     style: italic
 shell:
   program: /bin/zsh
-colors:
-  normal:
-    black:   "#414868"
-    red:     "#f7768e"
-    blue:   "#FFFFFF"
-    yellow:  "#e0af68"
-    green:    "#7aa2f7"
-    magenta: "#bb9af7"
-    cyan:    "#c0caf5"
-    white:   "#7dcfff"
-
-
-
-
-
-
-
-
+  everforest_dark_medium: &everforest_dark_medium
+    primary:
+      background: '#2f383e'
+      foreground: '#d3c6aa'
+    normal:
+      black:   '#4b565c'
+      red:     '#e67e80'
+      green:   '#a7c080'
+      yellow:  '#dbbc7f'
+      blue:    '#7fbbb3'
+      magenta: '#d699b6'
+      cyan:    '#83c092'
+      white:   '#d3c6aa'
+    bright:
+      black:   '#4b565c'
+      red:     '#e67e80'
+      green:   '#a7c080'
+      yellow:  '#dbbc7f'
+      blue:    '#7fbbb3'
+      magenta: '#d699b6'
+      cyan:    '#83c092'
+      white:   '#d3c6aa'
+  everforest_dark_hard: &everforest_dark_hard
+    primary:
+      background: '#000000'
+      foreground: '#d3c6aa'
+    normal:
+      black:   '#4b565c'
+      red:     '#e67e80'
+      green:   '#a7c080'
+      yellow:  '#dbbc7f'
+      blue:    '#7fbbb3'
+      magenta: '#d699b6'
+      cyan:    '#83c092'
+      white:   '#d3c6aa'
+    bright:
+      black:   '#4b565c'
+      red:     '#e67e80'
+      green:   '#a7c080'
+      yellow:  '#dbbc7f'
+      blue:    '#7fbbb3'
+      magenta: '#d699b6'
+      cyan:    '#83c092'
+      white:   '#d3c6aa'
+    
+  # normal:
+  #   black:   "#414868"
+  #   red:     "#f7768e"
+  #   blue:   "#FFFFFF"
+  #   yellow:  "#e0af68"
+  #   green:    "#7aa2f7"
+  #   magenta: "#bb9af7"
+  #   cyan:    "#c0caf5"
+  #   white:   "#7dcfff"
+colors: *everforest_dark_hard

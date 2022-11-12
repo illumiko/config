@@ -66,13 +66,7 @@ local function lsp_keymaps(bufnr)
 	map(0, "n", "gr", "<cmd>Lspsaga rename<cr>", { silent = true, noremap = true })
 	map(0, "n", "gx", "<cmd>Lspsaga code_action<cr>", { silent = true, noremap = true })
 	map(0, "x", "gx", ":<c-u>Lspsaga range_code_action<cr>", { silent = true, noremap = true })
-	vim.keymap.set("n", "K", function()
-		local winid = require("ufo").peekFoldedLinesUnderCursor()
-		if not winid then
-			-- choose one of coc.nvim and nvim lsp
-			vim.lsp.buf.hover()
-		end
-	end)
+	vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end)
 	map(0, "n", "go", "<cmd>Lspsaga show_line_diagnostics<cr>", { silent = true, noremap = true })
 	map(0, "n", "gj", "<cmd>Lspsaga diagnostic_jump_next<cr>", { silent = true, noremap = true })
 	map(0, "n", "gk", "<cmd>Lspsaga diagnostic_jump_prev<cr>", { silent = true, noremap = true })

@@ -82,7 +82,12 @@ vim.g.solarized_italics = 1
 vim.g.solarized_visibility = "high"
 -- vim.g.solarized_statusline = "flat"}}} ]]
 
-vim.api.nvim_command([[
+--[[ vim.api.nvim_command([=[
 colorscheme zephyr
 hi NormalNc guibg=#16181c
-]])
+]=]) ]]
+vim.api.nvim_command([=[
+colorscheme everforest
+hi Normal guibg=none
+hi NormalNc guibg=#16181c
+]=])

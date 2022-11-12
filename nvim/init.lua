@@ -3,9 +3,9 @@ require("impatient")
 require("general.settings") --base settings
 require("general.keymaps") --keymaps
 require("plugin.session_manager")
+require("plugin.rich_presence")
 require("plugin.autosave")
 require("plugin.LSP") --Language server xD
-require("plugin.ufo_settings")
 require("plugin.explorer") --file manager
 require("plugin.which_key")
 require("plugin.barbar") --buffer like tabs
@@ -24,6 +24,7 @@ require("general.colorscheme")
 require("plugin.cursor_context")
 require("general.highlights")
 require("plugin.telescope_conf") --telescope
+-- require("plugin.winbar_config")
 vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
 if vim.g.neovide then
 	vim.cmd([[
