@@ -42,425 +42,38 @@ packer.init({
 })
 
 return require("packer").startup(function(use)
-    --[[devdocs]]
-    use"romainl/vim-devdocs"
-	--[[fucntion context]]
+	--[[Plugin manager]]
+	use("wbthomason/packer.nvim")
+
+	--[[Dependencies]]
 	use({
-		"SmiteshP/nvim-navic",
-		requires = "neovim/nvim-lspconfig",
+		"nvim-lua/plenary.nvim",
+		"kyazdani42/nvim-web-devicons",
+		"MunifTanjim/nui.nvim",
+		use("nvim-lua/popup.nvim"),
 	})
-	use({ "fgheng/winbar.nvim" })
-	--[[scoped tabs]]
+
+	--[[LSP]]
 	use({
-		"tiagovla/scope.nvim",
-		config = function()
-			require("scope").setup()
-		end,
-	})
-	--[[highlight text]]
-	use("Pocco81/HighStr.nvim")
-	--[[GLow .md preview]]
-	use({
-		"ellisonleao/glow.nvim",
-		branch = "main",
-		config = function()
-			require("glow").setup({
-				style = "dark",
-				border = "none",
-				width = 120,
-				paper = true,
-			})
-		end,
-	})
-	--[[Create directory that dont exist with :w]]
-	use({ "jghauser/mkdir.nvim" })
-	--[[cursorline highlight acc to mode]]
-	use({
-		"mvllow/modes.nvim",
-		config = function()
-			require("modes").setup({
-				colors = {
-					copy = "#ffc591",
-					delete = "#d1d1d1",
-					insert = "#7bb099",
-					visual = "#9bc6e9",
-				},
-			})
-		end,
-	})
-	use({ "matze/vim-move" })
-	use({
-		"nvim-neo-tree/neo-tree.nvim",
-		branch = "v2.x",
-		requires = {
-			"nvim-lua/plenary.nvim",
-			"kyazdani42/nvim-web-devicons", -- not strictly required, but recommended
-			"MunifTanjim/nui.nvim",
-		},
-	})
-	--[[advance spell checker]]
-	use({
-		"lewis6991/spellsitter.nvim",
-		config = function()
-			require("spellsitter").setup()
-		end,
-	})
-	--[[function context]]
-	use({ "https://github.com/haringsrob/nvim_context_vt" })
-	--[[transparent nvim]]
-	use({
-		"xiyaowong/nvim-transparent",
-		config = function()
-			require("transparent").setup({
-				enable = false, -- boolean: enable transparent
-				extra_groups = { -- table/string: additional groups that should be cleared
-					-- In particular, when you set it to 'all', that means all available groups
-					-- example of akinsho/nvim-bufferline.lua
-					"BufferLineTabClose",
-					"BufferlineBufferSelected",
-					"BufferLineFill",
-					"BufferLineBackground",
-					"BufferLineSeparator",
-					"BufferLineIndicatorSelected",
-				},
-				exclude = {}, -- table: groups you don't want to clear
-			})
-		end,
-	})
-	use({
-		"lewis6991/impatient.nvim",
 		lock = true,
-		config = {
-			-- Move to lua dir so impatient.nvim can cache it
-			compile_path = vim.fn.stdpath("config") .. "/lua/packer_compiled.lua",
-		},
+		"neovim/nvim-lspconfig", --lsp base
+		"williamboman/nvim-lsp-installer", --auto lsp installer
 	})
-	use({
-		"wbthomason/packer.nvim",
-		lock = true,
-	})
-	--[[multi cursor]]
-	use({ "mg979/vim-visual-multi" })
-	--[[whcich Key]]
-	use({
-		"folke/which-key.nvim",
-		lock = true,
-	})
-
-	--[[window picker]]
-	use({
-		"https://gitlab.com/yorickpeterse/nvim-window.git",
-		config = function() --{{{
-			vim.cmd([[hi BlackOnLightYellow guifg=#000000 guibg=#f2de91]])
-			require("nvim-window").setup({
-				-- The characters available for hinting windows.
-				chars = {
-					"a",
-					"b",
-					"c",
-					"d",
-					"e",
-					"f",
-					"g",
-					"h",
-					"i",
-					"j",
-					"k",
-					"l",
-					"m",
-					"n",
-					"o",
-					"p",
-					"q",
-					"r",
-					"s",
-					"t",
-					"u",
-					"v",
-					"w",
-					"x",
-					"y",
-					"z",
-				},
-				-- A group to use for overwriting the Normal highlight group in the floating
-				-- window. This can be used to change the background color.
-				normal_hl = "BlackOnLightYellow",
-				-- The highlight group to apply to the line that contains the hint characters.
-				-- This is used to make them stand out more.
-				hint_hl = "Bold",
-				-- The border style to use for the floating window.
-				border = "single",
-			})
-		end, --}}}
-	})
-	-- [[norg]]
-	use({
-		"nvim-neorg/neorg",
-		-- commit = '81326c6f8f2dac905f247d79593a2bf17e656b80',
-		-- lock=true,
-		-- commit='b0b2d07d0ffb25eebc102487a5d0f2b70fa7427e',
-		requires = "nvim-lua/plenary.nvim",
-		-- lock = true,
-	})
-	--[[Table Creator]]
-	use({
-		"dhruvasagar/vim-table-mode",
-		ft = "norg",
-		-- cmd = "tbc"
-	})
-	--[[autosave]]
-	use({
-		"Pocco81/AutoSave.nvim",
-		config = function()
-			--config{{{
-		end, --}}}
-	})
-	--[[discord rich presence]]
-	use({
-		"andweeb/presence.nvim",
-        ft = {"lua"},
-	})
-	-- [[Lsp Progress]]
-	use({
-		"j-hui/fidget.nvim",
-		config = function()
-			require("fidget").setup({})
-		end,
-	})
-	use({ "https://github.com/windwp/nvim-ts-autotag" })
-
-	-- [[nvim greeter]]
-	use({ --{{{
-		"goolord/alpha-nvim",
-		lock = true,
-		requires = { "kyazdani42/nvim-web-devicons" },
-		config = function()
-			local alpha = require("alpha")
-			local dashboard = require("alpha.themes.startify")
-			dashboard.section.header.val = {
-				[[⡆⣐⢕⢕⢕⢕⢕⢕⢕⢕⠅⢗⢕⢕⢕⢕⢕⢕⢕⠕⠕⢕⢕⢕⢕⢕⢕⢕⢕⢕]],
-				[[⢐⢕⢕⢕⢕⢕⣕⢕⢕⠕⠁⢕⢕⢕⢕⢕⢕⢕⢕⠅⡄⢕⢕⢕⢕⢕⢕⢕⢕⢕]],
-				[[⢕⢕⢕⢕⢕⠅⢗⢕⠕⣠⠄⣗⢕⢕⠕⢕⢕⢕⠕⢠⣿⠐⢕⢕⢕⠑⢕⢕⠵⢕]],
-				[[⢕⢕⢕⢕⠁⢜⠕⢁⣴⣿⡇⢓⢕⢵⢐⢕⢕⠕⢁⣾⢿⣧⠑⢕⢕⠄⢑⢕⠅⢕]],
-				[[⢕⢕⠵⢁⠔⢁⣤⣤⣶⣶⣶⡐⣕⢽⠐⢕⠕⣡⣾⣶⣶⣶⣤⡁⢓⢕⠄⢑⢅⢑]],
-				[[⠍⣧⠄⣶⣾⣿⣿⣿⣿⣿⣿⣷⣔⢕⢄⢡⣾⣿⣿⣿⣿⣿⣿⣿⣦⡑⢕⢤⠱⢐]],
-				[[⢠⢕⠅⣾⣿⠋⢿⣿⣿⣿⠉⣿⣿⣷⣦⣶⣽⣿⣿⠈⣿⣿⣿⣿⠏⢹⣷⣷⡅⢐]],
-				[[⣔⢕⢥⢻⣿⡀⠈⠛⠛⠁⢠⣿⣿⣿⣿⣿⣿⣿⣿⡀⠈⠛⠛⠁⠄⣼⣿⣿⡇⢔]],
-				[[⢕⢕⢽⢸⢟⢟⢖⢖⢤⣶⡟⢻⣿⡿⠻⣿⣿⡟⢀⣿⣦⢤⢤⢔⢞⢿⢿⣿⠁⢕]],
-				[[⢕⢕⠅⣐⢕⢕⢕⢕⢕⣿⣿⡄⠛⢀⣦⠈⠛⢁⣼⣿⢗⢕⢕⢕⢕⢕⢕⡏⣘⢕]],
-				[[⢕⢕⠅⢓⣕⣕⣕⣕⣵⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣷⣕⢕⢕⢕⢕⡵⢀⢕⢕]],
-				[[⢑⢕⠃⡈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢃⢕⢕⢕]],
-				[[⣆⢕⠄⢱⣄⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⢁⢕⢕⠕⢁]],
-				[[⣿⣦⡀⣿⣿⣷⣶⣬⣍⣛⣛⣛⡛⠿⠿⠿⠛⠛⢛⣛⣉⣭⣤⣂⢜⠕⢑⣡⣴⣿]],
-			}
-			alpha.setup(dashboard.opts)
-		end,
-	}) --}}}
-
-	--[[focus]]
-	use({
-		"beauwilliams/focus.nvim",
-		config = function()
-			require("focus").setup({ width = 95 })
-		end,
-	})
-
-	--[[session]]
-	use("tpope/vim-obsession")
-	--[[git related plugins]]
-	use({
-		"lewis6991/gitsigns.nvim",
-		requires = {
-			"nvim-lua/plenary.nvim",
-		},
-	})
-
-	--[nvim terminal]]
-	use({
-		"akinsho/toggleterm.nvim",
-		lock = true,
-	})
-
-	--[lua functions for nvim]]
-	use({
-		"nvim-lua/popup.nvim",
-		lock = true,
-	})
-
-	--[symbol outline]]
-	use({
-		"simrat39/symbols-outline.nvim",
-		lock = true, --{{{
-		config = function()
-			vim.g.symbols_outline = {
-				highlight_hovered_item = true,
-				show_guides = true,
-				auto_preview = true,
-				position = "right",
-				relative_width = true,
-				width = 55,
-				auto_close = false,
-				show_numbers = false,
-				show_relative_numbers = false,
-				show_symbol_details = true,
-				preview_bg_highlight = "Pmenu",
-				keymaps = { -- These keymaps can be a string or a table for multiple keys
-					close = { "<Esc>", "q" },
-					goto_location = "<Cr>",
-					focus_location = "o",
-					hover_symbol = "<C-space>",
-					toggle_preview = "K",
-					rename_symbol = "r",
-					code_actions = "a",
-				},
-				lsp_blacklist = {},
-				symbol_blacklist = {},
-				symbols = {
-					File = { icon = "", hl = "TSURI" },
-					Module = { icon = "", hl = "TSNamespace" },
-					Namespace = { icon = "", hl = "TSNamespace" },
-					Package = { icon = "", hl = "TSNamespace" },
-					Class = { icon = "𝓒", hl = "TSType" },
-					Method = { icon = "ƒ", hl = "TSMethod" },
-					Property = { icon = "", hl = "TSMethod" },
-					Field = { icon = "", hl = "TSField" },
-					Constructor = { icon = "", hl = "TSConstructor" },
-					Enum = { icon = "ℰ", hl = "TSType" },
-					Interface = { icon = "ﰮ", hl = "TSType" },
-					Function = { icon = "", hl = "TSFunction" },
-					Variable = { icon = "", hl = "TSConstant" },
-					Constant = { icon = "", hl = "TSConstant" },
-					String = { icon = "𝓐", hl = "TSString" },
-					Number = { icon = "#", hl = "TSNumber" },
-					Boolean = { icon = "⊨", hl = "TSBoolean" },
-					Array = { icon = "", hl = "TSConstant" },
-					Object = { icon = "⦿", hl = "TSType" },
-					Key = { icon = "🔐", hl = "TSType" },
-					Null = { icon = "NULL", hl = "TSType" },
-					EnumMember = { icon = "", hl = "TSField" },
-					Struct = { icon = "𝓢", hl = "TSType" },
-					Event = { icon = "🗲", hl = "TSType" },
-					Operator = { icon = "+", hl = "TSOperator" },
-					TypeParameter = { icon = "𝙏", hl = "TSParameter" },
-				},
-			}
-		end, --}}}
-	})
-
-	--[[Useful lua functions used ny lots of plugins]]
-	use({ "nvim-lua/plenary.nvim", opt = false })
-
-	--[[cursor jumpy cool]]
-	use({ --{{{
-		"edluffy/specs.nvim",
-		config = function()
-			require("specs").setup({
-				show_jumps = true,
-				min_jump = 15,
-				popup = {
-					delay_ms = 0, -- delay before popup displays
-					inc_ms = 10, -- time increments used for fade/resize effects
-					blend = 10, -- starting blend, between 0-100 (fully transparent), see :h winblend
-					width = 10,
-					winhl = "PMenu",
-					fader = require("specs").linear_fader,
-					resizer = require("specs").shrink_resizer,
-				},
-				ignore_filetypes = {},
-				ignore_buftypes = {
-					nofile = true,
-				},
-			})
-		end,
-	}) --}}}
-
-	--[[matchup]]
-
-	--[[same text change fast]]
-	use({
-		"osyo-manga/vim-over",
-		lock = true,
-	})
-
-	--[[Telescope]]
-	use({
-		"nvim-telescope/telescope.nvim",
-		requires = { "nvim-lua/plenary.nvim" },
-	})
-	use({
-		"nvim-telescope/telescope-fzf-native.nvim",
-		run = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
-	}) -- session picker
-	--[[file browser]]
-	use({
-		"kyazdani42/nvim-tree.lua",
-		requires = {
-			"kyazdani42/nvim-web-devicons", -- optional, for file icons
-		},
-	})
-	-- use { "nvim-telescope/telescope-file-browser.nvim" }
-
-	--[[color preview]]
-	use({
-		"norcalli/nvim-colorizer.lua",
-		config = function()
-			require("colorizer").setup()
-		end,
-		lock = true,
-	})
-
-	--[[updats current root directory(imp for lsp to work)]]
+	use({ "tami5/lspsaga.nvim" }) -- nightly
 	use({
 		"ahmedkhalf/project.nvim",
 		config = function()
 			require("project_nvim").setup({})
 		end,
 	})
-
-	--[[colorscheme]]
 	use({
-		lock = true,
-        "sainnhe/everforest",
-		"rktjmp/lush.nvim",
-		"glepnir/zephyr-nvim",
-		"RishabhRD/gruvy",
-		"EdenEast/nightfox.nvim",
-		"adisen99/apprentice.nvim",
-		"ishan9299/nvim-solarized-lua",
-		"kvrohit/mellow.nvim",
-		"kdheepak/monochrome.nvim",
-		"rockyzhang24/arctic.nvim",
-		{
-			"catppuccin/nvim",
-			as = "catppuccin",
-		},
-		{ "catppuccin/nvim" },
-		{ "andersevenrud/nordic.nvim" },
-		"kvrohit/rasmus.nvim",
-		"mcchrish/zenbones.nvim",
-		-- {'olimorris/onedarkpro.nvim'}, -- onedarkpro
-		{ "marko-cerovac/material.nvim" },
-		{ "rebelot/kanagawa.nvim" }, -- kangawa}}}
+		"j-hui/fidget.nvim",
+		config = function()
+			require("fidget").setup({})
+		end,
 	})
-
-	--[[treesitter]]
-	use({
-		"nvim-treesitter/nvim-treesitter",
-		run = ":TSUpdate",
-	})
-	use({ "nvim-treesitter/playground" })
-
-	--[[native lsp stuff]]
-	use({
-		lock = true,
-		"neovim/nvim-lspconfig", --lsp base
-		"williamboman/nvim-lsp-installer", --auto lsp installer
-	})
-	--[[highlight similar words]]
-	use("RRethy/vim-illuminate")
-	--[[formatter]]
 	use({ "mhartington/formatter.nvim" })
-	--[[goto def float]]
+	use("RRethy/vim-illuminate")
 	use({
 		"rmagatti/goto-preview",
 		config = function()
@@ -481,17 +94,8 @@ return require("packer").startup(function(use)
 			})
 		end,
 	})
-	--[[Lsp saga]]
-	use({ "tami5/lspsaga.nvim" }) -- nightly
 
-	--[[snippets]]
-	use({
-		"L3MON4D3/LuaSnip",
-		lock = true,
-	}) --snippet engine
-	use({ "rafamadriz/friendly-snippets", lock = true }) --snippet library
-
-	--[[cmp (completion)]]
+	--[[Completion]]
 	use({
 		"hrsh7th/cmp-nvim-lsp", --cmp source lsp
 		"hrsh7th/cmp-nvim-lua", --cmp source nvim lua
@@ -504,57 +108,161 @@ return require("packer").startup(function(use)
 		"onsails/lspkind-nvim", --customizing cmp
 		lock = true,
 	})
-	--[[indent line]]
+
+	--[[Snippets]]
 	use({
-		"lukas-reineke/indent-blankline.nvim",
+		"rafamadriz/friendly-snippets",
+		"L3MON4D3/LuaSnip",
+	})
+
+	--[[Bufferline]]
+	use({ "romgrk/barbar.nvim" })
+
+	--[[status bar]]
+	use({ "hoob3rt/lualine.nvim" })
+
+	--[[Utility]]
+	use("xiyaowong/nvim-transparent")
+	use("matze/vim-move")
+	use("Pocco81/AutoSave.nvim")
+	use("andweeb/presence.nvim")
+	use("https://github.com/windwp/nvim-ts-autotag")
+	use("romainl/vim-devdocs")
+	use("Pocco81/HighStr.nvim")
+	use("osyo-manga/vim-over")
+	use("jghauser/mkdir.nvim")
+	use("mg979/vim-visual-multi")
+	use("folke/which-key.nvim")
+	use("https://gitlab.com/yorickpeterse/nvim-window.git")
+	use("numToStr/Comment.nvim")
+	use("windwp/nvim-autopairs")
+	use("SmiteshP/nvim-navic")
+	use("https://github.com/haringsrob/nvim_context_vt")
+	use({
+		"lewis6991/impatient.nvim",
+		config = { compile_path = vim.fn.stdpath("config") .. "/lua/packer_compiled.lua" },
+	})
+	use({
+		"norcalli/nvim-colorizer.lua",
 		config = function()
-			vim.opt.list = true
-			require("indent_blankline").setup({
-				space_char_blankline = " ",
-				show_current_context = true,
-				show_current_context_start = true,
+			require("colorizer").setup()
+		end,
+	})
+	use({
+		"lewis6991/spellsitter.nvim",
+		config = function()
+			require("spellsitter").setup()
+		end,
+	})
+	use("https://github.com/p00f/nvim-ts-rainbow")
+	use({
+		"phaazon/hop.nvim",
+		as = "hop",
+		config = function()
+			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
+		end,
+	})
+
+	--[[Markdown Preview]]
+	use({
+		"ellisonleao/glow.nvim",
+		branch = "main", -- {{{
+		config = function()
+			require("glow").setup({
+				style = "dark",
+				border = "none",
+				width = 120,
+				paper = true,
+			})
+		end, -- }}}
+	})
+
+	--[[File Browser]]
+	use({ "nvim-neo-tree/neo-tree.nvim", branch = "v2.x" })
+
+	--[[Note talking/Scheduling etc]]
+	use("nvim-neorg/neorg")
+	use({
+		"dhruvasagar/vim-table-mode",
+		ft = "norg",
+	})
+
+	-- [[nvim greeter]]
+	use("goolord/alpha-nvim")
+
+	--[[Syntax/Treesitter]]
+	use({
+		"nvim-treesitter/nvim-treesitter",
+		"nvim-treesitter/playground",
+		run = ":TSUpdate",
+	})
+
+	--[[focus]]
+	use({
+		"beauwilliams/focus.nvim",
+		config = function()
+			require("focus").setup({ width = 95 })
+		end,
+	})
+
+	--[[session]]
+	use("tpope/vim-obsession")
+
+	--[[git]]
+	use("lewis6991/gitsigns.nvim")
+
+	--[terminal]]
+	use("akinsho/toggleterm.nvim")
+
+	--[[Telescope]]
+	use({
+		"nvim-telescope/telescope.nvim",
+		requires = { "nvim-lua/plenary.nvim" },
+	})
+	use({
+		"nvim-telescope/telescope-fzf-native.nvim",
+		run = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
+	}) -- session picker
+
+	--[[colorscheme]]
+	use({
+		"sainnhe/everforest",
+		"rktjmp/lush.nvim",
+		"glepnir/zephyr-nvim",
+		"rockyzhang24/arctic.nvim",
+		"kvrohit/rasmus.nvim",
+		"mcchrish/zenbones.nvim",
+		-- {'olimorris/onedarkpro.nvim'}, -- onedarkpro
+		{ "rebelot/kanagawa.nvim" }, -- kangawa}}}
+	})
+
+	--[[indent]]
+	use("lukas-reineke/indent-blankline.nvim")
+	--[=[
+
+	--[[scoped tabs]]
+	use({
+		"tiagovla/scope.nvim",
+		config = function()
+			require("scope").setup()
+		end,
+	})
+
+	use({
+		"mvllow/modes.nvim",
+		config = function()
+			require("modes").setup({
+				colors = {
+					copy = "#ffc591",
+					delete = "#d1d1d1",
+					insert = "#7bb099",
+					visual = "#9bc6e9",
+				},
 			})
 		end,
 	})
 
-	--[[comments]]
-	use({
-		"numToStr/Comment.nvim",
-		lock = true,
-	})
-	--[[buffer management]]
-	--[[ use {{{{
-      'akinsho/bufferline.nvim',
-      lock=true,
-      requires = 'kyazdani42/nvim-web-devicons'
-    } ]]
-	--}}}
-	use({ --{{{
-		"romgrk/barbar.nvim",
-		requires = { "kyazdani42/nvim-web-devicons" },
-	}) --}}}
-	--[[status bar]]
-	use({
-		"hoob3rt/lualine.nvim",
-		lock = true,
-		requires = { "kyazdani42/nvim-web-devicons", opt = true },
-	})
-	-- use 'rstacruz/vim-closer'
-	--[[nvim-autopairs]]
-	use({
-		"windwp/nvim-autopairs",
-		lock = true,
-	})
-	--[[nvim-ts-rainbow]]
-	use("https://github.com/p00f/nvim-ts-rainbow")
-	--[[hoppppp]]
-	use({
-		"phaazon/hop.nvim",
-		lock = true,
-		as = "hop",
-		config = function()
-			-- you can configure Hop the way you like here; see :h hop-config
-			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
-		end,
-	})
+	use({ "matze/vim-move" })
+
+    ]=]
 end)

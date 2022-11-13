@@ -1,29 +1,33 @@
-require("plugins") --plugins
+require("plugins")
 require("impatient")
-require("general.settings") --base settings
-require("general.keymaps") --keymaps
+require("general.settings")
+require("general.keymaps")
 require("plugin.session_manager")
+require("plugin.window_picker")
+require("plugin.indent_lines")
 require("plugin.rich_presence")
+require("plugin.transparent")
+require("plugin.start_page")
 require("plugin.autosave")
-require("plugin.LSP") --Language server xD
-require("plugin.explorer") --file manager
+require("plugin.LSP")
+require("plugin.explorer")
 require("plugin.which_key")
-require("plugin.barbar") --buffer like tabs
-require("plugin.treesitter") --better syntax highlighting
+require("plugin.barbar")
+require("plugin.treesitter")
 require("plugin.org")
-require("plugin.completion") --nvim-cmp completion
-require("plugin.luasnip_conf") --Snippet manager
-require("plugin.comment") --modern commnet plugin
+require("plugin.completion")
+require("plugin.luasnip_conf")
+require("plugin.comment")
 require("plugin.highlightStr")
-require("plugin.autopairs") -- autopair setup
-require("plugin.status_bar") -- lualine
-require("plugin.tog_term") --terminal
-require("plugin.git_signs") --git signs
+require("plugin.autopairs")
+require("plugin.status_bar")
+require("plugin.tog_term")
+require("plugin.git_signs")
 require("plugin.format.format")
 require("general.colorscheme")
 require("plugin.cursor_context")
 require("general.highlights")
-require("plugin.telescope_conf") --telescope
+require("plugin.telescope_conf")
 -- require("plugin.winbar_config")
 vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
 if vim.g.neovide then
