@@ -5,34 +5,28 @@ map("n", "<Space>", "<NOP>", opts)
 vim.g.mapleader = " "
 
 -- vim.cmd([[inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"]])
---[===[normal mode]===]
-
---[[toggle term]]
+--Normal Mode
 --opens toggle term in a the dir of the working buffer
 vim.keymap.set("n", "<C-\\>", function()
 	local path = vim.fn.expand("%:p:h")
-	return vim.cmd("ToggleTerm dir=" .. path)
+	return vim.cmd(vim.v.count .." ToggleTerm dir=" .. path)
 end, opts)
 
 --[[highlight Str]]
-map("v", "<F3>", ":<cmd>HSHighlight" .. 1 .. "<CR><esc>", opts)
+map("v", "<F3>", "HSHighlight " .. vim.v.count .. "<CR>", opts)
 map("v", "<F4>", "<cmd>HSRmHighlight<CR><esc>", opts)
 
 --[[Source config]]
-map("n", "<leader>R", ":source %<cr>", opts)
-
---[[specs effect on search movement]]
-map("n", "n", 'n:lua require("specs").show_specs()<CR>', opts)
-map("n", "N", 'N:lua require("specs").show_specs()<CR>', opts)
+map("n", "<leader>R", "source %<cr>", opts)
 
 --[[focus Management]]
-map("n", "<C-f>", ":FocusMaximise <CR>", opts)
+map("n", "<C-f>", "FocusMaximise <CR>", opts)
 
 --[[hjkl movement in colemak]]
-map("n", "<C-h>", "h", opts) --{{{
+--[[ map("n", "<C-h>", "h", opts) --{{{
 map("n", "<C-n>", "j", opts)
 map("n", "<C-e>", "k", opts)
-map("n", "<C-i>", "l", opts) --}}}
+map("n", "<C-i>", "l", opts) --}}} ]]
 
 -- [[better window movemnt]]
 map("n", "<leader>w", ":lua require('nvim-window').pick()<CR>", opts)
@@ -94,55 +88,38 @@ map("n", "<C-k>", "<C-w>k", opts)
 map("n", "<C-l>", "<C-w>l", opts)
 
 --  [[Resizeing Splits with arrow]]
-map("n", "<C-Up>", ":resize -2<CR>", opts)
-map("n", "<C-Down>", ":resize +2<CR>", opts)
-map("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-map("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+-- map("n", "<C-Up>", ":resize -2<CR>", opts)
+-- map("n", "<C-Down>", ":resize +2<CR>", opts)
+-- map("n", "<C-Left>", ":vertical resize -2<CR>", opts)
+-- map("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 --[[tabline]]
-map("n", "<A-h>", "<cmd>tabprevious<CR>", opts)
-map("n", "<A-l>", ":tabnext<CR>", opts)
+-- map("n", "<C-h>", "<cmd>tabprevious<CR>", opts)
+-- map("n", "<C-l>", ":tabnext<CR>", opts)
 
 -- [[bufferline]]
 map("n", "<S-h>", ":BufferPrevious<CR>", opts)
 map("n", "<S-l>", ":BufferNext<CR>", opts)
 
 --[[Goto buffer in position...]]
-map("n", "<A-1>", ":BufferGoto 1<CR>", opts)
-map("n", "<A-2>", ":BufferGoto 2<CR>", opts)
-map("n", "<A-3>", ":BufferGoto 3<CR>", opts)
-map("n", "<A-4>", ":BufferGoto 4<CR>", opts)
-map("n", "<A-5>", ":BufferGoto 5<CR>", opts)
-map("n", "<A-6>", ":BufferGoto 6<CR>", opts)
-map("n", "<A-7>", ":BufferGoto 7<CR>", opts)
-map("n", "<A-8>", ":BufferGoto 8<CR>", opts)
-map("n", "<A-9>", ":BufferGoto 9<CR>", opts)
-map("n", "<A-0>", ":BufferLast<CR>", opts)
+map("n", "<C-1>", ":BufferGoto 1<CR>", opts)
+map("n", "<C-2>", ":BufferGoto 2<CR>", opts)
+map("n", "<C-3>", ":BufferGoto 3<CR>", opts)
+map("n", "<C-4>", ":BufferGoto 4<CR>", opts)
+map("n", "<C-5>", ":BufferGoto 5<CR>", opts)
+map("n", "<C-6>", ":BufferGoto 6<CR>", opts)
+map("n", "<C-7>", ":BufferGoto 7<CR>", opts)
+map("n", "<C-8>", ":BufferGoto 8<CR>", opts)
+map("n", "<C-9>", ":BufferGoto 9<CR>", opts)
+map("n", "<C-0>", ":BufferLast<CR>", opts)
 
 -- Close buffer
-map("n", "<A-c>", ":BufferClose<CR>", opts)
+map("n", "<C-c>", ":BufferClose<CR>", opts)
 
 -- Sort automatically by...
 map("n", "<S-Tab>", "<cmd>lua require('telescope.builtin').buffers()<CR>", opts) --bufferPicker
 --[===[insert mode]===]
---[[
-        map('i', '<A-Up>', '<C-\\><C-N><C-w>k', {noremap = true, silent = true})
-        map('i', '<A-Down>', '<C-\\><C-N><C-w>j', {noremap = true, silent = true})
-        map('i', '<A-Left>', '<C-\\><C-N><C-w>h', {noremap = true, silent = true})
-        map('i', '<A-Right>', '<C-\\><C-N><C-w>l', {noremap = true, silent = true})
-        ]]
 
---[[luasnip]]
-vim.cmd([[
-" press <Tab> to expand or jump in a snippet. These can also be mapped separately
-" via <Plug>luasnip-expand-snippet and <Plug>luasnip-jump-next.
-imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<cmd>lua require("luasnip").jump(1)<cr>' : '<Tab>' 
-" -1 for jumping backwards.
-inoremap <silent> <S-Tab> <cmd>lua require'luasnip'.jump(-1)<Cr>
-
-snoremap <silent> <Tab> <cmd>lua require('luasnip').jump(1)<Cr>
-snoremap <silent> <S-Tab> <cmd>lua require('luasnip').jump(-1)<Cr>
-]])
 vim.keymap.set("i", "<c-s>", function()
 	if ls.choice_active() then
 		ls.change_choice(1)

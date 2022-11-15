@@ -3,8 +3,8 @@ if not status_ok then
   return
 end
 
-require('plugin.LSP.lspInstaller')
-require('plugin.LSP.handlers').setup()
+require('plugin.lsp.lspInstaller')
+require('plugin.lsp.handlers').setup()
 -- {{{ for emmet
 local lspconfig = require'lspconfig'
 local configs = require'lspconfig.configs'

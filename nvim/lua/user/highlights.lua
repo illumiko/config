@@ -1,6 +1,6 @@
 vim.cmd([[
-hi VertSplit guibg=none guifg=#ffffff
-hi FloatBorder guibg=none guifg=#ffffff
+hi VertSplit guibg=none guifg=none
+hi FloatBorder guibg=none guifg=none
 hi WinSeparator guibg=none guifg=none
 ]])
 -- Get zephyr color

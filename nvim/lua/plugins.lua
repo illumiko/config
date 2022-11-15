@@ -59,22 +59,22 @@ return require("packer").startup(function(use)
 		"neovim/nvim-lspconfig", --lsp base
 		"williamboman/nvim-lsp-installer", --auto lsp installer
 	})
-	use({ "tami5/lspsaga.nvim" }) -- nightly
-	use({
+	use("tami5/lspsaga.nvim") -- nightly
+	use({ -- {{{"ahmedkhalf/project.nvim",
 		"ahmedkhalf/project.nvim",
 		config = function()
 			require("project_nvim").setup({})
 		end,
-	})
-	use({
+	}) -- }}}
+	use({ -- {{{"j-hui/fidget.nvim",
 		"j-hui/fidget.nvim",
 		config = function()
 			require("fidget").setup({})
 		end,
-	})
+	}) -- }}}
 	use({ "mhartington/formatter.nvim" })
 	use("RRethy/vim-illuminate")
-	use({
+	use({ -- {{{ "rmagatti/goto-preview",
 		"rmagatti/goto-preview",
 		config = function()
 			require("goto-preview").setup({
@@ -93,7 +93,7 @@ return require("packer").startup(function(use)
 				bufhidden = "wipe", -- the bufhidden option to set on the floating window. See :h bufhidden
 			})
 		end,
-	})
+	}) -- }}}
 
 	--[[Completion]]
 	use({
@@ -116,12 +116,14 @@ return require("packer").startup(function(use)
 	})
 
 	--[[Bufferline]]
-	use({ "romgrk/barbar.nvim" })
+	-- use({ "romgrk/barbar.nvim" })
 
 	--[[status bar]]
 	use({ "hoob3rt/lualine.nvim" })
 
 	--[[Utility]]
+	use("fgheng/winbar.nvim")
+	use("lukas-reineke/indent-blankline.nvim")
 	use("xiyaowong/nvim-transparent")
 	use("matze/vim-move")
 	use("Pocco81/AutoSave.nvim")
@@ -136,8 +138,14 @@ return require("packer").startup(function(use)
 	use("https://gitlab.com/yorickpeterse/nvim-window.git")
 	use("numToStr/Comment.nvim")
 	use("windwp/nvim-autopairs")
-	use("SmiteshP/nvim-navic")
+	-- use("SmiteshP/nvim-navic")
 	use("https://github.com/haringsrob/nvim_context_vt")
+	use({
+		"beauwilliams/focus.nvim",
+		config = function()
+			require("focus").setup({ width = 95 })
+		end,
+	})
 	use({
 		"lewis6991/impatient.nvim",
 		config = { compile_path = vim.fn.stdpath("config") .. "/lua/packer_compiled.lua" },
@@ -192,18 +200,13 @@ return require("packer").startup(function(use)
 
 	--[[Syntax/Treesitter]]
 	use({
+		"nvim-treesitter/nvim-treesitter-context",
 		"nvim-treesitter/nvim-treesitter",
 		"nvim-treesitter/playground",
 		run = ":TSUpdate",
 	})
 
 	--[[focus]]
-	use({
-		"beauwilliams/focus.nvim",
-		config = function()
-			require("focus").setup({ width = 95 })
-		end,
-	})
 
 	--[[session]]
 	use("tpope/vim-obsession")
@@ -215,10 +218,7 @@ return require("packer").startup(function(use)
 	use("akinsho/toggleterm.nvim")
 
 	--[[Telescope]]
-	use({
-		"nvim-telescope/telescope.nvim",
-		requires = { "nvim-lua/plenary.nvim" },
-	})
+	use("nvim-telescope/telescope.nvim")
 	use({
 		"nvim-telescope/telescope-fzf-native.nvim",
 		run = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
@@ -236,8 +236,6 @@ return require("packer").startup(function(use)
 		{ "rebelot/kanagawa.nvim" }, -- kangawa}}}
 	})
 
-	--[[indent]]
-	use("lukas-reineke/indent-blankline.nvim")
 	--[=[
 
 	--[[scoped tabs]]

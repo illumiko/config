@@ -7,3 +7,4 @@
     end
 end ]]
 -- disable()
+vim.opt.foldlevel = 1

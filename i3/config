@@ -15,7 +15,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango: Victor Mono 10
+font pango: Victor Mono 2 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -50,8 +50,6 @@ bindsym $mod+Return exec alacritty
 # kill focused window
 bindsym $mod+Shift+q kill
 
-#2f343f
-#f3f4f5
 # start rofi (a program launcher)
 bindsym $mod+d exec rofi -show run 
 #bindsym $mod+d exec dmenu_run
@@ -186,101 +184,6 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #vars for color
-  #tokyo night{{{
-      # #client
-      # set $client-bg 	            #2f343f
-      # set $urgent-client-bg       #61afef
-      # set $inactive-client-color2 #1e1e1e
-      # set $client-bg-2            #00ffd2
-      # set $inactive-client-bg     #2f343f
-      #
-      # #universal
-      # set $text-color          #ffffff
-      # #set $inactive-text-color #676E7D
-      #
-      # #i3bar
-      # set $bar-bg     #000000
-      # set $bar-text   #00ffd2
-      # set $bar-active-ws #ff4499
-      # set $bar-urgent #004687}}}
-  #gruvbox{{{
-      # #client
-      # set $client-bg 	            #282828
-      # set $urgent-client-bg       #fb4934
-      # set $inactive-client-color2 #282828
-      # set $client-bg-2            #fabd2f
-      # set $inactive-client-bg     #282828
-      #
-      # #universal
-      # set $text-color          #ffffff
-      # #set $inactive-text-color #676E7D
-      #
-      # #i3bar
-      # set $bar-bg     #282828
-      # set $bar-text   #fabd2f
-      # set $bar-active-ws #83a598
-      # set $bar-urgent #fb4934}}}
-  # #kanagawa{{{
-      # #client
-      # set $client-bg 	            #1f1f28
-      # set $urgent-client-bg       #dcd7ba
-      # set $inactive-client-color2 #1f1f28
-      # set $client-bg-2            #FFA066
-      # set $inactive-client-bg     #1f1f28
-      #
-      # #universal
-      # set $text-color          #dcd7ba
-      # #set $inactive-text-color #676E7D
-      #
-      # #i3bar
-      # set $bar-bg     #1f1f28
-      # set $bar-text   #FFA066
-      # set $bar-active-ws #957FB8
-      # set $bar-urgent #C34043}}}
-  # nordfox{{{
-      # #client
-      # set $client-bg 	            #2e3440
-      # set $urgent-client-bg       #b9bfca
-      # set $inactive-client-color2 #2e3440
-      # set $client-bg-2            #81a1c1
-      # set $inactive-client-bg     #2e3440
-      #
-      # #universal
-      # set $text-color          #b9bfca
-      # #set $inactive-text-color #676E7D
-      #
-      # #i3bar
-      # set $bar-bg     #2e3440
-      # set $bar-text   #81a1c1
-      # set $bar-active-ws #465780
-      # set $bar-urgent #C34043}}}
-  # # tokyoDark{{{
-      # #client
-      # set $client-bg 	            #212234
-      # set $urgent-client-bg       #a0a8cd
-      # set $inactive-client-color2 #212234
-      # set $client-bg-2            #ff5d62
-      # set $inactive-client-bg     #212234
-      #
-      # #universal
-      # set $text-color          #a0a8cd
-      #
-      # #i3bar
-      # set $bar-bg     #212234
-      # set $bar-text   #ff5d62
-      # set $bar-active-ws #a485dd
-      # set $bar-urgent #FE6D85}}}
-  # # onedark{{{
-      # #client
-      # set $client-bg 	            #232323
-      # set $urgent-client-bg       #98c379
-      # set $inactive-client-color2 #232323
-      # set $client-bg-2            #e06c75
-      # set $inactive-client-bg     #232323
-      #
-      # #universal
-      # set $text-color          #41afef
-      # #}}}
 # # window colors{{{
 # #                         border                        background                text          indicator
 # client.focused            $inactive-client-color2       $client-bg-2              #000000       $inactive-client-color2
@@ -299,8 +202,8 @@ set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
 
 # class                 border      backgr.   text    indicator   child_border
-client.focused          #1e1e1e     $bg       #000000     #1e1e1e   $bg
-client.focused_inactive $bg         #1e1e1e   $fg         $bg       #1e1e1e
+client.focused          #1e1e1e     $bg       $bg     #1e1e1e   $bg
+client.focused_inactive $bg         #1e1e1e   #1e1e1e         $bg       #1e1e1e
 client.unfocused        #1e1e1e     #1e1e1e   $fg         $bg       #1e1e1e
 client.urgent           #1e1e1e     $bg       $fg         $bg       #1e1e1e
 client.placeholder      #1e1e1e     $bg       #1e1e1e     $bg       #1e1e1e
@@ -310,8 +213,8 @@ client.background       $bg
 
 
 #custom settings
- #title_align center
- # default_border pixel 4
+ title_align center
+ default_border pixel 3
  # default_floating_border none
  #  hide_edge_borders none
 
