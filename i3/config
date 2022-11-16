@@ -273,7 +273,7 @@ client.background       $bg
     exec wal -R
 
   #with i3 gaps
-    for_window [instance=kitty] sticky enable
+    for_window [class=kitty] floating enable, sticky enable,move up 550px, resize set 400 100
     for_window [instance=discord] sticky enable
     for_window [class=".*"] border pixel 4
     gaps inner 15

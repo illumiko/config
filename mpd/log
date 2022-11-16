@@ -959,3 +959,4 @@ Nov 08 16:57 : player: played "hMMmmm/jp/Re -Zero Season 2 EP 23 Insert Song - R
 Nov 09 05:44 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
 Nov 10 20:21 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
 Nov 11 07:42 : player: played "hMMmmm/jp/Re -Zero Season 2 EP 23 Insert Song - Ram's Theme『Rie Murakawa - What you don't know』.mp3"
+Nov 16 12:18 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM

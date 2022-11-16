@@ -122,6 +122,12 @@ return require("packer").startup(function(use)
 	use({ "hoob3rt/lualine.nvim" })
 
 	--[[Utility]]
+	use("David-Kunz/markid")
+	use({
+		"ghillb/cybu.nvim",
+		branch = "main", -- timely updates
+		-- branch = "v1.x", -- won't receive breaking changes
+	})
 	use("fgheng/winbar.nvim")
 	use("lukas-reineke/indent-blankline.nvim")
 	use("xiyaowong/nvim-transparent")
