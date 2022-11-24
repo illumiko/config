@@ -33,8 +33,8 @@ vim.opt.shiftwidth = 4 -- the number of spaces inserted for each indentation
 vim.opt.tabstop = 4 -- insert 1 spaces for a tab
 vim.opt.smarttab = true
 vim.opt.cursorline = true -- highlight the current line
---vim.opt.number = false -- set numbered lines
-vim.opt.relativenumber = true -- set relative numbered lines
+vim.opt.number = true -- set numbered lines
+-- vim.opt.relativenumber = true -- set relative numbered lines
 vim.opt.numberwidth = 2 -- set number column width to 2 {default 4}
 vim.opt.signcolumn = "yes" -- always show the sign column otherwise it would shift the text each time
 vim.opt.wrap = false -- display lines as one long line
@@ -50,10 +50,13 @@ vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
     vim.cmd "set formatoptions-=cro"
   end,
 })
+vim.cmd([[
+command Journal source ~/Documents/norg/sessions/vp.vim
+]])
 --local add_cmd = vim.api.nvim_create_autocmd("NeorgToMd", function()
 ----    -- File name without extension .
 --    vim.cmd("Neorg export to-file " .. fn.expand("%:t:r") .. ".md")
 --end, { force = true })
 -- vim.textwidth = 120--{{{
--- vim.opt.relativenumber = true
+vim.opt.relativenumber = true
 vim.opt.foldmethod = "marker" --}}}

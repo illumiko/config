@@ -3,9 +3,9 @@ if not ok then
 	return
 end
 require("cybu").setup({
-	position = {-- {{{
-		relative_to = "win", -- win, editor, cursor
-		anchor = "topcenter", -- topleft, topcenter, topright,
+	position = { -- {{{
+		relative_to = "editor", -- win, editor, cursor
+		anchor = "bottomright", -- topleft, topcenter, topright,
 		-- centerleft, center, centerright,
 		-- bottomleft, bottomcenter, bottomright
 		vertical_offset = 10, -- vertical offset from anchor in lines
@@ -13,14 +13,14 @@ require("cybu").setup({
 		max_win_height = 5, -- height of cybu window in lines
 		max_win_width = 0.5, -- integer for absolute in columns
 		-- float for relative to win/editor width
-	},-- }}}
-	style = {-- {{{
+	}, -- }}}
+	style = { -- {{{
 		path = "relative", -- absolute, relative, tail (filename only)
 		path_abbreviation = "shortened", -- none, shortened
 		border = "none", -- single, double, rounded, none
-		separator = " ", -- string used as separator
+		separator = "  ", -- string used as separator
 		prefix = "…", -- string used as prefix for truncated paths
-		padding = 0, -- left & right padding in number of spaces
+		padding = 1, -- left & right padding in number of spaces
 		hide_buffer_id = true, -- hide buffer IDs in window
 		devicons = {
 			enabled = true, -- enable or disable web dev icons
@@ -30,14 +30,14 @@ require("cybu").setup({
 		highlights = { -- see highlights via :highlight
 			current_buffer = "CybuFocus", -- current / selected buffer
 			adjacent_buffers = "CybuAdjacent", -- buffers not in focus
-			background = "CybuBackground", -- window background
-			-- border = "CybuBorder", -- border of the window
+			background = "NormalNc", -- window background
+			border = "CybuBorder", -- border of the window
 		},
-	},-- }}}
+	}, -- }}}
 	behavior = { -- set behavior for different modes{{{
 		mode = {
 			default = {
-				switch = "on_close", -- immediate, on_close
+				switch = "immediate", -- immediate, on_close
 				view = "paging", -- paging, rolling
 			},
 			last_used = {
@@ -45,7 +45,7 @@ require("cybu").setup({
 				view = "paging", -- paging, rolling
 			},
 		},
-	},-- }}}
+	}, -- }}}
 	display_time = 850, -- time the cybu window is displayed
 	exclude = { -- filetypes, cybu will not be active
 		"neo-tree",
@@ -55,7 +55,3 @@ require("cybu").setup({
 	fallback = function() end, -- arbitrary fallback function
 	-- used in excluded filetypes
 })
-vim.keymap.set("n", "K", "<Plug>(CybuPrev)")
-vim.keymap.set("n", "J", "<Plug>(CybuNext)")
-vim.keymap.set({ "n", "v" }, "<c-s-tab>", "<plug>(CybuLastusedPrev)")
-vim.keymap.set({ "n", "v" }, "<c-tab>", "<plug>(CybuLastusedNext)")

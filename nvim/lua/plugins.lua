@@ -123,6 +123,7 @@ return require("packer").startup(function(use)
 
 	--[[Utility]]
 	use("David-Kunz/markid")
+	use("kazhala/close-buffers.nvim")
 	use({
 		"ghillb/cybu.nvim",
 		branch = "main", -- timely updates
@@ -226,6 +227,7 @@ return require("packer").startup(function(use)
 	--[[Telescope]]
 	use("nvim-telescope/telescope.nvim")
 	use({
+		"nvim-telescope/telescope-file-browser.nvim",
 		"nvim-telescope/telescope-fzf-native.nvim",
 		run = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
 	}) -- session picker

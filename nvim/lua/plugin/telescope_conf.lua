@@ -12,7 +12,7 @@ telescope.setup({
 		prompt_prefix = " ",
 		selection_caret = " ",
 		path_display = { "smart" },
-		mappings = {-- {{{
+		mappings = { -- {{{
 			i = {
 				["<C-n>"] = actions.cycle_history_next,
 				["<C-p>"] = actions.cycle_history_prev,
@@ -75,18 +75,17 @@ telescope.setup({
 
 				["?"] = actions.which_key,
 			},
-		},-- }}}
+		}, -- }}}
 	},
-	pickers = {-- {{{
+	pickers = { -- {{{
 		find_files = {
 			theme = "ivy",
 		},
 		buffers = {
 			theme = "dropdown",
 		},
-
-	},-- }}}
-	extensions = {-- {{{
+	}, -- }}}
+	extensions = { -- {{{
 		fzf = {
 			fuzzy = true, -- false will only do exact matching
 			override_generic_sorter = true, -- override the generic sorter
@@ -94,7 +93,21 @@ telescope.setup({
 			case_mode = "smart_case", -- or "ignore_case" or "respect_case"
 			-- the default case_mode is "smart_case"
 		},
-	},-- }}}
+		file_browser = {
+			theme = "ivy",
+			-- disables netrw and use telescope-file-browser in its place
+			hijack_netrw = true,
+			mappings = {
+				["i"] = {
+					-- your custom insert mode mappings
+				},
+				["n"] = {
+					-- your custom normal mode mappings
+				},
+			},
+		},
+	}, -- }}}
 })
 --telescope.load_extension("projects")
 telescope.load_extension("fzf")
+telescope.load_extension("file_browser")
