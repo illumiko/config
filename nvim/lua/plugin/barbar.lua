@@ -1,1 +1,1 @@
-require("mini.tabline").setup()
+-- require("mini.tabline").setup()

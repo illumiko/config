@@ -30,7 +30,7 @@
     "keyBindsEnabled": "true",
     "keyStringList": "Alt+S,Alt+C,Alt+T,Alt+W,Alt+M,Alt+U,Alt+P",
     "serverListButtonActive": "true",
-    "channelListButtonActive": "true",
+    "channelListButtonActive": "false",
     "userAreaButtonActive": "true",
     "msgBarButtonActive": "true",
     "callContainerButtonActive": "true",

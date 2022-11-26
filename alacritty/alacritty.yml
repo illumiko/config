@@ -10,24 +10,24 @@ window:
     x: 1
     y: 1
 font:
-  size: 10
+  size: 12
   offset:
     x: 1
     y: 5
   normal:
-    family: JetBrains Mono Nerd Font
+    family: FiraCode
     style: Normal
       #   family: Comic Code Ligatures Nerd font
       #   style: Normal
   bold:
-    family: JetBrains Mono Nerd Font
+    family: FiraCode
     style: Bold
       #   family: Comic Code Ligatures Nerd Font
       #   style: Bold
   italic:
   # family: Comic Code Ligatures Nerd Font
   # style: italic
-    family: JetBrains Mono Nerd Font
+    family: FiraCode
     style: italic
 shell:
   program: /bin/zsh
