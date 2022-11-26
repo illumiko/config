@@ -2069,3 +2069,14 @@ Nov 23 18:38 : output: Failed to open mixer for 'default detected output': no su
 Nov 23 18:42 : player: played "hMMmmm/newpipe/Nightcore - After Dark.opus"
 Nov 23 18:42 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
 Nov 23 18:45 : player: played "hMMmmm/newpipe/Classroom of the Elite S2 OST EP 3 -『Ayanokouji theme』[HQ Cover] by Enryu.m4a"
+Nov 24 19:08 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Nov 25 19:14 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Nov 26 12:45 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Nov 26 12:45 : player: played "hMMmmm/newpipe/Classroom of the Elite S2 OST - Mastermind『X』[HQ Cover] by Enryu.m4a"
+Nov 26 12:47 : player: played "hMMmmm/newpipe/Classroom of the Elite S2 OST EP 3 -『Ayanokouji theme』[HQ Cover] by Enryu.m4a"
+Nov 26 12:51 : player: played "hMMmmm/newpipe/Classroom of the Elite Season 2 OP. Full _ Dance In The Game - Sub. Español 『AMV』.m4a"
+Nov 26 12:54 : player: played "hMMmmm/newpipe/L_s theme A.m4a"
+Nov 26 12:54 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Nov 26 12:58 : player: played "hMMmmm/newpipe/Nightcore - After Dark.opus"
+Nov 26 12:58 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Nov 26 13:01 : player: played "hMMmmm/newpipe/SLOWED + REVERB _ Carol of the Bells by Lindsey Stirling.m4a"

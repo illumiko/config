@@ -1,6 +1,6 @@
 ----------------------------------------------
 --
---[[PLUGINS]]
+--[[#PLUGINS]]
 ----------------------------------------------
 local fn = vim.fn
 -- Automatically install packer
@@ -42,18 +42,19 @@ packer.init({
 })
 
 return require("packer").startup(function(use)
-	--[[Plugin manager]]
+	--[[#Plugin manager]]
 	use("wbthomason/packer.nvim")
 
-	--[[Dependencies]]
+	--[[#Dependencies]]
 	use({
 		"nvim-lua/plenary.nvim",
 		"kyazdani42/nvim-web-devicons",
 		"MunifTanjim/nui.nvim",
+		"rktjmp/lush.nvim",
 		use("nvim-lua/popup.nvim"),
 	})
 
-	--[[LSP]]
+	--[[#LSP]]
 	use({
 		lock = true,
 		"neovim/nvim-lspconfig", --lsp base
@@ -95,7 +96,7 @@ return require("packer").startup(function(use)
 		end,
 	}) -- }}}
 
-	--[[Completion]]
+	--[[#Completion]]
 	use({
 		"hrsh7th/cmp-nvim-lsp", --cmp source lsp
 		"hrsh7th/cmp-nvim-lua", --cmp source nvim lua
@@ -109,19 +110,21 @@ return require("packer").startup(function(use)
 		lock = true,
 	})
 
-	--[[Snippets]]
+	--[[#Snippets]]
 	use({
 		"rafamadriz/friendly-snippets",
 		"L3MON4D3/LuaSnip",
 	})
 
-	--[[Bufferline]]
+	--[[#Bufferline]]
 	-- use({ "romgrk/barbar.nvim" })
+    use { 'echasnovski/mini.tabline', branch = 'stable' }
 
-	--[[status bar]]
-	use({ "hoob3rt/lualine.nvim" })
+	--[[#status bar]]
+	-- use({ "hoob3rt/lualine.nvim" })
+	use("tjdevries/express_line.nvim")
 
-	--[[Utility]]
+	--[[#Utility]]
 	use("David-Kunz/markid")
 	use("kazhala/close-buffers.nvim")
 	use({
@@ -178,7 +181,7 @@ return require("packer").startup(function(use)
 		end,
 	})
 
-	--[[Markdown Preview]]
+	--[[#Markdown Preview]]
 	use({
 		"ellisonleao/glow.nvim",
 		branch = "main", -- {{{
@@ -192,10 +195,10 @@ return require("packer").startup(function(use)
 		end, -- }}}
 	})
 
-	--[[File Browser]]
+	--[[#File Browser]]
 	use({ "nvim-neo-tree/neo-tree.nvim", branch = "v2.x" })
 
-	--[[Note talking/Scheduling etc]]
+	--[[#Note talking/Scheduling etc]]
 	use("nvim-neorg/neorg")
 	use({
 		"dhruvasagar/vim-table-mode",
@@ -205,7 +208,7 @@ return require("packer").startup(function(use)
 	-- [[nvim greeter]]
 	use("goolord/alpha-nvim")
 
-	--[[Syntax/Treesitter]]
+	--[[#Syntax/Treesitter]]
 	use({
 		"nvim-treesitter/nvim-treesitter-context",
 		"nvim-treesitter/nvim-treesitter",
@@ -213,18 +216,18 @@ return require("packer").startup(function(use)
 		run = ":TSUpdate",
 	})
 
-	--[[focus]]
+	--[[#focus]]
 
-	--[[session]]
+	--[[#session]]
 	use("tpope/vim-obsession")
 
-	--[[git]]
+	--[[#git]]
 	use("lewis6991/gitsigns.nvim")
 
 	--[terminal]]
 	use("akinsho/toggleterm.nvim")
 
-	--[[Telescope]]
+	--[[#Telescope]]
 	use("nvim-telescope/telescope.nvim")
 	use({
 		"nvim-telescope/telescope-file-browser.nvim",
@@ -232,21 +235,24 @@ return require("packer").startup(function(use)
 		run = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
 	}) -- session picker
 
-	--[[colorscheme]]
+	--[[#colorscheme]]
 	use({
 		"sainnhe/everforest",
-		"rktjmp/lush.nvim",
+		"RRethy/nvim-base16",
+		"rockerBOO/boo-colorscheme-nvim",
+		"RishabhRD/gruvy",
 		"glepnir/zephyr-nvim",
 		"rockyzhang24/arctic.nvim",
 		"kvrohit/rasmus.nvim",
 		"mcchrish/zenbones.nvim",
+		"rmehri01/onenord.nvim",
 		-- {'olimorris/onedarkpro.nvim'}, -- onedarkpro
 		{ "rebelot/kanagawa.nvim" }, -- kangawa}}}
 	})
 
 	--[=[
 
-	--[[scoped tabs]]
+	--[[#scoped tabs]]
 	use({
 		"tiagovla/scope.nvim",
 		config = function()

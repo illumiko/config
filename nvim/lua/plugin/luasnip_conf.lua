@@ -22,6 +22,7 @@ ls.config.set_config({
 	ext_prio_increase = 1,
 	enable_autosnippets = true,
 })
+require("luasnip.loaders.from_vscode").lazy_load() -- loads premade snippets
 require("snippets.mySnips")
 vim.cmd([=[
 augroup CustomLuaSnip

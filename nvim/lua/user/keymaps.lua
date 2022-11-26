@@ -7,10 +7,15 @@ vim.g.mapleader = " "
 -- vim.cmd([[inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"]])
 --Normal Mode
 --opens toggle term in a the dir of the working buffer
-vim.keymap.set("n", "<C-\\>", function()
+map("n", "<C-\\>", function()
 	local path = vim.fn.expand("%:p:h")
 	return vim.cmd(vim.v.count .. " ToggleTerm dir=" .. path)
 end, opts)
+vim.cmd([[
+" set
+autocmd TermEnter term://*toggleterm#*
+      \ tnoremap <silent><c-\> <Cmd>exe v:count1 . "ToggleTerm"<CR>
+]])
 
 --[[highlight Str]]
 map("v", "<F3>", "HSHighlight " .. vim.v.count .. "<CR>", opts)

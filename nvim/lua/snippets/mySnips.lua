@@ -70,7 +70,7 @@ ls.add_snippets(nil, {
 						"GMath",
 						"Hujur @10:30",
 					},
-					["satureday"] = {
+					["saturday"] = {
 						"Revision",
 						"Bangla(cr)",
 						"Math @6/@6:30",
@@ -93,12 +93,12 @@ ls.add_snippets(nil, {
 						[3] = "@end",
 						[4] = "* " .. routine.current_day .. "",
 					}
-					for i, v in ipairs(routine.current_day_tasks) do
-						snip[4 + i] = "- " .. v
+					for z, v in ipairs(routine.current_day_tasks) do
+						snip[4 + z] = "- " .. v
 					end
 					local len = #snip
-					for i, v in ipairs(snip_last) do
-						snip[len + i] = v
+					for e, v in ipairs(snip_last) do
+						snip[len + e] = v
 					end
 					return snip
 				end

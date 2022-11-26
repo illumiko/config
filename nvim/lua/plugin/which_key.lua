@@ -7,12 +7,13 @@ require("which-key").setup({
 	},
 	hidden = { "<silent>", "<cmd>", "<Cmd>", "<CR>", "call", "lua", "^:", "^ " }, -- hide mapping boilerplate
 	window = {
-		border = "none",
+		border = "single",
 		position = "bottom",
 		margin = { 1, 1, 1, 1 }, -- extra window margin [top, right, bottom, left]
 		padding = { 1, 1, 1, 1 }, -- extra window padding [top, right, bottom, left]
-		winblend = 0,
+		winblend = 10,
 	},
+
 	-- your configuration comes here
 	-- or leave it empty to use the default settings
 	-- refer to the configuration section below
