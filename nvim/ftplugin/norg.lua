@@ -8,3 +8,4 @@
 end ]]
 -- disable()
 vim.opt.foldlevel = 1
+vim.opt.spell = true

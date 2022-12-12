@@ -15,7 +15,7 @@ hi CmpItemKindKeyword guifg=#ffc591
 hi NormalNc guibg=#16181c
 ]=])-- }}} ]]
 -- Kanagawa
---[[ -- {{{
+-- {{{
 vim.opt.laststatus = 3
 vim.opt.fillchars:append({
 	horiz = "━",
@@ -29,21 +29,21 @@ vim.opt.fillchars:append({
 require("kanagawa").setup({
 	undercurl = true, -- enable undercurls
 	commentStyle = { italic = true },
-	functionStyle = { bold = true, italic = true },
-	keywordStyle = { italic = true },
-	statementStyle = { bold = true },
+	functionStyle = {italic = true },
+	keywordStyle = {},
+	statementStyle = {},
 	typeStyle = { bold = true, italic = true },
 	variablebuiltinStyle = {},
 	specialReturn = true, -- special highlight for the return keyword
 	specialException = true, -- special highlight for exception handling keywords
-	transparent = false, -- do not set background color
+	transparent = true, -- do not set background color
 	dimInactive = true, -- dim inactive window `:h hl-NormalNC`
 	colors = {},
 	overrides = {},
 	globalStatus = true,
 })
 vim.cmd("colorscheme kanagawa")
--- }}} ]]
+-- }}}
 -- Zyphyr
 --[[ -- {{{
 vim.api.nvim_command([=[
@@ -97,8 +97,14 @@ require("onenord").setup({
 	custom_colors = {}, -- Overwrite default colors
 })
 -- }}} ]]
+-- base16-gruvbox-dark-hard
+--[[ -- {{{
 vim.cmd([=[
 colorscheme base16-gruvbox-dark-hard
 hi NormalNC guibg=#111111
 ]=])
-
+-- }}} ]]
+-- duotone
+vim.cmd([=[
+colorscheme 
+]=])

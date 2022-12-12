@@ -47,6 +47,7 @@ return require("packer").startup(function(use)
 
 	--[[#Dependencies]]
 	use({
+		"anuvyklack/keymap-amend.nvim",
 		"nvim-lua/plenary.nvim",
 		"kyazdani42/nvim-web-devicons",
 		"MunifTanjim/nui.nvim",
@@ -61,6 +62,7 @@ return require("packer").startup(function(use)
 		"williamboman/nvim-lsp-installer", --auto lsp installer
 	})
 	use("tami5/lspsaga.nvim") -- nightly
+	use("lvimuser/lsp-inlayhints.nvim")
 	use({ -- {{{"ahmedkhalf/project.nvim",
 		"ahmedkhalf/project.nvim",
 		config = function()
@@ -81,7 +83,7 @@ return require("packer").startup(function(use)
 			require("goto-preview").setup({
 				width = 100, -- Width of the floating window
 				height = 20, -- Height of the floating window
-				border = "none", -- Border characters of the floating window
+				border = "single", -- Border characters of the floating window
 				default_mappings = false, -- Bind default mappings
 				debug = false, -- Print debug information
 				opacity = nil, -- 0-100 opacity level of the floating window where 100 is fully transparent.
@@ -118,7 +120,7 @@ return require("packer").startup(function(use)
 
 	--[[#Bufferline]]
 	-- use({ "romgrk/barbar.nvim" })
-    use { 'echasnovski/mini.tabline', branch = 'stable' }
+	use("romgrk/barbar.nvim")
 
 	--[[#status bar]]
 	-- use({ "hoob3rt/lualine.nvim" })
@@ -127,10 +129,17 @@ return require("packer").startup(function(use)
 	--[[#Utility]]
 	use("David-Kunz/markid")
 	use("kazhala/close-buffers.nvim")
+	use("anuvyklack/fold-preview.nvim")
 	use({
 		"ghillb/cybu.nvim",
 		branch = "main", -- timely updates
 		-- branch = "v1.x", -- won't receive breaking changes
+	})
+	use({
+		"tiagovla/scope.nvim",
+		config = function()
+			require("scope").setup()
+		end,
 	})
 	use("fgheng/winbar.nvim")
 	use("lukas-reineke/indent-blankline.nvim")
@@ -239,10 +248,10 @@ return require("packer").startup(function(use)
 	use({
 		"sainnhe/everforest",
 		"RRethy/nvim-base16",
+		"https://github.com/atelierbram/Base2Tone-nvim",
 		"rockerBOO/boo-colorscheme-nvim",
 		"RishabhRD/gruvy",
 		"glepnir/zephyr-nvim",
-		"rockyzhang24/arctic.nvim",
 		"kvrohit/rasmus.nvim",
 		"mcchrish/zenbones.nvim",
 		"rmehri01/onenord.nvim",
@@ -253,12 +262,6 @@ return require("packer").startup(function(use)
 	--[=[
 
 	--[[#scoped tabs]]
-	use({
-		"tiagovla/scope.nvim",
-		config = function()
-			require("scope").setup()
-		end,
-	})
 
 	use({
 		"mvllow/modes.nvim",

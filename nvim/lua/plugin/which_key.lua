@@ -11,7 +11,7 @@ require("which-key").setup({
 		position = "bottom",
 		margin = { 1, 1, 1, 1 }, -- extra window margin [top, right, bottom, left]
 		padding = { 1, 1, 1, 1 }, -- extra window padding [top, right, bottom, left]
-		winblend = 10,
+		winblend = 0,
 	},
 
 	-- your configuration comes here

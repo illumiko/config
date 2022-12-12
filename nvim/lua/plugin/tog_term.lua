@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 toggleterm.setup({
-	size = 15,
+	size = 10,
 	hide_numbers = true,
 	shade_filetypes = { "toggleterm" },
 	shade_terminals = true,
@@ -12,12 +12,12 @@ toggleterm.setup({
 	start_in_insert = false,
 	insert_mappings = true,
 	persist_size = false,
-	direction = "vertical",
+	direction = "horizontal",
 	close_on_exit = true,
 	shell = "zsh",
 	float_opts = {
-		border = "none",
-		winblend = 4,
+		border = "single",
+		winblend = 0,
 	},
 	highlights = {
 		Normal = {

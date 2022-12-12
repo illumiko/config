@@ -2,6 +2,8 @@ vim.cmd([[
 hi VertSplit guibg=none guifg=none
 hi FloatBorder guibg=none guifg=none
 hi WinSeparator guibg=none guifg=none
+hi TelescopeBorder guibg=none
+hi LspInlayHint guibg=none
 ]])
 -- Get zephyr color
 --[[ local z = require("zephyr")

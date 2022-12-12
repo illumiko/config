@@ -24,8 +24,12 @@ map("v", "<F4>", "<cmd>HSRmHighlight<CR><esc>", opts)
 --[[Source config]]
 map("n", "<leader>R", ":source %<cr>", opts)
 
+--[[F/f with hopcurrentline]]
+map("n", "f", ":HopWordCurrentLine<CR>")
+map("n", "F", ":HopChar1CurrentLine<CR>")
+
 --[[Quit]]
-map("n", "<leader>Q",":wqa<CR>",opts)
+map("n", "<leader>Q", ":wqa<CR>", opts)
 
 --[[focus Management]]
 map("n", "<C-f>", "FocusMaximise <CR>", opts)
@@ -70,12 +74,12 @@ map("n", "<leader>F", ":FormatWrite<CR>", opts)
 
 -- [[telescope]]
 -- map("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
-map("n", "<leader>ffp", "<cmd>lua require('telescope.builtin').find_files({cwd='~/Documents/Projects/'})<CR>", opts) -- opening telescope in Projects dir
-map("n", "<leader>ffc", "<cmd>lua require('telescope.builtin').find_files({cwd='~/.config/'})<CR>", opts) --  opening telescope in config folder
-map("n", "<leader>fff", "<cmd>lua require('telescope.builtin').find_files()<CR>", opts) --  opening telescope in config folder
+map("n", "<leader>fp", "<cmd>lua require('telescope.builtin').find_files({cwd='~/Documents/Projects/'})<CR>", opts) -- opening telescope in Projects dir
+map("n", "<leader>fc", "<cmd>lua require('telescope.builtin').find_files({cwd='~/.config/'})<CR>", opts) --  opening telescope in config folder
+map("n", "<leader>ff", ":Telescope find_files theme=ivy<CR>", opts) --  opening telescope in config folder
 map("n", "<leader>fb", ":Telescope file_browser<CR>", opts) --  opening telescope in config folder
-map("n", "<leader>ffo", ":Telescope oldfiles<CR>", opts) --  opening telescope in config folder
-map("n", "<leader>ffg", "<cmd>lua require('telescope.builtin').live_grep()<CR>", opts) --  opening telescope in config folder
+map("n", "<leader>fo", ":Telescope oldfiles<CR>jk", opts) --  opening telescope in config folder
+map("n", "<leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<CR>", opts) --  opening telescope in config folder
 map("n", "<leader><Tab>", "<cmd>lua require('telescope.builtin').buffers()<CR>", opts) --  opening telescope in config folder
 -- map("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
@@ -128,8 +132,8 @@ map("n", "<C-l>", "<C-w>l", opts)
 -- map("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 --[[tabline]]
--- map("n", "<C-h>", "<cmd>tabprevious<CR>", opts)
--- map("n", "<C-l>", ":tabnext<CR>", opts)
+map("n", "<leadert>tp", "<cmd>tabprevious<CR>", opts)
+map("n", "<leader>tn", ":tabnext<CR>", opts)
 
 -- [[Cybu buffer switch]]
 map("n", "<S-l>", "<Plug>(CybuNext)", opts)
@@ -139,7 +143,7 @@ map("n", "<S-h>", "<Plug>(CybuPrev)", opts)
 -- map("n", "<C-c>", ":BufferClose<CR>", opts)
 
 -- Sort automatically by...
-map("n", "<S-Tab>", "<cmd>lua require('telescope.builtin').buffers()<CR>", opts) --bufferPicker
+map("n", "<S-Tab>", ":lua require('telescope.builtin').buffers()<CR>jk jj", opts) --bufferPicker
 --[===[insert mode]===]
 
 vim.keymap.set("i", "<c-s>", function()

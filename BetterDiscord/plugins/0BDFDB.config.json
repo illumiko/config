@@ -1,7 +1,7 @@
 {
 	"all": {
 		"changeLogs": {
-			"BDFDB": "2.9.9",
+			"BDFDB": "3.0.1",
 			"CompleteTimestamps": "1.6.2",
 			"GameActivityToggle": "1.1.7",
 			"PinDMs": "1.9.7",
@@ -20,8 +20,8 @@
 			"useChromium": false
 		},
 		"hashes": {
-			"0BDFDB.data.json": "4f71dd42b9e8a2d7205f24a47f7062b11f8c0f95",
-			"0BDFDB.raw.css": "900f672f247ea363e712ba1e3083e40d91fbe85a"
+			"0BDFDB.data.json": "f8673ad87828621154c13ee8f9a1475060e0147e",
+			"0BDFDB.raw.css": "a1c4a8b6f28c4765c6af2853ddf13a35922a2b9e"
 		}
 	}
 }

@@ -17,7 +17,7 @@ require("nvim_context_vt").setup({
 
 	-- Disable display of virtual text below blocks for indentation based languages like Python
 	-- Default: false
-	disable_virtual_lines = false,
+	disable_virtual_lines = true,
 
 	-- Same as above but only for spesific filetypes
 	-- Default: {}
@@ -31,4 +31,7 @@ require("nvim_context_vt").setup({
 	-- Default: {}
 	min_rows_ft = {},
 })
-vim.cmd([[hi CustomContextVt guifg=#3c4e71]])
+vim.cmd([[
+hi link CustomContextVt Whitespace
+]])
+

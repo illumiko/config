@@ -83,7 +83,7 @@ ls.add_snippets(nil, {
 
 				routine.main = function()
 					local snip_last = {
-						[1] = "===",
+						[1] = "  ===",
 						[2] = "*TO BE AT A PLACE NO ONE ELSE IS; YOU HAVE DO THINGS NO ONE ELSE WANTS*",
 						[3] = "* Agenda",
 					}
@@ -94,7 +94,7 @@ ls.add_snippets(nil, {
 						[4] = "* " .. routine.current_day .. "",
 					}
 					for z, v in ipairs(routine.current_day_tasks) do
-						snip[4 + z] = "- " .. v
+						snip[4 + z] = "  - " .. v
 					end
 					local len = #snip
 					for e, v in ipairs(snip_last) do
