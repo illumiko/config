@@ -12,7 +12,7 @@ toggleterm.setup({
 	start_in_insert = false,
 	insert_mappings = true,
 	persist_size = false,
-	direction = "horizontal",
+	direction = "float",
 	close_on_exit = true,
 	shell = "zsh",
 	float_opts = {

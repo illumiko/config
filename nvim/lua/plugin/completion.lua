@@ -70,29 +70,19 @@ cmp.setup({
 	}, -- }}}
 	sources = cmp.config.sources({ -- {{{
 		{ name = "nvim_lsp_signature_help" }, -- shows current func arg
+		{ name = "luasnip", group_index = 2 },
 		{
 			name = "nvim_lsp",
-			filter = function(entry, ctx)
-				local kind = require("cmp.types.lsp").CompletionItemKind[entry:get_kind()]
-				if kind == "Snippet" and ctx.prev_context.filetype == "java" then
-					return true
-				end
-
-				if kind == "Text" then
-					return true
-				end
-			end,
 			group_index = 2,
 		},
 		{ name = "nvim_lua", group_index = 2 },
-		{ name = "luasnip", group_index = 2 },
 		{ name = "buffer", group_index = 2 },
 		{ name = "path" },
 		{ name = "neorg" },
 		-- { name = 'ultisnips' }, -- For ultisnips users.
 		-- { name = 'snippy' }, -- For snippy users.
 	}), -- }}}
-	formatting = { -- {{{
+	--[[ formatting = { -- {{{
 		fields = { "kind", "abbr", "menu" },
 		format = function(entry, vim_item)
 			-- Kind icons
@@ -133,7 +123,18 @@ cmp.setup({
 			})[entry.source.name]
 			return vim_item
 		end,
-	}, -- }}}
+	}, -- }}} ]]
+	formatting = {-- {{{ the good kind
+		fields = { "kind", "abbr", "menu" },
+		format = function(entry, vim_item)
+			local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50 })(entry, vim_item)
+			local strings = vim.split(kind.kind, "%s", { trimempty = true })
+			kind.kind = " " .. strings[1] .. " "
+			kind.menu = "    (" .. strings[2] .. ")"
+
+			return kind
+		end,
+	},-- }}}
 	sorting = { -- {{{
 		priority_weight = 2,
 		comparators = {
@@ -154,18 +155,25 @@ cmp.setup({
 		},
 	}, -- }}}
 	experimental = { -- {{{
-		ghost_text = true,
+		ghost_text = false,
 	}, -- }}}
 	confirm_opts = { -- {{{
 		behavior = cmp.ConfirmBehavior.Replace,
 		select = false,
 	}, -- }}}
-	--[[ window = {-- {{{
-		completion = {
-			border = "rounded",
-			winhighlight = "NormalFloat:Pmenu,NormalFloat:Pmenu,CursorLine:PmenuSel,Search:None",
+	window = { -- {{{
+		documentation = {
+			border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
+			winhighlight = "Normal:CmpPmenu,FloatBorder:CmpPmenuBorder,CursorLine:PmenuSel,Search:None",
+            max_width = 200
 		},
-	},-- }}} ]]
+		completion = {
+			border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
+			winhighlight = "Normal:CmpPmenu,FloatBorder:CmpPmenuBorder,CursorLine:PmenuSel,Search:None",
+			col_offset = -3,
+			side_padding = 0,
+		},
+	}, -- }}}
 })
 
 -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).

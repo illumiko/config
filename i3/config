@@ -251,7 +251,7 @@ client.background       $bg
     # exec gtk-redshift
     # exec_always feh --bg-max ~/Pictures/Wallpaper/groups/sao/1.jpg
     # exec_always feh --bg-fill ~/Pictures/Wallpaper/yourname/3.png
-    exec_always wal -s -i ~/Pictures/Wallpaper/groups/tokyo/1wal.png
+    exec_always wal -s -i ~/Pictures/Wallpaper/groups/blue_lock/1.jpg
     # exec_always wal -n -i ~/Pictures/Wallpaper/groups/tokyo/1wal.png
     # for better battery:
     exec systemctl start auto-cpufreq.service 
@@ -277,8 +277,8 @@ client.background       $bg
     for_window [class=kitty] floating enable, sticky enable,move up 550px, resize set 400 100
     for_window [instance=discord] sticky enable
     for_window [class=".*"] border pixel 4
-    gaps inner 15
-    gaps outer 10
+    gaps inner 10
+    gaps outer 5
     # smart_gaps on
   #for moving to switched window from switched window
     workspace_auto_back_and_forth no

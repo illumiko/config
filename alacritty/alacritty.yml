@@ -4,23 +4,23 @@ env:
 window:
   opacity: 0.8
   dimensions:
-    columns: 0
-    lines: 0
+    columns: 2
+    lines: 2
   padding:
     x: 1
     y: 1
 font:
   size: 10
   offset:
-    x: 2
-    y: 8
+    x: 0
+    y: 0
   normal:
     family: Victor Mono NFM
     style: Normal
       #   family: Comic Code Ligatures Nerd font
       #   style: Normal
   bold:
-    family: Victor Mono NFM
+    family: VictorMono NFM
     style: Bold
       #   family: Comic Code Ligatures Nerd Font
       #   style: Bold

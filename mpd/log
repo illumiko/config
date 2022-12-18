@@ -2610,3 +2610,108 @@ Dec 10 19:24 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Reall
 Dec 12 09:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
 Dec 12 21:51 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
 Dec 13 00:38 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Dec 14 12:36 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Dec 14 12:38 : update: added youtubeDl/Jason Walker - Everybody Lies.mp3
+Dec 14 12:38 : player: played "youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Dec 14 12:38 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 14 12:42 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 12:46 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 12:50 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 12:53 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 12:57 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 13:01 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 13:05 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 13:09 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 13:13 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 13:16 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 13:20 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 13:24 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 13:28 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 13:32 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 13:36 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 13:40 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 13:43 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 13:47 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 13:51 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 13:55 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 13:59 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 14 18:19 : update: added youtubeDl/a classical music for reading, writing and studying ✒️📖☕✨.webm
+Dec 14 18:19 : update: added youtubeDl/a classical music for reading, writing and studying ✒️📖☕✨.mp3
+Dec 14 18:20 : update: updating youtubeDl/a classical music for reading, writing and studying ✒️📖☕✨.mp3
+Dec 14 18:20 : update: removing youtubeDl/a classical music for reading, writing and studying ✒️📖☕✨.webm
+Dec 15 17:46 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 15 17:46 : player: played "youtubeDl/Jason Walker - Everybody Lies.mp3"
+Dec 15 17:46 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 15 18:44 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 15 18:57 : player: played "youtubeDl/a classical music for reading, writing and studying ✒️📖☕✨.mp3"
+Dec 15 19:57 : player: played "youtubeDl/a classical music for reading, writing and studying ✒️📖☕✨.mp3"
+Dec 15 20:57 : player: played "youtubeDl/a classical music for reading, writing and studying ✒️📖☕✨.mp3"
+Dec 15 21:59 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 15 22:34 : player: played "youtubeDl/a classical music for reading, writing and studying ✒️📖☕✨.mp3"
+Dec 15 22:37 : player: played "youtubeDl/【HD】Fate⧸Grand Order - 絕對魔獸戰線巴比倫尼亞 - ED3 - milet - Tell me【中日字幕】.mp3"
+Dec 15 22:38 : update: added youtubeDl/Lauren Aquilina - King (Lyrics).webm
+Dec 15 22:38 : update: added youtubeDl/Lauren Aquilina - King (Lyrics).mp3
+Dec 15 22:39 : update: removing youtubeDl/Lauren Aquilina - King (Lyrics).webm
+Dec 15 22:39 : update: updating youtubeDl/Lauren Aquilina - King (Lyrics).mp3
+Dec 15 22:40 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 15 22:44 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 15 22:48 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 15 22:51 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 15 22:55 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 15 22:59 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 15 23:03 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 15 23:07 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 15 23:11 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 16 01:53 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 16 01:56 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 16 02:00 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 16 02:04 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 16 02:08 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 16 02:12 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 16 11:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 16 11:31 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 16 11:35 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 16 11:39 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 16 11:43 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 16 11:47 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 16 11:51 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 16 11:55 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 16 11:59 : player: played "youtubeDl/Lauren Aquilina - King (Lyrics).mp3"
+Dec 16 17:54 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 16 17:55 : update: added youtubeDl/【Anime BGM】Warning! This Will Make You Cry.mp3
+Dec 16 17:55 : update: added youtubeDl/【Anime BGM】Warning! This Will Make You Cry.webm
+Dec 16 17:58 : update: removing youtubeDl/【Anime BGM】Warning! This Will Make You Cry.webm
+Dec 16 17:58 : update: updating youtubeDl/【Anime BGM】Warning! This Will Make You Cry.mp3
+Dec 16 18:05 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 16 19:34 : player: played "youtubeDl/【Anime BGM】Warning! This Will Make You Cry.mp3"
+Dec 17 15:56 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 17 16:56 : player: played "youtubeDl/a classical music for reading, writing and studying ✒️📖☕✨.mp3"
+Dec 17 20:46 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 17 20:47 : player: played "hMMmmm/Nn/Wham! - Last Christmas (Lyrics) 'Last Christmas I gave you my heart'.mp3"
+Dec 17 20:47 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 17 21:54 : player: played "youtubeDl/【Anime BGM】Warning! This Will Make You Cry.mp3"
+Dec 18 19:25 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 18 19:25 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 18 20:03 : player: played "youtubeDl/【Anime BGM】Warning! This Will Make You Cry.mp3"
+Dec 18 22:26 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 18 23:16 : player: played "youtubeDl/【Anime BGM】Warning! This Will Make You Cry.mp3"
+Dec 19 00:09 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 19 00:31 : player: played "youtubeDl/【Anime BGM】Warning! This Will Make You Cry.mp3"
+Dec 19 00:34 : exception: Failed to access /home/illumiko/Music/SpotiFlyer: No such file or directory
+Dec 19 00:34 : exception: Failed to access /home/illumiko/Music/SpotiFlyer: No such file or directory
+Dec 19 00:34 : exception: Failed to access /home/illumiko/Music/SpotiFlyer: No such file or directory
+Dec 19 00:34 : exception: Failed to access /home/illumiko/Music/SpotiFlyer: No such file or directory
+Dec 19 00:35 : exception: Failed to access /home/illumiko/Music/SpotiFlyer: No such file or directory
+Dec 19 00:35 : exception: Failed to access /home/illumiko/Music/SpotiFlyer: No such file or directory
+Dec 19 00:35 : exception: Failed to access /home/illumiko/Music/SpotiFlyer: No such file or directory
+Dec 19 00:35 : exception: Failed to access /home/illumiko/Music/SpotiFlyer: No such file or directory
+Dec 19 00:35 : exception: Failed to access /home/illumiko/Music/SpotiFlyer: No such file or directory
+Dec 19 00:36 : exception: Failed to access /home/illumiko/Music/SpotiFlyer: No such file or directory
+Dec 19 00:36 : exception: Failed to access /home/illumiko/Music/SpotiFlyer: No such file or directory
+Dec 19 00:36 : exception: Failed to access /home/illumiko/Music/SpotiFlyer: No such file or directory
+Dec 19 00:37 : exception: Failed to access /home/illumiko/Music/SpotiFlyer: No such file or directory
+Dec 19 00:37 : exception: Failed to access /home/illumiko/Music/SpotiFlyer: No such file or directory
+Dec 19 00:37 : exception: Failed to access /home/illumiko/Music/SpotiFlyer: No such file or directory
+Dec 19 00:37 : exception: Failed to access /home/illumiko/Music/SpotiFlyer: No such file or directory
+Dec 19 00:37 : exception: Failed to access /home/illumiko/Music/SpotiFlyer: No such file or directory
+Dec 19 00:38 : exception: Failed to access /home/illumiko/Music/SpotiFlyer: No such file or directory

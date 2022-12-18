@@ -1,7 +1,4 @@
-local ok, cybu = pcall(require, "cybu")
-if not ok then
-	return
-end
+local ok, cybu = pcall(require, "cybu") if not ok then return end
 require("cybu").setup({
 	position = { -- {{{
 		relative_to = "editor", -- win, editor, cursor
@@ -18,7 +15,7 @@ require("cybu").setup({
 		path = "relative", -- absolute, relative, tail (filename only)
 		path_abbreviation = "shortened", -- none, shortened
 		border = "none", -- single, double, rounded, none
-		separator = "  ", -- string used as separator
+		separator = " ", -- string used as separator
 		prefix = "…", -- string used as prefix for truncated paths
 		padding = 1, -- left & right padding in number of spaces
 		hide_buffer_id = true, -- hide buffer IDs in window
@@ -46,7 +43,7 @@ require("cybu").setup({
 			},
 		},
 	}, -- }}}
-	display_time = 850, -- time the cybu window is displayed
+	display_time = 600, -- time the cybu window is displayed
 	exclude = { -- filetypes, cybu will not be active
 		"neo-tree",
 		"fugitive",

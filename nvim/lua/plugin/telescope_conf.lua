@@ -2,7 +2,7 @@ local status_ok, telescope = pcall(require, "telescope")
 if not status_ok then
 	return
 end
-
+local m = require("markid")
 -- telescope.load_extension('media_files')
 
 local actions = require("telescope.actions")
@@ -76,6 +76,13 @@ telescope.setup({
 				["?"] = actions.which_key,
 			},
 		}, -- }}}
+	},
+	autotag = { enable = true },
+	rainbow = {
+		enable = true,
+		termcolors = {
+			rainbowcol1 = "Debug",
+		},
 	},
 	pickers = { -- {{{
 		find_files = {

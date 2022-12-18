@@ -2,18 +2,14 @@ sw_volume: 100
 audio_device_state:1:default detected output
 state: pause
 current: 0
-time: 259.369000
-random: 1
+time: 1384.591000
+random: 0
 repeat: 1
-single: 0
+single: 1
 consume: 0
 crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:youtubeDl/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3
-1:youtubeDl/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3
-2:youtubeDl/【HD】Fate⧸Grand Order - 絕對魔獸戰線巴比倫尼亞 - ED3 - milet - Tell me【中日字幕】.mp3
-3:youtubeDl/​.mp4
-4:youtubeDl/ㅤ.mp4
+0:youtubeDl/【Anime BGM】Warning! This Will Make You Cry.mp3
 playlist_end
