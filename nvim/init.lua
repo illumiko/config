@@ -1,7 +1,7 @@
 require("plugins")
 require("impatient")
 require("user.settings")
--- require("user.autocmds")
+--require("user.autocmds")
 require("user.colorscheme")
 require("user.keymaps")
 require("plugin.lsp")
