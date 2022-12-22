@@ -49,6 +49,7 @@ return require("packer").startup(function(use)
 	use({
 		"anuvyklack/keymap-amend.nvim",
 		"nvim-lua/plenary.nvim",
+		"winston0410/cmd-parser.nvim", -- for range-highlight
 		"kyazdani42/nvim-web-devicons",
 		"MunifTanjim/nui.nvim",
 		"rktjmp/lush.nvim",
@@ -127,19 +128,13 @@ return require("packer").startup(function(use)
 	use("tjdevries/express_line.nvim")
 
 	--[[#Utility]]
-	use("David-Kunz/markid")
+	use("David-Kunz/markid") -- spcial var highlight
 	use("kazhala/close-buffers.nvim")
 	use("anuvyklack/fold-preview.nvim")
 	use({
 		"ghillb/cybu.nvim",
 		branch = "main", -- timely updates
 		-- branch = "v1.x", -- won't receive breaking changes
-	})
-	use({
-		"tiagovla/scope.nvim",
-		config = function()
-			require("scope").setup()
-		end,
 	})
 	use("fgheng/winbar.nvim")
 	use("lukas-reineke/indent-blankline.nvim")
@@ -159,6 +154,18 @@ return require("packer").startup(function(use)
 	use("windwp/nvim-autopairs")
 	-- use("SmiteshP/nvim-navic")
 	use("https://github.com/haringsrob/nvim_context_vt")
+	use({
+		"winston0410/range-highlight.nvim",
+		config = function()
+			require("range-highlight").setup({})
+		end,
+	}) --  highlights ranged entered into cmd
+	use({
+		"tiagovla/scope.nvim",
+		config = function()
+			require("scope").setup()
+		end,
+	})
 	use({
 		"beauwilliams/focus.nvim",
 		config = function()

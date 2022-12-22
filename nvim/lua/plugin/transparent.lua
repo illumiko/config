@@ -1,4 +1,4 @@
-local transparent = true
+local transparent = false
 require("transparent").setup({
 	enable = transparent, -- boolean: enable transparent
 	extra_groups = { -- table/string: additional groups that should be cleared
