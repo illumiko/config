@@ -3,7 +3,6 @@ vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboar
 vim.opt.cmdheight = 1 -- more space in the neovim command line for displaying messages
 vim.opt.colorcolumn = "100" -- fixes indentline for now
 vim.opt.conceallevel = 0 -- so that `` is visible in markdown files
-vim.opt.fileencoding = "utf-8" -- the encoding written to a file
 vim.opt.hidden = true -- required to keep multiple buffers and open multiple buffers
 vim.opt.ignorecase = true -- ignore case in search patterns
 vim.opt.pumheight = 10 -- pop up menu height

@@ -85,12 +85,15 @@ return {
 	"jghauser/mkdir.nvim",
 	"mg979/vim-visual-multi",
 	"folke/which-key.nvim",
-	{url="https://gitlab.com/yorickpeterse/nvim-window.git"},
+	{ url = "https://gitlab.com/yorickpeterse/nvim-window.git" },
 	"numToStr/Comment.nvim",
 	"windwp/nvim-autopairs",
 	-- "SmiteshP/nvim-navic",
 	"haringsrob/nvim_context_vt",
+	"anuvyklack/fold-preview.nvim",
+
 	{ -- {{{
+
 		"beauwilliams/focus.nvim",
 		config = function()
 			require("focus").setup({ width = 95 })
