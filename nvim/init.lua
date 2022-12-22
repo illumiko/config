@@ -1,19 +1,19 @@
-require("plugins")
-require("impatient")
+require("manager")
 require("user.settings")
---require("user.autocmds")
-require("user.colorscheme")
 require("user.keymaps")
+require("impatient")
+-- require("user.autocmds")
+require("user.colorscheme")
 require("plugin.lsp")
 require("user.highlights")
 -- require("plugin.session_manager")
-require("plugin.window_picker")
+-- require("plugin.window_picker")
 --require("plugin.fold_prev")
 require("plugin.indent_lines")
 require("plugin.rich_presence")
 require("plugin.transparent")
 require("plugin.start_page")
-require("plugin.autosave")
+-- require("plugin.autosave")
 require("plugin.explorer")
 require("plugin.which_key")
 require("plugin.cybu_conf")
@@ -34,9 +34,9 @@ require("plugin.format.format")
 require("plugin.cursor_context")
 require("plugin.telescope_conf")
 --[[ require("plugin.winbar_config") ]]
-if vim.g.neovide then
-	vim.cmd([[
-        set guifont=Comic\ Code\ Ligatures:h13
-    ]])
-	vim.g.neovide_transparency = 1
-end
+-- if vim.g.neovide then
+-- 	vim.cmd([[
+--         set guifont=Comic\ Code\ Ligatures:h13
+--     ]])
+-- 	vim.g.neovide_transparency = 1
+-- end

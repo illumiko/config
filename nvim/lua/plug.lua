@@ -76,29 +76,27 @@ return {
 	"lukas-reineke/indent-blankline.nvim",
 	"xiyaowong/nvim-transparent",
 	"matze/vim-move",
-	-- "Pocco81/AutoSave.nvim",
+	"Pocco81/AutoSave.nvim",
 	"andweeb/presence.nvim",
-	"windwp/nvim-ts-autotag",
+	"https://github.com/windwp/nvim-ts-autotag",
 	"romainl/vim-devdocs",
 	"Pocco81/HighStr.nvim",
 	"osyo-manga/vim-over",
 	"jghauser/mkdir.nvim",
 	"mg979/vim-visual-multi",
 	"folke/which-key.nvim",
-	{url="https://gitlab.com/yorickpeterse/nvim-window.git"},
+	"https://gitlab.com/yorickpeterse/nvim-window.git",
 	"numToStr/Comment.nvim",
 	"windwp/nvim-autopairs",
 	-- "SmiteshP/nvim-navic",
-	"haringsrob/nvim_context_vt",
+	"https://github.com/haringsrob/nvim_context_vt",
 	{ -- {{{
 		"beauwilliams/focus.nvim",
 		config = function()
 			require("focus").setup({ width = 95 })
 		end,
 	},
-	{
-		"lewis6991/impatient.nvim",
-	},
+	"lewis6991/impatient.nvim",
 	{
 		"norcalli/nvim-colorizer.lua",
 		config = function()
@@ -111,7 +109,7 @@ return {
 			require("spellsitter").setup()
 		end,
 	},
-	"p00f/nvim-ts-rainbow",
+	"https://github.com/p00f/nvim-ts-rainbow",
 	{
 		"phaazon/hop.nvim",
 		as = "hop",
@@ -148,7 +146,7 @@ return {
 	"goolord/alpha-nvim",
 
 	--[[#Syntax/Treesitter]]
-	"nvim-treesitter/nvim-treesitter-context",
+	{ "nvim-treesitter/nvim-treesitter-context" },
 	"nvim-treesitter/nvim-treesitter",
 	"nvim-treesitter/playground",
 
@@ -163,16 +161,16 @@ return {
 
 	--[[#Telescope]]
 	"nvim-telescope/telescope.nvim",
-	"nvim-telescope/telescope-file-browser.nvim",
 	{
+		"nvim-telescope/telescope-file-browser.nvim",
 		"nvim-telescope/telescope-fzf-native.nvim",
-		build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
+		-- run = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
 	}, -- session picker
 
 	--[[#colorscheme]]
 	"sainnhe/everforest",
 	"RRethy/nvim-base16",
-	"atelierbram/Base2Tone-nvim",
+	"https://github.com/atelierbram/Base2Tone-nvim",
 	"rockerBOO/boo-colorscheme-nvim",
 	"RishabhRD/gruvy",
 	"glepnir/zephyr-nvim",
