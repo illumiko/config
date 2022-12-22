@@ -220,29 +220,33 @@ client.background       $bg
  #  hide_edge_borders none
 
 #keybinds for applications
-  #bindsym $mod+g exec firefox
-  #bindsym $mod+g exec nautilus
-  bindsym $mod+c exec flameshot gui
-  #bindsym $mod+o exec code .config/i3/config
-  bindsym $mod+o exec okular
-  bindsym $mod+shift+f floating toggle
-  bindsym $mod+g exec alacritty -e ranger
-  bindsym $mod+m exec alacritty -e ncmpcpp
-  bindsym $mod+b exec alacritty -e bluetoothctl
-  bindsym $mod+F2 exec amixer -D pulse sset Master 5%-
-  bindsym $mod+F3 exec amixer -D pulse sset Master 5%+
-  bindsym $mod+F4 exec brightnessctl s 10%-
-  bindsym $mod+F5 exec brightnessctl s 10%+
+    #bindsym $mod+g exec firefox
+    #bindsym $mod+g exec nautilus
+    bindsym $mod+c exec flameshot gui
+    #bindsym $mod+o exec code .config/i3/config
+    #bindsym $mod+o exec okular
+    bindsym $mod+shift+f floating toggle
+    bindsym $mod+g exec alacritty -e ranger
+    bindsym $mod+m exec alacritty -e ncmpcpp
+    bindsym $mod+b exec alacritty -e bluetoothctl
+    bindsym $mod+F2 exec amixer -D pulse sset Master 5%-
+    bindsym $mod+F3 exec amixer -D pulse sset Master 5%+
+    bindsym $mod+F4 exec brightnessctl s 10%-
+    bindsym $mod+F5 exec brightnessctl s 10%+
 #for launching script with keybinds
-  bindsym $mod+t exec mpc toggle
+    #mpc
+    bindsym $mod+p exec mpc toggle
+    #note: the && are needed for a bug that pauses the playlist on the command
+    bindsym $mod+o exec mpc prev && mpc toggle && mpc toggle
+    bindsym $mod+i exec mpc next && mpc toggle && mpc toggle
 #for emoji-pciker
-  bindsym $mod+F1 exec NO_CLEANUP=true ~/Apps/emoji_keyboard/x11-emoji-picker-*.AppImage --appimage-extract-and-run
+    bindsym $mod+F1 exec NO_CLEANUP=true ~/Apps/emoji_keyboard/x11-emoji-picker-*.AppImage --appimage-extract-and-run
 
-  #locking i3
-  bindsym $mod+Shift+x exec i3lock --color 1e1e1e
-  focus_follows_mouse no
+#locking i3
+    bindsym $mod+Shift+x exec i3lock --color 1e1e1e
+    focus_follows_mouse no
 
-  #start ups
+#start ups
     #for having opacity for rofi and for transition effect
     #exec_always compton --config ~/.config/compton/compton.conf  #disabled for vm
     exec_always picom
@@ -266,20 +270,20 @@ client.background       $bg
     #exec_always xrandr --output HDMI-A-0 --brightness 0.8   #for brightness
   
 
-  #forcing apps on certain windows
+#forcing apps on certain windows
     assign [class="Indicator-stickynotes"] $ws1 #stickynotes
     assign [class="zoom"] $ws5   #zoom
     exec_always pulseaudio
     #for having prev colorscheme
     exec wal -R
 
-  #with i3 gaps
+#with i3 gaps
     for_window [class=kitty] floating enable, sticky enable,move up 550px, resize set 400 100
     for_window [instance=discord] sticky enable
     for_window [class=".*"] border pixel 4
     gaps inner 10
     gaps outer 5
     # smart_gaps on
-  #for moving to switched window from switched window
+#for moving to switched window from switched window
     workspace_auto_back_and_forth no
     smart_borders on

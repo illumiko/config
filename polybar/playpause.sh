@@ -1,9 +1,9 @@
 #!/bin/sh
 pause=""
 play=""
-title=$(mpc status | grep -Po "(?<=\/).*(?=.mp3)")
+title=$(mpc current)
 if mpc status | grep -q "playing" ; then
-  echo $play $title 
+  echo $play " " $title
 else
-    echo $pause $title
+    echo $pause " " $title
 fi
