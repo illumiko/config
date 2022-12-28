@@ -30,12 +30,11 @@ require("neorg").setup({
 		["core.norg.dirman"] = { -- Manage your directories with Neorg{{{
 			config = {
 				workspaces = {
-					default = "/home/illumiko/Documents/norg/gtd",
-                    example_gtd = "~/Documents/norg/practice/example_workspaces/gtd/"
+					default = "/home/illumiko/Documents/norg/",
 				},
-				autochdir = true, -- Automatically change the directory to the current workspace's root every time
+				autochdir = false, -- Automatically change the directory to the current workspace's root every time
 				index = "index.norg", -- The name of the main (root) .norg file
-                open_last_workspace = true
+                open_last_workspace = false
 			},
 		},-- }}}
 		--[[ ["core.gtd.base"] = {-- {{{

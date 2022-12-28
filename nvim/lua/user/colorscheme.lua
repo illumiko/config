@@ -15,7 +15,7 @@ hi CmpItemKindKeyword guifg=#ffc591
 hi NormalNc guibg=#16181c
 ]=])-- }}} ]]
 -- Kanagawa
--- {{{
+--[[ -- {{{
 vim.opt.laststatus = 3
 vim.opt.fillchars:append({
 	horiz = "━",
@@ -31,7 +31,7 @@ require("kanagawa").setup({
 	commentStyle = { italic = true },
 	functionStyle = { italic = true },
 	keywordStyle = { bold = true },
-	statementStyle = {bold=true},
+	statementStyle = { bold = true },
 	typeStyle = { bold = true, italic = true },
 	variablebuiltinStyle = {},
 	specialReturn = true, -- special highlight for the return keyword
@@ -47,32 +47,13 @@ vim.cmd([=[
 colorscheme kanagawa
 hi link CmpPmenu Normal
 ]=])
--- }}}
+-- }}} ]]
 -- Zyphyr
 --[[ -- {{{
 vim.api.nvim_command([=[
 colorscheme zephyr
 hi NormalNc guibg=#16181c
 ]=])-- }}} ]]
--- Everforest
---[[ -- {{{
-vim.api.nvim_command([=[
-colorscheme everforest
-hi Normal guibg=none
-hi NormalNc guibg=#16181c
-]=])-- }}} ]]
--- Boo
---[[ -- {{{
-require("boo-colorscheme").use({
-	theme = "crimson_moonlight",
-	italic = true,
-})
-vim.cmd([=[
-hi LspReferenceRead  guibg=#3f3442 guifg=none
-hi LspReferenceText  guibg=#3f3442 guifg=none
-hi LspReferenceWrite guibg=#3f3442 guifg=none
-]=])
--- }}} ]]
 -- one nord
 --[[ -- {{{
 require("onenord").setup({
@@ -101,10 +82,54 @@ require("onenord").setup({
 	custom_colors = {}, -- Overwrite default colors
 })
 -- }}} ]]
--- base16-gruvbox-dark-hard
---[[ -- {{{
-vim.cmd([=[
-colorscheme base16-gruvbox-dark-hard
-hi NormalNC guibg=#111111
-]=])
--- }}} ]]
+-- tokyonight
+-- {{{
+require("tokyonight").setup({
+	style = "night",
+	transparent = false,
+	terminal_colors = true,
+	styles = {
+		types = { italic = true, bold = true },
+		keywords = { italic = true },
+		functions = { italic = true, bold = true },
+		variables = { italic = true },
+		sidebars = "dark",
+		floats = "dark",
+	},
+	sidebaers = { "qf", "help" },
+	dim_inactive = true,
+	-- day_brightness = 0.3
+	--boarderless telescope
+	on_highlights = function(hl, c)
+		local prompt = "#2d3149"
+		hl.TelescopeNormal = {
+			bg = c.bg_dark,
+			fg = c.fg_dark,
+		}
+		hl.TelescopeBorder = {
+			bg = c.bg_dark,
+			fg = c.bg_dark,
+		}
+		hl.TelescopePromptNormal = {
+			bg = prompt,
+		}
+		hl.TelescopePromptBorder = {
+			bg = prompt,
+			fg = prompt,
+		}
+		hl.TelescopePromptTitle = {
+			bg = prompt,
+			fg = prompt,
+		}
+		hl.TelescopePreviewTitle = {
+			bg = c.bg_dark,
+			fg = c.bg_dark,
+		}
+		hl.TelescopeResultsTitle = {
+			bg = c.bg_dark,
+			fg = c.bg_dark,
+		}
+	end,
+})
+vim.cmd("colorscheme tokyonight")
+-- }}}

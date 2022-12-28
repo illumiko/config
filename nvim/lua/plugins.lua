@@ -1,5 +1,6 @@
 return {
 	-- [[#Dependencies]]
+	"winston0410/cmd-parser.nvim",
 	"anuvyklack/keymap-amend.nvim",
 	"nvim-lua/plenary.nvim",
 	"kyazdani42/nvim-web-devicons",
@@ -63,7 +64,7 @@ return {
 	"L3MON4D3/LuaSnip",
 
 	--[[#Bufferline]]
-	"romgrk/barbar.nvim",
+	{ "romgrk/barbar.nvim", lazy = true },
 
 	--[[#status bar]]
 	"tjdevries/express_line.nvim",
@@ -90,7 +91,9 @@ return {
 	"windwp/nvim-autopairs",
 	-- "SmiteshP/nvim-navic",
 	"haringsrob/nvim_context_vt",
-	"anuvyklack/fold-preview.nvim",
+	{
+		"winston0410/range-highlight.nvim",
+	},
 
 	{ -- {{{
 
@@ -152,7 +155,7 @@ return {
 
 	--[[#Syntax/Treesitter]]
 	"nvim-treesitter/nvim-treesitter-context",
-	"nvim-treesitter/nvim-treesitter",
+	{ "nvim-treesitter/nvim-treesitter", build = "TSUpdate" },
 	"nvim-treesitter/playground",
 
 	--[[#session]]
@@ -174,15 +177,10 @@ return {
 
 	--[[#colorscheme]]
 	"sainnhe/everforest",
-	"RRethy/nvim-base16",
-	"atelierbram/Base2Tone-nvim",
-	"rockerBOO/boo-colorscheme-nvim",
 	"RishabhRD/gruvy",
+    'folke/tokyonight.nvim',
+	"lourenci/github-colors",
 	"glepnir/zephyr-nvim",
 	"kvrohit/rasmus.nvim",
-	"mcchrish/zenbones.nvim",
-	"rmehri01/onenord.nvim",
-	-- {'olimorris/onedarkpro.nvim'}, -- onedarkpro
 	{ "rebelot/kanagawa.nvim" }, -- kangawa}}}
-	"sainnhe/everforest",
 }

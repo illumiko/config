@@ -1,5 +1,5 @@
-require("manager")
 require("user.settings")
+require("manager")
 require("user.keymaps")
 require("impatient")
 -- require("user.autocmds")
@@ -13,6 +13,7 @@ require("plugin.indent_lines")
 require("plugin.rich_presence")
 require("plugin.transparent")
 require("plugin.start_page")
+require("range-highlight").setup()
 -- require("plugin.autosave")
 require("plugin.explorer")
 require("plugin.which_key")
@@ -40,3 +41,4 @@ require("plugin.telescope_conf")
 --     ]])
 -- 	vim.g.neovide_transparency = 1
 -- end
+

@@ -1,8 +1,8 @@
 sw_volume: 100
 audio_device_state:1:default detected output
-state: play
-current: 2
-time: 120.101000
+state: pause
+current: 11
+time: 241.017000
 random: 0
 repeat: 1
 single: 0
@@ -11,27 +11,22 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:hMMmmm/Nightcore/「Nightcore」- Without You (Finding Hope feat. Holly Drummond).mp3
-1:hMMmmm/Nightcore/「Nightcore」→ CWJBHN - (Can We Just Be Happy Now_Switching Vocals).mp3
-2:hMMmmm/Nightcore/「Nightcore」→ House With No Mirrors - (Lyrics).mp3
-3:hMMmmm/Nightcore/「Nightcore」→ Hurtless (Female version) - (Lyrics).mp3
-4:hMMmmm/Nightcore/「Nightcore」→ i feel 2 much (@blackbear).mp3
-5:hMMmmm/Nightcore/「Nightcore」→ Devil On My Shoulder.mp3
-6:hMMmmm/Nightcore/「Nightcore」→ if i were you (blackbear_lyrics).mp3
-7:hMMmmm/Nightcore/【Nightcore】 Gryffin & Illenium _ Feel Good (Feat. Daya).mp3
-8:hMMmmm/Nightcore/Nightcore -  Diamond Heart (Alan Walker) _ lyrics.mp3
-9:hMMmmm/Nightcore/Nightcore - BLUE (da ba dee) - Lyrics.mp3
-10:hMMmmm/Nightcore/Nightcore - Crazier Things (Chelsea Cutler) - (Lyrics).mp3
-11:hMMmmm/Nightcore/Nightcore - Dancing Without Music (BRDGS) - (Lyrics).mp3
-12:hMMmmm/Nightcore/Nightcore - Dandelions (Lyrics).mp3
-13:hMMmmm/Nightcore/Nightcore - Epiphany (Female Version).mp3
-14:hMMmmm/Nightcore/Nightcore - East Of Eden「Lyrics」.mp3
-15:hMMmmm/Nightcore/Nightcore - Everyone Changes (Kodaline) - (Lyrics).mp3
-16:hMMmmm/Nightcore/Nightcore - Heart Attack (Switching Vocals) - (Lyrics).mp3
-17:hMMmmm/Nightcore/Nightcore - Knees (Lyrics).mp3
-18:hMMmmm/Nightcore/Nightcore - Love Again _ AVAION (Lyrics).mp3
-19:hMMmmm/Nightcore/Nightcore - On My Own - (Lyrics).mp3
-20:hMMmmm/Nightcore/Nightcore - Remember That Night (Sara Kays) - (Lyrics).mp3
-21:hMMmmm/Nightcore/Nightcore - Rewrite The Stars (switching vocals).mp3
-22:hMMmmm/Nightcore/Nightcore - when was it over (Sasha Sloan) (Sam Hunt) - (Lyrics).mp3
+0:hMMmmm/Playlists/liked/Tear_in_My_Heart.mp3
+1:hMMmmm/Playlists/liked/Dance_With_My_Father.mp3
+2:hMMmmm/Playlists/liked/Eternal_-_Similar_Outskirts_Remix.mp3
+3:hMMmmm/Playlists/liked/Everything_Goes_On.mp3
+4:hMMmmm/Playlists/liked/Lovers__Oath.mp3
+5:hMMmmm/Playlists/liked/Ghost_-_Acoustic.mp3
+6:hMMmmm/Playlists/liked/TV.mp3
+7:hMMmmm/Playlists/liked/I_Am_Falling_For_You.mp3
+8:hMMmmm/Playlists/liked/I_Can_t_Handle_Change.mp3
+9:hMMmmm/Playlists/liked/Innocently_Annoying.mp3
+10:hMMmmm/Playlists/liked/Ship_in_a_Bottle.mp3
+11:hMMmmm/Playlists/liked/We_re_Screwed.mp3
+12:hMMmmm/Playlists/liked/Nisha_Labyrinth__feat__Sophiya_.mp3
+13:hMMmmm/Playlists/liked/Patchwork_Staccato.mp3
+14:hMMmmm/Playlists/liked/Ikanaide_-_album_ver.mp3
+15:hMMmmm/Playlists/liked/Scatman__ski-ba-bop-ba-dop-bop_.mp3
+16:hMMmmm/Playlists/liked/She_Will_Be_Loved.mp3
+17:hMMmmm/Playlists/liked/sorry_haha_i_fell_asleep.mp3
 playlist_end
