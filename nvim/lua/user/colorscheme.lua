@@ -83,7 +83,7 @@ require("onenord").setup({
 })
 -- }}} ]]
 -- tokyonight
--- {{{
+--[[ -- {{{
 require("tokyonight").setup({
 	style = "night",
 	transparent = false,
@@ -132,4 +132,57 @@ require("tokyonight").setup({
 	end,
 })
 vim.cmd("colorscheme tokyonight")
--- }}}
+-- }}} ]]
+-- Catppuccin
+-- {{{
+require("catppuccin").setup({
+	flavour = "mocha", -- latte, frappe, macchiato, mocha
+	background = { -- :h background
+		light = "latte",
+		dark = "mocha",
+	},
+	transparent_background = false,
+	term_colors = true,
+	dim_inactive = {
+		enabled = true,
+		shade = "dark",
+		percentage = 0.65,
+	},
+	no_italic = true, -- Force no italic
+	no_bold = true, -- Force no bold
+	styles = {
+		comments = { "italic" },
+		conditionals = { "italic" },
+		loops = {},
+		functions = { "bold" },
+		keywords = { "italic" },
+		strings = {},
+		variables = {},
+		numbers = {},
+		booleans = {},
+		properties = { "bold" },
+		types = { "bold", "italic" },
+		operators = {},
+	},
+	color_overrides = {},
+	custom_highlights = {},
+	integrations = {
+		cmp = true,
+		gitsigns = true,
+		telescope = true,
+        neotree=true,
+        treesitter_context=true,
+        lsp_saga=true,
+        hop=true,
+        barbar=true,
+        treesitter=true,
+        illuminate = true,
+		notify = false,
+        which_key= true,
+		mini = false,
+		-- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+	},
+})
+
+-- setup must be called before loading
+vim.cmd("colorscheme catppuccin") -- }}}

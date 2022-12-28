@@ -29,7 +29,7 @@ return {
 	"RRethy/vim-illuminate",
 	{ -- {{{ "rmagatti/goto-preview",
 		"rmagatti/goto-preview",
-		config = function()
+		config = function() -- {{{
 			require("goto-preview").setup({
 				width = 100, -- Width of the floating window
 				height = 20, -- Height of the floating window
@@ -45,43 +45,79 @@ return {
 				force_close = true, -- passed into vim.api.nvim_win_close's second argument. See :h nvim_win_close
 				bufhidden = "wipe", -- the bufhidden option to set on the floating window. See :h bufhidden
 			})
-		end,
+		end, -- }}}
+		keys = { -- {{{
+			{ "<space>ld", "<cmd>lua vim.lsp.buf.definition()<CR>", desc = "Goto Definition File" },
+			{ "<space>lpd", ":lua require('goto-preview').goto_preview_definition()<cr>", desc = "Preview Definition" },
+			{
+				"<space>lpi",
+				":lua require('goto-preview').goto_preview_implementation()<cr>",
+				desc = "Preview Implementation",
+			},
+			{ "<space>lpc", ":lua require('goto-preview').close_all_win()<cr>", desc = "Close Preview" },
+			{ "<space>lpr", ":lua require('goto-preview').goto_preview_references()<cr>", desc = "Preview References" },
+		}, -- }}}
 	}, -- }}}
 
 	--[[#Completion]]
-	"hrsh7th/cmp-nvim-lsp", --cmp source lsp
-	"hrsh7th/cmp-nvim-lua", --cmp source nvim lua
-	"hrsh7th/cmp-buffer", --cmp source buffer
-	"hrsh7th/cmp-path", --cmp source path
-	"hrsh7th/cmp-cmdline", --cmp source cmd
-	"hrsh7th/nvim-cmp", --base of cmp
-	"hrsh7th/cmp-nvim-lsp-signature-help",
-	"saadparwaiz1/cmp_luasnip", --for snippets
-	"onsails/lspkind-nvim", --customizing cmp
+	{
+		"hrsh7th/nvim-cmp",
+		dependencies = {
+			"hrsh7th/cmp-nvim-lsp", --cmp source lsp
+			"hrsh7th/cmp-nvim-lua", --cmp source nvim lua
+			"hrsh7th/cmp-buffer", --cmp source buffer
+			"hrsh7th/cmp-path", --cmp source path
+			"hrsh7th/cmp-cmdline", --cmp source cmd
+			"hrsh7th/cmp-nvim-lsp-signature-help",
+			"saadparwaiz1/cmp_luasnip", --for snippets
+			"onsails/lspkind-nvim", --customizing cmp
+		},
+	}, --base of cmp
 
 	--[[#Snippets]]
-	"rafamadriz/friendly-snippets",
-	"L3MON4D3/LuaSnip",
+	{
+		"L3MON4D3/LuaSnip",
+		dependencies = {
+			"rafamadriz/friendly-snippets",
+		},
+	},
 
 	--[[#Bufferline]]
 	{ "romgrk/barbar.nvim", lazy = true },
 
 	--[[#status bar]]
-	"tjdevries/express_line.nvim",
+	{
+		"tjdevries/express_line.nvim",
+		events = { "BufEnter" },
+	},
 
 	--[[#Utility]]
-	"David-Kunz/markid",
-	"kazhala/close-buffers.nvim",
-	"anuvyklack/fold-preview.nvim",
-	"fgheng/winbar.nvim",
+	{
+		"kazhala/close-buffers.nvim",
+		keys = {
+			{
+				"<leader>bdh",
+				[[<CMD>lua require('close_buffers').delete({type = 'hidden'})<CR>]],
+				desc = "Hidden bufdel",
+			},
+			{
+				"<leader>bdn",
+				[[<CMD>lua require('close_buffers').delete({type = 'nameless'})<CR>]],
+				desc = "Nameless bufdel",
+			},
+			{
+				"<leader>bdd",
+				[[<CMD>lua require('close_buffers').delete({type = 'this'})<CR>]],
+				desc = "Current bufdel",
+			},
+		},
+	},
+    { "anuvyklack/fold-preview.nvim", },
 	"lukas-reineke/indent-blankline.nvim",
-	"xiyaowong/nvim-transparent",
+	-- "xiyaowong/nvim-transparent",
 	"matze/vim-move",
 	-- "Pocco81/AutoSave.nvim",
-	"andweeb/presence.nvim",
-	"windwp/nvim-ts-autotag",
 	"romainl/vim-devdocs",
-	"Pocco81/HighStr.nvim",
 	"osyo-manga/vim-over",
 	"jghauser/mkdir.nvim",
 	"mg979/vim-visual-multi",
@@ -90,12 +126,10 @@ return {
 	"numToStr/Comment.nvim",
 	"windwp/nvim-autopairs",
 	-- "SmiteshP/nvim-navic",
-	"haringsrob/nvim_context_vt",
+	"winston0410/range-highlight.nvim",
+	"numToStr/Navigator.nvim",
+	-- {{{,
 	{
-		"winston0410/range-highlight.nvim",
-	},
-
-	{ -- {{{
 
 		"beauwilliams/focus.nvim",
 		config = function()
@@ -112,24 +146,24 @@ return {
 		end,
 	},
 	{
-		"lewis6991/spellsitter.nvim",
-		config = function()
-			require("spellsitter").setup()
-		end,
-	},
-	"p00f/nvim-ts-rainbow",
-	{
 		"phaazon/hop.nvim",
 		as = "hop",
 		config = function()
 			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
 		end,
+		keys = {
+			{ "f", ":HopWordCurrentLine<CR>", desc = "Line hop" },
+			{ "F", ":HopChar1CurrentLine<CR>", desc = "Char hop" },
+			{ "<leader>hl", ":HopLine<CR>", desc = "Line Hop" },
+			{ "<leader>hc", ":HopChar1<CR>", desc = "Char Hop" },
+			{ "<leader>hw", ":HopWord<CR>", desc = "Word Hop" },
+		},
 	},
-	{
-		"ghillb/cybu.nvim",
-		branch = "main", -- timely updates
-		-- branch = "v1.x", -- won't receive breaking changes
-	},
+	-- {
+	-- 	"ghillb/cybu.nvim",
+	-- 	branch = "main", -- timely updates
+	-- 	-- branch = "v1.x", -- won't receive breaking changes
+	-- },
 	{
 		"tiagovla/scope.nvim",
 		config = function()
@@ -138,25 +172,47 @@ return {
 	}, -- }}}
 
 	--[[#Markdown Preview]]
-	"ellisonleao/glow.nvim",
+	{ "ellisonleao/glow.nvim" },
 
 	--[[#File Browser]]
-	{ "nvim-neo-tree/neo-tree.nvim", branch = "v2.x" },
+	{
+		"nvim-neo-tree/neo-tree.nvim",
+		branch = "v2.x",
+		keys = {
+			{ "<Leader>e", ":NeoTreeFocusToggle<CR>", desc = "Explorer" },
+		},
+	},
 
 	--[[#Note talking/Scheduling etc]]
-	"nvim-neorg/neorg",
+	{ "nvim-neorg/neorg", ft = "norg" },
 	{
 		"dhruvasagar/vim-table-mode",
 		ft = "norg",
 	},
 
 	-- [[nvim greeter]]
-	"goolord/alpha-nvim",
+	{ "goolord/alpha-nvim", lazy = true },
 
 	--[[#Syntax/Treesitter]]
-	"nvim-treesitter/nvim-treesitter-context",
-	{ "nvim-treesitter/nvim-treesitter", build = "TSUpdate" },
-	"nvim-treesitter/playground",
+	{
+		"nvim-treesitter/nvim-treesitter",
+		events = { "BufEnter" },
+		build = "TSUpdate",
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter-context",
+			"nvim-treesitter/playground",
+			"haringsrob/nvim_context_vt",
+			"windwp/nvim-ts-autotag",
+			"p00f/nvim-ts-rainbow",
+			"David-Kunz/markid",
+			{
+				"lewis6991/spellsitter.nvim",
+				config = function()
+					require("spellsitter").setup()
+				end,
+			},
+		},
+	},
 
 	--[[#session]]
 	"tpope/vim-obsession",
@@ -165,22 +221,74 @@ return {
 	"lewis6991/gitsigns.nvim",
 
 	--[terminal]]
-	"akinsho/toggleterm.nvim",
+	{
+		"akinsho/toggleterm.nvim",
+		keys = {
+			{
+				"<C-\\>",
+				function()
+					local path = vim.fn.expand("%:p:h")
+					return vim.cmd(vim.v.count .. " ToggleTerm dir=" .. path)
+				end,
+				desc = "",
+			},
+		},
+	},
 
 	--[[#Telescope]]
-	"nvim-telescope/telescope.nvim",
-	"nvim-telescope/telescope-file-browser.nvim",
 	{
-		"nvim-telescope/telescope-fzf-native.nvim",
-		build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
-	}, -- session picker
+		"nvim-telescope/telescope.nvim",
+		keys = { -- {{{
+			{
+				"<leader>fp",
+				"<cmd>lua require('telescope.builtin').find_files({cwd='~/Documents/Projects/'})<CR>",
+				desc = "Project Files",
+			},
+			{
+				"<leader>fc",
+				"<cmd>lua require('telescope.builtin').find_files({cwd='~/.config/'})<CR>",
+				desc = "Config Files",
+			},
+			{
+				"<leader>ff",
+				":Telescope find_files theme=ivy<CR>",
+				desc = "Find Files",
+			},
+			{
+				"<leader>fb",
+				":Telescope file_browser<CR>",
+				desc = "File Browser",
+			},
+			{
+				"<leader>fo",
+				":Telescope oldfiles<CR>jk",
+				desc = "Old Files",
+			},
+			{
+				"<leader>fg",
+				"<cmd>lua require('telescope.builtin').live_grep()<CR>",
+				desc = "Grep Directory",
+			},
+			{
+				"<S-Tab>",
+				":lua require('telescope.builtin').buffers()<CR>",
+				desc = "Buffer Picker",
+			},
+		}, -- }}}
+		dependencies = {
+			"nvim-telescope/telescope-file-browser.nvim",
+			{
+				"nvim-telescope/telescope-fzf-native.nvim",
+				build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
+			}, -- session picker
+		},
+	},
 
 	--[[#colorscheme]]
-	"sainnhe/everforest",
-	"RishabhRD/gruvy",
-    'folke/tokyonight.nvim',
-	"lourenci/github-colors",
-	"glepnir/zephyr-nvim",
-	"kvrohit/rasmus.nvim",
-	{ "rebelot/kanagawa.nvim" }, -- kangawa}}}
+	{ "sainnhe/everforest", lazy = true },
+	{ "RishabhRD/gruvy", lazy = true },
+	{ "folke/tokyonight.nvim", lazy = true },
+	-- "glepnir/zephyr-nvim",
+	{ "catppuccin/nvim", name = "catppuccin", lazy = true },
+	{ "rebelot/kanagawa.nvim", lazy = true }, -- kangawa}}}
 }

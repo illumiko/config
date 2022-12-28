@@ -1,5 +1,5 @@
 function transparent()-- {{{
-	local transparent = { "VertSplit", "FloatBorder", "WinSeparator", "LspInlayHint" }
+	local transparent = { "VertSplit", "FloatBorder", "WinSeparator", "LspInlayHint", "IndentBlanklineSpaceChar" }
 	for _, value in pairs(transparent) do
 		vim.cmd("hi " .. value .. " guibg=none guifg=none")
 	end
@@ -15,7 +15,3 @@ local ts_rainbow = {
 }
 
 transparent()
--- ts-rainbow consistant colors
---[[ for index, value in pairs(ts_rainbow) do
-	-- vim.cmd("hi link rainbowcol" .. index .. " " .. value)
-end ]]

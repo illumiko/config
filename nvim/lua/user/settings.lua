@@ -25,17 +25,26 @@ vim.opt.shiftwidth = 4 -- the number of spaces inserted for each indentation
 vim.opt.tabstop = 4 -- insert 1 spaces for a tab
 vim.opt.smarttab = true
 vim.opt.cursorline = true -- highlight the current line
-vim.opt.numberwidth = 3 -- set number column width to 2 {default 4}
+vim.opt.numberwidth = 2 -- set number column width to 2 {default 4}
 vim.opt.signcolumn = "yes" -- always show the sign column otherwise it would shift the text each time
 vim.opt.wrap = false -- display lines as one long line
 vim.opt.spell = false
 vim.opt.spelllang = "en"
-vim.opt.scrolloff = 10 -- use this with zz(centers view)
-vim.opt.sidescrolloff = 20
+vim.opt.scrolloff = 0 -- use this with zz(centers view)
+vim.opt.sidescrolloff = 0
 vim.opt.softtabstop = 4
 vim.opt.laststatus = 3
-vim.opt.number = true
-vim.opt.relativenumber = true
+vim.opt.number = false
+vim.opt.relativenumber = false
+vim.opt.fillchars:append({
+	horiz = "━",
+	horizup = "┻",
+	horizdown = "┳",
+	vert = "┃",
+	vertleft = "┨",
+	vertright = "┣",
+	verthoriz = "╋",
+})
 vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
 	callback = function()
 		vim.cmd("set formatoptions-=cro")
@@ -43,9 +52,8 @@ vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
 })
 vim.cmd([[
 command Journal source ~/Documents/norg/sessions/vp.vim
-" better focus
-"autocmd BufEnter * set number relativenumber
-"autocmd BufLeave * set nonumber norelativenumber
+
+set foldtext=v:folddashes.substitute(getline(v:foldstart),'/\\*\\\|\\*/\\\|{{{\\d\\=','','g')
 ]])
 --local add_cmd = vim.api.nvim_create_autocmd("NeorgToMd", function()
 ----    -- File name without extension .

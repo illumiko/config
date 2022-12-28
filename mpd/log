@@ -3157,3 +3157,62 @@ Dec 28 11:00 : player: played "hMMmmm/Playlists/liked/I_Am_Falling_For_You.mp3"
 Dec 28 11:03 : player: played "hMMmmm/Playlists/liked/I_Can_t_Handle_Change.mp3"
 Dec 28 11:07 : player: played "hMMmmm/Playlists/liked/Innocently_Annoying.mp3"
 Dec 28 11:12 : player: played "hMMmmm/Playlists/liked/Ship_in_a_Bottle.mp3"
+Dec 28 17:10 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 28 17:11 : player: played "hMMmmm/Playlists/liked/We_re_Screwed.mp3"
+Dec 28 17:14 : player: played "hMMmmm/Playlists/liked/Nisha_Labyrinth__feat__Sophiya_.mp3"
+Dec 28 17:19 : player: played "hMMmmm/Playlists/liked/Patchwork_Staccato.mp3"
+Dec 28 17:22 : player: played "hMMmmm/Playlists/liked/Ikanaide_-_album_ver.mp3"
+Dec 28 17:25 : player: played "hMMmmm/Playlists/liked/Scatman__ski-ba-bop-ba-dop-bop_.mp3"
+Dec 28 17:30 : player: played "hMMmmm/Playlists/liked/She_Will_Be_Loved.mp3"
+Dec 28 17:32 : player: played "hMMmmm/Playlists/liked/sorry_haha_i_fell_asleep.mp3"
+Dec 28 17:35 : player: played "hMMmmm/Playlists/liked/Tear_in_My_Heart.mp3"
+Dec 28 18:08 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 28 18:08 : player: played "hMMmmm/Playlists/liked/Dance_With_My_Father.mp3"
+Dec 28 18:09 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 28 19:35 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 28 19:36 : player: played "youtubeDl/a classical music for reading, writing and studying ✒️📖☕✨.mp3"
+Dec 28 20:24 : player: played "youtubeDl/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Dec 28 21:29 : player: played "youtubeDl/【Anime BGM】Warning! This Will Make You Cry.mp3"
+Dec 28 21:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 28 21:29 : player: played "hMMmmm/newpipe/Classroom of the Elite S2 OST - Manabu theme『PACT』[HQ Cover] by Enryu.m4a"
+Dec 28 21:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 28 21:34 : player: played "hMMmmm/newpipe/Classroom of the Elite S2 OST - Manabu theme『PACT』[HQ Cover] by Enryu.m4a"
+Dec 28 21:48 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 28 21:58 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 28 22:01 : player: played "hMMmmm/newpipe/Classroom of the Elite S2 OST - Mastermind『X』[HQ Cover] by Enryu.m4a"
+Dec 28 22:03 : player: played "hMMmmm/newpipe/Classroom of the Elite S2 OST EP 3 -『Ayanokouji theme』[HQ Cover] by Enryu.m4a"
+Dec 28 22:07 : player: played "hMMmmm/newpipe/Classroom of the Elite Season 2 OP. Full _ Dance In The Game - Sub. Español 『AMV』.m4a"
+Dec 28 22:10 : player: played "hMMmmm/newpipe/L_s theme A.m4a"
+Dec 28 22:10 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 28 22:14 : player: played "hMMmmm/newpipe/Nightcore - After Dark.opus"
+Dec 28 22:14 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 28 22:17 : player: played "hMMmmm/newpipe/SLOWED + REVERB _ Carol of the Bells by Lindsey Stirling.m4a"
+Dec 28 22:22 : player: played "hMMmmm/newpipe/Classroom of the Elite S2 OST - Manabu theme『PACT』[HQ Cover] by Enryu.m4a"
+Dec 28 22:28 : player: played "hMMmmm/newpipe/Classroom of the Elite S2 OST - Mastermind『X』[HQ Cover] by Enryu.m4a"
+Dec 28 22:30 : player: played "hMMmmm/newpipe/Classroom of the Elite S2 OST EP 3 -『Ayanokouji theme』[HQ Cover] by Enryu.m4a"
+Dec 28 22:34 : player: played "hMMmmm/newpipe/Classroom of the Elite Season 2 OP. Full _ Dance In The Game - Sub. Español 『AMV』.m4a"
+Dec 28 22:37 : player: played "hMMmmm/newpipe/L_s theme A.m4a"
+Dec 28 22:37 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 28 22:41 : player: played "hMMmmm/newpipe/Nightcore - After Dark.opus"
+Dec 28 22:41 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 28 22:44 : player: played "hMMmmm/newpipe/SLOWED + REVERB _ Carol of the Bells by Lindsey Stirling.m4a"
+Dec 28 22:49 : player: played "hMMmmm/newpipe/Classroom of the Elite S2 OST - Manabu theme『PACT』[HQ Cover] by Enryu.m4a"
+Dec 28 22:55 : player: played "hMMmmm/newpipe/Classroom of the Elite S2 OST - Mastermind『X』[HQ Cover] by Enryu.m4a"
+Dec 28 22:57 : player: played "hMMmmm/newpipe/Classroom of the Elite S2 OST EP 3 -『Ayanokouji theme』[HQ Cover] by Enryu.m4a"
+Dec 28 23:01 : player: played "hMMmmm/newpipe/Classroom of the Elite Season 2 OP. Full _ Dance In The Game - Sub. Español 『AMV』.m4a"
+Dec 28 23:04 : player: played "hMMmmm/newpipe/L_s theme A.m4a"
+Dec 28 23:04 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 28 23:08 : player: played "hMMmmm/newpipe/Nightcore - After Dark.opus"
+Dec 28 23:08 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 28 23:11 : player: played "hMMmmm/newpipe/SLOWED + REVERB _ Carol of the Bells by Lindsey Stirling.m4a"
+Dec 28 23:16 : player: played "hMMmmm/newpipe/Classroom of the Elite S2 OST - Manabu theme『PACT』[HQ Cover] by Enryu.m4a"
+Dec 28 23:22 : player: played "hMMmmm/newpipe/Classroom of the Elite S2 OST - Mastermind『X』[HQ Cover] by Enryu.m4a"
+Dec 28 23:25 : player: played "hMMmmm/newpipe/Classroom of the Elite S2 OST EP 3 -『Ayanokouji theme』[HQ Cover] by Enryu.m4a"
+Dec 28 23:28 : player: played "hMMmmm/newpipe/Classroom of the Elite Season 2 OP. Full _ Dance In The Game - Sub. Español 『AMV』.m4a"
+Dec 28 23:31 : player: played "hMMmmm/newpipe/L_s theme A.m4a"
+Dec 28 23:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 28 23:35 : player: played "hMMmmm/newpipe/Nightcore - After Dark.opus"
+Dec 28 23:35 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Dec 28 23:38 : player: played "hMMmmm/newpipe/SLOWED + REVERB _ Carol of the Bells by Lindsey Stirling.m4a"
+Dec 28 23:43 : player: played "hMMmmm/newpipe/Classroom of the Elite S2 OST - Manabu theme『PACT』[HQ Cover] by Enryu.m4a"
+Dec 28 23:49 : player: played "hMMmmm/newpipe/Classroom of the Elite S2 OST - Mastermind『X』[HQ Cover] by Enryu.m4a"

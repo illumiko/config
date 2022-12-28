@@ -1,8 +1,8 @@
 sw_volume: 100
 audio_device_state:1:default detected output
-state: pause
-current: 11
-time: 241.017000
+state: play
+current: 1
+time: 120.058000
 random: 0
 repeat: 1
 single: 0
@@ -11,22 +11,11 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:hMMmmm/Playlists/liked/Tear_in_My_Heart.mp3
-1:hMMmmm/Playlists/liked/Dance_With_My_Father.mp3
-2:hMMmmm/Playlists/liked/Eternal_-_Similar_Outskirts_Remix.mp3
-3:hMMmmm/Playlists/liked/Everything_Goes_On.mp3
-4:hMMmmm/Playlists/liked/Lovers__Oath.mp3
-5:hMMmmm/Playlists/liked/Ghost_-_Acoustic.mp3
-6:hMMmmm/Playlists/liked/TV.mp3
-7:hMMmmm/Playlists/liked/I_Am_Falling_For_You.mp3
-8:hMMmmm/Playlists/liked/I_Can_t_Handle_Change.mp3
-9:hMMmmm/Playlists/liked/Innocently_Annoying.mp3
-10:hMMmmm/Playlists/liked/Ship_in_a_Bottle.mp3
-11:hMMmmm/Playlists/liked/We_re_Screwed.mp3
-12:hMMmmm/Playlists/liked/Nisha_Labyrinth__feat__Sophiya_.mp3
-13:hMMmmm/Playlists/liked/Patchwork_Staccato.mp3
-14:hMMmmm/Playlists/liked/Ikanaide_-_album_ver.mp3
-15:hMMmmm/Playlists/liked/Scatman__ski-ba-bop-ba-dop-bop_.mp3
-16:hMMmmm/Playlists/liked/She_Will_Be_Loved.mp3
-17:hMMmmm/Playlists/liked/sorry_haha_i_fell_asleep.mp3
+0:hMMmmm/newpipe/Classroom of the Elite S2 OST - Manabu theme『PACT』[HQ Cover] by Enryu.m4a
+1:hMMmmm/newpipe/Classroom of the Elite S2 OST - Mastermind『X』[HQ Cover] by Enryu.m4a
+2:hMMmmm/newpipe/Classroom of the Elite S2 OST EP 3 -『Ayanokouji theme』[HQ Cover] by Enryu.m4a
+3:hMMmmm/newpipe/Classroom of the Elite Season 2 OP. Full _ Dance In The Game - Sub. Español 『AMV』.m4a
+4:hMMmmm/newpipe/L_s theme A.m4a
+5:hMMmmm/newpipe/Nightcore - After Dark.opus
+6:hMMmmm/newpipe/SLOWED + REVERB _ Carol of the Bells by Lindsey Stirling.m4a
 playlist_end
