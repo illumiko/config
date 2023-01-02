@@ -1,4 +1,4 @@
-function transparent()-- {{{
+local transparent = function ()-- {{{
 	local transparent = { "VertSplit", "FloatBorder", "WinSeparator", "LspInlayHint", "IndentBlanklineSpaceChar" }
 	for _, value in pairs(transparent) do
 		vim.cmd("hi " .. value .. " guibg=none guifg=none")

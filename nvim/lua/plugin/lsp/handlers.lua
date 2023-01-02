@@ -53,6 +53,7 @@ local function lsp_highlight_document(client)
 	illuminate.on_attach(client)
 	-- end
 end
+
 local function nav(client, bufnr)
 	local status_ok, navic = pcall(require, "nvim-navic")
 	if not status_ok then
@@ -60,6 +61,7 @@ local function nav(client, bufnr)
 	end
 	navic.attach(client, bufnr)
 end
+
 local function inlay_hints(client, bufnr)
 	local status_ok, inlay = pcall(require, "lsp-inlayhints")
 	if not status_ok then
@@ -67,18 +69,24 @@ local function inlay_hints(client, bufnr)
 	end
 	inlay.on_attach(client, bufnr)
 end
+
 local function lsp_keymaps(bufnr)
 	-- local opts = { noremap = true, silent = true }
-	local map = vim.api.nvim_buf_set_keymap
-	map(0, "n", "gr", "<cmd>Lspsaga rename<cr>", { silent = true, noremap = true })
-	map(0, "n", "gx", "<cmd>Lspsaga code_action<cr>", { silent = true, noremap = true })
-	-- map(0, "x", "gx", ":<c-u>Lspsaga range_code_action<cr>", { silent = true, noremap = true })
-	map(0, "n", "go", "<cmd>Lspsaga show_line_diagnostics<cr>", { silent = true, noremap = true })
-	map(0, "n", "gj", "<cmd>Lspsaga diagnostic_jump_next<cr>", { silent = true, noremap = true })
-	map(0, "n", "gk", "<cmd>Lspsaga diagnostic_jump_prev<cr>", { silent = true, noremap = true })
-	map(0, "n", "<C-u>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1, '<c-u>')<cr>", {})
-	map(0, "n", "<C-d>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1, '<c-d>')<cr>", {})
+	local nmap = require("utils.maps").nmap
+	local opts = require("utils.maps").opts
+
+	nmap("K", vim.lsp.buf.hover, opts("Hover"))
+	nmap("grn", vim.lsp.buf.rename, opts("Rename"))
+	nmap("gx", vim.lsp.buf.code_action, opts("Code Action"))
+	nmap("gd", vim.lsp.buf.definition, opts("Goto Def"))
+	nmap("gt", vim.lsp.buf.type_definition, opts("Goto Def"))
+	nmap("gi", vim.lsp.buf.implementation, opts("implementation"))
+	nmap("gr", vim.lsp.buf.references, opts("References"))
+	nmap("go", vim.diagnostic.open_float, opts("Diagnostic View"))
+	nmap("gj", vim.diagnostic.goto_next, opts("J Diagnostic"))
+	nmap("gk", vim.diagnostic.goto_prev, opts("K Diagnostic"))
 end
+
 M.on_attach = function(client, bufnr)
 	if client.name == "tsserver" then
 		client.resolved_capabilities.document_formatting = false

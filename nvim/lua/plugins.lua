@@ -47,18 +47,29 @@ return {
 			})
 		end, -- }}}
 		keys = { -- {{{
-			{ "<space>ld", "<cmd>lua vim.lsp.buf.definition()<CR>", desc = "Goto Definition File" },
-			{ "<space>lpd", ":lua require('goto-preview').goto_preview_definition()<cr>", desc = "Preview Definition" },
 			{
-				"<space>lpi",
+				"gD",
+				":lua require('goto-preview').goto_preview_definition()<cr>",
+				silent = true,
+				desc = "Preview Definition",
+			},
+			{
+				"gI",
 				":lua require('goto-preview').goto_preview_implementation()<cr>",
+				silent = true,
 				desc = "Preview Implementation",
 			},
-			{ "<space>lpc", ":lua require('goto-preview').close_all_win()<cr>", desc = "Close Preview" },
-			{ "<space>lpr", ":lua require('goto-preview').goto_preview_references()<cr>", desc = "Preview References" },
+			{ "gc", ":lua require('goto-preview').close_all_win()<cr>", silent = true, desc = "Close Preview" },
+			{
+				"gR",
+				":lua require('goto-preview').goto_preview_references()<cr>",
+				silent = true,
+				desc = "Preview References",
+			},
 		}, -- }}}
 	}, -- }}}
-
+	--[[Nvim config]]
+	"folke/neodev.nvim",
 	--[[#Completion]]
 	{
 		"hrsh7th/nvim-cmp",
@@ -92,6 +103,49 @@ return {
 	},
 
 	--[[#Utility]]
+
+	{ "anuvyklack/fold-preview.nvim" },
+	"lukas-reineke/indent-blankline.nvim",
+	-- "xiyaowong/nvim-transparent",
+	"matze/vim-move",
+	-- "Pocco81/AutoSave.nvim",
+	"romainl/vim-devdocs",
+	"osyo-manga/vim-over",
+	"jghauser/mkdir.nvim",
+	"mg979/vim-visual-multi",
+	"folke/which-key.nvim",
+	{
+		url = "https://gitlab.com/yorickpeterse/nvim-window.git",
+		keys = { { "<leader>w", ":lua require('nvim-window').pick()<CR>", desc = "window picker" } },
+	},
+	"numToStr/Comment.nvim",
+	"windwp/nvim-autopairs",
+	-- "SmiteshP/nvim-navic",
+	"winston0410/range-highlight.nvim",
+	"numToStr/Navigator.nvim",
+	"rhysd/accelerated-jk",
+	-- {{{,
+	-- {
+	-- 	"nkakouros-original/numbers.nvim",
+	-- 	config = function()
+	-- 		require("numbers").setup({
+	-- 			exclude_filetypes = { "alpha", "toggleterm", "TelescopePrompt", "neo-tree" },
+	-- 		})
+	-- 	end,
+	-- },
+	{
+		"nvim-zh/colorful-winsep.nvim",
+		config = function()
+			require("colorful-winsep").setup()
+		end,
+	},
+
+	{
+		"luukvbaal/stabilize.nvim",
+		config = function()
+			require("stabilize").setup()
+		end,
+	},
 	{
 		"kazhala/close-buffers.nvim",
 		keys = {
@@ -112,30 +166,12 @@ return {
 			},
 		},
 	},
-    { "anuvyklack/fold-preview.nvim", },
-	"lukas-reineke/indent-blankline.nvim",
-	-- "xiyaowong/nvim-transparent",
-	"matze/vim-move",
-	-- "Pocco81/AutoSave.nvim",
-	"romainl/vim-devdocs",
-	"osyo-manga/vim-over",
-	"jghauser/mkdir.nvim",
-	"mg979/vim-visual-multi",
-	"folke/which-key.nvim",
-	{ url = "https://gitlab.com/yorickpeterse/nvim-window.git" },
-	"numToStr/Comment.nvim",
-	"windwp/nvim-autopairs",
-	-- "SmiteshP/nvim-navic",
-	"winston0410/range-highlight.nvim",
-	"numToStr/Navigator.nvim",
-	-- {{{,
-	{
-
+	--[[ {
 		"beauwilliams/focus.nvim",
 		config = function()
 			require("focus").setup({ width = 95 })
 		end,
-	},
+	}, ]]
 	{
 		"lewis6991/impatient.nvim",
 	},
@@ -288,6 +324,7 @@ return {
 	{ "sainnhe/everforest", lazy = true },
 	{ "RishabhRD/gruvy", lazy = true },
 	{ "folke/tokyonight.nvim", lazy = true },
+	{ "navarasu/onedark.nvim", lazy = true },
 	-- "glepnir/zephyr-nvim",
 	{ "catppuccin/nvim", name = "catppuccin", lazy = true },
 	{ "rebelot/kanagawa.nvim", lazy = true }, -- kangawa}}}

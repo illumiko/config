@@ -1,7 +1,7 @@
 vim.opt.backup = false -- creates a backup file
 -- vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
 vim.opt.cmdheight = 1 -- more space in the neovim command line for displaying messages
-vim.opt.colorcolumn = "100" -- fixes indentline for now
+-- vim.opt.colorcolumn = "100" -- fixes indentline for now
 vim.opt.conceallevel = 0 -- so that `` is visible in markdown files
 vim.opt.hidden = true -- required to keep multiple buffers and open multiple buffers
 vim.opt.ignorecase = true -- ignore case in search patterns
@@ -30,12 +30,18 @@ vim.opt.signcolumn = "yes" -- always show the sign column otherwise it would shi
 vim.opt.wrap = false -- display lines as one long line
 vim.opt.spell = false
 vim.opt.spelllang = "en"
-vim.opt.scrolloff = 0 -- use this with zz(centers view)
+vim.opt.scrolloff = 4 -- use this with zz(centers view)
 vim.opt.sidescrolloff = 0
 vim.opt.softtabstop = 4
 vim.opt.laststatus = 3
 vim.opt.number = false
 vim.opt.relativenumber = false
+vim.opt.breakindent = true
+vim.opt.wh = 20
+vim.opt.wiw = 110
+vim.opt.showbreak = string.rep(" ", 3) 
+-- Make it so that long lines wrap smartly
+vim.opt.linebreak = true
 vim.opt.fillchars:append({
 	horiz = "━",
 	horizup = "┻",
@@ -52,7 +58,7 @@ vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
 })
 vim.cmd([[
 command Journal source ~/Documents/norg/sessions/vp.vim
-
+set noshowcmd noruler
 set foldtext=v:folddashes.substitute(getline(v:foldstart),'/\\*\\\|\\*/\\\|{{{\\d\\=','','g')
 ]])
 --local add_cmd = vim.api.nvim_create_autocmd("NeorgToMd", function()

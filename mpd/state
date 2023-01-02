@@ -1,8 +1,8 @@
 sw_volume: 100
 audio_device_state:1:default detected output
-state: play
+state: pause
 current: 1
-time: 120.058000
+time: 197.563000
 random: 0
 repeat: 1
 single: 0
@@ -11,11 +11,8 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:hMMmmm/newpipe/Classroom of the Elite S2 OST - Manabu theme『PACT』[HQ Cover] by Enryu.m4a
-1:hMMmmm/newpipe/Classroom of the Elite S2 OST - Mastermind『X』[HQ Cover] by Enryu.m4a
-2:hMMmmm/newpipe/Classroom of the Elite S2 OST EP 3 -『Ayanokouji theme』[HQ Cover] by Enryu.m4a
-3:hMMmmm/newpipe/Classroom of the Elite Season 2 OP. Full _ Dance In The Game - Sub. Español 『AMV』.m4a
-4:hMMmmm/newpipe/L_s theme A.m4a
-5:hMMmmm/newpipe/Nightcore - After Dark.opus
-6:hMMmmm/newpipe/SLOWED + REVERB _ Carol of the Bells by Lindsey Stirling.m4a
+0:youtubeDl/a classical music for reading, writing and studying ✒️📖☕✨.mp3
+1:youtubeDl/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3
+2:youtubeDl/【Anime BGM】Warning! This Will Make You Cry.mp3
+3:youtubeDl/Best Atmospheric Phonk ｜ Phonk Study.mp3
 playlist_end

@@ -2,13 +2,13 @@ require("user.settings")
 require("manager")
 require("user.keymaps")
 require("impatient")
--- require("user.autocmds")
+require("user.autocmds")
 require("plugin.lsp")
-require("user.highlights")
 -- require("plugin.session_manager")
 -- require("plugin.window_picker")
 require("plugin.fold_prev")
 require("user.colorscheme")
+require("user.highlights")
 require("plugin.indent_lines")
 require("plugin.start_page")
 require("range-highlight").setup()
@@ -32,10 +32,7 @@ require("plugin.git_signs")
 require("plugin.format.format")
 require("plugin.cursor_context")
 require("plugin.telescope_conf")
---[[ require("plugin.winbar_config") ]]
--- if vim.g.neovide then
--- 	vim.cmd([[
---         set guifont=Comic\ Code\ Ligatures:h13
---     ]])
--- 	vim.g.neovide_transparency = 1
--- end
+-- [[ --[[ require("plugin.winbar_config") ]]
+if vim.g.neovide then
+    require("user.neovide")
+end

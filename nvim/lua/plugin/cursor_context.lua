@@ -5,7 +5,7 @@ require("nvim_context_vt").setup({
 
 	-- Override default virtual text prefix
 	-- Default: '-->'
-	prefix = "",
+	prefix = "  ",
 
 	-- Override the internal highlight group name
 	-- Default: 'ContextVt'
