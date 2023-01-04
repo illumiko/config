@@ -1,4 +1,21 @@
-local status_ok, lsp_installer = pcall(require, "nvim-lsp-installer")
+require("mason").setup()
+require("mason-lspconfig").setup()
+
+require("mason-lspconfig").setup_handlers({
+	-- The first entry (without a key) will be the default handler
+	-- and will be called for each installed server that doesn't have
+	-- a dedicated handler.
+	function(server_name) -- default handler (optional)
+		require("lspconfig")[server_name].setup({})
+	end,
+	-- Next, you can provide a dedicated handler for specific servers.
+	-- For example, a handler override for the `rust_analyzer`:
+	-- ["rust_analyzer"] = function()
+	-- 	require("rust-tools").setup({})
+	-- end,
+})
+
+--[=[ local status_ok, lsp_installer = pcall(require, "nvim-lsp-installer")-- {{{
 if not status_ok then
 	return
 end
@@ -33,4 +50,4 @@ lsp_installer.on_server_ready(function(server)
 	-- This setup() function is exactly the same as lspconfig's setup function.
 	-- Refer to https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 	server:setup(opts)
-end)
+end)-- }}} ]=]

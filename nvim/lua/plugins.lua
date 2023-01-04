@@ -10,8 +10,9 @@ return {
 
 	-- [[#LSP]]
 	"neovim/nvim-lspconfig", --lsp base
-	"williamboman/nvim-lsp-installer", --auto lsp installer
+	"williamboman/mason.nvim",
 	"tami5/lspsaga.nvim", -- nightly
+    "williamboman/mason-lspconfig.nvim",
 	"lvimuser/lsp-inlayhints.nvim",
 	{ -- {{{"ahmedkhalf/project.nvim",
 		"ahmedkhalf/project.nvim",
@@ -69,7 +70,7 @@ return {
 		}, -- }}}
 	}, -- }}}
 	--[[Nvim config]]
-	"folke/neodev.nvim",
+	-- "folke/neodev.nvim",
 	--[[#Completion]]
 	{
 		"hrsh7th/nvim-cmp",

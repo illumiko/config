@@ -136,7 +136,7 @@ vim.cmd("colorscheme tokyonight")
 -- Catppuccin
 -- {{{
 require("catppuccin").setup({
-	flavour = "macchiato", -- latte, frappe, macchiato, mocha
+	flavour = "mocha", -- latte, frappe, macchiato, mocha
 	background = { -- :h background
 		light = "latte",
 		dark = "macchiato",
