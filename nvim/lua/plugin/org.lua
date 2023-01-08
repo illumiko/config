@@ -2,31 +2,36 @@ require("neorg").setup({
 	-- Tell Neorg what modules to load
 	load = {
 		["core.defaults"] = {}, -- Load all the default modules
-		["core.export"] = {-- {{{
+		["core.export"] = { -- {{{
 			config = {
 				extensions = "all",
 			},
-		},-- }}}
-		["core.norg.completion"] = {-- {{{
+		}, -- }}}
+		["core.norg.completion"] = { -- {{{
 			config = {
 				engine = "nvim-cmp", -- We current support nvim-compe and nvim-cmp only
 			},
-		},-- }}}
-		["core.keybinds"] = {-- {{{
+		}, -- }}}
+		["core.keybinds"] = { -- {{{
 			config = {
 				default_keybinds = true,
 				neorg_leader = "<Leader>o",
 			},
-		},-- }}}
-		["core.norg.journal"] = {-- {{{
+		}, -- }}}
+		["core.norg.journal"] = { -- {{{
 			config = { -- Note that this table is optional and doesn't need to be provided
 				-- Configuration here
-                workspace = "default",
+				workspace = "default",
 				jornal_folder = "./gtd/journal",
 				strategy = "flat",
 			},
-		},-- }}}
-		["core.norg.concealer"] = {}, -- Allows for use of icons
+		}, -- }}}
+		["core.norg.concealer"] = {
+			config = {
+				icon_preset = "diamond",
+				-- width = "content",
+			},
+		}, -- Allows for use of icons
 		["core.norg.dirman"] = { -- Manage your directories with Neorg{{{
 			config = {
 				workspaces = {
@@ -34,9 +39,9 @@ require("neorg").setup({
 				},
 				autochdir = false, -- Automatically change the directory to the current workspace's root every time
 				index = "index.norg", -- The name of the main (root) .norg file
-                open_last_workspace = false
+				open_last_workspace = false,
 			},
-		},-- }}}
+		}, -- }}}
 		--[[ ["core.gtd.base"] = {-- {{{
 			config = {
                 workspace = "example_gtd",

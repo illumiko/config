@@ -1,5 +1,5 @@
 import:
-  - ~/.config/alacritty/themes/catppuccin-mocha.yml
+  - ~/.config/alacritty/themes/doom_one.yml
 env:
   TERM: xterm-256color
 
@@ -12,7 +12,7 @@ window:
     x: 1
     y: 1
 font:
-  size: 10
+  size: 9
   offset:
     x: 0
     y: 0

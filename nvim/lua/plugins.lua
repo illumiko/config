@@ -11,8 +11,7 @@ return {
 	-- [[#LSP]]
 	"neovim/nvim-lspconfig", --lsp base
 	"williamboman/mason.nvim",
-	"tami5/lspsaga.nvim", -- nightly
-    "williamboman/mason-lspconfig.nvim",
+	"williamboman/mason-lspconfig.nvim",
 	"lvimuser/lsp-inlayhints.nvim",
 	{ -- {{{"ahmedkhalf/project.nvim",
 		"ahmedkhalf/project.nvim",
@@ -53,6 +52,7 @@ return {
 				":lua require('goto-preview').goto_preview_definition()<cr>",
 				silent = true,
 				desc = "Preview Definition",
+				noremap = true,
 			},
 			{
 				"gI",
@@ -105,6 +105,7 @@ return {
 
 	--[[#Utility]]
 
+	"wellle/targets.vim", -- better surround motions
 	{ "anuvyklack/fold-preview.nvim" },
 	"lukas-reineke/indent-blankline.nvim",
 	-- "xiyaowong/nvim-transparent",
@@ -117,7 +118,15 @@ return {
 	"folke/which-key.nvim",
 	{
 		url = "https://gitlab.com/yorickpeterse/nvim-window.git",
-		keys = { { "<leader>w", ":lua require('nvim-window').pick()<CR>", desc = "window picker" } },
+		keys = {
+			{
+				"<leader>w",
+				":lua require('nvim-window').pick()<CR>",
+				desc = "window picker",
+				silent = true,
+				noremap = true,
+			},
+		},
 	},
 	"numToStr/Comment.nvim",
 	"windwp/nvim-autopairs",
@@ -126,6 +135,13 @@ return {
 	"numToStr/Navigator.nvim",
 	"rhysd/accelerated-jk",
 	-- {{{,
+
+	{
+		"echasnovski/mini.animate",
+		config = function()
+			require("mini.animate").setup({ resize = { enable = false } })
+		end,
+	},
 	-- {
 	-- 	"nkakouros-original/numbers.nvim",
 	-- 	config = function()
@@ -134,13 +150,6 @@ return {
 	-- 		})
 	-- 	end,
 	-- },
-	{
-		"nvim-zh/colorful-winsep.nvim",
-		config = function()
-			require("colorful-winsep").setup()
-		end,
-	},
-
 	{
 		"luukvbaal/stabilize.nvim",
 		config = function()
@@ -154,16 +163,22 @@ return {
 				"<leader>bdh",
 				[[<CMD>lua require('close_buffers').delete({type = 'hidden'})<CR>]],
 				desc = "Hidden bufdel",
+				silent = true,
+				noremap = true,
 			},
 			{
 				"<leader>bdn",
 				[[<CMD>lua require('close_buffers').delete({type = 'nameless'})<CR>]],
 				desc = "Nameless bufdel",
+				silent = true,
+				noremap = true,
 			},
 			{
 				"<leader>bdd",
 				[[<CMD>lua require('close_buffers').delete({type = 'this'})<CR>]],
 				desc = "Current bufdel",
+				silent = true,
+				noremap = true,
 			},
 		},
 	},
@@ -189,11 +204,11 @@ return {
 			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
 		end,
 		keys = {
-			{ "f", ":HopWordCurrentLine<CR>", desc = "Line hop" },
-			{ "F", ":HopChar1CurrentLine<CR>", desc = "Char hop" },
-			{ "<leader>hl", ":HopLine<CR>", desc = "Line Hop" },
-			{ "<leader>hc", ":HopChar1<CR>", desc = "Char Hop" },
-			{ "<leader>hw", ":HopWord<CR>", desc = "Word Hop" },
+			{ "f", ":HopWordCurrentLine<CR>", desc = "Line hop", noremap = true, silent = true },
+			{ "F", ":HopChar1CurrentLine<CR>", desc = "Char hop", noremap = true, silent = true },
+			{ "<leader>hl", ":HopLine<CR>", desc = "Line Hop", noremap = true, silent = true },
+			{ "<leader>hc", ":HopChar1<CR>", desc = "Char Hop", noremap = true, silent = true },
+			{ "<leader>hw", ":HopWord<CR>", desc = "Word Hop", noremap = true, silent = true },
 		},
 	},
 	-- {
@@ -216,7 +231,7 @@ return {
 		"nvim-neo-tree/neo-tree.nvim",
 		branch = "v2.x",
 		keys = {
-			{ "<Leader>e", ":NeoTreeFocusToggle<CR>", desc = "Explorer" },
+			{ "<Leader>e", ":NeoTreeFocusToggle<CR>", desc = "Explorer", silent = true, noremap = true },
 		},
 	},
 
@@ -267,6 +282,8 @@ return {
 					local path = vim.fn.expand("%:p:h")
 					return vim.cmd(vim.v.count .. " ToggleTerm dir=" .. path)
 				end,
+				silent = true,
+				noremap = true,
 				desc = "",
 			},
 		},
@@ -322,6 +339,7 @@ return {
 	},
 
 	--[[#colorscheme]]
+	{ "NTBBloodbath/doom-one.nvim", lazy = true },
 	{ "sainnhe/everforest", lazy = true },
 	{ "RishabhRD/gruvy", lazy = true },
 	{ "folke/tokyonight.nvim", lazy = true },

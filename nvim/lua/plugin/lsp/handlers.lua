@@ -75,7 +75,6 @@ local function lsp_keymaps(bufnr)
 	local nmap = require("utils.maps").nmap
 	local opts = require("utils.maps").opts
 
-	nmap("K", vim.lsp.buf.hover, opts("Hover"))
 	nmap("grn", vim.lsp.buf.rename, opts("Rename"))
 	nmap("gx", vim.lsp.buf.code_action, opts("Code Action"))
 	nmap("gd", vim.lsp.buf.definition, opts("Goto Def"))
@@ -85,6 +84,7 @@ local function lsp_keymaps(bufnr)
 	nmap("go", vim.diagnostic.open_float, opts("Diagnostic View"))
 	nmap("gj", vim.diagnostic.goto_next, opts("J Diagnostic"))
 	nmap("gk", vim.diagnostic.goto_prev, opts("K Diagnostic"))
+	nmap("K", vim.lsp.buf.hover, opts("Hover"))
 end
 
 M.on_attach = function(client, bufnr)
@@ -92,9 +92,9 @@ M.on_attach = function(client, bufnr)
 		client.resolved_capabilities.document_formatting = false
 	end
 	nav(client, bufnr)
-	lsp_keymaps(bufnr)
 	lsp_highlight_document(client)
 	inlay_hints(client, bufnr)
+	lsp_keymaps(bufnr)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()

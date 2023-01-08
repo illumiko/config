@@ -1,19 +1,3 @@
--- Rasmus
---[[ -- {{{
-vim.api.nvim_command([=[
-colorscheme rasmus
-hi BufferVisible guibg=#444444 guifg=#666666
-hi BufferVisibleSign guibg=#444444 guifg=#666666
-hi BufferVisibleIndex guibg=#444444 guifg=#666666
-hi PmenuSel guibg=#7bb099
-hi LspReferenceRead guibg=#4b4b49 guifg=none
-hi LspReferenceText guibg=#4b4b49 guifg=none
-hi LspReferenceWrite guibg=#4b4b49 guifg=none
-hi CmpItemKindSnippet guifg=#7bb099
-hi CmpItemKindText guifg=#d1d1d1
-hi CmpItemKindKeyword guifg=#ffc591
-hi NormalNc guibg=#16181c
-]=])-- }}} ]]
 -- Kanagawa
 --[[ -- {{{
 vim.opt.laststatus = 3
@@ -47,40 +31,6 @@ vim.cmd([=[
 colorscheme kanagawa
 hi link CmpPmenu Normal
 ]=])
--- }}} ]]
--- Zyphyr
---[[ -- {{{
-vim.api.nvim_command([=[
-colorscheme zephyr
-hi NormalNc guibg=#16181c
-]=])-- }}} ]]
--- one nord
---[[ -- {{{
-require("onenord").setup({
-	theme = nil, -- "dark" or "light". Alternatively, remove the option and set vim.o.background instead
-	borders = true, -- Split window borders
-	fade_nc = true, -- Fade non-current windows, making them more distinguishable
-	-- Style that is applied to various groups: see `highlight-args` for options
-	styles = {
-		comments = "italic",
-		strings = "NONE",
-		keywords = "italic",
-		functions = "bold,italic",
-		variables = "NONE",
-		diagnostics = "underline",
-	},
-	disable = {
-		background = false, -- Disable setting the background color
-		cursorline = false, -- Disable the cursorline
-		eob_lines = true, -- Hide the end-of-buffer lines
-	},
-	-- Inverse highlight for different groups
-	inverse = {
-		match_paren = true,
-	},
-	custom_highlights = {}, -- Overwrite default highlight groups
-	custom_colors = {}, -- Overwrite default colors
-})
 -- }}} ]]
 -- tokyonight
 --[[ -- {{{
@@ -134,7 +84,7 @@ require("tokyonight").setup({
 vim.cmd("colorscheme tokyonight")
 -- }}} ]]
 -- Catppuccin
--- {{{
+--[[ -- {{{
 require("catppuccin").setup({
 	flavour = "mocha", -- latte, frappe, macchiato, mocha
 	background = { -- :h background
@@ -170,22 +120,22 @@ require("catppuccin").setup({
 		cmp = true,
 		gitsigns = true,
 		telescope = true,
-        neotree=true,
-        treesitter_context=true,
-        lsp_saga=true,
-        hop=true,
-        barbar=true,
-        treesitter=true,
-        illuminate = true,
+		neotree = true,
+		treesitter_context = true,
+		lsp_saga = true,
+		hop = true,
+		barbar = true,
+		treesitter = true,
+		illuminate = true,
 		notify = false,
-        which_key= true,
+		which_key = true,
 		mini = false,
 		-- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
 	},
 })
 
 -- setup must be called before loading
-vim.cmd("colorscheme catppuccin") -- }}}
+vim.cmd("colorscheme catppuccin") -- }}} ]]
 -- onedark
 --[[ --{{{
 require('onedark').setup  {
@@ -228,3 +178,36 @@ require('onedark').setup  {
     },
 }
 vim.cmd("colorscheme onedark")-- }}} ]]
+-- one DOOM
+-- {{{
+-- Add color to cursor
+vim.g.doom_one_cursor_coloring = true
+-- Set :terminal colors
+vim.g.doom_one_terminal_colors = true
+-- Enable italic comments
+vim.g.doom_one_italic_comments = false
+-- Enable TS support
+vim.g.doom_one_enable_treesitter = true
+-- Color whole diagnostic text or only underline
+vim.g.doom_one_diagnostics_text_color = false
+-- Enable transparent background
+vim.g.doom_one_transparent_background = false
+
+-- Pumblend transparency
+vim.g.doom_one_pumblend_enable = false
+vim.g.doom_one_pumblend_transparency = 20
+
+-- Plugins integration
+vim.g.doom_one_plugin_neorg = true
+vim.g.doom_one_plugin_barbar = true
+vim.g.doom_one_plugin_telescope = false
+vim.g.doom_one_plugin_neogit = false
+vim.g.doom_one_plugin_nvim_tree = false
+vim.g.doom_one_plugin_dashboard = false
+vim.g.doom_one_plugin_startify = true
+vim.g.doom_one_plugin_whichkey = true
+vim.g.doom_one_plugin_indent_blankline = true
+vim.g.doom_one_plugin_vim_illuminate = true
+vim.g.doom_one_plugin_lspsaga = false
+vim.cmd("colorscheme doom-one")
+-- }}}

@@ -37,8 +37,8 @@ vim.opt.laststatus = 3
 vim.opt.number = false
 vim.opt.relativenumber = false
 vim.opt.breakindent = true
-vim.opt.wh = 20
-vim.opt.wiw = 110
+vim.opt.wh = 25
+vim.opt.wiw = 120
 vim.opt.showbreak = string.rep(" ", 3) 
 -- Make it so that long lines wrap smartly
 vim.opt.linebreak = true
@@ -59,7 +59,7 @@ vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
 vim.cmd([[
 command Journal source ~/Documents/norg/sessions/vp.vim
 set noshowcmd noruler
-set foldtext=v:folddashes.substitute(getline(v:foldstart),'/\\*\\\|\\*/\\\|{{{\\d\\=','','g')
+"set foldtext=v:folddashes.substitute(getline(v:foldstart),'/\\*\\\|\\*/\\\|{{{\\d\\=','','g')
 ]])
 --local add_cmd = vim.api.nvim_create_autocmd("NeorgToMd", function()
 ----    -- File name without extension .

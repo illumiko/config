@@ -6,7 +6,10 @@ require("mason-lspconfig").setup_handlers({
 	-- and will be called for each installed server that doesn't have
 	-- a dedicated handler.
 	function(server_name) -- default handler (optional)
-		require("lspconfig")[server_name].setup({})
+		require("lspconfig")[server_name].setup({
+			on_attach = require("plugin.lsp.handlers").on_attach,
+			capabilities = require("plugin.lsp.handlers").capabilities,
+		})
 	end,
 	-- Next, you can provide a dedicated handler for specific servers.
 	-- For example, a handler override for the `rust_analyzer`:

@@ -3,6 +3,9 @@
     "Lua.diagnostics.disable": [
         "redefined-local"
     ],
+    "Lua.diagnostics.globals": [
+        "vim"
+    ],
     "Lua.workspace.library": [
         "/home/illumiko/.local/share/nvim/lazy/neodev.nvim/types/stable",
         "/usr/share/nvim/runtime",

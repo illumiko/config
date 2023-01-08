@@ -5,7 +5,7 @@ end
 require("lsp-inlayhints").setup()
 require("plugin.lsp.handlers").setup()
 require("plugin.lsp.lspInstaller")
--- {{{ for emmet
+--[[ -- {{{ for emmet
 local lspconfig = require("lspconfig")
 local configs = require("lspconfig.configs")
 
@@ -28,4 +28,4 @@ if not configs.ls_emmet then
 	}
 end
 
-lspconfig.ls_emmet.setup({ capabilities = capabilities }) -- }}}
+lspconfig.ls_emmet.setup({ capabilities = capabilities }) -- }}} ]]
