@@ -12,6 +12,7 @@
 #Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $terminal kitty
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -44,7 +45,7 @@ floating_modifier $mod
 # start a terminal
 #bindsym $mod+Return exec xfce4-terminal 
 # bindsym $mod+Return exec kitty
-bindsym $mod+Return exec alacritty 
+bindsym $mod+Return exec $terminal 
 
 
 # kill focused window
@@ -226,9 +227,9 @@ client.background       $bg
     #bindsym $mod+o exec code .config/i3/config
     #bindsym $mod+o exec okular
     bindsym $mod+shift+f floating toggle
-    bindsym $mod+g exec alacritty -e ranger
-    bindsym $mod+m exec alacritty -e ncmpcpp
-    bindsym $mod+b exec alacritty -e bluetoothctl
+    bindsym $mod+g exec $terminal -e ranger
+    bindsym $mod+m exec $terminal -e ncmpcpp
+    bindsym $mod+b exec $terminal -e bluetoothctl
     bindsym $mod+F2 exec amixer -D pulse sset Master 5%-
     bindsym $mod+F3 exec amixer -D pulse sset Master 5%+
     bindsym $mod+F4 exec brightnessctl s 10%-
@@ -263,7 +264,6 @@ client.background       $bg
     # exec_always feh --scale-down Pictures/Wallpaper/bg-2.png
     #for mouse prop
     exec_always xinput set-prop 10 301 0.5
-    exec alacritty -e tmux -u -c "nvim /home/illumiko/Documents/norg/index.norg"
     #exec_always indicator-stickynotes
     #exec_always codium ~/Documents/Notes/thingsToDo(longTerm)/longTerm.todo.md
     # exec_always nm-applet   #for mint wifi icon
@@ -278,7 +278,7 @@ client.background       $bg
     exec wal -R
 
 #with i3 gaps
-    for_window [class=kitty] floating enable, sticky enable,move up 550px, resize set 400 100
+    for_window [class=Alacritty] floating enable, sticky enable,move up 550px,move left 125px, resize set 400 100
     for_window [instance=discord] sticky enable
     for_window [class=".*"] border pixel 4
     gaps inner 10

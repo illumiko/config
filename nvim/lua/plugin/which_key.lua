@@ -13,7 +13,11 @@ require("which-key").setup({
 		padding = { 1, 1, 1, 1 }, -- extra window padding [top, right, bottom, left]
 		winblend = 0,
 	},
-
+    plugins = {
+        presets = {
+            operators = false
+        }
+    }
 	-- your configuration comes here
 	-- or leave it empty to use the default settings
 	-- refer to the configuration section below
