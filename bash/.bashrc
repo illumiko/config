@@ -24,6 +24,7 @@ alias journal="nvim ~/Documents/norg/index.norg"
 alias yt-dlp='yt-dlp --config-locations "~/.config/yt-dlp.conf"'
 alias pomodoro="go run ~/Documents/Projects/Personal/godoro/main.go"
 
+
 alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
@@ -32,3 +33,4 @@ alias rm='rm -i'
 export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="brave"
+export PATH="$PATH:$HOME/.local/share/go/bin/"
