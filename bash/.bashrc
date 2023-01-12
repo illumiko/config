@@ -34,3 +34,19 @@ export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="brave"
 export PATH="$PATH:$HOME/.local/share/go/bin/"
+
+
+#FZF
+if [[ ! "$PATH" == */home/illumiko/.fzf/bin* ]]; then
+  PATH="${PATH:+${PATH}:}/home/illumiko/.fzf/bin"
+fi
+
+# Auto-completion
+# ---------------
+[[ $- == *i* ]] && source "/home/illumiko/.config/bash/completion.bash" 2> /dev/null
+
+# Key bindings
+# ------------
+source "/home/illumiko/.config/bash/key-bindings.bash"
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border=bold'
+export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"

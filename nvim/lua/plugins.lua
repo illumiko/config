@@ -136,7 +136,7 @@ return {
 	"numToStr/Navigator.nvim",
 	"rhysd/accelerated-jk",
 	-- {{{,
-
+    {"petertriho/nvim-scrollbar", config= true},
 	{
 		"echasnovski/mini.animate",
 		config = function()

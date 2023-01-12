@@ -1039,3 +1039,10 @@ Jan 11 17:44 : player: played "youtubeDl/lets escape from reality ⧸⧸ #playli
 Jan 11 17:44 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
 Jan 11 17:44 : player: played "hMMmmm/lofi/[Piano x ASMR🎧] 귀멸의칼날 _ 탄지로의 숯 배달 체험하기🌨.mp3"
 Jan 11 17:44 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 11 19:50 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 12 07:45 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 12 08:24 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 12 12:04 : update: added youtubeDl/CLANNAD, CLANNAD After story - Sad Soundtrack Collection.mp3
+Jan 12 12:04 : update: added youtubeDl/CLANNAD, CLANNAD After story - Sad Soundtrack Collection.webm
+Jan 12 12:05 : update: removing youtubeDl/CLANNAD, CLANNAD After story - Sad Soundtrack Collection.webm
+Jan 12 12:05 : update: updating youtubeDl/CLANNAD, CLANNAD After story - Sad Soundtrack Collection.mp3
