@@ -24,7 +24,7 @@ tramp
 /eshell/lastdir
 
 # elpa packages
-/elpa/
+elpa
 
 # reftex files
 *.rel
