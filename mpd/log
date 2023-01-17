@@ -1258,3 +1258,12 @@ Jan 17 11:09 : player: played "hMMmmm/Playlists/liked/Innocently_Annoying.mp3"
 Jan 17 11:12 : player: played "hMMmmm/Playlists/liked/I_Am_Falling_For_You.mp3"
 Jan 17 11:54 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
 Jan 17 11:54 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 17 22:32 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 17 22:33 : player: played "hMMmmm/Playlists/liked/Anna Blue - I Against Me.mp3"
+Jan 17 22:33 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 17 22:34 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 17 22:34 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 17 22:34 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 17 22:35 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 17 23:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 17 23:45 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM

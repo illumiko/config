@@ -32,6 +32,7 @@ require("plugin.git_signs")
 require("plugin.format.format")
 require("plugin.cursor_context")
 require("plugin.telescope_conf")
+require("plugin.due_conf")
 -- [[ --[[ require("plugin.winbar_config") ]]
 if vim.g.neovide then
     require("user.neovide")

@@ -237,6 +237,7 @@ return {
 
 	--[[#Note talking/Scheduling etc]]
 	{ "nvim-neorg/neorg", ft = "norg" },
+    { 'NFrid/due.nvim', ft="norg"  },
 	{
 		"dhruvasagar/vim-table-mode",
 		ft = "norg",

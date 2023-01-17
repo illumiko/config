@@ -8,7 +8,7 @@ set bell-style visual
 alias PJC="cd ~/Documents/Projects/Course/" #dir shortcut 
 alias PJP="cd ~/Documents/Projects/Personal/" #dir shortcut 
 alias PJT="cd ~/Documents/Projects/Testing/" #dir shortcut 
-alias nvimrc='nvim ~/.config/nvim/init.lua' #open nvimrc
+alias nvrc='nvim ~/.config/nvim/init.lua' #open nvimrc
 alias python='python3.8' #open nvimrc
 alias poweroff='systemctl poweroff' #turning off pc 
 alias anime='~/Apps/ani-cli/ani-cli' #anime cli
