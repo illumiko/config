@@ -104,7 +104,6 @@ return {
 	},
 
 	--[[#Utility]]
-
     "mvllow/modes.nvim",
 	"wellle/targets.vim", -- better surround motions
 	{ "anuvyklack/fold-preview.nvim" },

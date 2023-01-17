@@ -75,7 +75,7 @@ local function lsp_keymaps(bufnr)
 	local nmap = require("utils.maps").nmap
 	local opts = require("utils.maps").opts
 
-	nmap("grn", vim.lsp.buf.rename, opts("Rename"))
+	nmap("rn", vim.lsp.buf.rename, opts("Rename"))
 	nmap("gx", vim.lsp.buf.code_action, opts("Code Action"))
 	nmap("gd", vim.lsp.buf.definition, opts("Goto Def"))
 	nmap("gt", vim.lsp.buf.type_definition, opts("Goto Def"))

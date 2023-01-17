@@ -23,6 +23,8 @@ alias tmux='tmux -f ~/.config/tmux/.tmux.conf -u'
 alias journal="nvim ~/Documents/norg/index.norg"
 alias yt-dlp='yt-dlp --config-locations "~/.config/yt-dlp.conf"'
 alias pomodoro="go run ~/Documents/Projects/Personal/godoro/main.go"
+alias nv="nvim"
+alias em="emacs"
 
 
 alias cp="cp -i"
@@ -34,7 +36,7 @@ export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="brave"
 export PATH="$PATH:$HOME/.local/share/go/bin/"
-
+# export IRS_CONFIG_LOCATION='$HOME/Apps/irs/bin/config.yml'
 
 #FZF
 if [[ ! "$PATH" == */home/illumiko/.fzf/bin* ]]; then

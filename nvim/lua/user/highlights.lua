@@ -20,14 +20,14 @@ transparent()
 
 require("modes").setup({ -- {{{
 	colors = {
-		copy = u.get_hl("FunctionBuiltin", "foreground"),
+		copy = u.get_hl("Visual", "background"),
 		delete = u.get_hl("Error", "foreground"),
 		insert = u.get_hl("String", "foreground"),
 		visual = u.get_hl("Visual", "background"),
 	},
 
 	-- Set opacity for cursorline and number background
-	line_opacity = 0.1,
+	line_opacity = 0.25,
 
 	-- Enable cursor highlights
 	set_cursor = true,

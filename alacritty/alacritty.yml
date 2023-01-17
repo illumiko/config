@@ -2,7 +2,6 @@ import:
   - ~/.config/alacritty/themes/doom_one.yml
 env:
   TERM: xterm-256color
-
 window:
   opacity: 1
   dimensions:
@@ -32,4 +31,9 @@ font:
     family: Victor Mono NFM
     style: italic
 shell:
-  program: /bin/zsh
+  program: /bin/bash
+cursor:
+  style:
+    shape: Block
+  vi_mode_style:
+    shape: Block

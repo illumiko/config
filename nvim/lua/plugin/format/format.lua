@@ -20,6 +20,9 @@ require("formatter").setup({
 				}
 			end,
 		},
+        json = {
+            require("plugin.format.filetype_conf.json")
+        },
 		typescript = {
 			require("plugin.format.filetype_conf.typescript").prettiereslint,
 		},

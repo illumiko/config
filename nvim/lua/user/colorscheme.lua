@@ -33,15 +33,15 @@ hi link CmpPmenu Normal
 ]=])
 -- }}} ]]
 -- tokyonight
---[[ -- {{{
+-- {{{
 require("tokyonight").setup({
 	style = "storm",
 	transparent = false,
 	terminal_colors = true,
 	styles = {
-		types = {},
-		keywords = {},
-		functions = {},
+		types = { italic = true, bold = true },
+		keywords = { italic = true },
+		functions = { bold = true },
 		variables = {},
 		sidebars = "dark",
 		floats = "dark",
@@ -82,7 +82,7 @@ require("tokyonight").setup({
 	end,
 })
 vim.cmd("colorscheme tokyonight")
--- }}} ]]
+-- }}}
 -- Catppuccin
 --[[ -- {{{
 require("catppuccin").setup({
@@ -140,7 +140,7 @@ vim.cmd("colorscheme catppuccin") -- }}} ]]
 --[[ --{{{
 require('onedark').setup  {
     -- Main options --
-    style = 'warm', -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
+    style = 'deep', -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
     transparent = false,  -- Show/hide background
     term_colors = true, -- Change terminal color as per the selected theme style
     ending_tildes = false, -- Show the end-of-buffer tildes. By default they are hidden
@@ -179,7 +179,7 @@ require('onedark').setup  {
 }
 vim.cmd("colorscheme onedark")-- }}} ]]
 -- one DOOM
--- {{{
+--[[ -- {{{
 -- Add color to cursor
 vim.g.doom_one_cursor_coloring = true
 -- Set :terminal colors
@@ -210,4 +210,4 @@ vim.g.doom_one_plugin_indent_blankline = true
 vim.g.doom_one_plugin_vim_illuminate = true
 vim.g.doom_one_plugin_lspsaga = false
 vim.cmd("colorscheme doom-one")
--- }}}
+-- }}} ]]

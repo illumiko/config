@@ -1046,3 +1046,215 @@ Jan 12 12:04 : update: added youtubeDl/CLANNAD, CLANNAD After story - Sad Soundt
 Jan 12 12:04 : update: added youtubeDl/CLANNAD, CLANNAD After story - Sad Soundtrack Collection.webm
 Jan 12 12:05 : update: removing youtubeDl/CLANNAD, CLANNAD After story - Sad Soundtrack Collection.webm
 Jan 12 12:05 : update: updating youtubeDl/CLANNAD, CLANNAD After story - Sad Soundtrack Collection.mp3
+Jan 12 19:40 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 12 19:54 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jan 12 19:54 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jan 12 19:54 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Jan 12 19:54 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jan 12 19:54 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jan 12 19:54 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Jan 13 11:51 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jan 13 11:51 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jan 13 11:51 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Jan 13 11:51 : update: added youtubeDl/no thoughts. just existence. ⧸⧸ a playlist.webm
+Jan 13 11:51 : update: added youtubeDl/no thoughts. just existence. ⧸⧸ a playlist.mp3
+Jan 13 11:52 : update: removing youtubeDl/no thoughts. just existence. ⧸⧸ a playlist.webm
+Jan 13 11:52 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jan 13 11:52 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jan 13 11:52 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Jan 13 11:52 : update: updating youtubeDl/no thoughts. just existence. ⧸⧸ a playlist.mp3
+Jan 13 11:58 : player: played "hMMmmm/lofiCompilation-rain/공부할 때 좋은 음악을 듣고 무엇을 얻을 수 있습니까 _ 3 hour lofi study _ work 📚 lofi hiphop mix.mp3"
+Jan 13 11:58 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 13 12:15 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 13 12:34 : player: played "youtubeDl/lets escape from reality ⧸⧸ #playlist  ⧸⧸.mp3"
+Jan 13 16:11 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 13 16:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 13 16:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 13 16:32 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 16:35 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 16:37 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 16:40 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 16:43 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 16:46 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 16:48 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 16:51 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 16:54 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 16:57 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 16:59 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 17:02 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 17:05 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 17:08 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 17:10 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 17:13 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 17:16 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 17:18 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 17:21 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 17:24 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 17:27 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 17:29 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 17:29 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Jan 13 17:30 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 13 17:30 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 13 17:40 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 13 17:40 : player: played "hMMmmm/Playlists/liked/Dark Nightcore - Angel With a Shotgun (Nightcore Version).mp3"
+Jan 13 17:43 : player: played "hMMmmm/Playlists/liked/4 Door Theatre - Porcelain Face.mp3"
+Jan 13 17:46 : player: played "hMMmmm/Playlists/liked/Backseat Vagabond - Trust Me Not (Hero and Villain Duet).mp3"
+Jan 13 17:50 : player: played "hMMmmm/Playlists/liked/Dance_With_My_Father.mp3"
+Jan 13 17:55 : player: played "hMMmmm/Playlists/liked/TV.mp3"
+Jan 13 17:59 : player: played "hMMmmm/Playlists/liked/Patchwork_Staccato.mp3"
+Jan 13 18:05 : player: played "hMMmmm/Playlists/liked/Ship_in_a_Bottle.mp3"
+Jan 13 18:08 : player: played "hMMmmm/Playlists/liked/Joe Zieja - Soldier, Poet, King (Venti Version from -Genshin Impact-).mp3"
+Jan 13 18:10 : player: played "hMMmmm/Playlists/liked/Ghost_-_Acoustic.mp3"
+Jan 13 18:15 : player: played "hMMmmm/Playlists/liked/myun - Fukurou.mp3"
+Jan 13 18:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 13 18:33 : player: played "hMMmmm/Playlists/liked/Lur - i-'m just your problem (2012 version).mp3"
+Jan 13 18:36 : player: played "hMMmmm/Playlists/liked/Ikanaide_-_album_ver.mp3"
+Jan 13 18:39 : player: played "hMMmmm/Playlists/liked/Brandon McInnis - Fuyunohanashi (From -Given-).mp3"
+Jan 13 18:44 : player: played "hMMmmm/Playlists/liked/We_re_Screwed.mp3"
+Jan 13 18:47 : player: played "hMMmmm/Playlists/liked/I_Can_t_Handle_Change.mp3"
+Jan 14 06:46 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 14 06:48 : player: played "hMMmmm/Playlists/liked/sorry_haha_i_fell_asleep.mp3"
+Jan 14 08:04 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 14 08:04 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 14 08:08 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/I_ll_Be_Good.mp3"
+Jan 14 08:13 : player: played "hMMmmm/Playlists/liked/Eternal_-_Similar_Outskirts_Remix.mp3"
+Jan 14 08:17 : player: played "hMMmmm/Playlists/liked/Innocently_Annoying.mp3"
+Jan 14 08:20 : player: played "hMMmmm/Playlists/liked/Everything_Goes_On.mp3"
+Jan 14 08:23 : player: played "hMMmmm/Playlists/liked/I_Am_Falling_For_You.mp3"
+Jan 14 09:15 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 14 09:18 : player: played "hMMmmm/Playlists/liked/Selphius - Fukurou.mp3"
+Jan 14 09:23 : player: played "hMMmmm/Playlists/liked/She_Will_Be_Loved.mp3"
+Jan 14 11:36 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 14 13:05 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 14 13:05 : player: played "hMMmmm/Playlists/liked/Scatman__ski-ba-bop-ba-dop-bop_.mp3"
+Jan 14 13:05 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 14 13:05 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 14 13:37 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 14 16:26 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 14 16:26 : player: played "hMMmmm/Nightcore/Nightcore - Little do you know _ Switching Vocals _ Lyrics.mp3"
+Jan 14 16:27 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jan 14 16:27 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jan 14 16:27 : ffmpeg/mp3: Failed to read frame size: Could not seek to 1026.
+Jan 14 16:28 : update: added youtubeDl/Saske - PADOU.mp3
+Jan 14 16:28 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 14 16:31 : player: played "youtubeDl/Saske - PADOU.mp3"
+Jan 14 16:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 14 17:30 : player: played "youtubeDl/CLANNAD, CLANNAD After story - Sad Soundtrack Collection.mp3"
+Jan 15 11:35 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 15 12:06 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 15 12:37 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 15 13:03 : player: played "youtubeDl/CLANNAD, CLANNAD After story - Sad Soundtrack Collection.mp3"
+Jan 15 13:03 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 15 13:06 : player: played "youtubeDl/Saske - PADOU.mp3"
+Jan 15 13:06 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 15 13:43 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 15 14:22 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 15 14:43 : player: played "youtubeDl/CLANNAD, CLANNAD After story - Sad Soundtrack Collection.mp3"
+Jan 15 14:43 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 15 14:46 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Something_-_Remastered_2009.mp3"
+Jan 15 14:49 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Are_You_Bored_Yet__-_Live_from_Henson_Studios.mp3"
+Jan 15 14:53 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Yellow.mp3"
+Jan 15 14:56 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/I_Want_To_Be_With_You.mp3"
+Jan 15 14:59 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Are_You_Bored_Yet___feat__Clairo_.mp3"
+Jan 15 15:03 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Sunlight.mp3"
+Jan 15 15:07 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Like_Real_People_Do.mp3"
+Jan 15 15:10 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Mr_Loverman.mp3"
+Jan 15 15:14 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Talk_to_You_-_acoustic.mp3"
+Jan 15 15:18 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/From_Eden.mp3"
+Jan 15 15:20 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Like_a_Brother.mp3"
+Jan 15 15:22 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/My_Lie.mp3"
+Jan 15 15:26 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Human.mp3"
+Jan 15 15:30 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/This_Side_of_Paradise.mp3"
+Jan 15 15:34 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Sparks.mp3"
+Jan 15 15:36 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/In_Spite_Of_All_The_Danger_-_Anthology_1_Version.mp3"
+Jan 15 15:41 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Out_Like_a_Light.mp3"
+Jan 15 15:44 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Mr_Loverman_-_Acoustic.mp3"
+Jan 15 15:48 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Northern_Downpour.mp3"
+Jan 15 15:53 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/unspoken_words.mp3"
+Jan 15 15:56 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/I_Love_You__I_Love_You__It_s_Disgusting.mp3"
+Jan 15 19:19 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 15 19:23 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Somewhere_Only_We_Know.mp3"
+Jan 15 19:40 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 15 19:42 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Words_Ain_t_Enough.mp3"
+Jan 15 19:45 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Mr_Loverman.mp3"
+Jan 15 20:00 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 15 20:01 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Somewhere_Only_We_Know.mp3"
+Jan 15 20:04 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/My_Lie.mp3"
+Jan 15 20:08 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Talk_to_You_-_acoustic.mp3"
+Jan 15 20:10 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Like_a_Brother.mp3"
+Jan 15 20:13 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/From_Eden.mp3"
+Jan 15 20:14 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Something_-_Remastered_2009.mp3"
+Jan 15 20:14 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 15 20:14 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 15 20:14 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Runaway.mp3"
+Jan 15 20:15 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 15 20:19 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Runaway.mp3"
+Jan 15 20:22 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Vienna.mp3"
+Jan 15 20:25 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Back_to_the_Old_House_-_2011_Remaster.mp3"
+Jan 15 20:27 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Class_of_2013.mp3"
+Jan 15 20:31 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Beautiful_Boy__Darling_Boy__-_Remastered_2010.mp3"
+Jan 15 20:36 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/All_Apologies.mp3"
+Jan 15 20:40 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Strawberry_Fields_Forever_-_Remastered_2009.mp3"
+Jan 15 20:45 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/In_Iolite.mp3"
+Jan 15 20:49 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Cherry_Wine_-_Live.mp3"
+Jan 15 20:53 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Heaven_Knows_I_m_Miserable_Now_-_2011_Remaster.mp3"
+Jan 15 20:56 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Johnny Goth - Aimless.mp3"
+Jan 15 20:58 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/A_Burning_Hill.mp3"
+Jan 15 21:00 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/God_Must_Hate_Me.mp3"
+Jan 15 21:04 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/I_Can_t_Handle_Change.mp3"
+Jan 15 21:08 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Carry_Me_Out.mp3"
+Jan 15 21:09 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Look_Who_s_Inside_Again.mp3"
+Jan 15 21:13 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Cavetown - This Is Home.mp3"
+Jan 15 21:16 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Show_You_a_Body.mp3"
+Jan 15 21:30 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 15 21:31 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Cocteau Twins - Sea, Swallow Me.mp3"
+Jan 15 21:34 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Young_Boy_-_Home_Recording.mp3"
+Jan 15 21:36 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Pink_in_the_Night.mp3"
+Jan 15 21:41 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Flatsound - I Exist I Exist I Exist.mp3"
+Jan 15 21:45 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/You_Are_the_Coffin.mp3"
+Jan 15 21:51 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Lang Lang - 드뷔시  Debussy Rêverie, L. 68.mp3"
+Jan 15 21:53 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Michelle_-_Remastered_2009.mp3"
+Jan 15 21:57 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Motion_Sickness.mp3"
+Jan 15 22:01 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Gymnop_die_No__1.mp3"
+Jan 15 23:38 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 16 19:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 16 19:29 : player: played "hMMmmm/Playlists/isnt_he_a_bit_like_you_and_me_/Matilda.mp3"
+Jan 16 19:30 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 16 19:44 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 16 20:04 : player: played "youtubeDl/lets escape from reality ⧸⧸ #playlist  ⧸⧸.mp3"
+Jan 16 20:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 16 20:36 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 16 21:18 : player: played "youtubeDl/no thoughts. just existence. ⧸⧸ a playlist.mp3"
+Jan 16 21:28 : player: played "youtubeDl/lets escape from reality ⧸⧸ #playlist  ⧸⧸.mp3"
+Jan 16 21:28 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 16 21:28 : player: played "youtubeDl/a classical music for reading, writing and studying ✒️📖☕✨.mp3"
+Jan 16 21:28 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 16 21:28 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 16 21:50 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 16 21:54 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 16 21:54 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 16 21:56 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 16 23:04 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 16 23:34 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 16 23:35 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 17 00:18 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 17 00:18 : player: played "hMMmmm/lofiCompilation-rain/Lofi Coding Mix 1 [Stay Home Edition].mp3"
+Jan 17 00:18 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 17 00:21 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Grateful.mp3"
+Jan 17 00:25 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Chance.mp3"
+Jan 17 00:29 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Crown.mp3"
+Jan 17 09:45 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Fever_Dream.mp3"
+Jan 17 09:46 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 17 09:50 : player: played "hMMmmm/Playlists/liked/myun - Fukurou.mp3"
+Jan 17 09:55 : player: played "hMMmmm/Playlists/liked/myun - Fukurou.mp3"
+Jan 17 10:00 : player: played "hMMmmm/Playlists/liked/myun - Fukurou.mp3"
+Jan 17 10:05 : player: played "hMMmmm/Playlists/liked/myun - Fukurou.mp3"
+Jan 17 10:54 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 17 10:54 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 17 10:58 : player: played "hMMmmm/Playlists/liked/Homura Records - Xian - Vocal (From -the Daily Life of the Immortal King-).mp3"
+Jan 17 11:00 : player: played "hMMmmm/Playlists/liked/Ghost_-_Acoustic.mp3"
+Jan 17 11:05 : player: played "hMMmmm/Playlists/liked/myun - Fukurou.mp3"
+Jan 17 11:09 : player: played "hMMmmm/Playlists/liked/Innocently_Annoying.mp3"
+Jan 17 11:12 : player: played "hMMmmm/Playlists/liked/I_Am_Falling_For_You.mp3"
+Jan 17 11:54 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 17 11:54 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
