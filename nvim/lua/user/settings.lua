@@ -24,7 +24,7 @@ vim.opt.expandtab = true -- convert tabs to spaces
 vim.opt.shiftwidth = 4 -- the number of spaces inserted for each indentation
 vim.opt.tabstop = 4 -- insert 1 spaces for a tab
 vim.opt.smarttab = true
-vim.opt.cursorline = true -- highlight the current line
+vim.opt.cursorline = false -- highlight the current line
 vim.opt.numberwidth = 2 -- set number column width to 2 {default 4}
 vim.opt.signcolumn = "yes" -- always show the sign column otherwise it would shift the text each time
 vim.opt.wrap = false -- display lines as one long line
@@ -34,12 +34,12 @@ vim.opt.scrolloff = 4 -- use this with zz(centers view)
 vim.opt.sidescrolloff = 0
 vim.opt.softtabstop = 4
 vim.opt.laststatus = 3
-vim.opt.number = false
+vim.opt.number = true
 vim.opt.relativenumber = false
 vim.opt.breakindent = true
 vim.opt.wh = 25
 vim.opt.wiw = 120
-vim.opt.showbreak = string.rep(" ", 3) 
+vim.opt.showbreak = string.rep(" ", 3)
 -- Make it so that long lines wrap smartly
 vim.opt.linebreak = true
 vim.opt.fillchars:append({

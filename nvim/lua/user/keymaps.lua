@@ -66,7 +66,8 @@ nmap("<S-l>", ":BufferNext<CR>", opts(""))
 nmap("<S-h>", ":BufferPrevious<CR>", opts(""))
 
 -- Sort automatically by...
---[===[insert mode]===]
+
+--inert mode
 
 vim.keymap.set("i", "<c-s>", function()
 	if ls.choice_active() then
@@ -84,6 +85,9 @@ end)
 imap("jk", "<cmd>LuaSnipUnlinkCurrent<CR><ESC>", opts(""))
 
 imap("<", "<", opts(""))
+
+--better backspace
+imap("<C-h>", "<BS>", opts(""))
 
 --[===[visiual mode]===]
 

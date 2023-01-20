@@ -1,5 +1,5 @@
--- Kanagawa
---[[ -- {{{
+--[[ -- Kanagawa-- {{{
+
 vim.opt.laststatus = 3
 vim.opt.fillchars:append({
 	horiz = "━",
@@ -20,7 +20,7 @@ require("kanagawa").setup({
 	variablebuiltinStyle = {},
 	specialReturn = true, -- special highlight for the return keyword
 	specialException = true, -- special highlight for exception handling keywords
-	transparent = false, -- do not set background color
+	transparent = true, -- do not set background color
 	dimInactive = true, -- dim inactive window `:h hl-NormalNC`
 	colors = {},
 	overrides = {},
@@ -32,11 +32,11 @@ colorscheme kanagawa
 hi link CmpPmenu Normal
 ]=])
 -- }}} ]]
--- tokyonight
--- {{{
+--[[ -- tokyonight -- {{{
+
 require("tokyonight").setup({
-	style = "storm",
-	transparent = false,
+	style = "night",
+	transparent = true,
 	terminal_colors = true,
 	styles = {
 		types = { italic = true, bold = true },
@@ -82,9 +82,9 @@ require("tokyonight").setup({
 	end,
 })
 vim.cmd("colorscheme tokyonight")
--- }}}
--- Catppuccin
---[[ -- {{{
+-- }}} ]]
+--[[ -- Catppuccin-- {{{
+
 require("catppuccin").setup({
 	flavour = "mocha", -- latte, frappe, macchiato, mocha
 	background = { -- :h background
@@ -136,8 +136,8 @@ require("catppuccin").setup({
 
 -- setup must be called before loading
 vim.cmd("colorscheme catppuccin") -- }}} ]]
--- onedark
---[[ --{{{
+--[[ -- onedark{{{
+--
 require('onedark').setup  {
     -- Main options --
     style = 'deep', -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
@@ -177,9 +177,9 @@ require('onedark').setup  {
         background = true,    -- use background color for virtual text
     },
 }
-vim.cmd("colorscheme onedark")-- }}} ]]
--- one DOOM
---[[ -- {{{
+vim.cmd("colorscheme onedark")
+-- }}} ]]
+--[[ -- Doom one{{{
 -- Add color to cursor
 vim.g.doom_one_cursor_coloring = true
 -- Set :terminal colors
@@ -209,5 +209,24 @@ vim.g.doom_one_plugin_whichkey = true
 vim.g.doom_one_plugin_indent_blankline = true
 vim.g.doom_one_plugin_vim_illuminate = true
 vim.g.doom_one_plugin_lspsaga = false
-vim.cmd("colorscheme doom-one")
--- }}} ]]
+vim.cmd("colorscheme doom-one")-- }}} ]]
+-- Gruvbox{{{
+require("gruvbox").setup({
+  undercurl = true,
+  underline = true,
+  bold = true,
+  italic = true,
+  strikethrough = true,
+  invert_selection = false,
+  invert_signs = false,
+  invert_tabline = false,
+  invert_intend_guides = false,
+  inverse = true, -- invert background for search, diffs, statuslines and errors
+  contrast = "", -- can be "hard", "soft" or empty string
+  palette_overrides = {},
+  overrides = {},
+  dim_inactive = false,
+  transparent_mode = true,
+})
+vim.cmd("hi IndentBlanklineChar guifg=none")
+vim.cmd("colorscheme gruvbox")-- }}}

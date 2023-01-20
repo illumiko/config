@@ -6,4 +6,5 @@ require("indent_blankline").setup({
 	use_treesitter = true,
 	max_indent_increase = 1,
 	show_trailing_blankline_indent = false,
+    show_current_context = true,
 })

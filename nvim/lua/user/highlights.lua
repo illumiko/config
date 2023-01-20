@@ -1,7 +1,7 @@
 local u = require("utils.get_hl")
 local transparent = function() -- {{{
 	local transparent =
-		{ "VertSplit", "FloatBorder", "NormalFloat", "WinSeparator", "LspInlayHint", "IndentBlanklineSpaceChar" }
+		{ "VertSplit", "FloatBorder", "NormalFloat","Folded", "WinSeparator", "LspInlayHint", "IndentBlanklineSpaceChar" }
 	for _, value in pairs(transparent) do
 		vim.cmd("hi " .. value .. " guibg=none guifg=none")
 	end
@@ -17,6 +17,10 @@ local ts_rainbow = {
 }
 
 transparent()
+
+-- Change folded guifg
+u.set_hl_fg("Folded","Comment")
+
 
 require("modes").setup({ -- {{{
 	colors = {
@@ -34,7 +38,7 @@ require("modes").setup({ -- {{{
 
 	-- Enable cursorline initially, and disable cursorline for inactive windows
 	-- or ignored filetypes
-	set_cursorline = true,
+	set_cursorline = false,
 
 	-- Enable line number highlights to match cursorline
 	set_number = true,

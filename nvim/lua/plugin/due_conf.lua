@@ -1,3 +1,3 @@
-require('due_nvim').setup {
-    ft="*.norg"
-}
+require("due_nvim").setup({
+	ft = "*.norg",
+})
