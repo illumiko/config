@@ -1,5 +1,5 @@
 local nmap = require("utils.maps").nmap
-local opts = {noremap = true, silent = true }
+local opts = {buffer=0,noremap = true, silent = true }
 -- {{{ Settings
 vim.opt.foldlevel = 0
 vim.opt.spell = true
@@ -18,7 +18,7 @@ vim.api.nvim_create_autocmd({ "BufEnter" }, { -- {{{
 			local file = path .. date .. ".norg"
 			local full_cmd = prefix .. file .. suffix
 			return full_cmd
-		end, { expr = true, noremap=true,silent=true })
+		end, {buffer=0, expr = true, noremap=true,silent=true })
 	end,
 }) -- }}}
 
