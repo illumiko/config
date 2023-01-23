@@ -32,6 +32,5 @@ require("nvim_context_vt").setup({
 	min_rows_ft = {},
 })
 vim.cmd([[
-hi link CustomContextVt Whitespace
+hi link CustomContextVt Comment
 ]])
-

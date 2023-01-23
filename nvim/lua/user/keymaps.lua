@@ -40,8 +40,9 @@ nmap("<C-f>", "FocusMaximise <CR>", opts("Max width"))
 nmap("<leader>oNjtd", ":Neorg journal today<CR>", opts("Journal today"))
 nmap("<leader>oNjty", ":Neorg journal yesterday<CR>", opts("Journal yesterday"))
 nmap("<leader>oNjtt", ":Neorg journal tomorrow<CR>", opts("Journal tomorrow"))
+nmap("<M-1>", ":e ~/Documents/norg/main/index.norg<CR>", opts(""))
 
---[[Format]]
+--[[format]]
 nmap("<leader>F", ":FormatWrite<CR>", opts("Format"))
 
 -- [[lsp]]

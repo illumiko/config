@@ -25,21 +25,39 @@ ls.add_snippets(nil, {
 	norg = {
 		--{{{ norg snippet
 		--[[ ls.parser.parse_snippet("ses", "- [ ] session $1 {$2} [$0->to]"), ]]
-		ls.parser.parse_snippet("h1", "* $1"),
-		ls.parser.parse_snippet("h2", "** $1"),
-		ls.parser.parse_snippet("h3", "*** $1"),
-		ls.parser.parse_snippet("h4", "**** $1"),
-		ls.parser.parse_snippet("h5", "***** $1"),
-		ls.parser.parse_snippet("Ud", "#contexts Udvash"),
-		ls.parser.parse_snippet("UdEx", "#contexts UdvashExam"),
-		ls.parser.parse_snippet("UdExP", "#contexts UdvashExamPrep"),
-		ls.parser.parse_snippet("Todo", "#contexts Todo"),
-		ls.parser.parse_snippet("code", "#contexts Code"),
-		ls.parser.parse_snippet("pre", "#contexts PreTestPrep"),
-		ls.parser.parse_snippet("sHw", "#contexts SchoolHw"),
-		s({ trig = "hajime", docstring = "hajime" }, {
+		ls.parser.parse_snippet("h1", "* $1 \n  ==="),
+		ls.parser.parse_snippet("h2", "** $1 \n "),
+		ls.parser.parse_snippet("h3", "*** $1 \n "),
+		ls.parser.parse_snippet("h4", "**** $1 \n "),
+		ls.parser.parse_snippet("h5", "***** $1 \n "),
+		s({ trig = "hajime", docstring = "hajime" }, { -- {{{
 			f(function()
-				local routine = {-- {{{
+				local routine = {}
+				routine.current_day = os.date("%A")
+				routine.main = function()
+					local template_last_part = {
+						[1] = "*TO BE AT A PLACE NO ONE ELSE IS; YOU HAVE DO THINGS NO ONE ELSE WANTS*",
+						[2] = "* Agenda",
+						[3] = "* Pomodoro",
+					}
+					local template_first_part = {
+						[1] = "@document.meta",
+						[2] = "created: " .. os.date("%Y-%m-%d") .. "",
+						[3] = "@end",
+					}
+					-- Union of the two table to create the template
+					local len = #template_first_part -- get the the last index of the table to add to
+					for e, v in ipairs(template_last_part) do
+						template_first_part[len + e] = v
+					end
+					return template_first_part
+				end
+				return routine.main()
+			end),
+		}), -- }}}
+		s({ trig = "routine", docstring = "routine" }, { -- {{{
+			f(function()
+				local routine = { -- {{{
 					["sunday"] = {
 						"Hmath",
 						"Bio",
@@ -76,36 +94,23 @@ ls.add_snippets(nil, {
 						"Math @6/@6:30",
 						"Hujur @3:30",
 					},
-				}-- }}}
+				} -- }}}
 				-- %A returns full weekday string
 				routine.current_day = os.date("%A")
 				routine.current_day_tasks = routine[string.lower(routine.current_day)]
 
 				routine.main = function()
-					local snip_last = {
-						[1] = "  ===",
-						[2] = "*TO BE AT A PLACE NO ONE ELSE IS; YOU HAVE DO THINGS NO ONE ELSE WANTS*",
-						[3] = "* Agenda",
-					}
-					local snip = {
-						[1] = "@document.meta",
-						[2] = "created: " .. os.date("%Y-%m-%d") .. "",
-						[3] = "@end",
-						[4] = "* " .. routine.current_day .. "",
+					local gen_routine = {
+						[1] = "* " .. routine.current_day .. "",
 					}
 					for z, v in ipairs(routine.current_day_tasks) do
-						snip[4 + z] = "  - " .. v
+						gen_routine[1 + z] = "  - " .. v
 					end
-					local len = #snip
-					for e, v in ipairs(snip_last) do
-						snip[len + e] = v
-					end
-					return snip
+					return gen_routine
 				end
-
-				return routine.main()
+                return routine.main()
 			end),
-		}),
+		}), -- }}}
 		--session future{{{
 		s({ trig = "sF", docstring = "sF" }, {
 			t("** Session "),

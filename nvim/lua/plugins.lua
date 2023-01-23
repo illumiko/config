@@ -108,7 +108,7 @@ return {
 	},
 
 	--[[#Utility]]
-	"mvllow/modes.nvim",
+	{"mvllow/modes.nvim"},
 	"wellle/targets.vim", -- better surround motions
 	{ "anuvyklack/fold-preview.nvim" },
 	"lukas-reineke/indent-blankline.nvim",
@@ -271,6 +271,7 @@ return {
 	--[[#Note talking/Scheduling etc]]
 	{ "nvim-neorg/neorg", ft = "norg" },
 	{ "NFrid/due.nvim", ft = "norg" },
+    {"tpope/vim-speeddating"},
 	{
 		"dhruvasagar/vim-table-mode",
 		ft = "norg",

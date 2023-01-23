@@ -22,7 +22,7 @@ alias luapg='nvim ~/Documents/Projects/Testing/lua/playground/playground.lua'
 alias tmux='tmux -f ~/.config/tmux/.tmux.conf -u'
 alias journal="nvim ~/Documents/norg/index.norg"
 alias yt-dlp='yt-dlp --config-locations "~/.config/yt-dlp.conf"'
-alias pomodoro="go run ~/Documents/Projects/Personal/godoro/main.go"
+alias pomodoro="~/Documents/Projects/Personal/godoro/pomodoro"
 alias nv="nvim"
 alias em="emacs"
 

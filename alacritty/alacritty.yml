@@ -1,9 +1,9 @@
 import:
-  - ~/.config/alacritty/themes/doom_one.yml
+  - ~/.config/alacritty/themes/everforest_dark_medium.yml
 env:
   TERM: xterm-256color
 window:
-  opacity: 1
+  opacity: 0.6
   dimensions:
     columns: 2
     lines: 2

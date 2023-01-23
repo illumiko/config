@@ -6,7 +6,7 @@ local transparent = function() -- {{{
 		vim.cmd("hi " .. value .. " guibg=none guifg=none")
 	end
 end -- }}}
-local ts_rainbow = {
+local ts_rainbow = {-- {{{
 	"@debug",
 	"@define",
 	"@function.macro",
@@ -14,14 +14,14 @@ local ts_rainbow = {
 	"@method",
 	"@label",
 	"@character",
-}
+}-- }}}
 
 transparent()
 
 -- Change folded guifg
 u.set_hl_fg("Folded","Comment")
-
-
+-- Change scroll bar guibg
+u.set_hl_bg("ScrollbarCursor","Visual")
 require("modes").setup({ -- {{{
 	colors = {
 		copy = u.get_hl("Visual", "background"),
@@ -34,7 +34,7 @@ require("modes").setup({ -- {{{
 	line_opacity = 0.25,
 
 	-- Enable cursor highlights
-	set_cursor = true,
+	set_cursor = false,
 
 	-- Enable cursorline initially, and disable cursorline for inactive windows
 	-- or ignored filetypes
