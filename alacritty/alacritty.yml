@@ -16,19 +16,19 @@ font:
     x: 0
     y: 0
   normal:
-    family: Victor Mono NFM
+    family: JetBrains Mono Nerd Font
     style: Normal
       #   family: Comic Code Ligatures Nerd font
       #   style: Normal
   bold:
-    family: VictorMono NFM
+    family: JetBrains Mono Nerd Font
     style: Bold
       #   family: Comic Code Ligatures Nerd Font
       #   style: Bold
   italic:
   # family: Comic Code Ligatures Nerd Font
   # style: italic
-    family: Victor Mono NFM
+    family: JetBrains Mono Nerd Font
     style: italic
 shell:
   program: /bin/bash

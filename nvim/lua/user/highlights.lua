@@ -1,12 +1,20 @@
 local u = require("utils.get_hl")
 local transparent = function() -- {{{
-	local transparent =
-		{ "VertSplit", "FloatBorder", "NormalFloat","Folded", "WinSeparator", "LspInlayHint", "IndentBlanklineSpaceChar" }
+	local transparent = {
+		"VertSplit",
+		"FloatBorder",
+		"NormalFloat",
+		"Folded",
+		"WinSeparator",
+		"LspInlayHint",
+		"IndentBlanklineSpaceChar",
+	}
+
 	for _, value in pairs(transparent) do
 		vim.cmd("hi " .. value .. " guibg=none guifg=none")
 	end
 end -- }}}
-local ts_rainbow = {-- {{{
+local ts_rainbow = { -- {{{
 	"@debug",
 	"@define",
 	"@function.macro",
@@ -14,15 +22,13 @@ local ts_rainbow = {-- {{{
 	"@method",
 	"@label",
 	"@character",
-}-- }}}
+} -- }}}
 
-transparent()
+transparent() -- setting hi's to none
+u.set_hl_fg("Folded", "Comment") -- Change folded guifg
+u.set_hl_bg("ScrollbarCursor", "Visual") -- Change scroll bar guibg
 
--- Change folded guifg
-u.set_hl_fg("Folded","Comment")
--- Change scroll bar guibg
-u.set_hl_bg("ScrollbarCursor","Visual")
-require("modes").setup({ -- {{{
+--[[ require("modes").setup({ -- {{{
 	colors = {
 		copy = u.get_hl("Visual", "background"),
 		delete = u.get_hl("Error", "foreground"),
@@ -31,14 +37,14 @@ require("modes").setup({ -- {{{
 	},
 
 	-- Set opacity for cursorline and number background
-	line_opacity = 0.25,
+	line_opacity = 0,
 
 	-- Enable cursor highlights
-	set_cursor = false,
+	set_cursor = true,
 
 	-- Enable cursorline initially, and disable cursorline for inactive windows
 	-- or ignored filetypes
-	set_cursorline = false,
+	set_cursorline = true,
 
 	-- Enable line number highlights to match cursorline
 	set_number = true,
@@ -46,4 +52,4 @@ require("modes").setup({ -- {{{
 	-- Disable modes highlights in specified filetypes
 	-- Please PR commonly ignored filetypes
 	ignore_filetypes = { "neo-tree", "alpha", "NvimTree", "TelescopePrompt" },
-}) -- }}}
+}) -- }}} ]]

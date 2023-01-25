@@ -30,6 +30,7 @@ ls.add_snippets(nil, {
 		ls.parser.parse_snippet("h3", "*** $1 \n "),
 		ls.parser.parse_snippet("h4", "**** $1 \n "),
 		ls.parser.parse_snippet("h5", "***** $1 \n "),
+        ls.parser.parse_snippet("rout","- $1: $2       *<$3-$4-$5 ${6|am,pm|}>*"),
 		s({ trig = "hajime", docstring = "hajime" }, { -- {{{
 			f(function()
 				local routine = {}

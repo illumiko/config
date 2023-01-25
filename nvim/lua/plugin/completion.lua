@@ -67,7 +67,7 @@ cmp.setup({
 	}, -- }}}
 	sources = cmp.config.sources({ -- {{{
 		{ name = "nvim_lsp_signature_help" }, -- shows current func arg
-		{ name = "luasnip", group_index = 2 },
+		{ name = "luasnip", group_index = 2, keyword_length = 2 },
 		{
 			name = "nvim_lsp",
 			group_index = 2,
@@ -169,8 +169,10 @@ cmp.setup({
 			winhighlight = "Normal:CmpPmenu,FloatBorder:CmpPmenuBorder,CursorLine:PmenuSel,Search:None",
 			col_offset = -3,
 			side_padding = 0,
+			keyword_length = 2,
 		},
 	}, -- }}}
+	preselect = cmp.PreselectMode.None,
 })
 
 -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
