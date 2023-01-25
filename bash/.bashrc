@@ -24,7 +24,7 @@ alias journal="nvim ~/Documents/norg/index.norg"
 alias yt-dlp='yt-dlp --config-locations "$DOT/yt-dlp.conf"'
 alias nl='redshift -o -l 0:0 -t 5000:5000'
 alias nx='redshift -x'
-alias pomodoro="~/Documents/Projects/Personal/godoro/pomodoro"
+alias pomodoro="go run ~/Documents/Projects/Personal/godoro/main.go"
 alias nv="nvim"
 alias em="emacs"
 

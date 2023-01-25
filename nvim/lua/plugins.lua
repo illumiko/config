@@ -110,7 +110,6 @@ return {
 	--[[#Utility]]
 	{"mvllow/modes.nvim"},
 	"wellle/targets.vim", -- better surround motions
-	{ "anuvyklack/fold-preview.nvim" },
 	"lukas-reineke/indent-blankline.nvim",
 	-- "xiyaowong/nvim-transparent",
 	"matze/vim-move",
@@ -168,6 +167,8 @@ return {
 			})
 		end,
 	},
+
+    {'kevinhwang91/nvim-ufo', dependencies = 'kevinhwang91/promise-async'},
 	{ "petertriho/nvim-scrollbar", config = true },
 	{
 		"echasnovski/mini.animate",
@@ -368,7 +369,7 @@ return {
 			"nvim-telescope/telescope-file-browser.nvim",
 			{
 				"nvim-telescope/telescope-fzf-native.nvim",
-				build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
+				build = "make",
 			}, -- session picker
 		},
 	},

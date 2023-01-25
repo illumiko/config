@@ -84,7 +84,13 @@ local function lsp_keymaps(bufnr)
 	nmap("go", vim.diagnostic.open_float, opts("Diagnostic View"))
 	nmap("gj", vim.diagnostic.goto_next, opts("J Diagnostic"))
 	nmap("gk", vim.diagnostic.goto_prev, opts("K Diagnostic"))
-	nmap("K", vim.lsp.buf.hover, opts("Hover"))
+	nmap("K", function()
+		local winid = require("ufo").peekFoldedLinesUnderCursor()
+		if not winid then
+			-- choose one of coc.nvim and nvim lsp
+			vim.lsp.buf.hover()
+		end
+	end, {desc = "Hover", noremap = true, silent = true })
 end
 
 M.on_attach = function(client, bufnr)
@@ -96,12 +102,6 @@ M.on_attach = function(client, bufnr)
 	inlay_hints(client, bufnr)
 	lsp_keymaps(bufnr)
 end
-
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities.textDocument.foldingRange = {
-	dynamicRegistration = false,
-	lineFoldingOnly = true,
-} -- for nvim-ufo
 
 local status_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
 if not status_ok then

@@ -6,5 +6,5 @@
 
 config_version: 2
 settings:
-  content.notifications.enabled:
-    https://www.rbth.com: false
+  fonts.web.size.default:
+    global: 20

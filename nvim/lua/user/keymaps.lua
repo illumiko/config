@@ -24,8 +24,13 @@ vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 -- vim.keymap.set("n", "k", "<Plug>(accelerated_jk_gk_position)", { noremap = true })
 
 --[[proper copy]]
-map("v", "Y", '"+y', opts(""))
+map("n", "Y", '"+y', opts(""))
 map("x", "y", '"+y', opts(""))
+map("n", "yi]", '"+yi]', opts(""))
+map("n", [[yi']], [["+yi']], opts(""))
+map("n", [[yi}]], [["+yi}]], opts(""))
+map("n", [[yi']], [["+yin']], opts(""))
+map("n", [[yi)]], [["+yi)]], opts(""))
 
 --[[Source config]]
 nmap("<leader>R", ":source %<cr>", opts("Reload current file"))
@@ -41,6 +46,12 @@ nmap("<leader>oNjtd", ":Neorg journal today<CR>", opts("Journal today"))
 nmap("<leader>oNjty", ":Neorg journal yesterday<CR>", opts("Journal yesterday"))
 nmap("<leader>oNjtt", ":Neorg journal tomorrow<CR>", opts("Journal tomorrow"))
 nmap("<M-1>", ":e ~/Documents/norg/main/index.norg<CR>", opts(""))
+
+--[[UFO]]
+nmap("zR", require("ufo").openAllFolds)
+nmap("zM", require("ufo").closeAllFolds)
+nmap("zr", require("ufo").openFoldsExceptKinds)
+nmap("zm", require("ufo").closeFoldsWith) --
 
 --[[format]]
 nmap("<leader>F", ":FormatWrite<CR>", opts("Format"))
