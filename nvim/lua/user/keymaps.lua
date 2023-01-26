@@ -24,7 +24,7 @@ vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 -- vim.keymap.set("n", "k", "<Plug>(accelerated_jk_gk_position)", { noremap = true })
 
 --[[proper copy]]
-map("n", "Y", '"+y', opts(""))
+map("n", "Y", '"+Y', opts(""))
 map("x", "y", '"+y', opts(""))
 map("n", "yi]", '"+yi]', opts(""))
 map("n", [[yi']], [["+yi']], opts(""))
@@ -112,3 +112,4 @@ map("v", ">", ">gv", opts(""))
 --moving blocks of code
 map("x", "K", ":move '<-2<CR>gv-gv", opts(""))
 map("x", "J", ":move '>+1<CR>gv-gv", opts(""))
+

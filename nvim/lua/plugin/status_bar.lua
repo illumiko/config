@@ -521,27 +521,23 @@ setup()
 return {
   setup = setup
 }-- }}} ]]
--- Eviline config for lualine
--- Author: shadmansaleh
--- Credit: glepnir
-local lualine = require('lualine')
--- Now don't forget to i
-lualine.setup({
-    theme = 'auto',
-    sections = {
-    lualine_a = {'mode'},
-    lualine_b = {'branch', 'diff', 'diagnostics'},
-    lualine_c = {'filename'},
-    lualine_x = {'filetype'},
-    lualine_y = {'progress'},
-    lualine_z = {'location'}
-  },
-  inactive_sections = {
-    lualine_a = {},
-    lualine_b = {},
-    lualine_c = {'filename'},
-    lualine_x = {'location'},
-    lualine_y = {},
-    lualine_z = {}
-  },
-})
+
+local u = require('utils.get_hl')
+require "staline".setup {
+	sections = {
+		left = { '  ', 'mode', ' ', 'branch', ' ', 'lsp' },
+		mid = {"lsp"},
+		right = {'file_name', 'line_column' }
+	},
+	mode_colors = {
+		i = u.get_hl("String", "foreground"),
+		n = u.get_hl("Identifier", "foreground"),
+		c = u.get_hl("Visual", "background"),
+		v = u.get_hl("Visual", "background"),
+	},
+	defaults = {
+		true_colors = true,
+		line_column = " [%l/%L] :%c  ",
+		branch_symbol = " "
+	}
+}

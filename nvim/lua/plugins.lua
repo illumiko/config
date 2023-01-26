@@ -102,13 +102,15 @@ return {
 		"tjdevries/express_line.nvim",
 		events = { "BufEnter" },
 	}, ]]
-	{
+	--[[ {
 		"nvim-lualine/lualine.nvim",
 		events = { "BufEnter" },
-	},
+	}, ]]
+
+	{ "tamton-aquib/staline.nvim", events = { "BufEnter" } },
 
 	--[[#Utility]]
-	{"mvllow/modes.nvim"},
+	{ "mvllow/modes.nvim" },
 	"wellle/targets.vim", -- better surround motions
 	"lukas-reineke/indent-blankline.nvim",
 	-- "xiyaowong/nvim-transparent",
@@ -168,12 +170,12 @@ return {
 		end,
 	},
 
-    {'kevinhwang91/nvim-ufo', dependencies = 'kevinhwang91/promise-async'},
+	{ "kevinhwang91/nvim-ufo", dependencies = "kevinhwang91/promise-async" },
 	{ "petertriho/nvim-scrollbar", config = true },
 	{
 		"echasnovski/mini.animate",
 		config = function()
-			require("mini.animate").setup({ resize = { enable = false }, scroll = {enable = false}})
+			require("mini.animate").setup({ resize = { enable = false }, scroll = { enable = false } })
 		end,
 	},
 	-- {
@@ -272,7 +274,7 @@ return {
 	--[[#Note talking/Scheduling etc]]
 	{ "nvim-neorg/neorg", ft = "norg" },
 	{ "NFrid/due.nvim", ft = "norg" },
-    {"tpope/vim-speeddating"},
+	{ "tpope/vim-speeddating" },
 	{
 		"dhruvasagar/vim-table-mode",
 		ft = "norg",
@@ -363,6 +365,11 @@ return {
 				"<S-Tab>",
 				":lua require('telescope.builtin').buffers()<CR>",
 				desc = "Buffer Picker",
+			},
+			{
+				"<leader>a",
+				":Telescope spell_suggest<CR>",
+				desc = "Spell Suggest",
 			},
 		}, -- }}}
 		dependencies = {

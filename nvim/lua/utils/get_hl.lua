@@ -1,5 +1,6 @@
 local M = {}
 M.get_hl = function(hl, fbg)
+    -- fbg = 'foreground' || 'background'
 	local color = vim.api.nvim_get_hl_by_name(hl, true)
 	local get = "#" .. string.format("%x", color[fbg])
 	return get
