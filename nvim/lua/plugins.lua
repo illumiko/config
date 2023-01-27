@@ -337,8 +337,8 @@ return {
 				desc = "Project Files",
 			},
 			{
-				"<leader>fc",
-				"<cmd>lua require('telescope.builtin').find_files({cwd='~/.config/'})<CR>",
+				"<leader>fd",
+				"<cmd>lua require('telescope.builtin').find_files({cwd='~/Dotfiles/'})<CR>",
 				desc = "Config Files",
 			},
 			{

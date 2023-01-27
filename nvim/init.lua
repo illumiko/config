@@ -33,7 +33,6 @@ require("plugin.cursor_context")
 require("plugin.telescope_conf")
 require("plugin.due_conf")
 require("plugin.ufo_conf")
--- [[ --[[ require("plugin.winbar_config") ]]
 if vim.g.neovide then
     require("user.neovide")
 end

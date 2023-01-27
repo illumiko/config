@@ -1662,3 +1662,17 @@ Jan 26 11:05 : player: played "hMMmmm/newpipe/Nightcore - After Dark.opus"
 Jan 26 11:09 : player: played "hMMmmm/newpipe/Nightcore - After Dark.opus"
 Jan 26 11:13 : player: played "hMMmmm/newpipe/Nightcore - After Dark.opus"
 Jan 26 11:17 : player: played "hMMmmm/newpipe/Nightcore - After Dark.opus"
+Jan 27 06:55 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 27 06:55 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 27 06:56 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 27 06:56 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 27 07:01 : player: played "hMMmmm/lofiCompilation-rain/3 HOURS of GENTLE NIGHT RAIN, Rain Sounds to Sleep, Study, Relax, Reduce Stress, help insomnia.mp3"
+Jan 27 07:01 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 27 07:01 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 27 07:01 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 27 07:05 : player: played "hMMmmm/lofiCompilation-rain/3 HOURS of GENTLE NIGHT RAIN, Rain Sounds to Sleep, Study, Relax, Reduce Stress, help insomnia.mp3"
+Jan 27 07:05 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 27 08:01 : player: played "hMMmmm/lofiCompilation-rain/【治愈系純音樂】蟲師全主題曲合集(mushishi ost).mp3"
+Jan 27 10:01 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 27 10:44 : player: played "hMMmmm/lofi/[Piano x ASMR🎧] 초속 5센티미터 _ 눈보라 치던 날, 따뜻한 난로가 있는 기차역 대합실에서 _ End Theme.mp3"
+Jan 27 10:46 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM

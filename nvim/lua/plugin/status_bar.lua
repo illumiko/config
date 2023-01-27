@@ -526,8 +526,8 @@ local u = require('utils.get_hl')
 require "staline".setup {
 	sections = {
 		left = { '  ', 'mode', ' ', 'branch', ' ', 'lsp' },
-		mid = {"lsp"},
-		right = {'file_name', 'line_column' }
+		mid = {"file_name"},
+		right = {'lsp_name', 'line_column' }
 	},
 	mode_colors = {
 		i = u.get_hl("String", "foreground"),

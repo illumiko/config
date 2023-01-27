@@ -33,7 +33,7 @@ map("n", [[yi']], [["+yin']], opts(""))
 map("n", [[yi)]], [["+yi)]], opts(""))
 
 --[[Source config]]
-nmap("<leader>R", ":source %<cr>", opts("Reload current file"))
+nmap("<leader>ls", ":source %<cr>", opts("Reload current file"))
 
 --[[Quit]]
 nmap("<leader>Q", ":wqa<CR>", opts("Quit"))
@@ -112,4 +112,3 @@ map("v", ">", ">gv", opts(""))
 --moving blocks of code
 map("x", "K", ":move '<-2<CR>gv-gv", opts(""))
 map("x", "J", ":move '>+1<CR>gv-gv", opts(""))
-
