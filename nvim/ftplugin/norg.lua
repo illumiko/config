@@ -22,4 +22,12 @@ vim.api.nvim_create_autocmd({ "BufEnter" }, { -- {{{
 	end,
 }) -- }}}
 
+
+vim.api.nvim_create_autocmd({ "BufWinEnter" }, { -- {{{
+	pattern = { "*.norg" },
+	group = vim.api.nvim_create_augroup("ng", { clear = true }),
+	callback = function()
+        vim.cmd("UfoDisable")
+	end,
+}) -- }}}
 -- }}}

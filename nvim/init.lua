@@ -34,5 +34,5 @@ require("plugin.telescope_conf")
 require("plugin.due_conf")
 require("plugin.ufo_conf")
 if vim.g.neovide then
-    require("user.neovide")
+	require("user.neovide")
 end
