@@ -41,7 +41,7 @@ return {
 		)
 	),
 	s(
-		{ trig = "flog ", snippetType = "autosnippet" },
+		{ trig = "flog", snippetType = "autosnippet" },
 		fmta(
 			[=[
           log.Fatal(<>)
@@ -50,7 +50,7 @@ return {
 		)
 	),
 	s(
-		{ trig = "prin ", snippetType = "autosnippet" },
+		{ trig = "prin", snippetType = "autosnippet" },
 		fmta(
 			[=[
           fmt.Println(<>)

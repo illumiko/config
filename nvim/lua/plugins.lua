@@ -279,6 +279,7 @@ return {
 		"dhruvasagar/vim-table-mode",
 		ft = "norg",
 	},
+    {"lervag/vimtex"},
 
 	-- [[nvim greeter]]
 	{ "goolord/alpha-nvim", lazy = true },
@@ -389,6 +390,7 @@ return {
 	{ "ellisonleao/gruvbox.nvim", lazy = true },
 	{ "folke/tokyonight.nvim", lazy = true },
 	{ "navarasu/onedark.nvim", lazy = true },
+    {'shaunsingh/nord.nvim',lazy=true},
 	-- "glepnir/zephyr-nvim",
 	{ "catppuccin/nvim", name = "catppuccin", lazy = true },
 	{ "rebelot/kanagawa.nvim", lazy = true }, -- kangawa}}}
