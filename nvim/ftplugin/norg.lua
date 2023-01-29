@@ -1,5 +1,6 @@
 local nmap = require("utils.maps").nmap
-local opts = {buffer=0,noremap = true, silent = true }
+local opts = { buffer = 0, noremap = true, silent = true }
+local g = vim.api.nvim_create_augroup("ng", { clear = true })
 -- {{{ Settings
 vim.opt.foldlevel = 0
 vim.opt.spell = true
@@ -9,7 +10,7 @@ vim.opt.spell = true
 -- only adds M-1... keybinds to norg ft
 vim.api.nvim_create_autocmd({ "BufEnter" }, { -- {{{
 	pattern = { "*.norg" },
-	group = vim.api.nvim_create_augroup("ng", { clear = true }),
+	group = g,
 	callback = function()
 		nmap("<M-2>", ":e ~/Documents/norg/main/inbox.norg<CR>", opts)
 		nmap("<M-3>", function()
@@ -17,15 +18,15 @@ vim.api.nvim_create_autocmd({ "BufEnter" }, { -- {{{
 			local prefix, suffix = ":e ", "<CR>"
 			local file = path .. date .. ".norg"
 			local full_cmd = prefix .. file .. suffix
+			print(full_cmd)
 			return full_cmd
-		end, {buffer=0, expr = true, noremap=true,silent=true })
+		end, { buffer = 0, expr = true, noremap = true, silent = true })
 	end,
 }) -- }}}
 
-
 vim.api.nvim_create_autocmd({ "BufWinEnter" }, { -- {{{
 	pattern = { "*.norg" },
-	group = vim.api.nvim_create_augroup("ng", { clear = true }),
+	group = g,
 	callback = function()
         vim.cmd("UfoDisable")
 	end,

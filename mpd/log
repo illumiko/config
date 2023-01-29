@@ -1910,3 +1910,17 @@ Jan 29 04:08 : update: added Recordings/2022_07_08_15_43_17.m4a
 Jan 29 04:08 : update: added Recordings/2022_07_08_15_53_17.m4a
 Jan 29 04:08 : update: added Recordings/2022_07_08_15_48_25.m4a
 Jan 29 04:08 : update: added Whatsapp/AUD-20220314-WA0012.m4a
+Jan 29 06:13 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 29 06:13 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 29 06:23 : player: played "hMMmmm/lofi/ambient/Life Is Too Short.mp3"
+Jan 29 06:33 : player: played "hMMmmm/lofi/ambient/Life Is Too Short.mp3"
+Jan 29 06:43 : player: played "hMMmmm/lofi/ambient/Life Is Too Short.mp3"
+Jan 29 06:53 : player: played "hMMmmm/lofi/ambient/Life Is Too Short.mp3"
+Jan 29 07:03 : player: played "hMMmmm/lofi/ambient/Life Is Too Short.mp3"
+Jan 29 07:48 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 29 07:58 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 29 08:53 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 29 09:07 : player: played "hMMmmm/lofi/ambient/a classical music for reading, writing and studying ✒️📖☕✨.mp3"
+Jan 29 16:45 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 29 17:03 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Jan 29 17:03 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
