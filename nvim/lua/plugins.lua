@@ -314,6 +314,7 @@ return {
 	--[terminal]]
 	{
 		"akinsho/toggleterm.nvim",
+        events = "BufNew",
 		keys = {
 			{
 				"<C-\\>",
@@ -391,6 +392,7 @@ return {
 	{ "folke/tokyonight.nvim", lazy = true },
 	{ "navarasu/onedark.nvim", lazy = true },
     {'shaunsingh/nord.nvim',lazy=true},
+    {"rmehri01/onenord.nvim", lazy=true},
 	-- "glepnir/zephyr-nvim",
 	{ "catppuccin/nvim", name = "catppuccin", lazy = true },
 	{ "rebelot/kanagawa.nvim", lazy = true }, -- kangawa}}}

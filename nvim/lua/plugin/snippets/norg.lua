@@ -5,7 +5,7 @@ return {
 	s({ trig = "([^%w])h3", regTrig = true, wordTrig = false, snippetType = "autosnippet" }, fmt([[*** {}]], i(0))),
 	s({ trig = "([^%w])h4", regTrig = true, wordTrig = false, snippetType = "autosnippet" }, fmt([[**** {}]], i(0))),
 	s({ trig = "([^%w])h5", regTrig = true, wordTrig = false, snippetType = "autosnippet" }, fmt([[***** {}]], i(0))),
-	s({ trig = "tk", regTrig = true, wordTrig = false, snippetType = "autosnippet" }, fmt([[( ) {}]], i(0))),
+	s({ trig = "([^%w])tk", regTrig = true, wordTrig = false, snippetType = "autosnippet" }, fmt([[( ) {}]], i(0))),
 
 	s(
 		{ trig = "sc ", wordTrig = true, dscr = "boiler plate for schedule timers", snippetType = autosnippet },
@@ -123,7 +123,7 @@ return {
 		t("** Session "),
 		i(1, "1 "),
 		f(function()
-			result = {}
+			local result = {}
 			-- result.start_hour = os.date("%I") -- defining start hour
 			result.start_hour = os.date("%I")
 			result.start_min = os.date("%M") -- defining start min
@@ -200,7 +200,7 @@ return {
 		t("** Session "),
 		i(1, "1 "),
 		f(function()
-			result = {}
+			local result = {}
 			-- result.start_hour = os.date("%I") -- defining start hour
 			result.end_hour = os.date("%I")
 			result.end_min = os.date("%M") -- defining start min

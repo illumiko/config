@@ -35,11 +35,9 @@ cmp.setup({
 		["<C-d>"] = cmp.mapping(cmp.mapping.scroll_docs(4), { "i", "c" }),
 		["<C-Space>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
 		["<A-y>"] = cmp.config.disable, -- Specify `cmp.config.disable` if you want to remove the default `<C-y>` mapping.
-		["<Tab>"] = cmp.mapping(function(fallback)
+		["<C-j>"] = cmp.mapping(function(fallback)
 			if cmp.visible() then
 				cmp.select_next_item()
-			elseif luasnip.expand_or_jumpable() then
-				luasnip.expand_or_jump()
 			elseif has_words_before() then
 				cmp.complete()
 			else
@@ -47,18 +45,16 @@ cmp.setup({
 			end
 		end, { "i", "s" }),
 
-		["<S-Tab>"] = cmp.mapping(function(fallback)
+		["<C-k>"] = cmp.mapping(function(fallback)
 			if cmp.visible() then
 				cmp.select_prev_item()
-			elseif luasnip.jumpable(-1) then
-				luasnip.jump(-1)
 			else
 				fallback()
 			end
 		end, { "i", "s" }),
-		["<CR>"] = cmp.mapping.confirm({
+		["<C-l>"] = cmp.mapping.confirm({
 			behavior = cmp.ConfirmBehavior.Replace,
-			select = false,
+			select = true,
 		}),
 		["<C-e>"] = cmp.mapping({
 			i = cmp.mapping.abort(),
@@ -73,7 +69,7 @@ cmp.setup({
 			group_index = 2,
 		},
 		{ name = "nvim_lua", group_index = 2 },
-		{ name = "buffer", group_index = 2 },
+		{ name = "buffer", group_index = 2, keyword_length=4 },
 		{ name = "path" },
 		{ name = "neorg" },
 		-- { name = 'ultisnips' }, -- For ultisnips users.

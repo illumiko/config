@@ -1,4 +1,6 @@
 vim.cmd([==[
+let g:tex_flavor='latex'
+
 " My configuration of the VimTeX plugin
 
 " Only load this plugin it has not yet been loaded for this buffer
@@ -111,6 +113,8 @@ augroup vimtex_event_close
   au User VimtexEventQuit call CloseViewers()
 augroup END
 
+
+
 " ---------------------------------------------
 " DEFINE MAPPINGS
 nmap dse <plug>(vimtex-env-delete)
@@ -186,4 +190,8 @@ map ]/ <plug>(vimtex-]/
 map ]* <plug>(vimtex-]star
 map [/ <plug>(vimtex-[/
 map [* <plug>(vimtex-[star
+
+setlocal spell
+set spelllang=nl,en_gb
+inoremap <C-p> <c-g>u<Esc>[s1z=`]a<c-g>u
 ]==])

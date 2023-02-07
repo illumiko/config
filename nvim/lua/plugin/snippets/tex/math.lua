@@ -17,6 +17,16 @@ end
 
 -- Return snippet tables
 return {
+    --auto align
+    s(
+        { trig = "\\\\", wordTrig = false, regTrig = false, snippetType = "autosnippet" },
+        fmta([=[
+        \\
+        &=<>
+        ]=], {i()}),
+        {condition = tex.in_mathzone}
+
+    ),
 	-- SUPERSCRIPT
 	s(
 		{ trig = "([%w%)%]%}])'", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
@@ -40,6 +50,7 @@ return {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- SUBSCRIPT AND SUPERSCRIPT
 	s(
 		{ trig = "([%w%)%]%}])__", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
@@ -52,12 +63,14 @@ return {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- TEXT SUBSCRIPT
 	s(
 		{ trig = "sd", snippetType = "autosnippet", wordTrig = false },
 		fmta("_{\\mathrm{<>}}", { d(1, get_visual) }),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- SUPERSCRIPT SHORTCUT
 	-- Places the first alphanumeric character after the trigger into a superscript.
 	s(
@@ -72,6 +85,7 @@ return {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- SUBSCRIPT SHORTCUT
 	-- Places the first alphanumeric character after the trigger into a subscript.
 	s(
@@ -86,6 +100,7 @@ return {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- EULER'S NUMBER SUPERSCRIPT SHORTCUT
 	s(
 		{ trig = "([^%a])ee", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
@@ -97,6 +112,7 @@ return {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- ZERO SUBSCRIPT SHORTCUT
 	s(
 		{ trig = "([%a%)%]%}])00", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
@@ -108,6 +124,7 @@ return {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- MINUS ONE SUPERSCRIPT SHORTCUT
 	s(
 		{ trig = "([%a%)%]%}])11", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
@@ -119,6 +136,7 @@ return {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- J SUBSCRIPT SHORTCUT (since jk triggers snippet jump forward)
 	s(
 		{ trig = "([%a%)%]%}])JJ", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
@@ -130,6 +148,7 @@ return {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- PLUS SUPERSCRIPT SHORTCUT
 	s(
 		{ trig = "([%a%)%]%}])%+%+", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
@@ -141,6 +160,7 @@ return {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- COMPLEMENT SUPERSCRIPT
 	s(
 		{ trig = "([%a%)%]%}])CC", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
@@ -152,6 +172,7 @@ return {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- CONJUGATE (STAR) SUPERSCRIPT SHORTCUT
 	s(
 		{ trig = "([%a%)%]%}])%*%*", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
@@ -163,6 +184,7 @@ return {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- VECTOR, i.e. \vec
 	s(
 		{ trig = "([^%a])vv", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
@@ -174,6 +196,7 @@ return {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- DEFAULT UNIT VECTOR WITH SUBSCRIPT, i.e. \unitvector_{}
 	s(
 		{ trig = "([^%a])ue", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
@@ -185,6 +208,7 @@ return {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- UNIT VECTOR WITH HAT, i.e. \uvec{}
 	s(
 		{ trig = "([^%a])uv", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
@@ -196,6 +220,7 @@ return {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- MATRIX, i.e. \vec
 	s(
 		{ trig = "([^%a])mt", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
@@ -207,6 +232,7 @@ return {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- FRACTION
 	s(
 		{ trig = "([^%a])ff", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
@@ -219,6 +245,7 @@ return {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- ANGLE
 	s(
 		{ trig = "([^%a])gg", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
@@ -230,6 +257,7 @@ return {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- ABSOLUTE VALUE
 	s(
 		{ trig = "([^%a])aa", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
@@ -264,6 +292,7 @@ return {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- LOGARITHM WITH BASE SUBSCRIPT
 	s(
 		{ trig = "([^%a%\\])ll", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
@@ -398,7 +427,7 @@ return {
 	--
 
 	-- DIFFERENTIAL, i.e. \diff
-	s({ trig = "df", snippetType = "autosnippet", snippetType = "autosnippet" }, {
+	s({ trig = "df", snippetType = "autosnippet", }, {
 		t("\\diff"),
 	}, { condition = tex.in_mathzone }),
 	-- BASIC INTEGRAL SYMBOL, i.e. \int

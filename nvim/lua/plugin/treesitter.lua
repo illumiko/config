@@ -2,7 +2,7 @@ require("nvim-treesitter.configs").setup({
 	ignore_install = { "" }, -- List of parsers to ignore installing
 	highlight = {
 		enable = true,
-		disable = { "html", "css", "sass" },
+		disable = { "html", "css", "sass", 'latex' },
 	},
 	indent = {
 		enable = true,

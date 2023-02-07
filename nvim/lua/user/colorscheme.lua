@@ -32,8 +32,9 @@ colorscheme kanagawa
 hi link CmpPmenu Normal
 ]=])
 -- }}} ]]
---[[ -- tokyonight -- {{{
 
+-- tokyonight -- {{{
+--[[
 require("tokyonight").setup({
 	style = "night",
 	transparent = true,
@@ -81,8 +82,9 @@ require("tokyonight").setup({
 		}
 	end,
 })
-vim.cmd("colorscheme tokyonight")
--- }}} ]]
+vim.cmd("colorscheme tokyonight") -- }}} 
+--]]
+
 --[[ -- Catppuccin-- {{{
 
 require("catppuccin").setup({
@@ -211,39 +213,56 @@ vim.g.doom_one_plugin_vim_illuminate = true
 vim.g.doom_one_plugin_lspsaga = false
 vim.cmd("colorscheme doom-one")-- }}} ]]
 
--- Gruvbox{{{
+-- -- Gruvbox{{{
 
-require("gruvbox").setup({
-	undercurl = true,
-	underline = true,
-	bold = true,
-	italic = true,
-	strikethrough = true,
-	invert_selection = false,
-	invert_signs = false,
-	invert_tabline = false,
-	invert_intend_guides = false,
-	inverse = true, -- invert background for search, diffs, statuslines and errors
-	contrast = "", -- can be "hard", "soft" or empty string
-	palette_overrides = {},
-	overrides = {},
-	dim_inactive = false,
-	transparent_mode = true,
-})
-vim.cmd("hi IndentBlanklineChar guifg=none")
-vim.cmd("colorscheme gruvbox")
-
+-- require("gruvbox").setup({
+-- 	undercurl = true,
+-- 	underline = true,
+-- 	bold = true,
+-- 	italic = true,
+-- 	strikethrough = true,
+-- 	invert_selection = false,
+-- 	invert_signs = false,
+-- 	invert_tabline = false,
+-- 	invert_intend_guides = false,
+-- 	inverse = true, -- invert background for search, diffs, statuslines and errors
+-- 	contrast = "", -- can be "hard", "soft" or empty string
+-- 	palette_overrides = {},
+-- 	overrides = {},
+-- 	dim_inactive = false,
+-- 	transparent_mode = true,
+-- })
+-- vim.cmd("hi IndentBlanklineChar guifg=none")
+-- vim.cmd("colorscheme gruvbox")
+--
 -- }}}
 
 -- Nord {{{
---
--- vim.g.nord_contrast = true
--- vim.g.nord_borders = false
--- vim.g.nord_disable_background = true
--- vim.g.nord_italic = false
--- vim.g.nord_uniform_diff_background = true
--- vim.g.nord_bold = true
--- -- Load the colorscheme
--- require('nord').set()
+
+require('onenord').setup({
+  theme = dark, -- "dark" or "light". Alternatively, remove the option and set vim.o.background instead
+  borders = false, -- Split window borders
+  fade_nc = true, -- Fade non-current windows, making them more distinguishable
+  -- Style that is applied to various groups: see `highlight-args` for options
+  styles = {
+    comments = "NONE",
+    strings = "NONE",
+    keywords = "bold",
+    functions = "italic",
+    variables = "NONE",
+    diagnostics = "underline",
+  },
+  disable = {
+    background = true, -- Disable setting the background color
+    cursorline = false, -- Disable the cursorline
+    eob_lines = true, -- Hide the end-of-buffer lines
+  },
+  -- Inverse highlight for different groups
+  inverse = {
+    match_paren = false,
+  },
+  custom_highlights = {}, -- Overwrite default highlight groups
+  custom_colors = {}, -- Overwrite default colors
+})
 
 -- }}}

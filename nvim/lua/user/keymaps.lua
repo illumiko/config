@@ -56,15 +56,27 @@ nmap("zm", require("ufo").closeFoldsWith) --
 --[[format]]
 nmap("<leader>F", ":FormatWrite<CR>", opts("Format"))
 
+--[[luasnip]]
+
+vim.cmd([[
+" press <Tab> to expand or jump in a snippet. These can also be mapped separately
+" via <Plug>luasnip-expand-snippet and <Plug>luasnip-jump-next.
+imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<cmd>lua require("luasnip").jump(1)<cr>' : '<Tab>' 
+" -1 for jumping backwards.
+inoremap <silent> <S-Tab> <cmd>lua require'luasnip'.jump(-1)<Cr>
+snoremap <silent> <Tab> <cmd>lua require('luasnip').jump(1)<Cr>
+snoremap <silent> <S-Tab> <cmd>lua require('luasnip').jump(-1)<Cr>
+]])
+
 -- [[lsp]]
 -- [[no hl]]
 nmap("<Leader>H", ":set hlsearch!<CR>", opts("Clear hls"))
 
 -- [[better split management]]
-nmap("<C-h>", ":NavigatorLeft<CR>", opts("Window Left"))
-nmap("<C-j>", ":NavigatorDown<CR>", opts("Window Down"))
-nmap("<C-k>", ":NavigatorUp<CR>", opts("Window Up"))
-nmap("<C-l>", ":NavigatorRight<CR>", opts("Window Right"))
+-- nmap("<C-h>", ":NavigatorLeft<CR>", opts("Window Left"))
+-- nmap("<C-j>", ":NavigatorDown<CR>", opts("Window Down"))
+-- nmap("<C-k>", ":NavigatorUp<CR>", opts("Window Up"))
+-- nmap("<C-l>", ":NavigatorRight<CR>", opts("Window Right"))
 
 -- [[swap windows]
 nmap("<C-x>", "<C-w>x", opts(""))
