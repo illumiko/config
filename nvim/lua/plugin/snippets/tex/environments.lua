@@ -21,6 +21,58 @@ local line_begin = require("luasnip.extras.expand_conditions").line_begin
 return
 	{
 		s(
+			{ trig = "([^%w])bse", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
+			fmta(
+				[=[
+
+            \subsubsection{<>}
+            \label{ssub:<>}
+
+            ]=],
+				{ i(1), rep(1) }
+			),
+			{ condition = line_begin }
+		),
+		s(
+			{ trig = "([^%w])su", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
+			fmta(
+				[=[
+
+            \subsection{<>}
+            \label{sub:<>}
+
+            ]=],
+				{ i(1), rep(1) }
+			),
+			{ condition = line_begin }
+		),
+		s(
+			{ trig = "([^%w])se", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
+			fmta(
+				[=[
+
+            \section{<>}
+            \label{sec:<>}
+
+            ]=],
+				{ i(1), rep(1) }
+			),
+			{ condition = line_begin }
+		),
+		s(
+			{ trig = "([^%w])pa", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
+			fmta(
+				[=[
+
+            \paragraph{<>}
+            \label{par:<>}
+
+            ]=],
+				{ d(1,get_visual), rep(1) }
+			),
+			{ condition = line_begin }
+		),
+		s(
 			{ trig = "doc", snippetType = "autosnippet" },
 			fmta(
 				[[
@@ -39,9 +91,9 @@ return
       ]],
 				{
 					i(1),
-                    i(2),
-                    i(3),
-                    i(0)
+					i(2),
+					i(3),
+					i(0),
 				}
 			),
 			{ condition = line_begin }
@@ -240,13 +292,13 @@ return
 		-- 	{ trig = "fig" },
 		-- 	fmta(
 		-- 		[[
-  --       \begin{figure}[htb!]
-  --         \centering
-  --         \includegraphics[width=<>\linewidth]{<>}
-  --         \caption{<>}
-  --         \label{fig:<>}
-  --       \end{figure}
-  --       ]],
+		--       \begin{figure}[htb!]
+		--         \centering
+		--         \includegraphics[width=<>\linewidth]{<>}
+		--         \caption{<>}
+		--         \label{fig:<>}
+		--       \end{figure}
+		--       ]],
 		-- 		{
 		-- 			i(1),
 		-- 			i(2),

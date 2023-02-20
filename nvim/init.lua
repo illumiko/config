@@ -6,15 +6,22 @@ require("user.autocmds")
 require("plugin.lsp")
 -- require("plugin.session_manager")
 -- require("plugin.window_picker")
-require("user.colorscheme")
-require("user.highlights")
 require("plugin.indent_lines")
 require("plugin.start_page")
 require("range-highlight").setup()
 require("Navigator").setup()
+
 -- require("plugin.autosave")
 require("plugin.explorer")
 require("plugin.which_key")
+if vim.g.neovide then
+	require("user.neovide")
+    require("user.highlights")
+else
+    require("user.colorscheme")
+    require("user.highlights")
+
+end
 -- require("plugin.cybu_conf")
 require("plugin.buf_deleto")
 require("plugin.barbar")
@@ -33,6 +40,3 @@ require("plugin.cursor_context")
 require("plugin.telescope_conf")
 require("plugin.due_conf")
 require("plugin.ufo_conf")
-if vim.g.neovide then
-	require("user.neovide")
-end

@@ -1,5 +1,7 @@
 vim.cmd([==[
 let g:tex_flavor='latex'
+let g:tex_fold_enabled=0
+let g:tex_fast= "M"
 
 " My configuration of the VimTeX plugin
 
@@ -20,11 +22,11 @@ let g:vimtex_mappings_enabled = 0
 let g:vimtex_imaps_enabled = 0
 
 " Turn off completion (not currently used so more efficient to turn off)
-" let g:vimtex_complete_enabled = 0
-let g:vimtex_complete_enabled = 1
+let g:vimtex_complete_enabled = 0
+"let g:vimtex_complete_enabled = 1
 
 " Disable syntax conceal
-let g:vimtex_syntax_conceal_disable = 1  
+let g:vimtex_syntax_conceal_disable = 0
 
 " Default is 500 lines and gave me lags on missed key presses
 let g:vimtex_delim_stopline = 5
@@ -191,7 +193,7 @@ map ]* <plug>(vimtex-]star
 map [/ <plug>(vimtex-[/
 map [* <plug>(vimtex-[star
 
-setlocal spell
+"setlocal spell
 set spelllang=nl,en_gb
 inoremap <C-p> <c-g>u<Esc>[s1z=`]a<c-g>u
 ]==])

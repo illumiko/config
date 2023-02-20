@@ -2145,3 +2145,381 @@ Feb 07 12:03 : output: Failed to open mixer for 'default detected output': no su
 Feb 07 12:05 : player: played "hMMmmm/jp/【Hatsune Miku】Patchwork Staccato 'ツギハギスタッカート'【Eng sub】.mp3"
 Feb 07 12:09 : player: played "hMMmmm/jp/【Hatsune Miku】Solitary Hide-and-Seek Envy _ Hitorinbo Envy 独りんぼエンヴィー PV (English Subs).mp3"
 Feb 07 12:12 : player: played "hMMmmm/jp/【HD】Fate⧸Grand Order - 絕對魔獸戰線巴比倫尼亞 - ED3 - milet - Tell me【中日字幕】.mp3"
+Feb 07 12:15 : player: played "hMMmmm/jp/【Soredemo Sekai wa Utsukushii】Tender Rain Cover【Kat】.mp3"
+Feb 07 14:39 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 07 14:43 : player: played "hMMmmm/jp/【アイネクライネ】歌ってみた 【ぽこた】.mp3"
+Feb 07 20:46 : player: played "hMMmmm/jp/【ボカロ10人】祝福のメシアとアイの塔【オリジナルMV】_【VOCALOID 10】『Blessed Messiah and the Tower of AI』【Original MV】.mp3"
+Feb 08 05:24 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Feb 08 07:19 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 08 07:47 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 08 10:19 : player: played "hMMmmm/jp/【ボカロ10人】祝福のメシアとアイの塔【オリジナルMV】_【VOCALOID 10】『Blessed Messiah and the Tower of AI』【Original MV】.mp3"
+Feb 08 10:20 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 08 10:39 : player: played "hMMmmm/lofi/beats+ambient/RAINING IN OSAKA.mp3"
+Feb 08 10:58 : player: played "hMMmmm/lofi/beats+ambient/RAINING IN OSAKA.mp3"
+Feb 08 11:17 : player: played "hMMmmm/lofi/beats+ambient/RAINING IN OSAKA.mp3"
+Feb 08 11:22 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 08 12:22 : player: played "hMMmmm/lofi/beats+ambient/[Piano x ASMR🎧] 초속 5센티미터 _ 눈보라 치던 날, 따뜻한 난로가 있는 기차역 대합실에서 _ End Theme.mp3"
+Feb 09 03:11 : player: played "hMMmmm/lofi/beats+ambient/[Piano x ASMR🎧] 초속 5센티미터 _ 눈보라 치던 날, 따뜻한 난로가 있는 기차역 대합실에서 _ End Theme.mp3"
+Feb 09 03:13 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Feb 09 03:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 09 04:16 : player: played "hMMmmm/lofi/beats+ambient/[Piano x ASMR🎧] 초속 5센티미터 _ 눈보라 치던 날, 따뜻한 난로가 있는 기차역 대합실에서 _ End Theme.mp3"
+Feb 09 05:08 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 09 05:08 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 09 05:11 : player: played "hMMmmm/lofi/singles/SLOWED + REVERB _ Carol of the Bells by Lindsey Stirling.m4a"
+Feb 09 05:15 : player: played "hMMmmm/lofi/singles/SLOWED + REVERB _ Carol of the Bells by Lindsey Stirling.m4a"
+Feb 09 05:18 : player: played "hMMmmm/lofi/singles/SLOWED + REVERB _ Carol of the Bells by Lindsey Stirling.m4a"
+Feb 09 05:21 : player: played "hMMmmm/lofi/singles/SLOWED + REVERB _ Carol of the Bells by Lindsey Stirling.m4a"
+Feb 09 05:24 : player: played "hMMmmm/lofi/singles/SLOWED + REVERB _ Carol of the Bells by Lindsey Stirling.m4a"
+Feb 09 05:28 : player: played "hMMmmm/lofi/singles/SLOWED + REVERB _ Carol of the Bells by Lindsey Stirling.m4a"
+Feb 09 05:30 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 09 05:30 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 09 05:30 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 09 05:30 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 09 06:30 : player: played "hMMmmm/lofi/beats+ambient/[Piano x ASMR🎧] 초속 5센티미터 _ 눈보라 치던 날, 따뜻한 난로가 있는 기차역 대합실에서 _ End Theme.mp3"
+Feb 09 07:26 : player: played "hMMmmm/lofi/beats+ambient/[Piano x ASMR🎧] 초속 5센티미터 _ 눈보라 치던 날, 따뜻한 난로가 있는 기차역 대합실에서 _ End Theme.mp3"
+Feb 09 07:26 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 09 07:29 : player: played "hMMmmm/Playlists/liked/Dark Nightcore - Angel With a Shotgun (Nightcore Version).mp3"
+Feb 09 07:32 : player: played "hMMmmm/Playlists/liked/Tear_in_My_Heart.mp3"
+Feb 09 07:37 : player: played "hMMmmm/Playlists/liked/Bao The Whale - Citrus Love.mp3"
+Feb 09 07:40 : player: played "hMMmmm/Playlists/liked/Em Beihold - City of Angels.mp3"
+Feb 09 07:44 : player: played "hMMmmm/Playlists/liked/Dance_With_My_Father.mp3"
+Feb 09 07:48 : player: played "hMMmmm/Playlists/liked/mxmtoon - almost home.mp3"
+Feb 09 07:48 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 09 07:50 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 09 07:51 : player: played "hMMmmm/Playlists/liked/Foxchase - Dear Maria as an Anime Intro.flac"
+Feb 09 07:51 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 09 07:56 : player: played "hMMmmm/Playlists/liked/Eternal_-_Similar_Outskirts_Remix.mp3"
+Feb 09 07:59 : player: played "hMMmmm/Playlists/liked/Everything_Goes_On.mp3"
+Feb 09 08:01 : player: played "hMMmmm/Playlists/liked/Miraie - facade (feat. blackwinterwells).mp3"
+Feb 09 08:06 : player: played "hMMmmm/Playlists/liked/myun - Fukurou.mp3"
+Feb 09 08:11 : player: played "hMMmmm/Playlists/liked/Selphius - Fukurou.mp3"
+Feb 09 08:12 : player: played "hMMmmm/Playlists/liked/Lovers__Oath.mp3"
+Feb 09 08:14 : player: played "hMMmmm/Playlists/liked/Ghost_-_Acoustic.mp3"
+Feb 09 08:19 : player: played "hMMmmm/Playlists/liked/TV.mp3"
+Feb 09 08:22 : player: played "hMMmmm/Playlists/liked/Annelle Staal - The Grey.mp3"
+Feb 09 08:26 : player: played "hMMmmm/Playlists/liked/I_Am_Falling_For_You.mp3"
+Feb 09 08:29 : player: played "hMMmmm/Playlists/liked/I_Can_t_Handle_Change.mp3"
+Feb 09 08:33 : player: played "hMMmmm/Playlists/liked/Lur - i-'m just your problem (2012 version).mp3"
+Feb 09 08:36 : player: played "hMMmmm/Playlists/liked/Innocently_Annoying.mp3"
+Feb 09 08:40 : player: played "hMMmmm/Playlists/liked/demxntia - it-'s alright.mp3"
+Feb 09 08:45 : player: played "hMMmmm/Playlists/liked/Ship_in_a_Bottle.mp3"
+Feb 09 08:49 : player: played "hMMmmm/Playlists/liked/We_re_Screwed.mp3"
+Feb 09 13:07 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 09 13:07 : player: played "hMMmmm/Playlists/liked/Arensky - My Gaming Life.mp3"
+Feb 09 13:11 : player: played "hMMmmm/Playlists/liked/Anna Blue - I Against Me.mp3"
+Feb 09 13:15 : player: played "hMMmmm/Playlists/liked/Nisha_Labyrinth__feat__Sophiya_.mp3"
+Feb 09 13:18 : player: played "hMMmmm/Playlists/liked/4 Door Theatre - Porcelain Face.mp3"
+Feb 09 13:21 : player: played "hMMmmm/Playlists/liked/TheFatRat - Hiding In The Blue.mp3"
+Feb 09 13:25 : player: played "hMMmmm/Playlists/liked/Patchwork_Staccato.mp3"
+Feb 09 13:29 : player: played "hMMmmm/Playlists/liked/Ikanaide_-_album_ver.mp3"
+Feb 09 14:17 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 09 14:18 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 09 14:21 : player: played "hMMmmm/Playlists/liked/Ikanaide_-_album_ver.mp3"
+Feb 09 14:24 : player: played "hMMmmm/Playlists/liked/Scatman__ski-ba-bop-ba-dop-bop_.mp3"
+Feb 09 14:27 : player: played "hMMmmm/Playlists/liked/Joe Zieja - Soldier, Poet, King (Venti Version from -Genshin Impact-).mp3"
+Feb 09 14:32 : player: played "hMMmmm/Playlists/liked/She_Will_Be_Loved.mp3"
+Feb 09 14:34 : player: played "hMMmmm/Playlists/liked/sorry_haha_i_fell_asleep.mp3"
+Feb 09 14:37 : player: played "hMMmmm/Playlists/liked/Mad Tsai - that friend.mp3"
+Feb 09 14:40 : player: played "hMMmmm/Playlists/liked/chrchie - tides.mp3"
+Feb 09 14:43 : player: played "hMMmmm/Playlists/liked/Brandon McInnis - Fuyunohanashi (From -Given-).mp3"
+Feb 09 14:46 : player: played "hMMmmm/Playlists/liked/Backseat Vagabond - Trust Me Not (Hero and Villain Duet).mp3"
+Feb 09 14:50 : player: played "hMMmmm/Playlists/liked/Homura Records - Xian - Vocal (From -the Daily Life of the Immortal King-).mp3"
+Feb 09 14:55 : player: played "hMMmmm/Playlists/liked/Mop Top - Yakusoku no Kizuna.mp3"
+Feb 09 14:58 : player: played "hMMmmm/Playlists/liked/Dark Nightcore - Angel With a Shotgun (Nightcore Version).mp3"
+Feb 09 15:01 : player: played "hMMmmm/Playlists/liked/Tear_in_My_Heart.mp3"
+Feb 09 15:05 : player: played "hMMmmm/Playlists/liked/Bao The Whale - Citrus Love.mp3"
+Feb 09 15:09 : player: played "hMMmmm/Playlists/liked/Em Beihold - City of Angels.mp3"
+Feb 09 15:13 : player: played "hMMmmm/Playlists/liked/Dance_With_My_Father.mp3"
+Feb 09 16:14 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 09 16:14 : player: played "hMMmmm/Playlists/liked/mxmtoon - almost home.mp3"
+Feb 09 16:14 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 09 16:15 : player: played "hMMmmm/Playlists/liked/Foxchase - Dear Maria as an Anime Intro.flac"
+Feb 09 16:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 09 16:21 : player: played "hMMmmm/Playlists/liked/Eternal_-_Similar_Outskirts_Remix.mp3"
+Feb 09 16:24 : player: played "hMMmmm/Playlists/liked/Everything_Goes_On.mp3"
+Feb 09 16:26 : player: played "hMMmmm/Playlists/liked/Miraie - facade (feat. blackwinterwells).mp3"
+Feb 09 16:31 : player: played "hMMmmm/Playlists/liked/myun - Fukurou.mp3"
+Feb 09 16:36 : player: played "hMMmmm/Playlists/liked/Selphius - Fukurou.mp3"
+Feb 09 16:37 : player: played "hMMmmm/Playlists/liked/Lovers__Oath.mp3"
+Feb 09 16:39 : player: played "hMMmmm/Playlists/liked/Ghost_-_Acoustic.mp3"
+Feb 09 16:44 : player: played "hMMmmm/Playlists/liked/TV.mp3"
+Feb 09 16:47 : player: played "hMMmmm/Playlists/liked/Annelle Staal - The Grey.mp3"
+Feb 09 16:51 : player: played "hMMmmm/Playlists/liked/I_Am_Falling_For_You.mp3"
+Feb 09 16:54 : player: played "hMMmmm/Playlists/liked/I_Can_t_Handle_Change.mp3"
+Feb 09 16:58 : player: played "hMMmmm/Playlists/liked/Lur - i-'m just your problem (2012 version).mp3"
+Feb 09 17:01 : player: played "hMMmmm/Playlists/liked/Innocently_Annoying.mp3"
+Feb 09 17:04 : player: played "hMMmmm/Playlists/liked/demxntia - it-'s alright.mp3"
+Feb 09 17:10 : player: played "hMMmmm/Playlists/liked/Ship_in_a_Bottle.mp3"
+Feb 09 17:14 : player: played "hMMmmm/Playlists/liked/We_re_Screwed.mp3"
+Feb 09 17:18 : player: played "hMMmmm/Playlists/liked/Arensky - My Gaming Life.mp3"
+Feb 09 17:21 : player: played "hMMmmm/Playlists/liked/Anna Blue - I Against Me.mp3"
+Feb 09 17:25 : player: played "hMMmmm/Playlists/liked/Nisha_Labyrinth__feat__Sophiya_.mp3"
+Feb 09 17:28 : player: played "hMMmmm/Playlists/liked/4 Door Theatre - Porcelain Face.mp3"
+Feb 09 17:32 : player: played "hMMmmm/Playlists/liked/TheFatRat - Hiding In The Blue.mp3"
+Feb 09 17:36 : player: played "hMMmmm/Playlists/liked/Patchwork_Staccato.mp3"
+Feb 10 10:46 : player: played "hMMmmm/Playlists/liked/Ikanaide_-_album_ver.mp3"
+Feb 10 10:48 : exception: Bad song index
+Feb 10 10:48 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 10 10:50 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Feb 10 10:51 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 10 10:55 : player: played "hMMmmm/Nnx/[ arcade ~ duncan ~ laurence -_- slowed + reverb + rain ] ALIF OFFICAL.m4a"
+Feb 10 10:55 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 10 12:07 : player: played "hMMmmm/Nnx/5 Seconds of Summer - Old Me (Official Video).mp3"
+Feb 10 12:23 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Feb 10 12:58 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 10 14:39 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 10 14:39 : player: played "hMMmmm/Nnx/5 Seconds of Summer - Old Me (Official Video).mp3"
+Feb 10 14:42 : player: played "hMMmmm/Nnx/5 Seconds of Summer - Want You Back (Official Video).mp3"
+Feb 10 14:46 : player: played "hMMmmm/Nnx/5 Seconds of Summer - Youngblood (Official Video).mp3"
+Feb 10 14:49 : player: played "hMMmmm/Nnx/5 Seconds of Summer ‒ Teeth (Lyrics).mp3"
+Feb 10 14:54 : player: played "hMMmmm/Nnx/Aitai - Mosawo _ Cover.mp3"
+Feb 10 14:56 : player: played "hMMmmm/Nnx/Alec Benjamin - Devil Doesn't Bargain [Official Lyric Video].mp3"
+Feb 10 14:59 : player: played "hMMmmm/Nnx/Alec Benjamin - Shadow Of Mine [Official Music Video].mp3"
+Feb 10 15:02 : player: played "hMMmmm/Nnx/Alec Benjamin - The Way You Felt - The Words.mp3"
+Feb 10 15:02 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 10 15:06 : player: played "hMMmmm/Nnx/Anna Blue- Silent Scream (Official Music Video).m4a"
+Feb 10 15:06 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 10 15:09 : player: played "hMMmmm/Nnx/Anson Seabra - Peter Pan Was Right (Official Lyric Video).mp3"
+Feb 10 15:15 : player: played "hMMmmm/Nnx/anson seabra - that's us _ lyrics.mp3"
+Feb 10 15:19 : player: played "hMMmmm/Nnx/Anson Seabra - Trying My Best (lyric).mp3"
+Feb 10 15:24 : player: played "hMMmmm/Nnx/Arctic Monkeys - Do I Wanna Know (Official Video).mp3"
+Feb 10 15:28 : player: played "hMMmmm/Nnx/Arctic Monkeys - Do I Wanna Know LYRICS.mp3"
+Feb 10 15:33 : player: played "hMMmmm/Nnx/Arctic Monkeys - Why'd You Only Call Me When You're High (Official Video).mp3"
+Feb 10 15:36 : player: played "hMMmmm/Nnx/Ashes - Stellar (Lyrics) 🎵.mp3"
+Feb 10 15:36 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 10 15:39 : player: played "hMMmmm/Nnx/Ashes Remain - On My Own (Pseudo Video).m4a"
+Feb 10 15:39 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 10 15:43 : player: played "hMMmmm/Nnx/AURORA - Runaway.mp3"
+Feb 10 15:46 : player: played "hMMmmm/Nnx/Ava Max - Kings & Queens (Lyrics).mp3"
+Feb 10 15:49 : player: played "hMMmmm/Nnx/Avicii - The Nights.mp3"
+Feb 10 15:53 : player: played "hMMmmm/Nnx/AViVA - GRRRLS (Lyrics).mp3"
+Feb 10 15:56 : player: played "hMMmmm/Nnx/AViVA - Psycho (Lyrics).mp3"
+Feb 10 16:17 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 10 16:17 : player: played "hMMmmm/Nnx/AViVA - Rabbit Hole (Lyrics).mp3"
+Feb 10 16:21 : player: played "hMMmmm/Nnx/Bebe Rexha - I'm Gonna Show You Crazy (Lyrics).mp3"
+Feb 10 16:25 : player: played "hMMmmm/Nnx/Bei Maejor - Lights Down Low (s l o w e d + r e v e r b).mp3"
+Feb 10 16:27 : player: played "hMMmmm/Nnx/Billie Eilish - Therefore I Am (Lyrics).mp3"
+Feb 10 16:30 : player: played "hMMmmm/Nnx/blackbear - queen of broken hearts (Lyrics).mp3"
+Feb 10 16:34 : player: played "hMMmmm/Nnx/Breaking The Habit [Official Music Video] - Linkin Park.mp3"
+Feb 10 16:34 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 10 16:55 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 10 16:57 : player: played "hMMmmm/Nnx/C2C - Delta (Official Video).m4a"
+Feb 10 16:57 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 10 17:01 : player: played "hMMmmm/Nnx/Cadmium - No Friends (Lyrics) ft. Rosendale.mp3"
+Feb 10 17:04 : player: played "hMMmmm/Nnx/calum Scott_flaws_(lyrics).mp3"
+Feb 10 17:09 : player: played "hMMmmm/Nnx/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Feb 10 17:13 : player: played "hMMmmm/Nnx/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Feb 10 17:17 : player: played "hMMmmm/Nnx/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Feb 10 17:22 : player: played "hMMmmm/Nnx/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Feb 10 17:26 : player: played "hMMmmm/Nnx/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Feb 10 17:27 : player: played "hMMmmm/Nnx/Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb).mp3"
+Feb 11 07:28 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 11 07:32 : player: played "hMMmmm/jp/Tokyo Ghoul - _Alone_ with Lyrics.m4a"
+Feb 11 07:37 : player: played "hMMmmm/jp/Tokyo Ghoul - _Alone_ with Lyrics.m4a"
+Feb 11 07:41 : player: played "hMMmmm/jp/Tokyo Ghoul - _Alone_ with Lyrics.m4a"
+Feb 11 07:46 : player: played "hMMmmm/jp/Tokyo Ghoul - _Alone_ with Lyrics.m4a"
+Feb 11 07:50 : player: played "hMMmmm/jp/Tokyo Ghoul - _Alone_ with Lyrics.m4a"
+Feb 11 07:55 : player: played "hMMmmm/jp/Tokyo Ghoul - _Alone_ with Lyrics.m4a"
+Feb 11 09:33 : player: played "hMMmmm/jp/Tokyo Ghoul - _Alone_ with Lyrics.m4a"
+Feb 11 09:33 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 11 10:18 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 11 11:23 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 11 11:26 : player: played "hMMmmm/jp/Sword Art Online - Alicization - War of Underworld Ending Full『LiSA - unlasting』.mp3"
+Feb 11 11:30 : player: played "hMMmmm/jp/Sword Art Online - Alicization - War of Underworld Ending Full『LiSA - unlasting』.mp3"
+Feb 11 11:35 : player: played "hMMmmm/jp/Sword Art Online - Alicization - War of Underworld Ending Full『LiSA - unlasting』.mp3"
+Feb 11 11:40 : player: played "hMMmmm/jp/Sword Art Online - Alicization - War of Underworld Ending Full『LiSA - unlasting』.mp3"
+Feb 11 11:45 : player: played "hMMmmm/jp/Sword Art Online - Alicization - War of Underworld Ending Full『LiSA - unlasting』.mp3"
+Feb 11 11:50 : player: played "hMMmmm/jp/Sword Art Online - Alicization - War of Underworld Ending Full『LiSA - unlasting』.mp3"
+Feb 11 11:55 : player: played "hMMmmm/jp/Sword Art Online - Alicization - War of Underworld Ending Full『LiSA - unlasting』.mp3"
+Feb 11 12:00 : player: played "hMMmmm/jp/Sword Art Online - Alicization - War of Underworld Ending Full『LiSA - unlasting』.mp3"
+Feb 11 12:12 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 11 12:16 : player: played "hMMmmm/jp/Sword Art Online - Alicization - War of Underworld Ending Full『LiSA - unlasting』.mp3"
+Feb 11 12:21 : player: played "hMMmmm/jp/Sword Art Online - Alicization - War of Underworld Ending Full『LiSA - unlasting』.mp3"
+Feb 11 12:26 : player: played "hMMmmm/jp/Sword Art Online - Alicization - War of Underworld Ending Full『LiSA - unlasting』.mp3"
+Feb 12 06:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 12 06:17 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 12 06:19 : player: played "hMMmmm/jp/Sword Art Online - Alicization - War of Underworld Ending Full『LiSA - unlasting』.mp3"
+Feb 12 06:24 : player: played "hMMmmm/jp/Sword Art Online - Alicization - War of Underworld Ending Full『LiSA - unlasting』.mp3"
+Feb 12 06:29 : player: played "hMMmmm/jp/Sword Art Online - Alicization - War of Underworld Ending Full『LiSA - unlasting』.mp3"
+Feb 12 06:30 : player: played "hMMmmm/jp/Sword Art Online - Alicization - War of Underworld Ending Full『LiSA - unlasting』.mp3"
+Feb 12 06:30 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 12 06:34 : player: played "hMMmmm/lofi/singles/Classroom of the Elite Season 2 OP. Full _ Dance In The Game - Sub. Español 『AMV』.m4a"
+Feb 12 06:37 : player: played "hMMmmm/lofi/singles/Classroom of the Elite Season 2 OP. Full _ Dance In The Game - Sub. Español 『AMV』.m4a"
+Feb 12 06:41 : player: played "hMMmmm/lofi/singles/Classroom of the Elite Season 2 OP. Full _ Dance In The Game - Sub. Español 『AMV』.m4a"
+Feb 12 06:45 : player: played "hMMmmm/lofi/singles/Classroom of the Elite Season 2 OP. Full _ Dance In The Game - Sub. Español 『AMV』.m4a"
+Feb 12 06:47 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 12 06:49 : player: played "hMMmmm/lofi/singles/lag train but it's lofi hiphop (inabakumori).mp3"
+Feb 12 06:51 : player: played "hMMmmm/lofi/singles/lag train but it's lofi hiphop (inabakumori).mp3"
+Feb 12 06:53 : player: played "hMMmmm/lofi/singles/lag train but it's lofi hiphop (inabakumori).mp3"
+Feb 12 06:55 : player: played "hMMmmm/lofi/singles/lag train but it's lofi hiphop (inabakumori).mp3"
+Feb 12 06:57 : player: played "hMMmmm/lofi/singles/lag train but it's lofi hiphop (inabakumori).mp3"
+Feb 12 06:59 : player: played "hMMmmm/lofi/singles/lag train but it's lofi hiphop (inabakumori).mp3"
+Feb 12 07:01 : player: played "hMMmmm/lofi/singles/lag train but it's lofi hiphop (inabakumori).mp3"
+Feb 12 07:03 : player: played "hMMmmm/lofi/singles/lag train but it's lofi hiphop (inabakumori).mp3"
+Feb 12 07:05 : player: played "hMMmmm/lofi/singles/lag train but it's lofi hiphop (inabakumori).mp3"
+Feb 12 07:07 : player: played "hMMmmm/lofi/singles/lag train but it's lofi hiphop (inabakumori).mp3"
+Feb 12 07:08 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 12 07:08 : player: played "hMMmmm/lofi/singles/L_s theme A.m4a"
+Feb 12 07:08 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 12 07:12 : player: played "hMMmmm/lofi/singles/SLOWED + REVERB _ Carol of the Bells by Lindsey Stirling.m4a"
+Feb 12 07:51 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 12 07:51 : player: played "hMMmmm/lofi/singles/SLOWED + REVERB _ Carol of the Bells by Lindsey Stirling.m4a"
+Feb 12 07:51 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 12 08:47 : player: played "hMMmmm/lofi/beats+ambient/you fell asleep in the car on a rainy afternoon (playlist).m4a"
+Feb 12 08:47 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 12 08:47 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 12 08:50 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Grateful.mp3"
+Feb 12 08:54 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Rumors.mp3"
+Feb 12 08:57 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Cold.mp3"
+Feb 12 09:01 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Destiny.mp3"
+Feb 12 09:04 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Ready_to_Kill.mp3"
+Feb 12 09:07 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Till_I_m_Free.mp3"
+Feb 12 09:10 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Statement.mp3"
+Feb 12 09:12 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/NO_TURNING_BACK.mp3"
+Feb 12 09:16 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Anxiety.mp3"
+Feb 12 09:19 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Play_Dead.mp3"
+Feb 12 09:21 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Till_My_Hands_Bleed.mp3"
+Feb 12 09:24 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Play.mp3"
+Feb 12 09:27 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Greatest.mp3"
+Feb 12 09:29 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/PINKY_PROMISE.mp3"
+Feb 12 09:32 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Free_Me.mp3"
+Feb 12 09:35 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/No_Retreat.mp3"
+Feb 12 09:39 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Light_It_Up.mp3"
+Feb 12 15:13 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 12 15:15 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Fight_Back.mp3"
+Feb 12 15:17 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 12 15:36 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 12 15:36 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Are_You_Ok_.mp3"
+Feb 12 15:41 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Careless.mp3"
+Feb 12 15:43 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/INSPIRED.mp3"
+Feb 12 15:46 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Born_a_Rockstar.mp3"
+Feb 12 15:48 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Life.mp3"
+Feb 12 15:52 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Best_of_Me.mp3"
+Feb 12 15:55 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/THAT_S_WHAT_IT_TAKES.mp3"
+Feb 12 15:57 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Better_Days.mp3"
+Feb 12 16:01 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Soldier.mp3"
+Feb 12 16:05 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Never_Give_Up.mp3"
+Feb 12 16:08 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Choose_It.mp3"
+Feb 12 16:11 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Don_t_Wanna_Let_Myself_Down.mp3"
+Feb 12 16:14 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Flirt.mp3"
+Feb 12 16:17 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Make_Moves.mp3"
+Feb 12 16:19 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Secrets__With_NEFFEX_.mp3"
+Feb 12 16:22 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Fever_Dream.mp3"
+Feb 12 16:26 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Crown.mp3"
+Feb 12 17:00 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 12 17:03 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/As_You_Fade_Away.mp3"
+Feb 12 17:07 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Purpose.mp3"
+Feb 12 17:10 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Chance.mp3"
+Feb 12 17:34 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 12 17:49 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 12 17:49 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Big_Swing.mp3"
+Feb 12 17:53 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Legendary.mp3"
+Feb 12 17:55 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Free_Me.mp3"
+Feb 13 03:28 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Light_It_Up.mp3"
+Feb 13 03:29 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Feb 13 05:41 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 13 06:09 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 13 06:44 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 13 08:37 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 13 08:37 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 13 10:40 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 13 10:40 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 13 11:19 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 13 11:19 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 13 11:20 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Are_You_Ok_.mp3"
+Feb 13 11:22 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Secrets__With_NEFFEX_.mp3"
+Feb 13 11:26 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Light_It_Up.mp3"
+Feb 13 11:28 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Play.mp3"
+Feb 13 11:33 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Careless.mp3"
+Feb 13 11:36 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Big_Swing.mp3"
+Feb 13 11:39 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Anxiety.mp3"
+Feb 13 11:43 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Born_a_Rockstar.mp3"
+Feb 13 15:18 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Are_You_Ok_.mp3"
+Feb 13 15:18 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 13 16:18 : player: played "hMMmmm/lofi/beats+ambient/you fell asleep in the car on a rainy afternoon (playlist).m4a"
+Feb 14 08:58 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 09:31 : player: played "hMMmmm/lofi/beats+ambient/you fell asleep in the car on a rainy afternoon (playlist).m4a"
+Feb 14 10:31 : player: played "hMMmmm/lofi/beats+ambient/you fell asleep in the car on a rainy afternoon (playlist).m4a"
+Feb 14 11:31 : player: played "hMMmmm/lofi/beats+ambient/you fell asleep in the car on a rainy afternoon (playlist).m4a"
+Feb 14 12:31 : player: played "hMMmmm/lofi/beats+ambient/you fell asleep in the car on a rainy afternoon (playlist).m4a"
+Feb 14 13:30 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 13:30 : player: played "hMMmmm/lofi/beats+ambient/you fell asleep in the car on a rainy afternoon (playlist).m4a"
+Feb 14 13:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 13:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 13:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 13:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 13:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 13:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 13:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 13:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 13:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 13:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 13:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 13:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 13:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 13:32 : player: played "hMMmmm/jp/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Feb 14 13:32 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 13:37 : player: played "hMMmmm/jp/Re -Zero kara Hajimeru Isekai Seikatsu Ending FULL - Re：ゼロから始める異世界生活 ED 「STYX HELIX」.mp3"
+Feb 14 13:37 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 13:42 : player: played "hMMmmm/jp/Re -Zero Season 2 Insert Song EP 15『 Emilia (CV. Rie Takahashi) - Door』.mp3"
+Feb 14 13:42 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 13:47 : player: played "hMMmmm/jp/Tokyo Ghoul - Glassy Sky [東京喰種 -トーキョーグール-].m4a"
+Feb 14 13:47 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 13:53 : player: played "hMMmmm/jp/[ENG SUB] Secret Base - 10 Years After Ver..mp3"
+Feb 14 13:58 : player: played "hMMmmm/jp/Re -Zero Season 2 - Ending Full『Memento』by nonoc.mp3"
+Feb 14 14:02 : player: played "hMMmmm/jp/Cyberpunk： Edgerunners ｜ “I Really Want to Stay At Your House” by Rosa Walton ｜ Music Video.mp3"
+Feb 14 14:07 : player: played "hMMmmm/jp/Re -Zero Season 2 EP 23 Insert Song - Ram's Theme『Rie Murakawa - What you don't know』.mp3"
+Feb 14 14:07 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 14:11 : player: played "hMMmmm/jp/Tokyo Ghoul - _Wanderers_ with Lyrics.m4a"
+Feb 14 14:11 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 14:15 : player: played "hMMmmm/jp/【HD】Fate⧸Grand Order - 絕對魔獸戰線巴比倫尼亞 - ED3 - milet - Tell me【中日字幕】.mp3"
+Feb 14 14:15 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 14:19 : player: played "hMMmmm/jp/Tokyo Ghoul - Licht und Schatten - Yutaka Yamada [東京喰種-トーキョーグール- OST].m4a"
+Feb 14 14:23 : player: played "hMMmmm/jp/Tokyo Ghoul - On my Own [ Lyrics - 東京喰種 -トーキョーグール-].m4a"
+Feb 14 14:27 : player: played "hMMmmm/jp/Tokyo Ghoul - _Alone_ with Lyrics.m4a"
+Feb 14 14:31 : player: played "hMMmmm/jp/Tokyo Ghoul - _Wanderers_ with Lyrics.m4a"
+Feb 14 14:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 14:37 : player: played "hMMmmm/jp/[ENG SUB] Secret Base - 10 Years After Ver..mp3"
+Feb 14 14:37 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 14:41 : player: played "hMMmmm/jp/Tokyo Ghoul - Licht und Schatten - Yutaka Yamada [東京喰種-トーキョーグール- OST].m4a"
+Feb 14 14:45 : player: played "hMMmmm/jp/Tokyo Ghoul - _Alone_ with Lyrics.m4a"
+Feb 14 14:49 : player: played "hMMmmm/jp/Tokyo Ghoul - On my Own [ Lyrics - 東京喰種 -トーキョーグール-].m4a"
+Feb 14 14:49 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 15:28 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 17:08 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 17:09 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 18:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 14 18:20 : player: played "hMMmmm/Nightcore/Nightcore - After Dark.opus"
+Feb 14 18:24 : player: played "hMMmmm/Nightcore/Nightcore - After Dark.opus"
+Feb 14 18:28 : player: played "hMMmmm/Nightcore/Nightcore - After Dark.opus"
+Feb 14 18:32 : player: played "hMMmmm/Nightcore/Nightcore - After Dark.opus"
+Feb 14 18:36 : player: played "hMMmmm/Nightcore/Nightcore - After Dark.opus"
+Feb 14 18:40 : player: played "hMMmmm/Nightcore/Nightcore - After Dark.opus"
+Feb 14 19:32 : update: removing hMMmmm/jp/才能なんか _ 音街ウナ.mp3
+Feb 15 10:12 : player: played "hMMmmm/Nightcore/Nightcore - After Dark.opus"
+Feb 15 11:14 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Feb 15 13:06 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 15 14:43 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 15 14:44 : player: played "hMMmmm/Nightcore/Nightcore - After Dark.opus"
+Feb 15 14:48 : player: played "hMMmmm/Nightcore/Nightcore - After Dark.opus"
+Feb 15 14:52 : player: played "hMMmmm/Nightcore/Nightcore - After Dark.opus"
+Feb 15 14:56 : player: played "hMMmmm/Nightcore/Nightcore - After Dark.opus"
+Feb 15 15:00 : player: played "hMMmmm/Nightcore/Nightcore - After Dark.opus"
+Feb 15 15:04 : player: played "hMMmmm/Nightcore/Nightcore - After Dark.opus"
+Feb 15 15:08 : player: played "hMMmmm/Nightcore/Nightcore - After Dark.opus"
+Feb 15 15:12 : player: played "hMMmmm/Nightcore/Nightcore - After Dark.opus"
+Feb 15 15:16 : player: played "hMMmmm/Nightcore/Nightcore - After Dark.opus"
+Feb 16 06:34 : player: played "hMMmmm/Nightcore/Nightcore - After Dark.opus"
+Feb 16 06:34 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 16 06:58 : player: played "hMMmmm/lofi/ambient/running away ｜ dreamcore playlist •°.mp3"
+Feb 16 07:45 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 16 07:45 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 16 07:45 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 16 14:14 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 16 14:14 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 18 06:31 : player: played "hMMmmm/lofi/ambient/no thoughts. just existence. ⧸⧸ a playlist.mp3"
+Feb 18 06:33 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Feb 18 20:50 : player: played "hMMmmm/lofi/ambient/no thoughts. just existence. ⧸⧸ a playlist.mp3"
+Feb 20 10:52 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Feb 20 10:52 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 20 11:42 : player: played "hMMmmm/lofi/ambient/no thoughts. just existence. ⧸⧸ a playlist.mp3"

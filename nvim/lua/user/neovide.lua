@@ -1,27 +1,70 @@
-vim.opt.guifont = {"VictorMono NFM", ":h12"}
-vim.cmd("let g:neovide_scale_factor = 0.85")
+vim.opt.guifont = { "JetBrainsMono Nerd Font", ":h18" }
 
---kanagawa
--- {{{
-require("kanagawa").setup({
-	undercurl = true, -- enable undercurls
-    functionStyle = {},
-	commentStyle = {},
-	keywordStyle = { bold = true },
-	statementStyle = { bold = true },
-	typeStyle = { bold = true,},
-	variablebuiltinStyle = {},
-	specialReturn = true, -- special highlight for the return keyword
-	specialException = true, -- special highlight for exception handling keywords
-	transparent = false, -- do not set background color
-	dimInactive = true, -- dim inactive window `:h hl-NormalNC`
-	colors = {},
-	overrides = {},
-	globalStatus = true,
+vim.g.neovide_transparency = 0.95
+vim.g.neovide_scale_factor = 1
+vim.g.neovide_floating_blur_amount_x = 20.0
+vim.g.neovide_floating_blur_amount_y = 0.0
+vim.g.neovide_input_use_logo = true -- true on macOS
+
+vim.opt.laststatus = 3
+vim.opt.fillchars:append({
+	horiz = "━",
+	horizup = "┻",
+	horizdown = "┳",
+	vert = "┃",
+	vertleft = "┨",
+	vertright = "┣",
+	verthoriz = "╋",
 })
-vim.cmd([=[
 
-colorscheme kanagawa
-hi link CmpPmenu Normal
-]=])
+-- tokyonight -- {{{
+
+require("tokyonight").setup({
+	style = "night",
+	transparent = false,
+	terminal_colors = true,
+	styles = {
+		types = { italic = true, bold = true },
+		keywords = { italic = true },
+		functions = { bold = true },
+		variables = {},
+		sidebars = "dark",
+		floats = "dark",
+	},
+	sidebaers = { "qf", "help" },
+	dim_inactive = true,
+	-- day_brightness = 0.3
+	--boarderless telescope
+	on_highlights = function(hl, c)
+		local prompt = "#2d3149"
+		hl.TelescopeNormal = {
+			bg = c.bg_dark,
+			fg = c.fg_dark,
+		}
+		hl.TelescopeBorder = {
+			bg = c.bg_dark,
+			fg = c.bg_dark,
+		}
+		hl.TelescopePromptNormal = {
+			bg = prompt,
+		}
+		hl.TelescopePromptBorder = {
+			bg = prompt,
+			fg = prompt,
+		}
+		hl.TelescopePromptTitle = {
+			bg = prompt,
+			fg = prompt,
+		}
+		hl.TelescopePreviewTitle = {
+			bg = c.bg_dark,
+			fg = c.bg_dark,
+		}
+		hl.TelescopeResultsTitle = {
+			bg = c.bg_dark,
+			fg = c.bg_dark,
+		}
+	end,
+})
+vim.cmd("colorscheme tokyonight")
 -- }}}

@@ -9,15 +9,15 @@ local transparent = function() -- {{{
 		"LspInlayHint",
 		"IndentBlanklineSpaceChar",
         --Telescope stuff:
-        "TelescopeBorder",
-        "TelescopeResultsBorder",
-        "TelescopePreviewBorder",
-        "TelescopePromptBorder",
-        "TelescopeTitle",
-        "TelescopeResultsTitle",
-        "TelescopePreviewTitle",
-        "TelescopePromptTitle",
-        "TelescopeNormal"
+        -- "TelescopeBorder",
+        -- "TelescopeResultsBorder",
+        -- "TelescopePreviewBorder",
+        -- "TelescopePromptBorder",
+        -- "TelescopeTitle",
+        -- "TelescopeResultsTitle",
+        -- "TelescopePreviewTitle",
+        -- "TelescopePromptTitle",
+        -- "TelescopeNormal"
 	}
 
 	for _, value in pairs(transparent) do

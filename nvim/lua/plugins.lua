@@ -170,8 +170,7 @@ return {
 		end,
 	},
 
-	{ "kevinhwang91/nvim-ufo", dependencies = "kevinhwang91/promise-async" },
-	{ "petertriho/nvim-scrollbar", config = true },
+{ "kevinhwang91/nvim-ufo", dependencies = "kevinhwang91/promise-async" },
 	{
 		"echasnovski/mini.animate",
 		config = function()
@@ -279,7 +278,7 @@ return {
 		"dhruvasagar/vim-table-mode",
 		ft = "norg",
 	},
-    {"lervag/vimtex"},
+	{ "lervag/vimtex" },
 
 	-- [[nvim greeter]]
 	{ "goolord/alpha-nvim", lazy = true },
@@ -314,7 +313,7 @@ return {
 	--[terminal]]
 	{
 		"akinsho/toggleterm.nvim",
-        events = "BufNew",
+		events = "BufNew",
 		keys = {
 			{
 				"<C-\\>",
@@ -391,8 +390,7 @@ return {
 	{ "ellisonleao/gruvbox.nvim", lazy = true },
 	{ "folke/tokyonight.nvim", lazy = true },
 	{ "navarasu/onedark.nvim", lazy = true },
-    {'shaunsingh/nord.nvim',lazy=true},
-    {"rmehri01/onenord.nvim", lazy=true},
+	{ "gbprod/nord.nvim"},
 	-- "glepnir/zephyr-nvim",
 	{ "catppuccin/nvim", name = "catppuccin", lazy = true },
 	{ "rebelot/kanagawa.nvim", lazy = true }, -- kangawa}}}

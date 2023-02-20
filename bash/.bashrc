@@ -140,3 +140,8 @@ _open_files_for_editing() {
     echo "$FUNCNAME: package 'xdg-utils' or 'exo' is required." >&2
 }
 # }}}
+
+# Caps as backspacpe
+# setxkbmap -option caps:backspace
+# xmodmap -e "keycode 66 = BackSpace"
+# dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:swapescape']" 

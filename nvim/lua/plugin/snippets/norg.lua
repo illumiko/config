@@ -5,7 +5,7 @@ return {
 	s({ trig = "([^%w])h3", regTrig = true, wordTrig = false, snippetType = "autosnippet" }, fmt([[*** {}]], i(0))),
 	s({ trig = "([^%w])h4", regTrig = true, wordTrig = false, snippetType = "autosnippet" }, fmt([[**** {}]], i(0))),
 	s({ trig = "([^%w])h5", regTrig = true, wordTrig = false, snippetType = "autosnippet" }, fmt([[***** {}]], i(0))),
-	s({ trig = "([^%w])tk", regTrig = true, wordTrig = false, snippetType = "autosnippet" }, fmt([[( ) {}]], i(0))),
+	s({ trig = "tk", regTrig = true, wordTrig = false, snippetType = "autosnippet" }, fmt([[  ( ) {}]], i(0))),
 
 	s(
 		{ trig = "sc ", wordTrig = true, dscr = "boiler plate for schedule timers", snippetType = autosnippet },
