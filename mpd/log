@@ -2523,3 +2523,63 @@ Feb 18 20:50 : player: played "hMMmmm/lofi/ambient/no thoughts. just existence. 
 Feb 20 10:52 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
 Feb 20 10:52 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
 Feb 20 11:42 : player: played "hMMmmm/lofi/ambient/no thoughts. just existence. ⧸⧸ a playlist.mp3"
+Feb 21 05:03 : player: played "hMMmmm/lofi/ambient/no thoughts. just existence. ⧸⧸ a playlist.mp3"
+Feb 21 05:08 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Feb 23 20:53 : player: played "hMMmmm/lofi/ambient/no thoughts. just existence. ⧸⧸ a playlist.mp3"
+Feb 24 09:55 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Feb 24 16:17 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 24 16:18 : player: played "hMMmmm/Playlists/liked/Annelle Staal - The Grey.mp3"
+Feb 24 20:09 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 24 21:09 : player: played "hMMmmm/lofi/beats+ambient/you fell asleep in the car on a rainy afternoon (playlist).m4a"
+Feb 24 21:26 : player: played "hMMmmm/lofi/beats+ambient/you fell asleep in the car on a rainy afternoon (playlist).m4a"
+Feb 25 04:59 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Feb 25 05:49 : player: played "hMMmmm/lofi/beats+ambient/you fell asleep in the car on a rainy afternoon (playlist).m4a"
+Feb 25 05:49 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 25 05:52 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Don_t_Wanna_Let_Myself_Down.mp3"
+Feb 25 05:54 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Don_t_Wanna_Let_Myself_Down.mp3"
+Feb 25 06:05 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 25 06:06 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Don_t_Wanna_Let_Myself_Down.mp3"
+Feb 25 06:09 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Don_t_Wanna_Let_Myself_Down.mp3"
+Feb 25 06:11 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Don_t_Wanna_Let_Myself_Down.mp3"
+Feb 25 06:14 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Don_t_Wanna_Let_Myself_Down.mp3"
+Feb 25 06:16 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Don_t_Wanna_Let_Myself_Down.mp3"
+Feb 25 06:19 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Don_t_Wanna_Let_Myself_Down.mp3"
+Feb 25 06:22 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Don_t_Wanna_Let_Myself_Down.mp3"
+Feb 25 06:24 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Don_t_Wanna_Let_Myself_Down.mp3"
+Feb 25 06:26 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 25 06:30 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/As_You_Fade_Away.mp3"
+Feb 25 06:34 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Play_Dead.mp3"
+Feb 25 06:37 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Choose_It.mp3"
+Feb 25 06:40 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Till_I_m_Free.mp3"
+Feb 25 06:43 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/THAT_S_WHAT_IT_TAKES.mp3"
+Feb 25 06:45 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Secrets__With_NEFFEX_.mp3"
+Feb 25 06:49 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Light_It_Up.mp3"
+Feb 25 06:51 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Till_My_Hands_Bleed.mp3"
+Feb 25 06:54 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Immortal.mp3"
+Feb 25 06:57 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Cold.mp3"
+Feb 25 07:00 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/NO_TURNING_BACK.mp3"
+Feb 25 07:03 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Grateful.mp3"
+Feb 25 07:05 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Are_You_Ok_.mp3"
+Feb 26 11:05 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Feb 28 10:09 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Play.mp3"
+Feb 28 17:15 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Mar 01 08:53 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Mar 01 09:53 : player: played "hMMmmm/lofi/beats+ambient/you fell asleep in the car on a rainy afternoon (playlist).m4a"
+Mar 01 09:53 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Mar 01 09:56 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Legendary.mp3"
+Mar 01 10:59 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Mar 01 10:59 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Mar 01 11:56 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Mar 01 15:17 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Mar 01 15:20 : player: played "hMMmmm/lofi/beats+ambient/[Piano x ASMR🎧] 귀멸의칼날 _ 탄지로의 숯 배달 체험하기🌨.mp3"
+Mar 01 15:20 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Mar 01 15:20 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Mar 01 15:20 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Mar 01 17:15 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Mar 01 17:28 : player: played "hMMmmm/lofi/beats+ambient/you fell asleep in the car on a rainy afternoon (playlist).m4a"
+Mar 01 18:18 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Mar 01 18:29 : player: played "hMMmmm/lofi/beats+ambient/you fell asleep in the car on a rainy afternoon (playlist).m4a"
+Mar 01 19:29 : player: played "hMMmmm/lofi/beats+ambient/you fell asleep in the car on a rainy afternoon (playlist).m4a"
+Mar 01 20:29 : player: played "hMMmmm/lofi/beats+ambient/you fell asleep in the car on a rainy afternoon (playlist).m4a"
+Mar 02 06:58 : player: played "hMMmmm/lofi/beats+ambient/you fell asleep in the car on a rainy afternoon (playlist).m4a"
+Mar 02 06:58 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM

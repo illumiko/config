@@ -29,7 +29,7 @@ map("x", "y", '"+y', opts(""))
 map("n", "yi]", '"+yi]', opts(""))
 map("n", [[yi']], [["+yi']], opts(""))
 map("n", [[yi}]], [["+yi}]], opts(""))
-map("n", [[yi']], [["+yin']], opts(""))
+map("n", [[yi"]], [["+yi"]], opts(""))
 map("n", [[yi)]], [["+yi)]], opts(""))
 
 --[[Source config]]
