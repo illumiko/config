@@ -21,12 +21,12 @@ require("nvim-treesitter.configs").setup({
 		max_file_lines = 10000, -- Do not enable for files with more than n lines, int
 		-- termcolors = {} -- table of colour name strings
 	},
-	ensure_installed = {
-		"javascript",
-		"vue",
-		"html",
-		"css",
-		"scss",
-		"python",
-	},
+	-- ensure_installed = {
+	-- 	"javascript",
+	-- 	"vue",
+	-- 	"html",
+	-- 	"css",
+	-- 	"scss",
+	-- 	"python",
+	-- },
 })

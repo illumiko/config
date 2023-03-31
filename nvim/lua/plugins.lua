@@ -7,6 +7,7 @@ return {
 	"MunifTanjim/nui.nvim",
 	"rktjmp/lush.nvim",
 	"nvim-lua/popup.nvim",
+    'godlygeek/tabular',
 
 	-- [[#LSP]]
 	"neovim/nvim-lspconfig", --lsp base
@@ -71,6 +72,7 @@ return {
 	}, -- }}}
 	--[[Nvim config]]
 	-- "folke/neodev.nvim",
+
 	--[[#Completion]]
 	{
 		"hrsh7th/nvim-cmp",
@@ -170,7 +172,7 @@ return {
 		end,
 	},
 
-{ "kevinhwang91/nvim-ufo", dependencies = "kevinhwang91/promise-async" },
+--[[ { "kevinhwang91/nvim-ufo", dependencies = "kevinhwang91/promise-async" }, ]]
 	{
 		"echasnovski/mini.animate",
 		config = function()
@@ -260,6 +262,7 @@ return {
 
 	--[[#Markdown Preview]]
 	{ "ellisonleao/glow.nvim" },
+    {"corriander/vim-markdown-indent"},
 
 	--[[#File Browser]]
 	{
@@ -271,6 +274,7 @@ return {
 	},
 
 	--[[#Note talking/Scheduling etc]]
+    -- [[NORG]]
 	{ "nvim-neorg/neorg", ft = "norg" },
 	{ "NFrid/due.nvim", ft = "norg" },
 	{ "tpope/vim-speeddating" },
@@ -287,7 +291,7 @@ return {
 	{
 		"nvim-treesitter/nvim-treesitter",
 		events = { "BufEnter" },
-		build = "TSUpdate",
+		build = ":TSUpdate",
 		dependencies = {
 			"nvim-treesitter/nvim-treesitter-context",
 			"nvim-treesitter/playground",
@@ -386,7 +390,7 @@ return {
 	{ "NTBBloodbath/doom-one.nvim", lazy = true },
 	{ "sainnhe/everforest", lazy = true },
 	{ "RishabhRD/gruvy", lazy = true },
-
+    {'mcchrish/zenbones.nvim', lazy=true},
 	{ "ellisonleao/gruvbox.nvim", lazy = true },
 	{ "folke/tokyonight.nvim", lazy = true },
 	{ "navarasu/onedark.nvim", lazy = true },

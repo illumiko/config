@@ -69,7 +69,7 @@ set noshowcmd noruler
 -- vim.textwidth = 120--{{{
 -- vim.opt.relativenumber = true
 vim.opt.foldcolumn = "1"
-vim.o.foldlevel = 90
-vim.foldlevelstart = 99
-vim.foldenable = true
-vim.o.foldmethod = "manual" --}}}
+-- vim.o.foldlevel = 90
+-- vim.foldlevelstart = 99
+-- vim.foldenable = true
+vim.o.foldmethod = "marker" --}}}

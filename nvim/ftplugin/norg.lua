@@ -30,11 +30,11 @@ vim.api.nvim_create_autocmd({ "BufEnter" }, { -- {{{
 	end,
 }) -- }}}
 
-vim.api.nvim_create_autocmd({ "BufWinEnter" }, { -- {{{
+--[[ vim.api.nvim_create_autocmd({ "BufWinEnter" }, { -- {{{
 	pattern = { "*.norg" },
 	group = g,
 	callback = function()
         vim.cmd("UfoDisable")
 	end,
-}) -- }}}
+}) -- }}} ]]
 -- }}}

@@ -9,21 +9,22 @@ local transparent = function() -- {{{
 		"LspInlayHint",
 		"IndentBlanklineSpaceChar",
         --Telescope stuff:
-        -- "TelescopeBorder",
-        -- "TelescopeResultsBorder",
-        -- "TelescopePreviewBorder",
-        -- "TelescopePromptBorder",
-        -- "TelescopeTitle",
-        -- "TelescopeResultsTitle",
-        -- "TelescopePreviewTitle",
-        -- "TelescopePromptTitle",
-        -- "TelescopeNormal"
+        "TelescopeBorder",
+        "TelescopeResultsBorder",
+        "TelescopePreviewBorder",
+        "TelescopePromptBorder",
+        "TelescopeTitle",
+        "TelescopeResultsTitle",
+        "TelescopePreviewTitle",
+        "TelescopePromptTitle",
+        "TelescopeNormal"
 	}
 
 	for _, value in pairs(transparent) do
 		vim.cmd("hi " .. value .. " guibg=none guifg=none")
 	end
 end -- }}}
+
 local ts_rainbow = { -- {{{
 	"@debug",
 	"@define",
@@ -37,6 +38,9 @@ local ts_rainbow = { -- {{{
 transparent() -- setting hi's to none
 u.set_hl_fg("Folded", "Comment") -- Change folded guifg
 u.set_hl_bg("ScrollbarCursor", "Visual") -- Change scroll bar guibg
+vim.cmd([[
+hi SpellBad guifg=none guisp=Red
+]])
 
 --[[ require("modes").setup({ -- {{{
 	colors = {

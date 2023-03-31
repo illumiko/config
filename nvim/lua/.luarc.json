@@ -78,5 +78,6 @@
         "/home/illumiko/.local/share/nvim/lazy/cmp-nvim-lua",
         "/home/illumiko/.local/share/nvim/lazy/playground",
         "${3rd}/luassert/library"
-    ]
+    ],
+    "workspace.checkThirdParty": false
 }

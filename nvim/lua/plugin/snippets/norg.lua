@@ -51,9 +51,10 @@ return {
 			routine.current_day = os.date("%A")
 			routine.main = function()
 				local template_last_part = {
-					[1] = "*TO BE AT A PLACE NO ONE ELSE IS; YOU HAVE DO THINGS NO ONE ELSE WANTS*",
-					[2] = "* Agenda",
-					[3] = "* Pomodoro",
+                    [1] = "*TO BE AT A PLACE NO ONE ELSE IS; YOU HAVE DO THINGS NO ONE ELSE WANTS*",
+                    [2] = "*Refresh strategy: 30m nap + shower + coffee*",
+					[3] = "* Agenda",
+                    [4] = "* Pomodoro",
 				}
 				local template_first_part = {
 					[1] = "@document.meta",

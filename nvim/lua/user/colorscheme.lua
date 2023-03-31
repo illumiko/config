@@ -1,35 +1,33 @@
 -- Kanagawa-- {{{
 --
--- vim.opt.laststatus = 3
--- vim.opt.fillchars:append({
--- 	horiz = "━",
--- 	horizup = "┻",
--- 	horizdown = "┳",
--- 	vert = "┃",
--- 	vertleft = "┨",
--- 	vertright = "┣",
--- 	verthoriz = "╋",
--- })
--- require("kanagawa").setup({
--- 	undercurl = true, -- enable undercurls
--- 	commentStyle = { italic = true },
--- 	functionStyle = { italic = true },
--- 	keywordStyle = { bold = true },
--- 	statementStyle = { bold = true },
--- 	typeStyle = { bold = true, italic = true },
--- 	variablebuiltinStyle = {},
--- 	specialReturn = true, -- special highlight for the return keyword
--- 	specialException = true, -- special highlight for exception handling keywords
--- 	transparent = true, -- do not set background color
--- 	dimInactive = true, -- dim inactive window `:h hl-NormalNC`
--- 	colors = {},
--- 	overrides = {},
--- 	globalStatus = true,
--- })
--- vim.cmd([=[
--- colorscheme kanagawa
--- hi link CmpPmenu Normal
--- ]=])
+vim.opt.laststatus = 3
+vim.opt.fillchars:append({
+	horiz = "━",
+	horizup = "┻",
+	horizdown = "┳",
+	vert = "┃",
+	vertleft = "┨",
+	vertright = "┣",
+	verthoriz = "╋",
+})
+require("kanagawa").setup({
+	undercurl = true, -- enable undercurls
+	commentStyle = { italic = true },
+	functionStyle = { italic = true },
+	keywordStyle = { bold = true },
+	statementStyle = { bold = true },
+	typeStyle = { bold = true, italic = true },
+	variablebuiltinStyle = {},
+	specialReturn = true, -- special highlight for the return keyword
+	specialException = true, -- special highlight for exception handling keywords
+	transparent = false, -- do not set background color
+	dimInactive = true, -- dim inactive window `:h hl-NormalNC`
+	globalStatus = true,
+})
+vim.cmd([=[
+colorscheme kanagawa
+hi link CmpPmenu Normal
+]=])
 -- -- }}}
 --
 -- tokyonight -- {{{
@@ -85,14 +83,13 @@ vim.cmd("colorscheme tokyonight") -- }}}
 --]]
 
 --[[ -- Catppuccin-- {{{
-
 require("catppuccin").setup({
 	flavour = "mocha", -- latte, frappe, macchiato, mocha
 	background = { -- :h background
 		light = "latte",
 		dark = "macchiato",
 	},
-	transparent_background = false,
+	transparent_background = true,
 	term_colors = true,
 	dim_inactive = {
 		enabled = true,
@@ -134,23 +131,20 @@ require("catppuccin").setup({
 		-- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
 	},
 })
-
 -- setup must be called before loading
 vim.cmd("colorscheme catppuccin") -- }}} ]]
+
 --[[ -- onedark{{{
---
 require('onedark').setup  {
     -- Main options --
-    style = 'deep', -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
-    transparent = false,  -- Show/hide background
+    style = 'warmer', -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
+    transparent = true,  -- Show/hide background
     term_colors = true, -- Change terminal color as per the selected theme style
     ending_tildes = false, -- Show the end-of-buffer tildes. By default they are hidden
     cmp_itemkind_reverse = false, -- reverse item kind highlights in cmp menu
-
     -- toggle theme style ---
     toggle_style_key = nil, -- keybind to toggle theme style. Leave it nil to disable it, or set it to a string, for example "<leader>ts"
     toggle_style_list = {'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light'}, -- List of styles to toggle between
-
     -- Change code style ---
     -- Options are italic, bold, underline, none
     -- You can configure multiple style with comma seperated, For e.g., keywords = 'italic,bold'
@@ -161,16 +155,13 @@ require('onedark').setup  {
         strings = 'none',
         variables = 'none'
     },
-
     -- Lualine options --
     lualine = {
         transparent = false, -- lualine center bar transparency
     },
-
     -- Custom Highlights --
     colors = {}, -- Override default colors
     highlights = {}, -- Override highlight groups
-
     -- Plugins Config --
     diagnostics = {
         darker = true, -- darker colors for diagnostic
@@ -214,8 +205,7 @@ vim.cmd("colorscheme onedark")
 --
 --}}}
 
--- -- Gruvbox{{{
-
+--[[ -- -- Gruvbox{{{
 require("gruvbox").setup({
 	undercurl = true,
 	underline = true,
@@ -235,8 +225,7 @@ require("gruvbox").setup({
 })
 vim.cmd("hi IndentBlanklineChar guifg=none")
 vim.cmd("colorscheme gruvbox")
-
--- }}}
+-- }}} ]]
 
 -- Nord {{{
 --
@@ -281,3 +270,5 @@ vim.cmd("colorscheme gruvbox")
 -- vim.cmd("colorscheme nord")
 --
 -- }}}
+
+--[[ vim.cmd("colorscheme zenbones") ]]

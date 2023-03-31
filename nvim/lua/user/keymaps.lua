@@ -42,16 +42,16 @@ nmap("<leader>Q", ":wqa<CR>", opts("Quit"))
 nmap("<C-f>", "FocusMaximise <CR>", opts("Max width"))
 
 -- [[Norg]]
-nmap("<leader>oNjtd", ":Neorg journal today<CR>", opts("Journal today"))
+nmap("<leader>oNjtcd", ":Neorg journal today<CR>", opts("Journal custom"))
 nmap("<leader>oNjty", ":Neorg journal yesterday<CR>", opts("Journal yesterday"))
 nmap("<leader>oNjtt", ":Neorg journal tomorrow<CR>", opts("Journal tomorrow"))
 nmap("<M-1>", ":e ~/Documents/norg/main/index.norg<CR>", opts(""))
 
 --[[UFO]]
-nmap("zR", require("ufo").openAllFolds)
-nmap("zM", require("ufo").closeAllFolds)
-nmap("zr", require("ufo").openFoldsExceptKinds)
-nmap("zm", require("ufo").closeFoldsWith) --
+--nmap("zR", require("ufo").openAllFolds)
+--nmap("zM", require("ufo").closeAllFolds)
+--nmap("zr", require("ufo").openFoldsExceptKinds)
+--nmap("zm", require("ufo").closeFoldsWith) --
 
 --[[format]]
 nmap("<leader>F", ":FormatWrite<CR>", opts("Format"))

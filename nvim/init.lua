@@ -20,7 +20,6 @@ if vim.g.neovide then
 else
     require("user.colorscheme")
     require("user.highlights")
-
 end
 -- require("plugin.cybu_conf")
 require("plugin.buf_deleto")
@@ -39,4 +38,4 @@ require("plugin.format.format")
 require("plugin.cursor_context")
 require("plugin.telescope_conf")
 require("plugin.due_conf")
-require("plugin.ufo_conf")
+-- require("plugin.ufo_conf")

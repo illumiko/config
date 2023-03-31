@@ -27,6 +27,8 @@ alias nx='redshift -x'
 alias pomodoro="go run ~/Documents/Projects/Personal/godoro/main.go"
 alias nv="nvim"
 alias em="emacs"
+alias ls="ls -Xghr --color=always"
+
 
 
 alias cp="cp -i"
@@ -96,9 +98,9 @@ ShowInstallerIsoInfo() {
 }
 
 
-alias ls='ls --color=auto'
-alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
-alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
+# alias ls='ls --color=auto'
+# alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
+# alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
 
 [[ "$(whoami)" = "root" ]] && return
 
@@ -142,6 +144,6 @@ _open_files_for_editing() {
 # }}}
 
 # Caps as backspacpe
-# setxkbmap -option caps:backspace
-# xmodmap -e "keycode 66 = BackSpace"
+xmodmap -e "keycode 66 = BackSpace"
+setxkbmap -option caps:backspace
 # dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:swapescape']" 

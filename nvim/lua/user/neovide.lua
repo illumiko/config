@@ -1,4 +1,4 @@
-vim.opt.guifont = { "JetBrainsMono Nerd Font", ":h12" }
+vim.opt.guifont = { "VictorMono Nerd Font", ":h14" }
 
 vim.g.neovide_transparency = 0.95
 vim.g.neovide_scale_factor = 0.85
