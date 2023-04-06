@@ -1,14 +1,15 @@
 {
-    "layer": "bottom",
+    "layer": "top",
     "position": "bottom",
     "mod": "dock",
     "exclusive": true,
-    "spacing": 15,
+    "spacing": 20,
     "passthrough": false,
     "gtk-layer-shell": true,
     "height": 0,
     // "width":500,
     "modules-left": ["clock","custom/music"],
+    "modules-center":["wlr/workspaces"],
     "modules-right": ["network", "custom/power_profile","battery","backlight","pulseaudio","tray"],
     // "modules-center": ["clock","custom/music","network", "custom/power_profile","battery","backlight","pulseaudio","tray"],
     "hyprland/window": {
@@ -16,20 +17,40 @@
     },
 
     "wlr/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "on-click": "activate",
-        "persistent_workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": [],
-            "6": [],
-            "7": [],
-            "8": [],
-            "9": [],
-            "10": []
+        "format": "{icon}",
+        "active-only":true,
+        "sort-by-number": true,
+        "format-icons": {
+            "1": "I",
+            "2": "II",
+            "3": "III",
+            "4": "IV",
+            "5": "V",
+            "6": "VI",
+            "7": "VII",
+            "8": "VIII",
+            "9": "IX",
+            "10": "X",
+            "11": "XI",
+            "12": "XII",
+            "13": "XIII",
+            "14": "XIV",
+            "15": "XV",
+            "16": "XVI",
+            "17": "XVII",
+            "18": "XVIII",
+            "19": "XIX",
+            "21": "XXI",
+            "22": "XXII",
+            "23": "XXIII",
+            "24": "XXIV",
+            "25": "XXV",
+            "26": "XXVI",
+            "27": "XXVII",
+            "28": "XXVIII",
+            "29": "XXIX",
+            "30": "XXX",
+            "urgent": ""
         }
     },
     
@@ -41,7 +62,7 @@
     "custom/music":{
         "exec": "~/.config/waybar/scripts/current_playing_song.sh",
         "format":"  {}",
-        "interval":"5",
+        "interval":"5"
 
     },
 

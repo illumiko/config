@@ -31,7 +31,6 @@ hi link CmpPmenu Normal
 -- -- }}}
 --
 -- tokyonight -- {{{
---[[
 require("tokyonight").setup({
 	style = "night",
 	transparent = true,
@@ -79,7 +78,7 @@ require("tokyonight").setup({
 		}
 	end,
 })
-vim.cmd("colorscheme tokyonight") -- }}} ]]
+vim.cmd("colorscheme tokyonight") -- }}}
 
 --[[ -- Catppuccin-- {{{
 require("catppuccin").setup({
@@ -204,7 +203,7 @@ vim.cmd("colorscheme onedark")
 --
 --}}}
 
--- -- Gruvbox{{{
+--[[ -- -- Gruvbox{{{
 require("gruvbox").setup({
 	undercurl = true,
 	underline = true,
@@ -224,7 +223,7 @@ require("gruvbox").setup({
 })
 vim.cmd("hi IndentBlanklineChar guifg=none")
 vim.cmd("colorscheme gruvbox")
--- }}}
+-- }}} ]]
 
 -- Nord {{{
 --

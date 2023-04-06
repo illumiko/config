@@ -4,14 +4,14 @@
     border-radius: 10px;
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
-    font-size: 20px;
-    padding: 5px 10px;
+    font-size: 20px;;
+    padding: 3px 10px;
     min-height: 0;
 }
 
 window#waybar {
     background: transparent;
-    color: #cdd6f4;
+    color: @foreground;
 }
 
 tooltip {
@@ -39,7 +39,7 @@ tooltip {
 
 #custom-music {
     background :@background;
-    color: @foreground;
+    color: @color2;
 }
 
 #backlight {
@@ -47,14 +47,14 @@ tooltip {
 }
 
 #clock {
-    color: @foreground;
+    color: @color1;;
     /* border-radius: 10px; */
     /* margin-left: 10px; */
     /* border-right: 10px; */
 }
 
 #network {
-    color: @color6;
+    color: @color1;
     /* border-radius: 10px 0px 0px 10px; */
     /* border-radius: 10px 10px 10px 10px; */
     /* margin-right: 10px */
@@ -65,7 +65,7 @@ tooltip {
 } 
 
 #pulseaudio {
-    color: @cursor;
+    color: @color3;
 }
 
 #pulseaudio.microphone {
@@ -77,7 +77,7 @@ tooltip {
 }
 
 #battery {
-    color: @color6;
+    color: @color2;
     /* border-radius: 10px 10px 10px 10px; */
     /* margin-right: 10px */
 }

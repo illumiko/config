@@ -3333,3 +3333,9 @@ Apr 06 06:02 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Life.mp3"
 Apr 06 06:06 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Light_It_Up.mp3"
 Apr 06 06:09 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Make_Moves.mp3"
 Apr 06 06:13 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/No_Retreat.mp3"
+Apr 06 14:15 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 06 14:15 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/NO_TURNING_BACK.mp3"
+Apr 06 14:18 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/PINKY_PROMISE.mp3"
+Apr 06 14:18 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 06 14:22 : player: played "hMMmmm/jpEngCov/ENGLISH 'Lemon (Yuzu ver.)' Kenshi Yonezu (Akane Sasu Sora).mp3"
+Apr 06 14:26 : player: played "hMMmmm/jpEngCov/ENGLISH 'Crying for Rain' Domestic Kanojo (Akane Sasu Sora).mp3"
