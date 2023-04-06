@@ -1,4 +1,4 @@
--- Kanagawa-- {{{
+--[[ -- Kanagawa-- {{{
 --
 vim.opt.laststatus = 3
 vim.opt.fillchars:append({
@@ -27,7 +27,7 @@ require("kanagawa").setup({
 vim.cmd([=[
 colorscheme kanagawa
 hi link CmpPmenu Normal
-]=])
+]=]) ]]
 -- -- }}}
 --
 -- tokyonight -- {{{
@@ -79,8 +79,7 @@ require("tokyonight").setup({
 		}
 	end,
 })
-vim.cmd("colorscheme tokyonight") -- }}} 
---]]
+vim.cmd("colorscheme tokyonight") -- }}} ]]
 
 --[[ -- Catppuccin-- {{{
 require("catppuccin").setup({
@@ -205,7 +204,7 @@ vim.cmd("colorscheme onedark")
 --
 --}}}
 
---[[ -- -- Gruvbox{{{
+-- -- Gruvbox{{{
 require("gruvbox").setup({
 	undercurl = true,
 	underline = true,
@@ -225,7 +224,7 @@ require("gruvbox").setup({
 })
 vim.cmd("hi IndentBlanklineChar guifg=none")
 vim.cmd("colorscheme gruvbox")
--- }}} ]]
+-- }}}
 
 -- Nord {{{
 --
@@ -271,4 +270,4 @@ vim.cmd("colorscheme gruvbox")
 --
 -- }}}
 
---[[ vim.cmd("colorscheme zenbones") ]]
+-- vim.cmd("colorscheme jellybeans-nvim")

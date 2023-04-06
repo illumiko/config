@@ -3116,3 +3116,220 @@ Mar 31 10:10 : output: Failed to open mixer for 'default detected output': no su
 Mar 31 11:06 : player: played "youtubeDl/Dark Academia Music Ambience With Rain Sounds ⧸ Melancholic Piano ⧸ Study music.mp3"
 WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
 WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+Apr 01 01:47 : player: played "youtubeDl/Dark Academia Music Ambience With Rain Sounds ⧸ Melancholic Piano ⧸ Study music.mp3"
+Apr 01 01:58 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Apr 01 04:11 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 01 12:49 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 01 13:55 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 01 13:55 : player: played "hMMmmm/lofi/beats+ambient/[Piano x ASMR🎧] 초속 5센티미터 _ 눈보라 치던 날, 따뜻한 난로가 있는 기차역 대합실에서 _ End Theme.mp3"
+Apr 01 13:55 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 01 14:45 : player: played "hMMmmm/lofi/beats/Cozy Winter ☕ - [lofi hip hop_study beats].mp3"
+Apr 01 14:45 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 01 15:05 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 01 15:17 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 01 19:55 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 01 19:56 : player: played "hMMmmm/lofi/beats/i found my home in your arms - lofi hip hop mix.mp3"
+Apr 01 19:56 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 01 19:56 : player: played "hMMmmm/lofi/beats/Late Night Nostalgia _ Lofi HipHop Mix _ Best of kudasai.mp3"
+Apr 01 19:56 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 01 20:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 01 20:16 : player: played "hMMmmm/lofi/beats/공부할 때 좋은 음악을 듣고 무엇을 얻을 수 있습니까 _ 3 hour lofi study _ work 📚 lofi hiphop mix.mp3"
+Apr 01 20:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 01 21:10 : player: played "hMMmmm/lofi/beats/Tokyo Ghoul OST Mix - Relaxing Piano Anime Music.mp3"
+Apr 01 21:50 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 01 22:39 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 01 22:51 : update: added Recordings/2023_03_23_19_21_07.m4a
+Apr 01 22:51 : update: added Recordings/2023_03_23_19_20_35.m4a
+Apr 01 22:51 : update: added Recordings/2023_03_23_19_21_02.m4a
+Apr 01 23:28 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 02 00:16 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 02 01:05 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 02 01:54 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 02 02:43 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 02 03:32 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 02 05:04 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 02 05:04 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 02 05:05 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 02 13:06 : update: added youtubeDl/The Bible： The Most Influential Book in the History of the World.mp3
+Apr 02 13:06 : update: added youtubeDl/The Bible： The Most Influential Book in the History of the World.webm
+Apr 02 13:07 : update: updating youtubeDl/The Bible： The Most Influential Book in the History of the World.mp3
+Apr 02 13:07 : update: removing youtubeDl/The Bible： The Most Influential Book in the History of the World.webm
+Apr 02 13:08 : player: played "hMMmmm/lofi/beats/Best Atmospheric Phonk ｜ Phonk Study.mp3"
+Apr 02 13:08 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 02 13:09 : update: removing youtubeDl/The Bible： The Most Influential Book in the History of the World.mp3
+Apr 02 13:10 : update: added youtubeDl/The Bible： The Most Influential Book in the History of the World.webm
+Apr 02 13:11 : player: played "hMMmmm/lofi/singles/Classroom of the Elite S2 OST EP 3 -『Ayanokouji theme』[HQ Cover] by Enryu.m4a"
+Apr 02 13:14 : player: played "hMMmmm/lofi/singles/Classroom of the Elite S2 OST EP 3 -『Ayanokouji theme』[HQ Cover] by Enryu.m4a"
+Apr 02 13:16 : player: played "hMMmmm/lofi/singles/Classroom of the Elite S2 OST EP 3 -『Ayanokouji theme』[HQ Cover] by Enryu.m4a"
+Apr 02 13:19 : player: played "hMMmmm/lofi/singles/Classroom of the Elite S2 OST EP 3 -『Ayanokouji theme』[HQ Cover] by Enryu.m4a"
+Apr 02 13:22 : player: played "hMMmmm/lofi/singles/Classroom of the Elite S2 OST EP 3 -『Ayanokouji theme』[HQ Cover] by Enryu.m4a"
+Apr 02 13:24 : player: played "hMMmmm/lofi/singles/Classroom of the Elite S2 OST EP 3 -『Ayanokouji theme』[HQ Cover] by Enryu.m4a"
+Apr 02 13:27 : player: played "hMMmmm/lofi/singles/Classroom of the Elite S2 OST EP 3 -『Ayanokouji theme』[HQ Cover] by Enryu.m4a"
+Apr 02 13:30 : player: played "hMMmmm/lofi/singles/Classroom of the Elite S2 OST EP 3 -『Ayanokouji theme』[HQ Cover] by Enryu.m4a"
+Apr 02 13:33 : player: played "hMMmmm/lofi/singles/Classroom of the Elite S2 OST EP 3 -『Ayanokouji theme』[HQ Cover] by Enryu.m4a"
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+Apr 02 16:44 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 02 19:42 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 03 16:28 : player: played "hMMmmm/lofi/singles/Classroom of the Elite S2 OST EP 3 -『Ayanokouji theme』[HQ Cover] by Enryu.m4a"
+Apr 03 16:30 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Apr 03 17:12 : update: added youtubeDl/Best White Noise for Studying - Maximum Mind Power.mp3
+Apr 03 17:12 : update: added youtubeDl/Best White Noise for Studying - Maximum Mind Power.webm
+Apr 03 17:13 : update: updating youtubeDl/Best White Noise for Studying - Maximum Mind Power.mp3
+Apr 03 17:13 : update: removing youtubeDl/Best White Noise for Studying - Maximum Mind Power.webm
+Apr 03 17:18 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 03 17:47 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 03 22:25 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 03 23:23 : player: played "youtubeDl/Best White Noise for Studying - Maximum Mind Power.mp3"
+Apr 04 09:57 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 09:57 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 10:58 : player: played "youtubeDl/Dark Academia Music Ambience With Rain Sounds ⧸ Melancholic Piano ⧸ Study music.mp3"
+Apr 04 11:42 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 11:42 : player: played "youtubeDl/Dark Academia Music Ambience With Rain Sounds ⧸ Melancholic Piano ⧸ Study music.mp3"
+Apr 04 11:43 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 12:10 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 12:39 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 13:06 : player: played "hMMmmm/lofi/beats/Best of Steins;Gate OST _ Relaxing Anime BGM For Sleeping or Studying.mp3"
+Apr 04 13:07 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 13:11 : player: played "hMMmmm/Nnx/Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video].mp3"
+Apr 04 13:11 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 13:16 : player: played "hMMmmm/Nnx/Clean Bandit - Rockabye (Lyrics) feat. Sean Paul & Anne-Marie.mp3"
+Apr 04 13:19 : player: played "hMMmmm/Nnx/Halsey, Nico Collins - Walls Could Talk (Lyrics).mp3"
+Apr 04 13:22 : player: played "hMMmmm/Nnx/Hayd - Changes (Official Lyric Video).mp3"
+Apr 04 13:26 : player: played "hMMmmm/Nnx/Clinton Kane - I GUESS I'M IN LOVE (lyric).mp3"
+Apr 04 13:29 : player: played "hMMmmm/Nnx/Halsey, Nico Collins - Walls Could Talk (Lyrics).mp3"
+Apr 04 13:33 : player: played "hMMmmm/Nnx/Hayd - Changes (Official Lyric Video).mp3"
+Apr 04 13:34 : player: played "hMMmmm/Nnx/Clinton Kane - I GUESS I'M IN LOVE (lyric).mp3"
+Apr 04 13:34 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 13:37 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Something_-_Remastered_2009.mp3"
+Apr 04 13:41 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Out_Like_a_Light.mp3"
+Apr 04 13:44 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Are_You_Bored_Yet___feat__Clairo_.mp3"
+Apr 04 13:48 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Human.mp3"
+Apr 04 13:51 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/From_Eden.mp3"
+Apr 04 13:56 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Sunlight.mp3"
+Apr 04 13:59 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/I_Want_To_Be_With_You.mp3"
+Apr 04 14:03 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/This_Side_of_Paradise.mp3"
+Apr 04 14:07 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Yellow.mp3"
+Apr 04 14:10 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Are_You_Bored_Yet__-_Live_from_Henson_Studios.mp3"
+Apr 04 14:14 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Sparks.mp3"
+Apr 04 14:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 14:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 14:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 14:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 14:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 14:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 14:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 14:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 14:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 14:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 14:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 14:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 14:16 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 19:21 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 19:23 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/I_Want_To_Be_With_You.mp3"
+Apr 04 19:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 19:34 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/This_Side_of_Paradise.mp3"
+Apr 04 19:39 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Yellow.mp3"
+Apr 04 19:42 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Are_You_Bored_Yet__-_Live_from_Henson_Studios.mp3"
+Apr 04 19:46 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Sparks.mp3"
+Apr 04 19:50 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Somewhere_Only_We_Know.mp3"
+Apr 04 21:51 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 04 21:55 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Talk_to_You_-_acoustic.mp3"
+Apr 04 21:57 : player: played "hMMmmm/Playlists/platonic_intimacy_agenda/Mr_Loverman_-_Acoustic.mp3"
+Apr 04 21:57 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 05 10:45 : player: played "youtubeDl/Best White Noise for Studying - Maximum Mind Power.mp3"
+Apr 05 10:46 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 05 10:49 : player: played "hMMmmm/Nightcore/Nightcore - After Dark.opus"
+Apr 05 10:50 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 05 11:50 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Apr 05 11:50 : player: played "youtubeDl/Best White Noise for Studying - Maximum Mind Power.mp3"
+Apr 05 12:18 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 05 12:32 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 05 13:12 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 05 13:12 : player: played "youtubeDl/Best White Noise for Studying - Maximum Mind Power.mp3"
+Apr 05 13:12 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 05 13:15 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Don_t_Wanna_Let_Myself_Down.mp3"
+Apr 05 13:18 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Anxiety.mp3"
+Apr 05 13:20 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Are_You_Ok_.mp3"
+Apr 05 13:25 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/As_You_Fade_Away.mp3"
+Apr 05 13:28 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Best_of_Me.mp3"
+Apr 05 13:31 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Better_Days.mp3"
+Apr 05 13:33 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Big_Swing.mp3"
+Apr 05 13:37 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Born_a_Rockstar.mp3"
+Apr 05 13:42 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Careless.mp3"
+Apr 05 13:45 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Chance.mp3"
+Apr 05 13:49 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Choose_It.mp3"
+Apr 05 13:52 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Cold.mp3"
+Apr 05 14:47 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Crown.mp3"
+Apr 05 14:48 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+Apr 05 16:43 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 05 19:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 05 19:31 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Crown.mp3"
+Apr 05 19:41 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 05 19:41 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 05 19:41 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 05 19:44 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Fight_Back.mp3"
+Apr 05 19:56 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 05 19:57 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 05 19:59 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Soldier.mp3"
+Apr 05 20:32 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 05 20:35 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Never_Give_Up.mp3"
+Apr 05 20:36 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 05 20:38 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Greatest.mp3"
+Apr 05 20:47 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Flirt.mp3"
+Apr 05 21:32 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Apr 06 05:20 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 06 05:22 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Flirt.mp3"
+Apr 06 05:24 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Free_Me.mp3"
+Apr 06 05:27 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Grateful.mp3"
+Apr 06 05:30 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Immortal.mp3"
+Apr 06 05:32 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/INSPIRED.mp3"
+Apr 06 05:36 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Legendary.mp3"
+Apr 06 06:00 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 06 06:00 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Fever_Dream.mp3"
+Apr 06 06:02 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Life.mp3"
+Apr 06 06:06 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Light_It_Up.mp3"
+Apr 06 06:09 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/Make_Moves.mp3"
+Apr 06 06:13 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/No_Retreat.mp3"

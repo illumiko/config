@@ -7,7 +7,7 @@ return {
 	"MunifTanjim/nui.nvim",
 	"rktjmp/lush.nvim",
 	"nvim-lua/popup.nvim",
-    'godlygeek/tabular',
+	"godlygeek/tabular",
 
 	-- [[#LSP]]
 	"neovim/nvim-lspconfig", --lsp base
@@ -73,6 +73,19 @@ return {
 	--[[Nvim config]]
 	-- "folke/neodev.nvim",
 
+	-- #winbar
+	{
+		"utilyre/barbecue.nvim",
+		name = "barbecue",
+		version = "*",
+		dependencies = {
+			"SmiteshP/nvim-navic",
+		},
+		opts = {
+			-- configurations go here
+		},
+	},
+
 	--[[#Completion]]
 	{
 		"hrsh7th/nvim-cmp",
@@ -112,7 +125,7 @@ return {
 	{ "tamton-aquib/staline.nvim", events = { "BufEnter" } },
 
 	--[[#Utility]]
-	{ "mvllow/modes.nvim" },
+	-- { "mvllow/modes.nvim" },
 	"wellle/targets.vim", -- better surround motions
 	"lukas-reineke/indent-blankline.nvim",
 	-- "xiyaowong/nvim-transparent",
@@ -172,7 +185,7 @@ return {
 		end,
 	},
 
---[[ { "kevinhwang91/nvim-ufo", dependencies = "kevinhwang91/promise-async" }, ]]
+	--[[ { "kevinhwang91/nvim-ufo", dependencies = "kevinhwang91/promise-async" }, ]]
 	{
 		"echasnovski/mini.animate",
 		config = function()
@@ -262,19 +275,18 @@ return {
 
 	--[[#Markdown Preview]]
 	{ "ellisonleao/glow.nvim" },
-    {"corriander/vim-markdown-indent"},
+	{ "corriander/vim-markdown-indent", ft = "markdown" },
 
 	--[[#File Browser]]
 	{
 		"nvim-neo-tree/neo-tree.nvim",
 		branch = "v2.x",
 		keys = {
-			{ "<Leader>E", ":NeoTreeFocusToggle<CR>", desc = "Explorer", silent = true, noremap = true },
+			{ "<Leader>E", ":Neotree toggle<CR>", desc = "Explorer", silent = true, noremap = true },
 		},
 	},
-
 	--[[#Note talking/Scheduling etc]]
-    -- [[NORG]]
+	-- [[NORG]]
 	{ "nvim-neorg/neorg", ft = "norg" },
 	{ "NFrid/due.nvim", ft = "norg" },
 	{ "tpope/vim-speeddating" },
@@ -345,36 +357,43 @@ return {
 				"<leader>fd",
 				"<cmd>lua require('telescope.builtin').find_files({cwd='~/Dotfiles/'})<CR>",
 				desc = "Config Files",
+				silent = true,
 			},
 			{
 				"<leader>ff",
 				":Telescope find_files theme=ivy<CR>",
 				desc = "Find Files",
+				silent = true,
 			},
 			{
 				"<leader>e",
-				":Telescope file_browser<CR>",
+				":Telescope file_browser path=%:p:h select_buffer=true<CR>",
 				desc = "File Browser",
+				silent = true,
 			},
 			{
 				"<leader>fo",
 				":Telescope oldfiles theme=ivy<CR>",
 				desc = "Old Files",
+				silent = true,
 			},
 			{
 				"<leader>fg",
 				"<cmd>lua require('telescope.builtin').live_grep()<CR>",
 				desc = "Grep Directory",
+				silent = true,
 			},
 			{
 				"<S-Tab>",
 				":lua require('telescope.builtin').buffers()<CR>",
 				desc = "Buffer Picker",
+				silent = true,
 			},
 			{
 				"<leader>a",
 				":Telescope spell_suggest<CR>",
 				desc = "Spell Suggest",
+				silent = true,
 			},
 		}, -- }}}
 		dependencies = {
@@ -390,13 +409,14 @@ return {
 	{ "NTBBloodbath/doom-one.nvim", lazy = true },
 	{ "sainnhe/everforest", lazy = true },
 	{ "RishabhRD/gruvy", lazy = true },
-    {'mcchrish/zenbones.nvim', lazy=true},
+	{ "mcchrish/zenbones.nvim", lazy = true },
 	{ "ellisonleao/gruvbox.nvim", lazy = true },
 	{ "folke/tokyonight.nvim", lazy = true },
 	{ "navarasu/onedark.nvim", lazy = true },
-	{ "gbprod/nord.nvim"},
+	{ "gbprod/nord.nvim", lazy = true },
 	-- "glepnir/zephyr-nvim",
 	{ "catppuccin/nvim", name = "catppuccin", lazy = true },
 	{ "rebelot/kanagawa.nvim", lazy = true }, -- kangawa}}}
 	{ "tiagovla/tokyodark.nvim", lazy = true },
+	{ "metalelf0/jellybeans-nvim", lazy = true },
 }

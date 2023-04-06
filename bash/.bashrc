@@ -145,5 +145,5 @@ _open_files_for_editing() {
 
 # Caps as backspacpe
 xmodmap -e "keycode 66 = BackSpace"
-setxkbmap -option caps:backspace
+# setxkbmap -option caps:backspace
 # dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:swapescape']" 

@@ -1,0 +1,89 @@
+@import '../../.cache/wal/colors-waybar.css';
+* {
+    border: none;
+    border-radius: 10px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 10px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #cdd6f4;
+}
+
+tooltip {
+    background: @background;
+    /* border-radius: 10px; */
+    border-width: 2px;
+    border-style: solid;
+    border-color: #11111b;
+}
+#custom-power_profile,
+#custom-weather,
+#custom-music,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#temperature,
+#workspaces,
+#tray,
+#backlight {
+    background: @background;
+}
+
+#custom-music {
+    background :@background;
+    color: @foreground;
+}
+
+#backlight {
+    color: @color4;
+}
+
+#clock {
+    color: @foreground;
+    /* border-radius: 10px; */
+    /* margin-left: 10px; */
+    /* border-right: 10px; */
+}
+
+#network {
+    color: @color6;
+    /* border-radius: 10px 0px 0px 10px; */
+    /* border-radius: 10px 10px 10px 10px; */
+    /* margin-right: 10px */
+}
+
+#bluetooth {
+    color: @background;
+} 
+
+#pulseaudio {
+    color: @cursor;
+}
+
+#pulseaudio.microphone {
+    color: @cursor;
+    border-left: 0px;
+    border-right: 0px;
+    /* border-radius: 0px 10px 10px 0px; */
+    /* margin-right: 10px; */
+}
+
+#battery {
+    color: @color6;
+    /* border-radius: 10px 10px 10px 10px; */
+    /* margin-right: 10px */
+}
+
+#custom-weather {
+    /* border-radius: 0px 10px 10px 0px; */
+    border-right: 0px;
+    /* margin-left: 0px; */
+}

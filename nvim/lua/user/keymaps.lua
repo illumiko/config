@@ -1,6 +1,7 @@
 local map = require("utils.maps").map
 local nmap = require("utils.maps").nmap
 local imap = require("utils.maps").imap
+local cmap = require("utils.maps").cmap
 local opts = require("utils.maps").opts
 
 local ls = require("luasnip")
@@ -42,9 +43,9 @@ nmap("<leader>Q", ":wqa<CR>", opts("Quit"))
 nmap("<C-f>", "FocusMaximise <CR>", opts("Max width"))
 
 -- [[Norg]]
-nmap("<leader>oNjtcd", ":Neorg journal today<CR>", opts("Journal custom"))
-nmap("<leader>oNjty", ":Neorg journal yesterday<CR>", opts("Journal yesterday"))
-nmap("<leader>oNjtt", ":Neorg journal tomorrow<CR>", opts("Journal tomorrow"))
+-- nmap("<leader>oNjtcd", ":Neorg journal today<CR>", opts("Journal custom"))
+-- nmap("<leader>oNjty", ":Neorg journal yesterday<CR>", opts("Journal yesterday"))
+-- nmap("<leader>oNjtt", ":Neorg journal tomorrow<CR>", opts("Journal tomorrow"))
 nmap("<M-1>", ":e ~/Documents/norg/main/index.norg<CR>", opts(""))
 
 --[[UFO]]
@@ -105,8 +106,9 @@ vim.keymap.set("i", "<c-e>", function()
 	end
 end)
 
---better ESC
+-- better ESC
 imap("jk", "<cmd>LuaSnipUnlinkCurrent<CR><ESC>", opts(""))
+cmap("jk", "<ESC>",opts(""))
 
 imap("<", "<", opts(""))
 

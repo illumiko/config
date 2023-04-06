@@ -85,11 +85,8 @@ local function lsp_keymaps(bufnr)
 	nmap("gj", vim.diagnostic.goto_next, opts("J Diagnostic"))
 	nmap("gk", vim.diagnostic.goto_prev, opts("K Diagnostic"))
 	nmap("K", function()
-		local winid = require("ufo").peekFoldedLinesUnderCursor()
-		if not winid then
 			-- choose one of coc.nvim and nvim lsp
 			vim.lsp.buf.hover()
-		end
 	end, {desc = "Hover", noremap = true, silent = true })
 end
 
