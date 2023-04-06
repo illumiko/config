@@ -3339,3 +3339,5 @@ Apr 06 14:18 : player: played "hMMmmm/Playlists/This_Is_NEFFEX/PINKY_PROMISE.mp3
 Apr 06 14:18 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
 Apr 06 14:22 : player: played "hMMmmm/jpEngCov/ENGLISH 'Lemon (Yuzu ver.)' Kenshi Yonezu (Akane Sasu Sora).mp3"
 Apr 06 14:26 : player: played "hMMmmm/jpEngCov/ENGLISH 'Crying for Rain' Domestic Kanojo (Akane Sasu Sora).mp3"
+Apr 06 14:53 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 06 19:06 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM

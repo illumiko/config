@@ -1,4 +1,4 @@
-@import '../../.cache/wal/colors-waybar.css';
+@import '../../.cache/wal/colors-waybar.css';/*{{{*/
 * {
     border: none;
     border-radius: 10px;
@@ -86,4 +86,4 @@ tooltip {
     /* border-radius: 0px 10px 10px 0px; */
     border-right: 0px;
     /* margin-left: 0px; */
-}
+}/*}}}*/
