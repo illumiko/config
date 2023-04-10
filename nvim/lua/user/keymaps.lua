@@ -21,8 +21,13 @@ autocmd TermEnter term://*toggleterm#*
 vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
--- vim.keymap.set("n", "j", "<Plug>(accelerated_jk_gj_position)", { noremap = true })
--- vim.keymap.set("n", "k", "<Plug>(accelerated_jk_gk_position)", { noremap = true })
+-- better <c-d> and <c-u>
+-- "<Cmd>lua vim.cmd('normal! n'); MiniAnimate.execute_after('scroll', 'normal! zvzz')<CR>"
+
+nmap("<c-d>","<Cmd>lua vim.cmd('normal! <c-d>'); MiniAnimate.execute_after('scroll', 'normal! zz')<CR>",opts(""))
+nmap("<c-u>","<Cmd>lua vim.cmd('normal! <c-u>'); MiniAnimate.execute_after('scroll', 'normal! zz')<CR>",opts(""))
+nmap("n","<Cmd>lua vim.cmd('normal! n'); MiniAnimate.execute_after('scroll', 'normal! zvzz')<CR>", opts(""))
+nmap("N","<Cmd>lua vim.cmd('normal! N'); MiniAnimate.execute_after('scroll', 'normal! zvzz')<CR>", opts(""))
 
 --[[proper copy]]
 map("n", "Y", '"+Y', opts(""))

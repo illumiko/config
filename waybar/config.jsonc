@@ -3,71 +3,102 @@
     "position": "top",
     "mod": "dock",
     "exclusive": true,
-    "spacing": 20,
+    "spacing": 0,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "height": 0,
+    "height": 10,
+    "margin-bottom": 8,
+    "margin-top": 10,
+    "margin-right":15,
+    "margin-left": 15,
+    "fixed-center":true,
     // "width":500,
-    "modules-left": ["clock","custom/music"],
-    "modules-center":["wlr/workspaces"],
-    "modules-right": ["network", "custom/power_profile","battery","backlight","pulseaudio","tray"],
+    "modules-left": ["memory","hyprland/window","custom/music"],
+    "modules-center":["clock"],
+    "modules-right": ["wlr/workspaces", "custom/power_profile","pulseaudio","battery","network","tray"],
     // "modules-center": ["clock","custom/music","network", "custom/power_profile","battery","backlight","pulseaudio","tray"],
     "hyprland/window": {
-        "format": "{}"
+        "format": "{}",
+        "separate-outputs": false,
+        "max-length":36
     },
-
+    "memory": {
+        "interval": 5,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "disk": {
+    "interval": 30,
+    "format": "󱛟 {free}",
+    "path": "/"
+    },
+    "mpris": {
+        "format": "DEFAULT: {player_icon} {dynamic}",
+        "format-paused": "DEFAULT: {status_icon} <i>{dynamic}</i>",
+        "player-icons": {
+            "default": "▶",
+            "mpv": "🎵"
+        },
+        "status-icons": {
+            "paused": "⏸"
+        }
+        // "ignored-players": ["firefox"]
+    },
     "wlr/workspaces": {
-        "format": "{icon}",
-        "active-only":true,
+        "format": " {icon} ",
+        "all-outputs":true,
+        "on-click": "activate",
+        "active-only":false,
         "sort-by-number": true,
         "format-icons": {
-            "1": "I",
-            "2": "II",
-            "3": "III",
-            "4": "IV",
-            "5": "V",
-            "6": "VI",
-            "7": "VII",
-            "8": "VIII",
-            "9": "IX",
-            "10": "X",
-            "11": "XI",
-            "12": "XII",
-            "13": "XIII",
-            "14": "XIV",
-            "15": "XV",
-            "16": "XVI",
-            "17": "XVII",
-            "18": "XVIII",
-            "19": "XIX",
-            "21": "XXI",
-            "22": "XXII",
-            "23": "XXIII",
-            "24": "XXIV",
-            "25": "XXV",
-            "26": "XXVI",
-            "27": "XXVII",
-            "28": "XXVIII",
-            "29": "XXIX",
-            "30": "XXX",
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "ﭮ",
+            "5": "",
+            "6": "",
+            // "5": "V",
+            // "6": "VI",
+            // "7": "VII",
+            // "8": "VIII",
+            // "11": "XI",
+            // "12": "XII",
+            // "13": "XIII",
+            // "14": "XIV",
+            // "15": "XV",
+            // "16": "XVI",
+            // "17": "XVII",
+            // "18": "XVIII",
+            // "19": "XIX",
+            // "21": "XXI",
+            // "22": "XXII",
+            // "23": "XXIII",
+            // "24": "XXIV",
+            // "25": "XXV",
+            // "26": "XXVI",
+            // "27": "XXVII",
+            // "28": "XXVIII",
+            // "29": "XXIX",
+            // "30": "XXX",
             "urgent": ""
         }
     },
     
     "tray": {
         "icon-size": 20,
-        "spacing": 15
+        "spacing":0
     },
 
     "custom/music":{
         "exec": "~/.config/waybar/scripts/current_playing_song.sh",
         "format":"  {}",
+        "max-length":40,
         "interval":"5"
 
     },
 
     "clock": {
-        "format": "{: %I:%M %p   %Y-%m-%d}",
+        "format": "{: %Y-%m-%d(%a)   %I:%M%p}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
 
@@ -114,7 +145,7 @@
 
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "  {signalStrength}%",
+        "format-wifi": " ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{essid} - {ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",

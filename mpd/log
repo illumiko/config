@@ -3341,3 +3341,65 @@ Apr 06 14:22 : player: played "hMMmmm/jpEngCov/ENGLISH 'Lemon (Yuzu ver.)' Kensh
 Apr 06 14:26 : player: played "hMMmmm/jpEngCov/ENGLISH 'Crying for Rain' Domestic Kanojo (Akane Sasu Sora).mp3"
 Apr 06 14:53 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
 Apr 06 19:06 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 05:42 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:28 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:29 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:32 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:34 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:35 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:38 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:38 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:38 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:39 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:39 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:40 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:40 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:40 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:40 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:40 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:41 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:41 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:42 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:42 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:42 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:42 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:44 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:47 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 06:49 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 14:52 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Apr 07 15:47 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 21:48 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 07 21:50 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 08 05:23 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 08 05:39 : player: played "hMMmmm/lofi/beats/[ 𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕 ] 코딩 _ 과제 할 때 집중 해서 듣기 좋은 음악 _ 3 hour playlist _ lofi coding hip hop - beats to study.mp3"
+Apr 08 05:39 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 09 04:23 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 10 14:23 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 10 14:23 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 10 14:23 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 10 14:26 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Apr 10 14:30 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 10 14:33 : player: played "hMMmmm/Nnx/Gotye performing 'Somebody That I Used To Know' Live on KCRW.mp3"
+Apr 10 14:37 : player: played "hMMmmm/Nnx/Halsey, Nico Collins - Walls Could Talk (Lyrics).mp3"
+Apr 10 14:37 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 10 14:40 : player: played "hMMmmm/Nnx/how to be a heartbreaker ⧸⧸ marina and the diamonds lyrics.mp4"
+Apr 10 14:40 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 10 14:56 : player: played "hMMmmm/Nnx/I'm overthinking about you(mix with lyrics).mp3"
+Apr 10 14:56 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 10 15:00 : player: played "hMMmmm/Nnx/ILLENIUM, Jon Bellion - Good Things Fall Apart (Lyric Video).m4a"
+Apr 10 15:00 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 10 15:02 : player: played "hMMmmm/Nnx/John K - If We Never Met (Lyrics).mp3"
+Apr 10 15:05 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 10 15:07 : player: played "hMMmmm/Nnx/'Just The Two of Us' by Adikara Fardy.mp3"
+Apr 10 15:08 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 10 15:12 : player: played "hMMmmm/Nnx/Gotye performing 'Somebody That I Used To Know' Live on KCRW.mp3"
+Apr 10 15:15 : player: played "hMMmmm/Nnx/Halsey, Nico Collins - Walls Could Talk (Lyrics).mp3"
+Apr 10 15:15 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 10 15:19 : player: played "hMMmmm/Nnx/how to be a heartbreaker ⧸⧸ marina and the diamonds lyrics.mp4"
+Apr 10 15:19 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 10 15:35 : player: played "hMMmmm/Nnx/I'm overthinking about you(mix with lyrics).mp3"
+Apr 10 15:35 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 10 15:39 : player: played "hMMmmm/Nnx/ILLENIUM, Jon Bellion - Good Things Fall Apart (Lyric Video).m4a"
+Apr 10 15:39 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM

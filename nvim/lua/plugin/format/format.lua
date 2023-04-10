@@ -20,20 +20,30 @@ require("formatter").setup({
 				}
 			end,
 		},
-        json = {
-            require("plugin.format.filetype_conf.json")
-        },
+		json = {
+			require("plugin.format.filetype_conf.json"),
+		},
 		typescript = {
 			require("plugin.format.filetype_conf.typescript").prettiereslint,
 		},
 		go = {
 			require("plugin.format.filetype_conf.go").goimports,
 		},
+		-- vimwiki = {
+		-- 	require("plugin.format.filetype_conf.markdown").markdownlint,
+		-- },
 	},
 })
 vim.cmd([[
 augroup FormatAutogroup
   autocmd!
-  autocmd FileType go autocmd BufWritePost * FormatWrite
+  autocmd FileType go markdown autocmd BufWritePost * FormatWrite
 augroup END
 ]])
+
+-- vim.cmd([[
+-- augroup FormatAutogroup
+--   autocmd!
+--   autocmd BufWritePost * FormatWrite
+-- augroup END
+-- ]])

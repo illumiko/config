@@ -126,6 +126,18 @@ return {
 
 	--[[#Utility]]
 	-- { "mvllow/modes.nvim" },
+	{
+		"cpea2506/relative-toggle.nvim",
+		config = function()
+			require("relative-toggle").setup({
+				pattern = "*",
+				events = {
+					on = {"CmdlineLeave" },
+					off = {"CmdlineEnter" },
+				},
+			})
+		end,
+	},
 	"wellle/targets.vim", -- better surround motions
 	"lukas-reineke/indent-blankline.nvim",
 	-- "xiyaowong/nvim-transparent",
@@ -189,7 +201,7 @@ return {
 	{
 		"echasnovski/mini.animate",
 		config = function()
-			require("mini.animate").setup({ resize = { enable = false }, scroll = { enable = false } })
+			require("mini.animate").setup({ resize = { enable = false }, scroll = { enable = true } })
 		end,
 	},
 	-- {
@@ -254,8 +266,8 @@ return {
 			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
 		end,
 		keys = {
-			{ "f", ":HopWordCurrentLine<CR>", desc = "Line hop", noremap = true, silent = true },
-			{ "F", ":HopChar1CurrentLine<CR>", desc = "Char hop", noremap = true, silent = true },
+			-- { "f", ":HopWordCurrentLine<CR>", desc = "Line hop", noremap = true, silent = true },
+			-- { "F", ":HopChar1CurrentLine<CR>", desc = "Char hop", noremap = true, silent = true },
 			{ "<leader>hl", ":HopLine<CR>", desc = "Line Hop", noremap = true, silent = true },
 			{ "<leader>hc", ":HopChar1<CR>", desc = "Char Hop", noremap = true, silent = true },
 			{ "<leader>hw", ":HopWord<CR>", desc = "Word Hop", noremap = true, silent = true },

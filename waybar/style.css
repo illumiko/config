@@ -1,45 +1,66 @@
 @import '../../.cache/wal/colors-waybar.css';/*{{{*/
+@import '../../Dotfiles/waybar/colors.css';
 * {
     border: none;
-    border-radius: 10px;
+    border-radius: 0px;
     font-family: "JetBrainsMono Nerd Font";
-    font-weight: bold;
-    font-size: 20px;;
-    padding: 3px 10px;
-    min-height: 0;
-}
-
-window#waybar {
-    background: transparent;
-    color: @foreground;
-}
-
-tooltip {
-    background: @background;
-    /* border-radius: 10px; */
-    border-width: 2px;
-    border-style: solid;
-    border-color: #11111b;
+    /* font-weight: bold; */
+    font-size: 20px;
+    padding: 2px 2px;
+    /* margin: 10px 0px; */
+    /* min-height: 50px; */
 }
 #custom-power_profile,
 #custom-weather,
 #custom-music,
-#window,
 #clock,
+#disk,
+#memory,
 #battery,
 #pulseaudio,
 #network,
 #bluetooth,
 #temperature,
 #workspaces,
+#window,
 #tray,
 #backlight {
     background: @background;
+    font-size: 16px;
+    padding: 0 15px
+}
+
+
+window#waybar {
+    background: @background;
+    color: @foreground-alt;
+}
+#window,#workspaces button{
+    font-size:12px;
+}
+
+tooltip {
+    background: @background;
+    /* border-radius: 10px; */
+    /* border-width: 2px; */
+    border-style: solid;
+    border-color: #11111b;
+}
+
+
+#workspaces button.active {
+    color: @primary;
+    background: @background-alt;
+}
+
+#memory {
+    color: @primary;
 }
 
 #custom-music {
+    font-size: 12px;
     background :@background;
-    color: @color2;
+    color: @foreground-alt;
 }
 
 #backlight {
@@ -47,14 +68,27 @@ tooltip {
 }
 
 #clock {
-    color: @color1;;
+    color: @primary;
     /* border-radius: 10px; */
     /* margin-left: 10px; */
     /* border-right: 10px; */
 }
 
+#pulseaudio {
+    color: @foreground-alt;
+}
+#battery {
+    color: @primary;
+    padding:10px;
+    /* border-radius: 10px 10px 10px 10px; */
+    /* margin-right: 10px */
+}
+#network, #pulseaudio {
+    padding: 0px;
+}
 #network {
-    color: @color1;
+    color: @foreground-alt;
+    padding-right: 15px;
     /* border-radius: 10px 0px 0px 10px; */
     /* border-radius: 10px 10px 10px 10px; */
     /* margin-right: 10px */
@@ -64,10 +98,6 @@ tooltip {
     color: @background;
 } 
 
-#pulseaudio {
-    color: @color3;
-}
-
 #pulseaudio.microphone {
     color: @cursor;
     border-left: 0px;
@@ -76,14 +106,7 @@ tooltip {
     /* margin-right: 10px; */
 }
 
-#battery {
-    color: @color2;
-    /* border-radius: 10px 10px 10px 10px; */
-    /* margin-right: 10px */
-}
 
 #custom-weather {
-    /* border-radius: 0px 10px 10px 0px; */
     border-right: 0px;
-    /* margin-left: 0px; */
 }/*}}}*/

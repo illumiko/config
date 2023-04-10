@@ -3,7 +3,7 @@ import:
 env:
   TERM: xterm-256color
 window:
-  opacity: 0.6
+  opacity: 1.0
   dimensions:
     columns: 2
     lines: 2
@@ -11,7 +11,7 @@ window:
     x: 1
     y: 1
 font:
-  size: 8
+  size: 16
   offset:
     x: 0
     y: 0
@@ -34,6 +34,6 @@ shell:
   program: /bin/bash
 cursor:
   style:
-    shape: Block
+    shape: Underline
   vi_mode_style:
     shape: Block

@@ -1,3 +1,4 @@
+require("plugin.vim_wiki")
 require("user.settings")
 require("manager")
 require("user.keymaps")
