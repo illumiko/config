@@ -80,14 +80,14 @@ require("tokyonight").setup({
 })
 vim.cmd("colorscheme tokyonight") -- }}} ]]
 
---[[ -- Catppuccin-- {{{
+-- Catppuccin-- {{{
 require("catppuccin").setup({
-	flavour = "mocha", -- latte, frappe, macchiato, mocha
+	flavour = "frappe", -- latte, frappe, macchiato, mocha
 	background = { -- :h background
 		light = "latte",
-		dark = "macchiato",
+		dark = "frappe",
 	},
-	transparent_background = true,
+	transparent_background = false,
 	term_colors = true,
 	dim_inactive = {
 		enabled = true,
@@ -110,7 +110,13 @@ require("catppuccin").setup({
 		types = { "bold", "italic" },
 		operators = {},
 	},
-	color_overrides = {},
+	color_overrides = {
+        all = {
+            base = "#282828",
+            mantle = "#262626",
+            crust = "#1c1c1c"
+        }
+    },
 	custom_highlights = {},
 	integrations = {
 		cmp = true,
@@ -125,12 +131,16 @@ require("catppuccin").setup({
 		illuminate = true,
 		notify = false,
 		which_key = true,
-		mini = false,
+		mini = true,
+        navic = {
+            enabled = true,
+            custom_bg= "NONE",
+        }
 		-- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
 	},
 })
 -- setup must be called before loading
-vim.cmd("colorscheme catppuccin") -- }}} ]]
+vim.cmd("colorscheme catppuccin") -- }}}
 
 --[[ -- onedark{{{
 require('onedark').setup  {
@@ -203,7 +213,7 @@ vim.cmd("colorscheme onedark")
 --
 --}}}
 
--- -- Gruvbox{{{
+--[[ -- -- Gruvbox{{{
 require("gruvbox").setup({
 	undercurl = true,
 	underline = true,
@@ -221,12 +231,12 @@ require("gruvbox").setup({
 	dim_inactive = false,
 	transparent_mode = true,
 })
-vim.cmd([[
+vim.cmd([=[
 hi IndentBlanklineChar guifg=none
 hi TreesitterContext guibg=#222222
-]])
+]=])
 vim.cmd("colorscheme gruvbox")
--- }}}
+-- }}} ]]
 
 -- Nord {{{
 --

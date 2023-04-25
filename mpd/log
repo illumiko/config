@@ -3403,3 +3403,74 @@ Apr 10 15:35 : player: played "hMMmmm/Nnx/I'm overthinking about you(mix with ly
 Apr 10 15:35 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
 Apr 10 15:39 : player: played "hMMmmm/Nnx/ILLENIUM, Jon Bellion - Good Things Fall Apart (Lyric Video).m4a"
 Apr 10 15:39 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 12 22:14 : player: played "hMMmmm/Nnx/John K - If We Never Met (Lyrics).mp3"
+Apr 12 22:15 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 15 05:31 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 17 03:31 : player: played "hMMmmm/Nightcore/Insane 1 Hour Nightcore Compilation  -D.mp3"
+Apr 18 05:05 : exception: Failed to decode /home/illumiko/Music/hMMmmm/Nightcore/Insane 1 Hour Nightcore Compilation  -D.mp3; Failed to open '/home/illumiko/Music/hMMmmm/Nightcore/Insane 1 Hour Nightcore Compilation  -D.mp3': No such file or directory
+Apr 18 05:05 : player: played "hMMmmm/Nightcore/Insane 1 Hour Nightcore Compilation  -D.mp3"
+Apr 18 05:05 : exception: Failed to decode /home/illumiko/Music/hMMmmm/Nightcore/Insane 1 Hour Nightcore Compilation  -D.mp3; Failed to open '/home/illumiko/Music/hMMmmm/Nightcore/Insane 1 Hour Nightcore Compilation  -D.mp3': No such file or directory
+Apr 18 05:05 : player: played "hMMmmm/Nightcore/Insane 1 Hour Nightcore Compilation  -D.mp3"
+Apr 19 02:46 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 19 02:47 : exception: Failed to decode /home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3; Failed to open '/home/illumiko/Music/hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3': No such file or directory
+Apr 19 02:47 : player: played "hMMmmm/lofi/beats/Atmospheric Sad Phonk Mix ｜ Phonk Study.mp3"
+Apr 23 12:20 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Apr 23 12:20 : output: Failed to open mixer for 'default detected output': no such mixer control: PCM
+Apr 23 17:54 : player: played "youtubeDl/Best White Noise for Studying - Maximum Mind Power.mp3"
+Apr 23 17:57 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Apr 23 18:00 : player: played "youtubeDl/Best White Noise for Studying - Maximum Mind Power.mp3"
+Apr 23 21:03 : player: played "youtubeDl/Best White Noise for Studying - Maximum Mind Power.mp3"
+Apr 23 21:41 : mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Apr 23 21:58 : update: added youtubeDl/Dabin - Holding On (feat. Lowell).m4a
+Apr 24 02:39 : update: added youtubeDl/you fell asleep in the car on a rainy afternoon (playlist).m4a

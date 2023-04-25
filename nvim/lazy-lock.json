@@ -20,6 +20,7 @@
   "due.nvim": { "branch": "main", "commit": "3ff9e999e0a2cbb61f4575835f53eefd27e80ce4" },
   "everforest": { "branch": "master", "commit": "164a44fe8655ff66073189bf6b0a718bfaffa0c0" },
   "fidget.nvim": { "branch": "main", "commit": "688b4fec4517650e29c3e63cfbb6e498b3112ba1" },
+  "firenvim": { "branch": "master", "commit": "ee4ef314bd990b2b05b7fbd95b857159e444a2fe" },
   "formatter.nvim": { "branch": "master", "commit": "ed949c13e1a942db29ababa35e8c7864ced90eb6" },
   "friendly-snippets": { "branch": "main", "commit": "2f5b8a41659a19bd602497a35da8d81f1e88f6d9" },
   "gitsigns.nvim": { "branch": "main", "commit": "b1f9cf7c5c5639c006c937fc1819e09f358210fc" },
