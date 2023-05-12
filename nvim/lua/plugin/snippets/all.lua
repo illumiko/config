@@ -1,9 +1,9 @@
 return {
-	s({ trig = ";a", snippetType = "autosnippet" }, {
-		t("\\alpha"),
+    s({ trig = ";c", snippetType = "autosnippet" }, {
+        t("●"),
 	}),
-	s({ trig = ";b", snippetType = "autosnippet" }, {
-		t("\\beta"),
+    s({ trig = ";C", snippetType = "autosnippet" }, {
+		t("○ "),
 	}),
 	s({ trig = ";g", snippetType = "autosnippet" }, {
 		t("\\gamma"),

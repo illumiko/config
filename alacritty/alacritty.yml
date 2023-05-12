@@ -3,7 +3,7 @@ import:
 env:
   TERM: xterm-256color
 window:
-  opacity: 1.0
+  opacity: 0.8
   dimensions:
     columns: 2
     lines: 2

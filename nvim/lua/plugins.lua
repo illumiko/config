@@ -313,7 +313,7 @@ return {
 	},
 	--[[#Note talking/Scheduling etc]]
 	-- [[NORG]]
-	{ "nvim-neorg/neorg", ft = "norg" },
+	-- { "nvim-neorg/neorg", ft = "norg" },
 	{ "NFrid/due.nvim", ft = "norg" },
 	{ "tpope/vim-speeddating" },
 	{
