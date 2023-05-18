@@ -1,4 +1,4 @@
---[[ -- Kanagawa-- {{{
+-- Kanagawa-- {{{
 --
 vim.opt.laststatus = 3
 vim.opt.fillchars:append({
@@ -20,14 +20,14 @@ require("kanagawa").setup({
 	variablebuiltinStyle = {},
 	specialReturn = true, -- special highlight for the return keyword
 	specialException = true, -- special highlight for exception handling keywords
-	transparent = false, -- do not set background color
-	dimInactive = true, -- dim inactive window `:h hl-NormalNC`
+	transparent = true, -- do not set background color
+	dimInactive = false, -- dim inactive window `:h hl-NormalNC`
 	globalStatus = true,
 })
 vim.cmd([=[
 colorscheme kanagawa
 hi link CmpPmenu Normal
-]=]) ]]
+]=])
 -- -- }}}
 --
 --[[ -- tokyonight -- {{{
@@ -80,14 +80,14 @@ require("tokyonight").setup({
 })
 vim.cmd("colorscheme tokyonight") -- }}} ]]
 
--- Catppuccin-- {{{
+--[[ -- Catppuccin-- {{{
 require("catppuccin").setup({
 	flavour = "frappe", -- latte, frappe, macchiato, mocha
 	background = { -- :h background
 		light = "latte",
 		dark = "frappe",
 	},
-	transparent_background = false,
+	transparent_background = true,
 	term_colors = true,
 	dim_inactive = {
 		enabled = true,
@@ -111,12 +111,12 @@ require("catppuccin").setup({
 		operators = {},
 	},
 	color_overrides = {
-        all = {
-            base = "#282828",
-            mantle = "#262626",
-            crust = "#1c1c1c"
-        }
-    },
+		all = {
+			base = "#282828",
+			mantle = "#262626",
+			crust = "#1c1c1c",
+		},
+	},
 	custom_highlights = {},
 	integrations = {
 		cmp = true,
@@ -132,21 +132,21 @@ require("catppuccin").setup({
 		notify = false,
 		which_key = true,
 		mini = true,
-        navic = {
-            enabled = true,
-            custom_bg= "NONE",
-        }
+		navic = {
+			enabled = true,
+			custom_bg = "NONE",
+		},
 		-- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
 	},
 })
 -- setup must be called before loading
-vim.cmd("colorscheme catppuccin") -- }}}
+vim.cmd("colorscheme catppuccin") -- }}} ]]
 
 --[[ -- onedark{{{
 require('onedark').setup  {
     -- Main options --
     style = 'warmer', -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
-    transparent = true,  -- Show/hide background
+    transparent = false,  -- Show/hide background
     term_colors = true, -- Change terminal color as per the selected theme style
     ending_tildes = false, -- Show the end-of-buffer tildes. By default they are hidden
     cmp_itemkind_reverse = false, -- reverse item kind highlights in cmp menu
@@ -158,8 +158,8 @@ require('onedark').setup  {
     -- You can configure multiple style with comma seperated, For e.g., keywords = 'italic,bold'
     code_style = {
         comments = 'italic',
-        keywords = 'bold',
-        functions = 'bold,italic',
+        keywords = 'none',
+        functions = 'bold',
         strings = 'none',
         variables = 'none'
     },
@@ -180,38 +180,38 @@ require('onedark').setup  {
 vim.cmd("colorscheme onedark")
 -- }}} ]]
 
--- Doom one{{{
---
--- -- Add color to cursor
--- vim.g.doom_one_cursor_coloring = true
--- -- Set :terminal colors
--- vim.g.doom_one_terminal_colors = true
--- -- Enable italic comments
--- vim.g.doom_one_italic_comments = true
--- -- Enable TS support
--- vim.g.doom_one_enable_treesitter = true
--- -- Color whole diagnostic text or only underline
--- vim.g.doom_one_diagnostics_text_color = true
--- -- Enable transparent background
--- vim.g.doom_one_transparent_background = false
--- -- Pumblend transparency
--- vim.g.doom_one_pumblend_enable = true
--- vim.g.doom_one_pumblend_transparency = 20
--- -- Plugins integration
--- vim.g.doom_one_plugin_neorg = true
--- vim.g.doom_one_plugin_barbar = true
--- vim.g.doom_one_plugin_telescope = true
--- vim.g.doom_one_plugin_neogit = false
--- vim.g.doom_one_plugin_nvim_tree = false
--- vim.g.doom_one_plugin_dashboard = true
--- vim.g.doom_one_plugin_startify = true
--- vim.g.doom_one_plugin_whichkey = true
--- vim.g.doom_one_plugin_indent_blankline = true
--- vim.g.doom_one_plugin_vim_illuminate = true
--- vim.g.doom_one_plugin_lspsaga = false
--- vim.cmd("colorscheme doom-one") 
---
---}}}
+--[[ --Doom one{{{
+
+-- Add color to cursor
+vim.g.doom_one_cursor_coloring = true
+-- Set :terminal colors
+vim.g.doom_one_terminal_colors = true
+-- Enable italic comments
+vim.g.doom_one_italic_comments = true
+-- Enable TS support
+vim.g.doom_one_enable_treesitter = true
+-- Color whole diagnostic text or only underline
+vim.g.doom_one_diagnostics_text_color = true
+-- Enable transparent background
+vim.g.doom_one_transparent_background = false
+-- Pumblend transparency
+vim.g.doom_one_pumblend_enable = true
+vim.g.doom_one_pumblend_transparency = 20
+-- Plugins integration
+vim.g.doom_one_plugin_neorg = true
+vim.g.doom_one_plugin_barbar = true
+vim.g.doom_one_plugin_telescope = true
+vim.g.doom_one_plugin_neogit = false
+vim.g.doom_one_plugin_nvim_tree = false
+vim.g.doom_one_plugin_dashboard = true
+vim.g.doom_one_plugin_startify = true
+vim.g.doom_one_plugin_whichkey = true
+vim.g.doom_one_plugin_indent_blankline = true
+vim.g.doom_one_plugin_vim_illuminate = true
+vim.g.doom_one_plugin_lspsaga = false
+vim.cmd("colorscheme doom-one")
+
+--}}} ]]
 
 --[[ -- -- Gruvbox{{{
 require("gruvbox").setup({
@@ -238,48 +238,44 @@ hi TreesitterContext guibg=#222222
 vim.cmd("colorscheme gruvbox")
 -- }}} ]]
 
--- Nord {{{
---
--- require("nord").setup({
--- 	-- your configuration comes here
--- 	-- or leave it empty to use the default settings
--- 	transparent = false, -- Enable this to disable setting the background color
--- 	terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
--- 	diff = { mode = "bg" }, -- enables/disables colorful backgrounds when used in diff mode. values : [bg|fg]
--- 	borders = true, -- Enable the border between verticaly split windows visible
--- 	errors = { mode = "bg" }, -- Display mode for errors and diagnostics
--- 	-- values : [bg|fg|none]
--- 	styles = {
--- 		-- Style to be applied to different syntax groups
--- 		-- Value is any valid attr-list value for `:help nvim_set_hl`
--- 		comments = { italic = true },
--- 		keywords = {},
--- 		functions = {},
--- 		variables = {},
--- 		-- To customize lualine/bufferline
--- 		bufferline = {
--- 			current = {},
--- 			modified = { italic = true },
--- 		},
--- 	},
--- 	-- colorblind mode
--- 	-- see https://github.com/EdenEast/nightfox.nvim#colorblind
--- 	-- simulation mode has not been implemented yet.
--- 	colorblind = {
--- 		enable = false,
--- 		preserve_background = false,
--- 		severity = {
--- 			protan = 0.0,
--- 			deutan = 0.0,
--- 			tritan = 0.0,
--- 		},
--- 	},
--- 	--- You can override specific highlights to use other groups or a hex color
--- 	--- function will be called with all highlights and the colorScheme table
--- 	on_highlights = function(highlights, colors) end,
--- })
--- vim.cmd("colorscheme nord")
---
--- }}}
+require("nord").setup({
+	-- your configuration comes here
+	-- or leave it empty to use the default settings
+	transparent = false, -- Enable this to disable setting the background color
+	terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
+	diff = { mode = "bg" }, -- enables/disables colorful backgrounds when used in diff mode. values : [bg|fg]
+	borders = true, -- Enable the border between verticaly split windows visible
+	errors = { mode = "bg" }, -- Display mode for errors and diagnostics
+	-- values : [bg|fg|none]
+	styles = {
+		-- Style to be applied to different syntax groups
+		-- Value is any valid attr-list value for `:help nvim_set_hl`
+		comments = { italic = true },
+		keywords = {},
+		functions = {},
+		variables = {},
+
+		-- To customize lualine/bufferline
+		bufferline = {
+			current = {},
+			modified = { italic = true },
+		},
+	},
+
+	-- colorblind mode
+	-- see https://github.com/EdenEast/nightfox.nvim#colorblind
+	-- simulation mode has not been implemented yet.
+	colorblind = {
+		enable = false,
+		preserve_background = false,
+		severity = {
+			protan = 0.0,
+			deutan = 0.0,
+			tritan = 0.0,
+		},
+	},
+})
+vim.cmd("colorscheme nord")
 
 -- vim.cmd("colorscheme jellybeans-nvim")
+require("user.highlights")

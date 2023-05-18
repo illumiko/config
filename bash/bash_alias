@@ -21,6 +21,7 @@ alias pomodoro="go run ~/Documents/Projects/Personal/godoro/main.go"
 alias nv="nvim"
 alias em="emacs"
 alias ls="ls -Xghr --color=always"
+alias blt="bluetoothctl"
 
 
 

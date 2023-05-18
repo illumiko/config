@@ -30,13 +30,21 @@ nmap("n","<Cmd>lua vim.cmd('normal! n'); MiniAnimate.execute_after('scroll', 'no
 nmap("N","<Cmd>lua vim.cmd('normal! N'); MiniAnimate.execute_after('scroll', 'normal! zvzz')<CR>", opts(""))
 
 --[[proper copy]]
-map("n", "Y", '"+Y', opts(""))
-map("x", "y", '"+y', opts(""))
+map("n", "Y", '"+y$', opts(""))
+map("n", "yy", '"+y', opts(""))
 map("n", "yi]", '"+yi]', opts(""))
 map("n", [[yi']], [["+yi']], opts(""))
 map("n", [[yi}]], [["+yi}]], opts(""))
 map("n", [[yi"]], [["+yi"]], opts(""))
 map("n", [[yi)]], [["+yi)]], opts(""))
+
+map("x", "Y", '"+y$', opts(""))
+map("x", "yy", '"+y', opts(""))
+map("x", "yi]", '"+yi]', opts(""))
+map("x", [[yi']], [["+yi']], opts(""))
+map("x", [[yi}]], [["+yi}]], opts(""))
+map("x", [[yi"]], [["+yi"]], opts(""))
+map("x", [[yi)]], [["+yi)]], opts(""))
 
 --[[Source config]]
 nmap("<leader>ls", ":source %<cr>", opts("Reload current file"))

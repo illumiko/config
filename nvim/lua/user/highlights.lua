@@ -8,16 +8,17 @@ local transparent = function() -- {{{
 		"WinSeparator",
 		"LspInlayHint",
 		"IndentBlanklineSpaceChar",
-        --Telescope stuff:
-        "TelescopeBorder",
-        "TelescopeResultsBorder",
-        "TelescopePreviewBorder",
-        "TelescopePromptBorder",
-        "TelescopeTitle",
-        "TelescopeResultsTitle",
-        "TelescopePreviewTitle",
-        "TelescopePromptTitle",
-        "TelescopeNormal"
+		--Telescope stuff:
+		"TelescopeBorder",
+		"TelescopeResultsBorder",
+		"TelescopePreviewBorder",
+		"TelescopePromptBorder",
+		"TelescopeTitle",
+		"TelescopeResultsTitle",
+		"TelescopePreviewTitle",
+		"TelescopePromptTitle",
+		"TelescopeNormal",
+		"NormalNC",
 	}
 
 	for _, value in pairs(transparent) do
@@ -40,8 +41,9 @@ u.set_hl_fg("Folded", "Comment") -- Change folded guifg
 u.set_hl_bg("ScrollbarCursor", "Visual") -- Change scroll bar guibg
 vim.cmd([[
 hi SpellBad guifg=none guisp=Red
-hi LineNrBelow guifg=#434343
-hi LineNrAbove guifg=#434343
+hi i3ConfigError guibg=none
+hi LineNrBelow guifg=#616e88
+hi LineNrAbove guifg=#616e88
 ]])
 
 --[[ require("modes").setup({ -- {{{

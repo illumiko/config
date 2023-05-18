@@ -37,7 +37,7 @@ require("formatter").setup({
 vim.cmd([[
 augroup FormatAutogroup
   autocmd!
-  autocmd FileType go markdown autocmd BufWritePost * FormatWrite
+  autocmd FileType go autocmd BufWritePost * FormatWrite
 augroup END
 ]])
 

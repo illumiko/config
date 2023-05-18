@@ -2,10 +2,10 @@ vim.o.backup = false -- creates a backup file
 -- vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
 vim.o.cmdheight = 1 -- more space in the neovim command line for displaying messages
 -- vim.opt.colorcolumn = "100" -- fixes indentline for now
-vim.o.conceallevel = 2 -- so that `` is visible in markdown files
+vim.o.conceallevel = 0 -- so that `` is visible in markdown files
 vim.o.hidden = true -- required to keep multiple buffers and open multiple buffers
 vim.o.ignorecase = true -- ignore case in search patterns
-vim.o.pumheight = 10 -- pop up menu height
+vim.o.pumheight = 15 -- pop up menu height
 vim.o.showmode = false -- we don't need to see things like -- INSERT -- anymore
 vim.o.showtabline = 2 -- always show tabs
 vim.o.smartcase = true -- smart case
@@ -52,11 +52,6 @@ vim.opt.fillchars:append({
 	verthoriz = "╋",
 })
 vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
-vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
-	callback = function()
-		vim.cmd("set formatoptions-=cro")
-	end,
-})
 vim.cmd([[
 command Journal source ~/Documents/norg/sessions/vp.vim
 set noshowcmd noruler

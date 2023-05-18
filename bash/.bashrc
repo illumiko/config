@@ -8,7 +8,7 @@ set bell-style visual
 export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="brave"
-export DOT="$HOME/Dotfiles"
+export DOT="$HOME/dotfiles"
 export PATH="$PATH:$HOME/.local/share/go/bin/"
 
 # Alias

@@ -38,3 +38,4 @@ require("gruvbox").setup({
 
 vim.cmd("hi IndentBlanklineChar guifg=none")
 vim.cmd("colorscheme gruvbox")
+require("user.highlights")
