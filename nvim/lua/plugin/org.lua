@@ -7,7 +7,7 @@ require("neorg").setup({
 				extensions = "all",
 			},
 		}, -- }}}
-		["core.norg.completion"] = { -- {{{
+		["core.completion"] = { -- {{{
 			config = {
 				engine = "nvim-cmp", -- We current support nvim-compe and nvim-cmp only
 			},
@@ -18,7 +18,7 @@ require("neorg").setup({
 				neorg_leader = "<Leader>o",
 			},
 		}, -- }}}
-		["core.norg.journal"] = { -- {{{
+		["core.journal"] = { -- {{{
 			config = { -- Note that this table is optional and doesn't need to be provided
 				-- Configuration here
 				workspace = "default",
@@ -26,13 +26,13 @@ require("neorg").setup({
 				strategy = "flat",
 			},
 		}, -- }}}
-		["core.norg.concealer"] = {
+		["core.concealer"] = {
 			config = {
 				icon_preset = "diamond",
 				-- width = "content",
 			},
 		}, -- Allows for use of icons
-		["core.norg.dirman"] = { -- Manage your directories with Neorg{{{
+		["core.dirman"] = { -- Manage your directories with Neorg{{{
 			config = {
 				workspaces = {
 					default = "/home/illumiko/Documents/norg/",

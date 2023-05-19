@@ -313,7 +313,7 @@ return {
 	},
 	--[[#Note talking/Scheduling etc]]
 	-- [[NORG]]
-	-- { "nvim-neorg/neorg", ft = "norg" },
+	{ "nvim-neorg/neorg", ft = "norg" },
 	{ "NFrid/due.nvim", ft = "norg" },
 	{ "tpope/vim-speeddating" },
 	{
@@ -333,16 +333,16 @@ return {
 		dependencies = {
 			"nvim-treesitter/nvim-treesitter-context",
 			"nvim-treesitter/playground",
-			"haringsrob/nvim_context_vt",
+			-- "haringsrob/nvim_context_vt",
 			"windwp/nvim-ts-autotag",
 			"p00f/nvim-ts-rainbow",
 			"David-Kunz/markid",
-			{
-				"lewis6991/spellsitter.nvim",
-				config = function()
-					require("spellsitter").setup()
-				end,
-			},
+			-- {
+			-- 	"lewis6991/spellsitter.nvim",
+			-- 	config = function()
+			-- 		require("spellsitter").setup()
+			-- 	end,
+			-- },
 		},
 	},
 
@@ -381,7 +381,7 @@ return {
 			},
 			{
 				"<leader>fd",
-				"<cmd>lua require('telescope.builtin').find_files({cwd='~/Dotfiles/'})<CR>",
+				"<cmd>lua require('telescope.builtin').find_files({cwd='~/dotfiles/'})<CR>",
 				desc = "Config Files",
 				silent = true,
 			},

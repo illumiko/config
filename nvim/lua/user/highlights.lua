@@ -41,7 +41,6 @@ u.set_hl_fg("Folded", "Comment") -- Change folded guifg
 u.set_hl_bg("ScrollbarCursor", "Visual") -- Change scroll bar guibg
 vim.cmd([[
 hi SpellBad guifg=none guisp=Red
-hi i3ConfigError guibg=none
 hi LineNrBelow guifg=#616e88
 hi LineNrAbove guifg=#616e88
 ]])

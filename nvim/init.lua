@@ -17,14 +17,14 @@ require("plugin.which_key")
 if vim.g.neovide then
 	require("user.neovide")
 else
-    require("user.colorscheme")
+	require("user.colorscheme")
 end
 -- require("plugin.cybu_conf")
 require("plugin.buf_deleto")
 require("plugin.barbar")
 require("plugin.treesitter")
 -- require("plugin.treesitter_context")
--- require("plugin.org")
+require("plugin.org")
 require("plugin.completion")
 require("plugin.luasnip_conf")
 require("plugin.comment")

@@ -83,7 +83,7 @@ vim.api.nvim_create_autocmd({ "BufEnter" }, {
 	callback = function()
 		vim.cmd("startinsert!")
 		vim.cmd("set cmdheight=1")
-		vim.cmd("set wh=5")
+		vim.cmd("set wh=10")
 	end,
 })
 
@@ -103,7 +103,7 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
 	end,
 })
 
-vim.cmd("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif")
+-- vim.cmd("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif")
 -- vim.api.nvim_create_autocmd({ "BufEnter" }, {
 --   callback = function()
 --     vim.cmd [[
@@ -143,12 +143,12 @@ vim.api.nvim_create_autocmd({ "VimEnter" }, {
 	end,
 })
 
-vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
-	pattern = { "*" },
-	callback = function()
-		vim.cmd("checktime")
-	end,
-})
+-- vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
+-- 	pattern = { "*" },
+-- 	callback = function()
+-- 		vim.cmd("checktime")
+-- 	end,
+-- })
 
 vim.api.nvim_create_autocmd({ "CursorHold" }, {
 	callback = function()

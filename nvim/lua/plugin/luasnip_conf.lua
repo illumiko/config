@@ -45,7 +45,7 @@ ls.config.set_config({
 })
 
 require("luasnip.loaders.from_vscode").lazy_load() -- loads premade snippets
-require("luasnip.loaders.from_lua").load({ paths = "~/Dotfiles/nvim/lua/plugin/snippets/" })
+require("luasnip.loaders.from_lua").load({ paths = "~/dotfiles/nvim/lua/plugin/snippets/" })
 
 vim.cmd([=[
 augroup CustomLuaSnip
@@ -57,5 +57,5 @@ augroup end
 vim.keymap.set(
 	"n",
 	"<Leader>ll",
-	'<Cmd>lua require("luasnip.loaders.from_lua").lazy_load({paths = "~/Dotfiles/nvim/lua/plugin/snippets/"})<CR>'
+	'<Cmd>lua require("luasnip.loaders.from_lua").lazy_load({paths = "~/dotfiles/nvim/lua/plugin/snippets/"})<CR>'
 )

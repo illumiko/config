@@ -9,6 +9,7 @@ export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="brave"
 export DOT="$HOME/dotfiles"
+export NVIMRC="$DOT/nvim/"
 export PATH="$PATH:$HOME/.local/share/go/bin/"
 
 # Alias
@@ -121,4 +122,5 @@ xmodmap -e "keycode 66 = BackSpace"
 setxkbmap -option caps:backspace
 # dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:swapescape']" 
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+source $DOT/bash/bash_sensible.bash
 fish
