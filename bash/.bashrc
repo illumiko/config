@@ -1,5 +1,4 @@
 #Important
-eval "$(starship init bash)" #starship prompt
 xset r rate 200 50 #responsive keys
 set -o vi
 set bell-style visual
@@ -123,4 +122,4 @@ setxkbmap -option caps:backspace
 # dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:swapescape']" 
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 source $DOT/bash/bash_sensible.bash
-fish
+eval "$(starship init bash)" #starship prompt

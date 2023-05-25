@@ -3,7 +3,6 @@ local nmap = require("utils.maps").nmap
 local imap = require("utils.maps").imap
 local cmap = require("utils.maps").cmap
 local opts = require("utils.maps").opts
-
 local ls = require("luasnip")
 
 nmap("<Space>", "<NOP>", opts("wk"))
@@ -29,48 +28,73 @@ nmap("<c-u>","<Cmd>lua vim.cmd('normal! <c-u>'); MiniAnimate.execute_after('scro
 nmap("n","<Cmd>lua vim.cmd('normal! n'); MiniAnimate.execute_after('scroll', 'normal! zvzz')<CR>", opts(""))
 nmap("N","<Cmd>lua vim.cmd('normal! N'); MiniAnimate.execute_after('scroll', 'normal! zvzz')<CR>", opts(""))
 
+------------------
+--[[Window Change]]
+------------------
+nmap("<c-j>","<c-w>j",opts(""))
+nmap("<c-k>","<c-w>k",opts(""))
+nmap("<c-h>","<c-w>h",opts(""))
+nmap("<c-l>","<c-w>l",opts(""))
+
+------------------
 --[[proper copy]]
+------------------
+-- Normal mode
 map("n", "Y", '"+y$', opts(""))
-map("n", "yy", '"+y', opts(""))
+map("n", "y", '"+y', opts(""))
 map("n", "yi]", '"+yi]', opts(""))
 map("n", [[yi']], [["+yi']], opts(""))
 map("n", [[yi}]], [["+yi}]], opts(""))
 map("n", [[yi"]], [["+yi"]], opts(""))
 map("n", [[yi)]], [["+yi)]], opts(""))
-
+-- Visual Mode
 map("v", "Y", '"+y$', opts(""))
-map("v", "yy", '"+y', opts(""))
+map("v", "y", '"+y', opts(""))
 map("v", "yi]", '"+yi]', opts(""))
 map("v", [[yi']], [["+yi']], opts(""))
 map("v", [[yi}]], [["+yi}]], opts(""))
 map("v", [[yi"]], [["+yi"]], opts(""))
 map("v", [[yi)]], [["+yi)]], opts(""))
 
+------------------
 --[[Source config]]
+------------------
 nmap("<leader>ls", ":source %<cr>", opts("Reload current file"))
 
+------------------
 --[[Quit]]
+------------------
 nmap("<leader>Q", ":wqa<CR>", opts("Quit"))
 
+------------------
 --[[focus Management]]
+------------------
 nmap("<C-f>", "FocusMaximise <CR>", opts("Max width"))
 
+------------------
 -- [[Norg]]
+------------------
 -- nmap("<leader>oNjtcd", ":Neorg journal today<CR>", opts("Journal custom"))
 -- nmap("<leader>oNjty", ":Neorg journal yesterday<CR>", opts("Journal yesterday"))
 -- nmap("<leader>oNjtt", ":Neorg journal tomorrow<CR>", opts("Journal tomorrow"))
 nmap("<M-1>", ":e ~/Documents/norg/main/index.norg<CR>", opts(""))
 
+------------------
 --[[UFO]]
---nmap("zR", require("ufo").openAllFolds)
---nmap("zM", require("ufo").closeAllFolds)
---nmap("zr", require("ufo").openFoldsExceptKinds)
---nmap("zm", require("ufo").closeFoldsWith) --
+------------------
+nmap("zR", require("ufo").openAllFolds)
+nmap("zM", require("ufo").closeAllFolds)
+nmap("zr", require("ufo").openFoldsExceptKinds)
+nmap("zm", require("ufo").closeFoldsWith) --
 
+------------------
 --[[format]]
+------------------
 nmap("<leader>F", ":FormatWrite<CR>", opts("Format"))
 
+------------------
 --[[luasnip]]
+------------------
 
 vim.cmd([[
 " press <Tab> to expand or jump in a snippet. These can also be mapped separately
@@ -83,7 +107,9 @@ snoremap <silent> <S-Tab> <cmd>lua require('luasnip').jump(-1)<Cr>
 ]])
 
 -- [[lsp]]
+------------------
 -- [[no hl]]
+------------------
 nmap("<Leader>H", ":set hlsearch!<CR>", opts("Clear hls"))
 
 -- [[better split management]]
@@ -92,14 +118,18 @@ nmap("<Leader>H", ":set hlsearch!<CR>", opts("Clear hls"))
 -- nmap("<C-k>", ":NavigatorUp<CR>", opts("Window Up"))
 -- nmap("<C-l>", ":NavigatorRight<CR>", opts("Window Right"))
 
+------------------
 -- [[swap windows]
+------------------
 nmap("<C-x>", "<C-w>x", opts(""))
 
 --[[tabline]]
 nmap("<leadert>tp", ":tabprevious<CR>", opts("Tab Prev"))
 nmap("<leader>tn", ":tabnext<CR>", opts("Tab Next"))
 
+------------------
 -- [[buffer switch]]
+------------------
 nmap("<S-l>", ":BufferNext<CR>", opts(""))
 nmap("<S-h>", ":BufferPrevious<CR>", opts(""))
 
@@ -119,7 +149,9 @@ vim.keymap.set("i", "<c-e>", function()
 	end
 end)
 
+------------------
 -- better ESC
+------------------
 imap("jk", "<cmd>LuaSnipUnlinkCurrent<CR><ESC>", opts(""))
 cmap("jk", "<ESC>",opts(""))
 

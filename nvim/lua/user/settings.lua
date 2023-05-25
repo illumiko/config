@@ -41,6 +41,8 @@ vim.o.wh = 25
 vim.o.wiw = 120
 vim.o.showbreak = string.rep(" ", 3)
 -- Make it so that long lines wrap smartly
+
+
 vim.o.linebreak = true
 vim.opt.fillchars:append({
 	horiz = "━",
@@ -64,7 +66,9 @@ set noshowcmd noruler
 -- vim.textwidth = 120--{{{
 -- vim.opt.relativenumber = true
 vim.opt.foldcolumn = "1"
--- vim.o.foldlevel = 90
--- vim.foldlevelstart = 99
--- vim.foldenable = true
-vim.o.foldmethod = "marker" --}}}
+vim.o.foldlevel = 90
+vim.foldlevelstart = 99
+vim.foldlevel = 0
+vim.foldenable = true
+-- vim.o.foldmethod = "marker" --}}}
+

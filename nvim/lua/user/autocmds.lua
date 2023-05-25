@@ -83,7 +83,7 @@ vim.api.nvim_create_autocmd({ "BufEnter" }, {
 	callback = function()
 		vim.cmd("startinsert!")
 		vim.cmd("set cmdheight=1")
-		vim.cmd("set wh=10")
+		vim.cmd("set wh=8")
 	end,
 })
 

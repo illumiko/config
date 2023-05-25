@@ -1,4 +1,6 @@
 return {
+    require("plugin.noice").lazy,
+    require("plugin.barbar").lazy,
 	-- [[#Dependencies]]
 	"winston0410/cmd-parser.nvim",
 	"anuvyklack/keymap-amend.nvim",
@@ -24,6 +26,7 @@ return {
 		"j-hui/fidget.nvim",
 		config = function()
 			require("fidget").setup({})
+                 
 		end,
 	}, -- }}}
 	{ "mhartington/formatter.nvim" },
@@ -124,7 +127,6 @@ return {
 	},
 
 	--[[#Bufferline]]
-	{ "romgrk/barbar.nvim", lazy = true },
 
 	--[[#status bar]]
 	--[[ {
@@ -153,15 +155,14 @@ return {
 		end,
 	},
 	"wellle/targets.vim", -- better surround motions
-	"lukas-reineke/indent-blankline.nvim",
+    require("plugin.indent_lines").lazy,
 	-- "xiyaowong/nvim-transparent",
 	"matze/vim-move",
 	-- "Pocco81/AutoSave.nvim",
 	"romainl/vim-devdocs",
 	"osyo-manga/vim-over",
 	"jghauser/mkdir.nvim",
-	"mg979/vim-visual-multi",
-	"folke/which-key.nvim",
+    require("plugin.which_key").lazy,
 	{
 		url = "https://gitlab.com/yorickpeterse/nvim-window.git",
 		keys = {
@@ -211,7 +212,7 @@ return {
 		end,
 	},
 
-	--[[ { "kevinhwang91/nvim-ufo", dependencies = "kevinhwang91/promise-async" }, ]]
+	{ "kevinhwang91/nvim-ufo", dependencies = "kevinhwang91/promise-async" },
 	{
 		"echasnovski/mini.animate",
 		config = function()
@@ -232,32 +233,7 @@ return {
 			require("stabilize").setup()
 		end,
 	},
-	{
-		"kazhala/close-buffers.nvim",
-		keys = {
-			{
-				"<leader>bdh",
-				[[<CMD>lua require('close_buffers').delete({type = 'hidden'})<CR>]],
-				desc = "Hidden bufdel",
-				silent = true,
-				noremap = true,
-			},
-			{
-				"<leader>bdn",
-				[[<CMD>lua require('close_buffers').delete({type = 'nameless'})<CR>]],
-				desc = "Nameless bufdel",
-				silent = true,
-				noremap = true,
-			},
-			{
-				"<leader>bdd",
-				[[<CMD>lua require('close_buffers').delete({type = 'this'})<CR>]],
-				desc = "Current bufdel",
-				silent = true,
-				noremap = true,
-			},
-		},
-	},
+    require("plugin.close_buffer").lazy,
 	--[[ {
 		"beauwilliams/focus.nvim",
 		config = function()
@@ -304,13 +280,7 @@ return {
 	{ "corriander/vim-markdown-indent", ft = "markdown" },
 
 	--[[#File Browser]]
-	{
-		"nvim-neo-tree/neo-tree.nvim",
-		branch = "v2.x",
-		keys = {
-			{ "<Leader>E", ":Neotree toggle<CR>", desc = "Explorer", silent = true, noremap = true },
-		},
-	},
+    require("plugin.explorer").lazy,
 	--[[#Note talking/Scheduling etc]]
 	-- [[NORG]]
 	{ "nvim-neorg/neorg", ft = "norg" },
@@ -323,28 +293,10 @@ return {
 	{ "lervag/vimtex" },
 
 	-- [[nvim greeter]]
-	{ "goolord/alpha-nvim", lazy = true },
+    require("plugin.alpha").lazy,
 
 	--[[#Syntax/Treesitter]]
-	{
-		"nvim-treesitter/nvim-treesitter",
-		events = { "BufEnter" },
-		build = ":TSUpdate",
-		dependencies = {
-			"nvim-treesitter/nvim-treesitter-context",
-			"nvim-treesitter/playground",
-			-- "haringsrob/nvim_context_vt",
-			"windwp/nvim-ts-autotag",
-			"p00f/nvim-ts-rainbow",
-			"David-Kunz/markid",
-			-- {
-			-- 	"lewis6991/spellsitter.nvim",
-			-- 	config = function()
-			-- 		require("spellsitter").setup()
-			-- 	end,
-			-- },
-		},
-	},
+    require("plugin.treesitter").lazy,
 
 	--[[#session]]
 	"tpope/vim-obsession",

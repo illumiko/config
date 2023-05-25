@@ -28,5 +28,5 @@ if not status_ok then
 end
 
 -- Have packer use a popup window
-
+local pnoice = require("plugin.noice")
 lazy.setup("plugins")
