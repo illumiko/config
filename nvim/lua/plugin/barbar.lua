@@ -1,5 +1,4 @@
 local M = {}
-
 vim.g.barbar_auto_setup = false -- disable auto-setup
 M.config = {
 	-- WARN: do not copy everything below into your config!
@@ -75,4 +74,4 @@ M.lazy = {
 	config = M.config,
 }
 
-return M
+return M.lazy

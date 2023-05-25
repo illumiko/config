@@ -1,5 +1,5 @@
 local M = {}
-M.config = function()
+local config = function()
 	require("nvim-treesitter.configs").setup({
 		playground = {
 			enable = true,
@@ -48,34 +48,18 @@ M.config = function()
 			max_file_lines = 10000, -- Do not enable for files with more than n lines, int
 			-- termcolors = {} -- table of colour name strings
 		},
-		-- ensure_installed = {
-		-- 	"javascript",
-		-- 	"vue",
-		-- 	"html",
-		-- 	"css",
-		-- 	"scss",
-		-- 	"python",
-		-- },
 	})
 end
 M.lazy = {
 	"nvim-treesitter/nvim-treesitter",
 	events = { "BufEnter" },
 	build = ":TSUpdate",
-	config = M.config,
+	config = config,
 	dependencies = {
-		"nvim-treesitter/nvim-treesitter-context",
 		"nvim-treesitter/playground",
-		-- "haringsrob/nvim_context_vt",
 		"windwp/nvim-ts-autotag",
 		"p00f/nvim-ts-rainbow",
 		"David-Kunz/markid",
-		-- {
-		-- 	"lewis6991/spellsitter.nvim",
-		-- 	config = function()
-		-- 		require("spellsitter").setup()
-		-- 	end,
-		-- },
 	},
 }
-return M
+return M.lazy

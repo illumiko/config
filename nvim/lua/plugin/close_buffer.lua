@@ -34,4 +34,4 @@ M.lazy = {
 	keys = M.keys,
 	config = M.config,
 }
-return M
+return M.lazy

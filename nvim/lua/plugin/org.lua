@@ -1,4 +1,5 @@
-require("neorg").setup({
+local M = {}
+config = {
 	-- Tell Neorg what modules to load
 	load = {
 		["core.defaults"] = {}, -- Load all the default modules
@@ -71,6 +72,16 @@ require("neorg").setup({
 			},
 		},-- }}} ]]
 	},
-})
+}
+M.lazy = {
+	{ "nvim-neorg/neorg", ft = "norg", config = config },
+	{ "NFrid/due.nvim", ft = "norg" },
+	{ "tpope/vim-speeddating" },
+	{
+		"dhruvasagar/vim-table-mode",
+		ft = "norg",
+	},
 
---for completion
+}
+return M.lazy
+

@@ -1,5 +1,5 @@
-local autosave = require("auto-save")
-autosave.setup({
+local M = {}
+local config = {
 	enabled = false,
 	execution_message = "AutoSave: saved at " .. vim.fn.strftime("%H:%M:%S"),
 	events = { "InsertLeave" },
@@ -13,4 +13,12 @@ autosave.setup({
 	on_off_commands = true,
 	clean_command_line_interval = 0,
 	debounce_delay = 135,
-})
+}
+
+M.lazy = {
+	"Pocco81/AutoSave.nvim",
+	config = M.config,
+    ft = ""
+}
+
+return M.lazy

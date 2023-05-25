@@ -59,16 +59,10 @@ command Journal source ~/Documents/norg/sessions/vp.vim
 set noshowcmd noruler
 "set foldtext=v:folddashes.substitute(getline(v:foldstart),'/\\*\\\|\\*/\\\|{{{\\d\\=','','g')
 ]])
---local add_cmd = vim.api.nvim_create_autocmd("NeorgToMd", function()
-----    -- File name without extension .
---    vim.cmd("Neorg export to-file " .. fn.expand("%:t:r") .. ".md")
---end, { force = true })
--- vim.textwidth = 120--{{{
--- vim.opt.relativenumber = true
 vim.opt.foldcolumn = "1"
 vim.o.foldlevel = 90
 vim.foldlevelstart = 99
 vim.foldlevel = 0
 vim.foldenable = true
--- vim.o.foldmethod = "marker" --}}}
+-- vim.o.foldmethod = "marker" 
 

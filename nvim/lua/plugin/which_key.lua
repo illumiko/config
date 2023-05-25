@@ -31,4 +31,4 @@ M.lazy = {
 	"folke/which-key.nvim",
     config = M.config
 }
-return M
+return M.lazy

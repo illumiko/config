@@ -82,10 +82,6 @@ nmap("<M-1>", ":e ~/Documents/norg/main/index.norg<CR>", opts(""))
 ------------------
 --[[UFO]]
 ------------------
-nmap("zR", require("ufo").openAllFolds)
-nmap("zM", require("ufo").closeAllFolds)
-nmap("zr", require("ufo").openFoldsExceptKinds)
-nmap("zm", require("ufo").closeFoldsWith) --
 
 ------------------
 --[[format]]

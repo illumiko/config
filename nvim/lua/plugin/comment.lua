@@ -1,4 +1,5 @@
-require('Comment').setup{
+local M = {}
+M.config = {
     ---Add a space b/w comment and the line
     ---@type boolean
     padding = true,
@@ -66,3 +67,8 @@ require('Comment').setup{
     ---@type fun(ctx: Ctx)
     post_hook = nil,
 }
+M.lazy = {
+	"numToStr/Comment.nvim",
+    config = M.config
+}
+return M.lazy

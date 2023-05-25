@@ -1,4 +1,5 @@
-require("ufo").setup({
+local M = {}
+local config = {
 	provider_selector = function(bufnr, filetype, buftype)
 		return { "treesitter", "indent" }
 	end,
@@ -13,6 +14,12 @@ require("ufo").setup({
 		mappings = {
 			scrollU = "<C-u>",
 			scrollD = "<C-d>",
-		}, 
+		},
 	},
-})
+}
+M.lazy = {
+	"kevinhwang91/nvim-ufo",
+	dependencies = "kevinhwang91/promise-async",
+    config = config
+}
+return M.lazy
