@@ -1,0 +1,6 @@
+require("user.statusbar")
+require("user.keymaps")
+require("user.settings")
+require("user.autocmds")
+require("user.highlights")
+vim.cmd("colorscheme tokyonight")

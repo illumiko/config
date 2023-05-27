@@ -51,7 +51,6 @@ config = function()
 			}),
 		}, -- }}}
 		sources = cmp.config.sources({ -- {{{
-			{ name = "nvim_lsp_signature_help" }, -- shows current func arg
 			{ name = "luasnip", group_index = 2, keyword_length = 2 },
 			{
 				name = "nvim_lsp",
@@ -144,10 +143,9 @@ M.lazy = {
 		"hrsh7th/cmp-buffer", --cmp source buffer
 		"hrsh7th/cmp-path", --cmp source path
 		"hrsh7th/cmp-cmdline", --cmp source cmd
-		"hrsh7th/cmp-nvim-lsp-signature-help",
 		"saadparwaiz1/cmp_luasnip", --for snippets
 		"onsails/lspkind-nvim", --customizing cmp
 	},
-    config = config,
+	config = config,
 }
 return M.lazy

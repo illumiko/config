@@ -2,7 +2,6 @@ return {
 	-- [[#Dependencies]]
 
 	-- [[#LSP]]
-	{ "mhartington/formatter.nvim" },
 	--[[Nvim config]]
 	-- "folke/neodev.nvim",
 
@@ -38,9 +37,7 @@ return {
 			})
 		end,
 	},
-	"wellle/targets.vim", -- better surround motions
 	-- "xiyaowong/nvim-transparent",
-	"matze/vim-move",
 	"romainl/vim-devdocs",
 	"osyo-manga/vim-over",
 	"jghauser/mkdir.nvim",
@@ -67,21 +64,6 @@ return {
 		end,
 	}, ]]
 	{
-		"lewis6991/impatient.nvim",
-	},
-	{
-		"phaazon/hop.nvim",
-		as = "hop",
-		config = function()
-			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
-		end,
-		keys = {
-			-- { "f", ":HopWordCurrentLine<CR>", desc = "Line hop", noremap = true, silent = true },
-			-- { "F", ":HopChar1CurrentLine<CR>", desc = "Char hop", noremap = true, silent = true },
-			{ "<leader>hl", ":HopLine<CR>", desc = "Line Hop", noremap = true, silent = true },
-			{ "<leader>hc", ":HopChar1<CR>", desc = "Char Hop", noremap = true, silent = true },
-			{ "<leader>hw", ":HopWord<CR>", desc = "Word Hop", noremap = true, silent = true },
-		},
 	},
 	-- {
 	-- 	"ghillb/cybu.nvim",

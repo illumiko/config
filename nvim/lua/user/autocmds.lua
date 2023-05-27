@@ -1,93 +1,69 @@
--- vim.api.nvim_create_autocmd({ "User" }, {
---   pattern = { "AlphaReady" },
---   callback = function()
---     vim.cmd [[
---       set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
---     ]]
---   end,
--- })
+-- This file is automatically loaded by lazyvim.config.init
 
--- vim.api.nvim_create_autocmd({ "User" }, {
---   pattern = { "AlphaReady" },
---   callback = function()
---     vim.cmd [[
---       set laststatus=0 | autocmd BufUnload <buffer> set laststatus=3
---     ]]
---   end,
--- })
+local function augroup(name)
+	return vim.api.nvim_create_augroup("vim_" .. name, { clear = true })
+end
+-- Check if we need to reload the file when it changed
+vim.api.nvim_create_autocmd({ "FocusGained", "TermClose", "TermLeave" }, {
+	group = augroup("checktime"),
+	command = "checktime",
+})
 
-vim.api.nvim_create_autocmd({ "FileType" }, {
+-- Highlight on yank
+vim.api.nvim_create_autocmd("TextYankPost", {
+	group = augroup("highlight_yank"),
+	callback = function()
+		vim.highlight.on_yank()
+	end,
+})
+
+-- resize splits if window got resized
+vim.api.nvim_create_autocmd({ "VimResized" }, {
+	group = augroup("resize_splits"),
+	callback = function()
+		vim.cmd("tabdo wincmd =")
+	end,
+})
+
+-- go to last loc when opening a buffer
+vim.api.nvim_create_autocmd("BufReadPost", {
+	group = augroup("last_loc"),
+	callback = function()
+		local mark = vim.api.nvim_buf_get_mark(0, '"')
+		local lcount = vim.api.nvim_buf_line_count(0)
+		if mark[1] > 0 and mark[1] <= lcount then
+			pcall(vim.api.nvim_win_set_cursor, 0, mark)
+		end
+	end,
+})
+
+-- close some filetypes with <q>
+vim.api.nvim_create_autocmd("FileType", {
+	group = augroup("close_with_q"),
 	pattern = {
-		"Jaq",
-		"qf",
+		"PlenaryTestPopup",
 		"help",
-		"man",
 		"lspinfo",
+		"man",
+		"notify",
+		"qf",
 		"spectre_panel",
-		"lir",
-		"DressingSelect",
+		"startuptime",
 		"tsplayground",
-		"Markdown",
+		"checkhealth",
+		"neotest-output",
+		"Lazy",
+        "Dashboard",
 	},
-	callback = function()
-		vim.cmd([[
-      nnoremap <silent> <buffer> q :close<CR> 
-      nnoremap <silent> <buffer> <esc> :close<CR> 
-      set nobuflisted 
-    ]])
+	callback = function(event)
+		vim.bo[event.buf].buflisted = false
+		vim.keymap.set("n", "q", "<cmd>close<cr>", { buffer = event.buf, silent = true })
 	end,
 })
 
-vim.api.nvim_create_autocmd({ "FileType" }, {
-	pattern = { "Jaq" },
-	callback = function()
-		vim.cmd([[
-      nnoremap <silent> <buffer> <m-r> :close<CR>
-      " nnoremap <silent> <buffer> <m-r> <NOP> 
-      set nobuflisted 
-    ]])
-	end,
-})
-
-vim.api.nvim_create_autocmd({ "BufEnter" }, {
-	pattern = { "" },
-	callback = function()
-		local buf_ft = vim.bo.filetype
-		if buf_ft == "" or buf_ft == nil then
-			vim.cmd([[
-      nnoremap <silent> <buffer> q :close<CR> 
-      nnoremap <silent> <buffer> <c-j> j<CR> 
-      nnoremap <silent> <buffer> <c-k> k<CR> 
-      set nobuflisted 
-    ]])
-		end
-	end,
-})
-
-vim.api.nvim_create_autocmd({ "BufEnter" }, {
-	pattern = { "" },
-	callback = function()
-		local get_project_dir = function()
-			local cwd = vim.fn.getcwd()
-			local project_dir = vim.split(cwd, "/")
-			local project_name = project_dir[#project_dir]
-			return project_name
-		end
-
-		vim.opt.titlestring = get_project_dir() .. " - nvim"
-	end,
-})
-
-vim.api.nvim_create_autocmd({ "BufEnter" }, {
-	pattern = { "term://*" },
-	callback = function()
-		vim.cmd("startinsert!")
-		vim.cmd("set cmdheight=1")
-		vim.cmd("set wh=8")
-	end,
-})
-
-vim.api.nvim_create_autocmd({ "FileType" }, {
+-- wrap and check for spell in text filetypes
+vim.api.nvim_create_autocmd("FileType", {
+	group = augroup("wrap_spell"),
 	pattern = { "gitcommit", "markdown" },
 	callback = function()
 		vim.opt_local.wrap = true
@@ -95,89 +71,14 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
 	end,
 })
 
-vim.api.nvim_create_autocmd({ "FileType" }, {
-	pattern = { "lir" },
-	callback = function()
-		vim.opt_local.number = false
-		vim.opt_local.relativenumber = false
-	end,
-})
-
--- vim.cmd("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif")
--- vim.api.nvim_create_autocmd({ "BufEnter" }, {
---   callback = function()
---     vim.cmd [[
---       if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
---     ]]
---   end,
--- })
-
--- vim.api.nvim_create_autocmd({ "VimResized" }, {
---   callback = function()
---     vim.cmd "tabdo wincmd ="
---   end,
--- })
-
-vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
-	callback = function()
-		vim.cmd("set formatoptions-=cro")
-	end,
-})
-
-vim.api.nvim_create_autocmd({ "TextYankPost" }, {
-	callback = function()
-		vim.highlight.on_yank({ higroup = "Visual", timeout = 300 })
-	end,
-})
-
-vim.api.nvim_create_autocmd({ "BufWritePost" }, {
-	pattern = { "*.java" },
-	callback = function()
-		vim.lsp.codelens.refresh()
-	end,
-})
-
-vim.api.nvim_create_autocmd({ "VimEnter" }, {
-	callback = function()
-		vim.cmd("hi link illuminatedWord LspReferenceText")
-	end,
-})
-
--- vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
--- 	pattern = { "*" },
--- 	callback = function()
--- 		vim.cmd("checktime")
--- 	end,
--- })
-
-vim.api.nvim_create_autocmd({ "CursorHold" }, {
-	callback = function()
-		local status_ok, luasnip = pcall(require, "luasnip")
-		if not status_ok then
+-- Auto create dir when saving a file, in case some intermediate directory does not exist
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+	group = augroup("auto_create_dir"),
+	callback = function(event)
+		if event.match:match("^%w%w+://") then
 			return
 		end
-		if luasnip.expand_or_jumpable() then
-			-- ask maintainer for option to make this silent
-			-- luasnip.unlink_current()
-			vim.cmd([[silent! lua require("luasnip").unlink_current()]])
-		end
-	end,
-})
-
--- vim.api.nvim_create_autocmd({ "ModeChanged" }, {
---   callback = function()
---     local luasnip = require "luasnip"
---     if luasnip.expand_or_jumpable() then
---       -- ask maintainer for option to make this silent
---       -- luasnip.unlink_current()
---       vim.cmd [[silent! lua require("luasnip").unlink_current()]]
---     end
---   end,
--- })
-
-vim.api.nvim_create_autocmd({ "BufWritePost" }, {
-	pattern = { "*.ts" },
-	callback = function()
-		vim.lsp.buf.format({ async = true })
+		local file = vim.loop.fs_realpath(event.match) or event.match
+		vim.fn.mkdir(vim.fn.fnamemodify(file, ":p:h"), "p")
 	end,
 })

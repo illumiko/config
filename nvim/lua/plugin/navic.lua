@@ -4,7 +4,7 @@
 -- end
 --
 local M = {}
-config = function()
+local config = function()
 	local icons = require("utils.icons")
 	local navic = require("nvim-navic")
 	navic.setup({
@@ -42,7 +42,6 @@ config = function()
 		depth_limit = 0,
 		depth_limit_indicator = "..",
 	})
-	vim.cmd("colorscheme kanagawa")
 	vim.api.nvim_set_hl(0, "NavicIconsFile", { default = true, bg = "none", fg = "#ffffff" })
 	vim.api.nvim_set_hl(0, "NavicIconsModule", { default = true, bg = "none", fg = "#ffffff" })
 	vim.api.nvim_set_hl(0, "NavicIconsNamespace", { default = true, bg = "none", fg = "#ffffff" })
@@ -75,11 +74,12 @@ end
 
 M.lazy = {
 	"utilyre/barbecue.nvim",
-	name = "barbecue",
+	-- name = "barbecue",
 	version = "*",
 	dependencies = {
 		"SmiteshP/nvim-navic",
 	},
-	config = config,
+	config = true,
 }
+
 return M.lazy

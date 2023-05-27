@@ -16,9 +16,8 @@ local config = {
 }
 
 M.lazy = {
-	"Pocco81/AutoSave.nvim",
-	config = M.config,
-    ft = ""
+	-- "Pocco81/AutoSave.nvim",
+	-- config = config,
 }
 
 return M.lazy

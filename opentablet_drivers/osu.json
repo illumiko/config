@@ -1,38 +1,62 @@
 {
+  "Revision": "0.7.0.0",
   "Profiles": [
     {
       "Tablet": "Huion H420X",
       "OutputMode": {
-        "Path": "OpenTabletDriver.Desktop.Output.LinuxArtistMode",
-        "Settings": [],
+        "Path": "OpenTabletDriver.Desktop.Output.AbsoluteMode",
+        "Settings": [
+          {
+            "Property": "Input",
+            "Value": {
+              "Rotation": 0.0,
+              "Width": 30.0,
+              "Height": 16.86533,
+              "XPosition": 91.0,
+              "YPosition": 57.567337
+            }
+          },
+          {
+            "Property": "Output",
+            "Value": {
+              "Width": 1745.0,
+              "Height": 981.0,
+              "XPosition": 872.5,
+              "YPosition": 490.5
+            }
+          },
+          {
+            "Property": "AreaClipping",
+            "Value": true
+          },
+          {
+            "Property": "AreaLimiting",
+            "Value": true
+          },
+          {
+            "Property": "LockToBounds",
+            "Value": true
+          },
+          {
+            "Property": "LockAspectRatio",
+            "Value": true
+          },
+          {
+            "Property": "Sensitivity",
+            "Value": {}
+          },
+          {
+            "Property": "Rotation",
+            "Value": {}
+          },
+          {
+            "Property": "ResetDelay",
+            "Value": {}
+          }
+        ],
         "Enable": true
       },
       "Filters": [],
-      "AbsoluteModeSettings": {
-        "Display": {
-          "Width": 1920.0,
-          "Height": 1080.0,
-          "X": 960.0,
-          "Y": 540.0,
-          "Rotation": 0.0
-        },
-        "Tablet": {
-          "Width": 40.0,
-          "Height": 30.0,
-          "X": 20.0,
-          "Y": 15.0,
-          "Rotation": 0.0
-        },
-        "EnableClipping": true,
-        "EnableAreaLimiting": false,
-        "LockAspectRatio": false
-      },
-      "RelativeModeSettings": {
-        "XSensitivity": 10.0,
-        "YSensitivity": 10.0,
-        "RelativeRotation": 0.0,
-        "RelativeResetDelay": "00:00:00.1000000"
-      },
       "Bindings": {
         "TipActivationThreshold": 0.0,
         "TipButton": {
@@ -48,26 +72,8 @@
         "EraserActivationThreshold": 0.0,
         "EraserButton": null,
         "PenButtons": [
-          {
-            "Path": "OpenTabletDriver.Desktop.Binding.KeyBinding",
-            "Settings": [
-              {
-                "Property": "Key",
-                "Value": "LeftShift"
-              }
-            ],
-            "Enable": true
-          },
-          {
-            "Path": "OpenTabletDriver.Desktop.Binding.KeyBinding",
-            "Settings": [
-              {
-                "Property": "Key",
-                "Value": "Space"
-              }
-            ],
-            "Enable": true
-          }
+          null,
+          null
         ],
         "AuxButtons": [],
         "MouseButtons": [],
@@ -76,7 +82,5 @@
       }
     }
   ],
-  "LockUsableAreaDisplay": true,
-  "LockUsableAreaTablet": true,
   "Tools": []
 }

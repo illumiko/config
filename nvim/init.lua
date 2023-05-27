@@ -1,9 +1,7 @@
-require("user.settings")
 require("manager")
-require("user.keymaps")
+require("user")
 
 -- require("impatient")
--- require("user.autocmds")
 -- require("plugin.lsp")
 -- -- require("range-highlight").setup()
 -- -- require("Navigator").setup()

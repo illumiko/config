@@ -23,18 +23,18 @@ vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 -- better <c-d> and <c-u>
 -- "<Cmd>lua vim.cmd('normal! n'); MiniAnimate.execute_after('scroll', 'normal! zvzz')<CR>"
 
-nmap("<c-d>","<Cmd>lua vim.cmd('normal! <c-d>'); MiniAnimate.execute_after('scroll', 'normal! zz')<CR>",opts(""))
-nmap("<c-u>","<Cmd>lua vim.cmd('normal! <c-u>'); MiniAnimate.execute_after('scroll', 'normal! zz')<CR>",opts(""))
-nmap("n","<Cmd>lua vim.cmd('normal! n'); MiniAnimate.execute_after('scroll', 'normal! zvzz')<CR>", opts(""))
-nmap("N","<Cmd>lua vim.cmd('normal! N'); MiniAnimate.execute_after('scroll', 'normal! zvzz')<CR>", opts(""))
+nmap("<c-d>", "<Cmd>lua vim.cmd('normal! <c-d>'); MiniAnimate.execute_after('scroll', 'normal! zz')<CR>", opts(""))
+nmap("<c-u>", "<Cmd>lua vim.cmd('normal! <c-u>'); MiniAnimate.execute_after('scroll', 'normal! zz')<CR>", opts(""))
+nmap("n", "<Cmd>lua vim.cmd('normal! n'); MiniAnimate.execute_after('scroll', 'normal! zvzz')<CR>", opts(""))
+nmap("N", "<Cmd>lua vim.cmd('normal! N'); MiniAnimate.execute_after('scroll', 'normal! zvzz')<CR>", opts(""))
 
 ------------------
 --[[Window Change]]
 ------------------
-nmap("<c-j>","<c-w>j",opts(""))
-nmap("<c-k>","<c-w>k",opts(""))
-nmap("<c-h>","<c-w>h",opts(""))
-nmap("<c-l>","<c-w>l",opts(""))
+nmap("<c-j>", "<c-w>j", opts(""))
+nmap("<c-k>", "<c-w>k", opts(""))
+nmap("<c-h>", "<c-w>h", opts(""))
+nmap("<c-l>", "<c-w>l", opts(""))
 
 ------------------
 --[[proper copy]]
@@ -126,8 +126,8 @@ nmap("<leader>tn", ":tabnext<CR>", opts("Tab Next"))
 ------------------
 -- [[buffer switch]]
 ------------------
-nmap("<S-l>", ":BufferNext<CR>", opts(""))
-nmap("<S-h>", ":BufferPrevious<CR>", opts(""))
+nmap("<S-l>", ":bnext<CR>", opts(""))
+nmap("<S-h>", ":bprevious<CR>", opts(""))
 
 -- Sort automatically by...
 
@@ -149,7 +149,7 @@ end)
 -- better ESC
 ------------------
 imap("jk", "<cmd>LuaSnipUnlinkCurrent<CR><ESC>", opts(""))
-cmap("jk", "<ESC>",opts(""))
+cmap("jk", "<ESC>", opts(""))
 
 imap("<", "<", opts(""))
 

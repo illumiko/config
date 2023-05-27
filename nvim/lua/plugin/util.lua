@@ -7,6 +7,9 @@ return {
 	"rktjmp/lush.nvim",
 	"nvim-lua/popup.nvim",
 	"godlygeek/tabular",
+	"wellle/targets.vim", -- better surround motions
+	"matze/vim-move",
+	"lewis6991/impatient.nvim",
 	{
 		"echasnovski/mini.animate",
 		config = function()
@@ -54,5 +57,19 @@ return {
 				line_number_text = "Line %s out of %s", -- Format string rendered when `enable_line_number` is set to true (either string or function(line_number: number, line_count: number): string)
 			})
 		end,
+	},
+	{
+		"phaazon/hop.nvim",
+		as = "hop",
+		config = function()
+			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
+		end,
+		keys = {
+			-- { "f", ":HopWordCurrentLine<CR>", desc = "Line hop", noremap = true, silent = true },
+			-- { "F", ":HopChar1CurrentLine<CR>", desc = "Char hop", noremap = true, silent = true },
+			{ "<leader>hl", ":HopLine<CR>", desc = "Line Hop", noremap = true, silent = true },
+			{ "<leader>hc", ":HopChar1<CR>", desc = "Char Hop", noremap = true, silent = true },
+			{ "<leader>hw", ":HopWord<CR>", desc = "Word Hop", noremap = true, silent = true },
+		},
 	},
 }

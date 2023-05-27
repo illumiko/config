@@ -18,7 +18,7 @@ local transparent = function() -- {{{
 		"TelescopePreviewTitle",
 		"TelescopePromptTitle",
 		"TelescopeNormal",
-		"NormalNC",
+		-- "NormalNC",
 	}
 
 	for _, value in pairs(transparent) do

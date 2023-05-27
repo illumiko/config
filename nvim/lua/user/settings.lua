@@ -15,7 +15,7 @@ vim.o.splitright = true -- force all vertical splits to go to the right of curre
 vim.o.swapfile = false -- creates a swapfile
 vim.o.termguicolors = true -- set term gui colors (most terminals support this)
 vim.o.timeoutlen = 100 -- time to wait for a mapped sequence to complete (in milliseconds)
-vim.o.title = true -- set the title of window to the value of the titlestring
+vim.o.title = false -- set the title of window to the value of the titlestring
 vim.o.undodir = vim.fn.stdpath("cache") .. "/undo"
 vim.o.undofile = true -- enable persistent undo
 vim.o.updatetime = 300 -- faster completion
@@ -25,7 +25,7 @@ vim.o.shiftwidth = 4 -- the number of spaces inserted for each indentation
 vim.o.tabstop = 4 -- insert 1 spaces for a tab
 vim.o.smarttab = true
 vim.o.cursorline = true -- highlight the current line
-vim.o.numberwidth = 2 -- set number column width to 2 {default 4}
+vim.o.numberwidth = 4 -- set number column width to 2 {default 4}
 vim.o.signcolumn = "yes" -- always show the sign column otherwise it would shift the text each time
 vim.o.wrap = false -- display lines as one long line
 vim.o.spell = false
@@ -39,9 +39,8 @@ vim.o.relativenumber = true
 vim.o.breakindent = true
 vim.o.wh = 25
 vim.o.wiw = 120
-vim.o.showbreak = string.rep(" ", 3)
+-- vim.o.showbreak = string.rep(" ", 3)
 -- Make it so that long lines wrap smartly
-
 
 vim.o.linebreak = true
 vim.opt.fillchars:append({
@@ -59,10 +58,11 @@ command Journal source ~/Documents/norg/sessions/vp.vim
 set noshowcmd noruler
 "set foldtext=v:folddashes.substitute(getline(v:foldstart),'/\\*\\\|\\*/\\\|{{{\\d\\=','','g')
 ]])
-vim.opt.foldcolumn = "1"
-vim.o.foldlevel = 90
-vim.foldlevelstart = 99
-vim.foldlevel = 0
-vim.foldenable = true
--- vim.o.foldmethod = "marker" 
-
+-- vim.opt.foldcolumn = "1"
+vim.cmd([[
+set foldlevel=20
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
+]])
+vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
+-- vim.o.foldmethod = "marker"
