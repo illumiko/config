@@ -29,8 +29,13 @@ config.goto_preview = {
 }
 
 config.lsp_signature = {
-  max_height = 12, -- max height of signature floating_window
-  max_width = 80, -- max_width of signature floating_window
+	max_height = 12, -- max height of signature floating_window
+	max_width = 80, -- max_width of signature floating_window
+	noice = true,
+	floating_window = false,
+	fix_pos = true, -- set to true, the floating window will not auto-close until finish all parameters
+	hint_enable = true, -- virtual hint enable
+	hint_prefix = " ",
 }
 
 keys.goto_preview = {
@@ -56,16 +61,13 @@ keys.goto_preview = {
 	},
 }
 
-
-
-
 M.lazy = {
 	{ "neovim/nvim-lspconfig", config = config.lspconfig },
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
 	"lvimuser/lsp-inlayhints.nvim",
 	"RRethy/vim-illuminate",
-    -- {"ray-x/lsp_signature.nvim", config = config.lsp_signature},
+	{ "ray-x/lsp_signature.nvim", config = config.lsp_signature },
 	{
 		"ahmedkhalf/project.nvim",
 		config = function()

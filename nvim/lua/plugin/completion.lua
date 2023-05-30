@@ -103,12 +103,13 @@ config = function()
 		window = { -- {{{
 			documentation = {
 				border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
-				winhighlight = "Normal:CmpPmenu,FloatBorder:CmpPmenuBorder,CursorLine:PmenuSel,Search:None",
+				winhighlight = "Normal:NormalFloat,FloatBorder:Normal,CursorLine:PmenuSel,Search:None",
 				max_width = 200,
 			},
 			completion = {
-				border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
-				winhighlight = "Normal:CmpPmenu,FloatBorder:CmpPmenuBorder,CursorLine:PmenuSel,Search:None",
+				-- border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
+                border = none,
+				winhighlight = "Normal:NormalFloat,FloatBorder:CmpPmenuBorder,CursorLine:PmenuSel,Search:None",
 				col_offset = -3,
 				side_padding = 0,
 				keyword_length = 2,

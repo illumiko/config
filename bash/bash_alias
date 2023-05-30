@@ -6,7 +6,7 @@ alias python='python3.8' #open nvimrc
 alias poweroff='systemctl poweroff' #turning off pc 
 alias anime='~/Apps/ani-cli/ani-cli' #anime cli
 alias se='du -a ~/.config/* ~/Documents/Projects/* | awk "{print $2}" | fzf | xargs -r $EDITOR ; '
-alias todo='nvim ~/Documents/neorg/gtd/index.norg'
+alias todo='nvim ~/Documents/norg/main/index.norg'
 alias jspg='nvim ~/Documents/Projects/Testing/webDev/playground/app.js'
 alias pypg='nvim ~/Documents/Projects/Testing/python/PPG/playground.py'
 alias gopg="nvim ~/Documents/Projects/Testing/go/playground/pg.go"
@@ -20,7 +20,8 @@ alias nx='redshift -x'
 alias pomodoro="go run ~/Documents/Projects/Personal/godoro/main.go"
 alias nv="nvim"
 alias em="emacs"
-alias ls="ls -Xghr --color=always"
+alias ls="ls -X1hr --color=always"
+alias ytmusic='/usr/bin/qtws /usr/share/qtws-apps/youtube-music/youtube-music.qtws --disable-seccomp-filter-sandbox --register-pepper-plugins="/usr/lib/qt/plugins/ppapi/libwidevinecdmadapter.so; application/x-ppapi-widevine-cdm"'
 alias blt="bluetoothctl"
 
 

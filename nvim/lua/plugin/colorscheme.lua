@@ -1,42 +1,50 @@
 local config = {}
 
-config.nord = {
-	-- your configuration comes here
-	-- or leave it empty to use the default settings
-	transparent = false, -- Enable this to disable setting the background color
-	terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
-	diff = { mode = "bg" }, -- enables/disables colorful backgrounds when used in diff mode. values : [bg|fg]
-	borders = true, -- Enable the border between verticaly split windows visible
-	errors = { mode = "bg" }, -- Display mode for errors and diagnostics
-	-- values : [bg|fg|none]
-	styles = {
-		-- Style to be applied to different syntax groups
-		-- Value is any valid attr-list value for `:help nvim_set_hl`
-		comments = { italic = true },
-		keywords = {},
-		functions = {},
-		variables = {},
+config.nord = function()
+	require("nord").setup({
+		-- your configuration comes here
+		-- or leave it empty to use the default settings
+		transparent = false, -- Enable this to disable setting the background color
+		terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
+		diff = { mode = "bg" }, -- enables/disables colorful backgrounds when used in diff mode. values : [bg|fg]
+		borders = true, -- Enable the border between verticaly split windows visible
+		errors = { mode = "bg" }, -- Display mode for errors and diagnostics
+		-- values : [bg|fg|none]
+		styles = {
+			-- Style to be applied to different syntax groups
+			-- Value is any valid attr-list value for `:help nvim_set_hl`
+			comments = { italic = true },
+			keywords = {},
+			functions = {},
+			variables = {},
 
-		-- To customize lualine/bufferline
-		bufferline = {
-			current = {},
-			modified = { italic = true },
+			-- To customize lualine/bufferline
+			bufferline = {
+				current = {},
+				modified = { italic = true },
+			},
 		},
-	},
 
-	-- colorblind mode
-	-- see https://github.com/EdenEast/nightfox.nvim#colorblind
-	-- simulation mode has not been implemented yet.
-	colorblind = {
-		enable = false,
-		preserve_background = false,
-		severity = {
-			protan = 0.0,
-			deutan = 0.0,
-			tritan = 0.0,
+		-- colorblind mode
+		-- see https://github.com/EdenEast/nightfox.nvim#colorblind
+		-- simulation mode has not been implemented yet.
+		colorblind = {
+			enable = false,
+			preserve_background = false,
+			severity = {
+				protan = 0.0,
+				deutan = 0.0,
+				tritan = 0.0,
+			},
 		},
-	},
-}
+	})
+	vim.cmd([[
+    hi LineNrBelow guifg=#444444
+    hi LineNrAbove guifg=#444444
+	hi MDCodeBlock guibg=#222222
+
+    ]])
+end
 
 config.kanagawa = function()
 	require("kanagawa").setup({
@@ -220,19 +228,32 @@ config.tokyonight = {
 	end,
 }
 
-config.zenbones = {}
+config.zenbones = function()
+	vim.g.zenbones_transparent_background = true
+end
+
+config.jellybeans = function()
+	-- 	vim.cmd([[
+	-- hi MDCodeBlock guibg=#222222
+	-- ]])
+	return vim.cmd("colorscheme tokyonight")
+end
 return {
 	{ "NTBBloodbath/doom-one.nvim", lazy = true, config = config.doom_one },
 	{ "sainnhe/everforest", lazy = true },
 	{ "RishabhRD/gruvy", lazy = true },
-	{ "mcchrish/zenbones.nvim", lazy = true },
+	{ "mcchrish/zenbones.nvim", lazy = true, config = config.zenbones },
 	{ "ellisonleao/gruvbox.nvim", lazy = true, config = config.gruvbox },
-	{ "folke/tokyonight.nvim", lazy = true, config = config.tokyonight },
+	{ "folke/tokyonight.nvim", lazy = false, config = config.tokyonight },
 	{ "olimorris/onedarkpro.nvim", lazy = true },
 	{ "gbprod/nord.nvim", lazy = false, config = config.nord },
+	{
+		"rockyzhang24/arctic.nvim",
+		branch = "v2",
+	},
 	-- "glepnir/zephyr-nvim",
 	{ "catppuccin/nvim", name = "catppuccin", lazy = true, config = config.catppuccin },
 	{ "rebelot/kanagawa.nvim", lazy = true, config = config.kanagawa }, -- kangawa}}}
 	{ "tiagovla/tokyodark.nvim", lazy = true },
-	{ "metalelf0/jellybeans-nvim", lazy = true },
+	{ "metalelf0/jellybeans-nvim", lazy = true, init = config.jellybeans },
 }

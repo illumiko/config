@@ -40,7 +40,7 @@ local config = function()
 			enable = true,
 		},
 		markid = {
-			enable = true,
+			enable = false,
 		},
 		rainbow = {
 			enable = true,

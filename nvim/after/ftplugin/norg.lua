@@ -27,6 +27,7 @@ vim.api.nvim_create_autocmd({ "BufEnter" }, { -- {{{
 			print(full_cmd)
 			return full_cmd
 		end, { buffer = 0, expr = true, noremap = true, silent = true })
+		--vim.cmd("colorscheme tokyonight")
 	end,
 }) -- }}}
 

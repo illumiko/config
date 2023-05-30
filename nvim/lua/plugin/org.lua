@@ -1,5 +1,5 @@
 local M = {}
-config = {
+local config = {
 	-- Tell Neorg what modules to load
 	load = {
 		["core.defaults"] = {}, -- Load all the default modules
@@ -74,7 +74,7 @@ config = {
 	},
 }
 M.lazy = {
-	{ "nvim-neorg/neorg", ft = "norg", config = config },
+	{ "nvim-neorg/neorg", config = config, commit="f9ec5c4" },
 	{ "NFrid/due.nvim", ft = "norg" },
 	{ "tpope/vim-speeddating" },
 	{

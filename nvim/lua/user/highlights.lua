@@ -18,7 +18,7 @@ local transparent = function() -- {{{
 		"TelescopePreviewTitle",
 		"TelescopePromptTitle",
 		"TelescopeNormal",
-		-- "NormalNC",
+		"NormalNC",
 	}
 
 	for _, value in pairs(transparent) do
@@ -41,9 +41,10 @@ u.set_hl_fg("Folded", "Comment") -- Change folded guifg
 u.set_hl_bg("ScrollbarCursor", "Visual") -- Change scroll bar guibg
 vim.cmd([[
 hi SpellBad guifg=none guisp=Red
-hi LineNrBelow guifg=#616e88
-hi LineNrAbove guifg=#616e88
+hi NormalFloat guibg=#1C1917 guifg=#c3c3c3
 ]])
+--hi LineNrBelow guifg=#444444
+--hi LineNrAbove guifg=#444444
 
 --[[ require("modes").setup({ -- {{{
 	colors = {

@@ -7,6 +7,50 @@ local config = {
 			["vim.lsp.util.stylize_markdown"] = true,
 			["cmp.entry.get_documentation"] = true,
 		},
+		signature = {
+			enabled = true,
+		},
+	},
+	views = {
+		cmdline_popup = {
+			border = {
+				style = "none",
+				padding = { 1, 2 },
+			},
+			position = {
+				row = 5,
+				col = "50%",
+			},
+			size = {
+				width = 60,
+				height = "auto",
+			},
+			filter_options = {},
+			win_options = {
+				winhighlight = {
+					Normal = "NormalFloat",
+					FloatBorder = "FloatBorder",
+				},
+			},
+		},
+		popupmenu = {
+			relative = "editor",
+			position = {
+				row = 8,
+				col = "50%",
+			},
+			size = {
+				width = 60,
+				height = 10,
+			},
+			border = {
+				style = "none",
+				padding = { 0, 1 },
+			},
+			win_options = {
+				winhighlight = { Normal = "Normal", FloatBorder = "DiagnosticInfo" },
+			},
+		},
 	},
 	-- you can enable a preset for easier configuration
 	presets = {

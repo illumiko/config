@@ -66,6 +66,7 @@ nmap("<leader>ls", ":source %<cr>", opts("Reload current file"))
 ------------------
 nmap("<leader>Q", ":wqa<CR>", opts("Quit"))
 
+nmap("<bs>", ":edit #<cr>", opts("Return to prev file"))
 ------------------
 --[[focus Management]]
 ------------------
