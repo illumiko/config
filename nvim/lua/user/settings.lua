@@ -37,8 +37,8 @@ vim.o.laststatus = 3
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.breakindent = true
-vim.o.wh = 25
-vim.o.wiw = 120
+vim.o.wh = 20
+vim.o.wiw = 100
 -- vim.o.showbreak = string.rep(" ", 3)
 -- Make it so that long lines wrap smartly
 
@@ -61,8 +61,8 @@ set noshowcmd noruler
 -- vim.opt.foldcolumn = "1"
 vim.cmd([[
 set foldlevel=20
-set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
+set foldmethod=expr
 ]])
 vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 -- vim.o.foldmethod = "marker"

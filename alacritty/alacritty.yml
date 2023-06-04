@@ -1,9 +1,9 @@
 import:
-  - ~/Dotfiles/alacritty/themes/kanagawa.yml
+  - ~/dotfiles/alacritty/themes/kanagawa.yml
 env:
   TERM: xterm-256color
 window:
-  opacity: 0.8
+  opacity: 1
   dimensions:
     columns: 2
     lines: 2
@@ -16,19 +16,19 @@ font:
     x: 0
     y: 0
   normal:
-    family: JetBrains Mono Nerd Font
+    family: Maple Mono NF
     style: Normal
       #   family: Comic Code Ligatures Nerd font
       #   style: Normal
   bold:
-    family: JetBrains Mono Nerd Font
+    family: Maple Mono NF
     style: Bold
       #   family: Comic Code Ligatures Nerd Font
       #   style: Bold
   italic:
   # family: Comic Code Ligatures Nerd Font
   # style: italic
-    family: JetBrains Mono Nerd Font
+    family: Maple Mono NF
     style: italic
 shell:
   program: /bin/bash

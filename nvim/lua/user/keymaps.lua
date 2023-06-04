@@ -20,14 +20,19 @@ autocmd TermEnter term://*toggleterm#*
 vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
+------------------
 -- better <c-d> and <c-u>
+------------------
 -- "<Cmd>lua vim.cmd('normal! n'); MiniAnimate.execute_after('scroll', 'normal! zvzz')<CR>"
 
-nmap("<c-d>", "<Cmd>lua vim.cmd('normal! <c-d>'); MiniAnimate.execute_after('scroll', 'normal! zz')<CR>", opts(""))
-nmap("<c-u>", "<Cmd>lua vim.cmd('normal! <c-u>'); MiniAnimate.execute_after('scroll', 'normal! zz')<CR>", opts(""))
-nmap("n", "<Cmd>lua vim.cmd('normal! n'); MiniAnimate.execute_after('scroll', 'normal! zvzz')<CR>", opts(""))
-nmap("N", "<Cmd>lua vim.cmd('normal! N'); MiniAnimate.execute_after('scroll', 'normal! zvzz')<CR>", opts(""))
-
+-- nmap("<c-d>", "<Cmd>lua vim.cmd('normal! <c-d>'); MiniAnimate.execute_after('scroll', 'normal! zz')<CR>", opts(""))
+-- nmap("<c-u>", "<Cmd>lua vim.cmd('normal! <c-u>'); MiniAnimate.execute_after('scroll', 'normal! zz')<CR>", opts(""))
+-- nmap("n", "<Cmd>lua vim.cmd('normal! n'); MiniAnimate.execute_after('scroll', 'normal! zvzz')<CR>", opts(""))
+-- nmap("N", "<Cmd>lua vim.cmd('normal! N'); MiniAnimate.execute_after('scroll', 'normal! zvzz')<CR>", opts(""))
+nmap("<c-d>", "<c-d>zz", opts(""))
+nmap("<c-u>", "<c-u>zz", opts(""))
+nmap("n", "nzz", opts(""))
+nmap("N", "Nzz", opts(""))
 ------------------
 --[[Window Change]]
 ------------------
@@ -83,7 +88,7 @@ nmap("<M-1>", ":e ~/Documents/norg/main/index.norg<CR>", opts(""))
 ------------------
 --[[UFO]]
 ------------------
-
+nmap("cd", ":lua require('markdown-togglecheck').toggle()<CR>", opts(""))
 ------------------
 --[[format]]
 ------------------
@@ -149,7 +154,7 @@ end)
 ------------------
 -- better ESC
 ------------------
-imap("jk", "<cmd>LuaSnipUnlinkCurrent<CR><ESC>", opts(""))
+imap("jk", "<ESC><cmd>LuaSnipUnlinkCurrent<CR>", opts(""))
 cmap("jk", "<ESC>", opts(""))
 
 imap("<", "<", opts(""))

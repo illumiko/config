@@ -6,10 +6,10 @@ local config = {
 	--       The defaults are suitable for most people.
 
 	-- Enable/disable animations
-	animation = false,
+	animation = true,
 
 	-- Enable/disable auto-hiding the tab bar when there is a single buffer
-	auto_hide = false,
+	auto_hide = true,
 
 	-- Enable/disable current/total tabpages indicator (top right corner)
 	tabpages = true,
@@ -69,8 +69,8 @@ local config = {
 }
 
 M.lazy = {
-	-- "romgrk/barbar.nvim",
- --    ft = ""
+	"romgrk/barbar.nvim",
+    config = config
 }
 
 return M.lazy

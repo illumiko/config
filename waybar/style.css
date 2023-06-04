@@ -1,11 +1,11 @@
-@import '../../.cache/wal/colors-waybar.css';/*{{{*/
-/* @import '../../dotfiles/waybar/colors.css'; */
+@import '../../.cache/wal/colors-waybar.css';
+@import '../../dotfiles/waybar/colors.css';
 * {
     border: none;
     border-radius: 0px;
-    font-family: "JetBrainsMono Nerd Font";
+    font-family: "Maple Mono NF";
     /* font-weight: bold; */
-    font-size: 20px;
+    font-size: 30px;
     padding: 0px 2px;
     /* margin: 0px 0px; */
     /* min-height: 50px; */
@@ -26,7 +26,7 @@
 #tray,
 #backlight {
     background: @background;
-    font-size: 16px;
+    font-size: 18px;
     padding: 0 15px
 }
 
@@ -36,7 +36,7 @@ window#waybar {
     color: @foreground-alt;
 }
 #window,#workspaces button{
-    font-size:12px;
+    font-size:16px;
 }
 
 tooltip {

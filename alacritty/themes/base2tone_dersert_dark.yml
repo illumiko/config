@@ -1,0 +1,41 @@
+colors:
+  # Default colors
+  primary:
+    background: '0x292824'
+    foreground: '0xada794'
+
+    # Bright and dim foreground colors
+    #
+    # The dimmed foreground color is calculated automatically if it is not present.
+    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
+    # is `false`, the normal foreground color will be used.
+    #dim_foreground: '0x9a9a9a'
+    #bright_foreground: '0xffffff'
+
+  # Cursor colors
+  #
+  # Colors which should be used to draw the terminal cursor. If these are unset,
+  # the cursor color will be the inverse of the cell color.
+  cursor:
+    text: '0x292824'
+    cursor: '0xbc672f'
+
+  # Selection colors
+  #
+  # Colors which should be used to draw the selection area. If selection
+  # background is unset, selection color will be the inverse of the cell colors.
+  # If only text is unset the cell text color will remain the same.
+  #selection:
+  #  text: '0xeaeaea'
+  #  background: '0x404040'
+
+  # Normal colors
+  normal:
+    black:   '0x292824'
+    red:     '0x81744b'
+    green:   '0xf29d63'
+    yellow:  '0xffb380'
+    blue:    '0x958550'
+    magenta: '0xe58748'
+    cyan:    '0xac9753'
+    white:   '0xada794'

@@ -11,10 +11,10 @@ return {
 	"matze/vim-move",
 	"lewis6991/impatient.nvim",
 	{
-		"echasnovski/mini.animate",
-		config = function()
-			require("mini.animate").setup({ resize = { enable = false }, scroll = { enable = true } })
-		end,
+		-- "echasnovski/mini.animate",
+		-- config = function()
+		-- 	require("mini.animate").setup({ resize = { enable = false }, scroll = { enable = true } })
+		-- end,
 	},
 	{
 		"norcalli/nvim-colorizer.lua",

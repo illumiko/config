@@ -72,18 +72,18 @@ config.gruvbox = function()
 		undercurl = true,
 		underline = true,
 		bold = true,
-		italic = true,
+		-- italic = true,
 		strikethrough = true,
 		invert_selection = false,
 		invert_signs = false,
 		invert_tabline = false,
 		invert_intend_guides = true,
 		inverse = false, -- invert background for search, diffs, statuslines and errors
-		contrast = "", -- can be "hard", "soft" or empty string
+		contrast = "soft", -- can be "hard", "soft" or empty string
 		palette_overrides = {},
 		overrides = {},
 		dim_inactive = false,
-		transparent_mode = true,
+		transparent_mode = false,
 	})
 	vim.cmd([=[
 hi IndentBlanklineChar guifg=none
@@ -232,12 +232,6 @@ config.zenbones = function()
 	vim.g.zenbones_transparent_background = true
 end
 
-config.jellybeans = function()
-	-- 	vim.cmd([[
-	-- hi MDCodeBlock guibg=#222222
-	-- ]])
-	return vim.cmd("colorscheme tokyonight")
-end
 return {
 	{ "NTBBloodbath/doom-one.nvim", lazy = true, config = config.doom_one },
 	{ "sainnhe/everforest", lazy = true },
@@ -251,9 +245,10 @@ return {
 		"rockyzhang24/arctic.nvim",
 		branch = "v2",
 	},
+    {"atelierbram/Base2Tone-nvim"},
 	-- "glepnir/zephyr-nvim",
 	{ "catppuccin/nvim", name = "catppuccin", lazy = true, config = config.catppuccin },
 	{ "rebelot/kanagawa.nvim", lazy = true, config = config.kanagawa }, -- kangawa}}}
 	{ "tiagovla/tokyodark.nvim", lazy = true },
-	{ "metalelf0/jellybeans-nvim", lazy = true, init = config.jellybeans },
+	{ "metalelf0/jellybeans-nvim", lazy = true },
 }

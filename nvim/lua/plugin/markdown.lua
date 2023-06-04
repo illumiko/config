@@ -1,7 +1,7 @@
 local M = {}
 local config = {}
 config.mdcodeblock = {
-	hl_group = "Visual", -- default highlight group
+	hl_group = "MDCodeBlock", -- default highlight group
 	events = { -- refresh event
 		"FileChangedShellPost",
 		"Syntax",
@@ -30,5 +30,9 @@ config.mdcodeblock = {
 M.lazy = {
 	{ "jghauser/follow-md-links.nvim" },
 	{ "yaocccc/nvim-hl-mdcodeblock.lua", config = config.mdcodeblock },
+	{
+		"nfrid/markdown-togglecheck",
+		dependencies = { "nfrid/treesitter-utils" },
+	},
 }
 return M.lazy
