@@ -1,0 +1,86 @@
+{
+  "Revision": "0.7.0.0",
+  "Profiles": [
+    {
+      "Tablet": "Huion H420X",
+      "OutputMode": {
+        "Path": "OpenTabletDriver.Desktop.Output.AbsoluteMode",
+        "Settings": [
+          {
+            "Property": "Input",
+            "Value": {
+              "Rotation": 0.0,
+              "Width": 107.0,
+              "Height": 66.0,
+              "XPosition": 53.0,
+              "YPosition": 33.0
+            }
+          },
+          {
+            "Property": "Output",
+            "Value": {
+              "Width": 1745.0,
+              "Height": 981.0,
+              "XPosition": 872.5,
+              "YPosition": 490.5
+            }
+          },
+          {
+            "Property": "Sensitivity",
+            "Value": {}
+          },
+          {
+            "Property": "Rotation",
+            "Value": {}
+          },
+          {
+            "Property": "ResetDelay",
+            "Value": {}
+          },
+          {
+            "Property": "AreaLimiting",
+            "Value": false
+          },
+          {
+            "Property": "LockToBounds",
+            "Value": true
+          },
+          {
+            "Property": "AreaClipping",
+            "Value": true
+          },
+          {
+            "Property": "LockAspectRatio",
+            "Value": false
+          }
+        ],
+        "Enable": true
+      },
+      "Filters": [],
+      "Bindings": {
+        "TipActivationThreshold": 0.0,
+        "TipButton": {
+          "Path": "OpenTabletDriver.Desktop.Binding.MouseBinding",
+          "Settings": [
+            {
+              "Property": "Button",
+              "Value": "Left"
+            }
+          ],
+          "Enable": true
+        },
+        "EraserActivationThreshold": 0.0,
+        "EraserButton": null,
+        "PenButtons": [
+          null,
+          null
+        ],
+        "AuxButtons": [],
+        "MouseButtons": [],
+        "MouseScrollUp": null,
+        "MouseScrollDown": null
+      }
+    }
+  ],
+  "Tools": []
+}

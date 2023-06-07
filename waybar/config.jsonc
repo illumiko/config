@@ -13,7 +13,7 @@
     // "margin-left": 15,
     "fixed-center":true,
     // "width":500,
-    "modules-left": ["memory","hyprland/window","custom/music"],
+    "modules-left": ["memory","hyprland/window"],
     "modules-center":["clock"],
     "modules-right": ["wlr/workspaces", "custom/power_profile","pulseaudio","battery","network","tray"],
     // "modules-center": ["clock","custom/music","network", "custom/power_profile","battery","backlight","pulseaudio","tray"],

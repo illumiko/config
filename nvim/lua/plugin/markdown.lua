@@ -29,7 +29,7 @@ config.mdcodeblock = {
 
 M.lazy = {
 	{ "jghauser/follow-md-links.nvim" },
-	{ "yaocccc/nvim-hl-mdcodeblock.lua", config = config.mdcodeblock },
+	{ "yaocccc/nvim-hl-mdcodeblock.lua", config = config.mdcodeblock ,ft="norg"},
 	{
 		"nfrid/markdown-togglecheck",
 		dependencies = { "nfrid/treesitter-utils" },
