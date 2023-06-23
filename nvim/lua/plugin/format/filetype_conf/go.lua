@@ -9,7 +9,7 @@ end
 
 function M.goimports()
   return {
-    exe = "~/.local/share/go/bin/goimports",
+    exe = "~/go/bin/goimports",
     stdin = true,
   }
 end

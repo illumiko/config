@@ -85,7 +85,6 @@ return {
     require("plugin.explorer").lazy,
 	--[[#Note talking/Scheduling etc]]
 	-- [[NORG]]
-	{ "lervag/vimtex" },
 
 	-- [[nvim greeter]]
     require("plugin.alpha").lazy,

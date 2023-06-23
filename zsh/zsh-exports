@@ -29,3 +29,21 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+
+export EDITOR="nvim"
+export TERMINAL="alacritty"
+export BROWSER="brave"
+export DOT="$HOME/dotfiles"
+export NVIMRC="$DOT/nvim/"
+export PATH="$PATH:$HOME/.local/share/go/bin/"
+export SDL_VIDEODRIVER=wayland
+
+# Alias
+source $DOT/bash/bash_alias
+
+
+# Node Version Manager exports
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

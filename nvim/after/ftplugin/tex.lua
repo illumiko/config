@@ -58,7 +58,7 @@ let g:vimtex_quickfix_ignore_filters = [
       \]
 
 " Don't automatically open PDF viewer after first compilation
-let g:vimtex_view_automatic = 0
+" let g:vimtex_view_automatic = 0
 
 let g:vimtex_compiler_latexmk = {
     \ 'build_dir' : '',

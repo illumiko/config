@@ -30,7 +30,7 @@ zle -N down-line-or-beginning-search
 autoload -Uz colors && colors
 
 # Useful Functions
-source "$ZDOTDIR/zsh-functions"
+source "$DOT/zsh/zsh-functions"
 
 # Normal files to source
 zsh_add_file "zsh-exports"

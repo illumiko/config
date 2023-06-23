@@ -10,6 +10,7 @@ export BROWSER="brave"
 export DOT="$HOME/dotfiles"
 export NVIMRC="$DOT/nvim/"
 export PATH="$PATH:$HOME/.local/share/go/bin/"
+export SDL_VIDEODRIVER=wayland
 
 # Alias
 source $DOT/bash/bash_alias

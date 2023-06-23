@@ -5,8 +5,8 @@ env:
 window:
   opacity: 1
   dimensions:
-    columns: 2
-    lines: 2
+    columns: 100
+    lines: 30
   padding:
     x: 10
     y: 0
