@@ -5,6 +5,8 @@ M.lazy = {
 	config = {
 		cursorline = true,
 		cursorcolumn = true,
+        width = 125,
+        height = 30,
 	},
 }
 

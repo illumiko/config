@@ -10,7 +10,7 @@ local config = function()
 		hide_numbers = true,
 		-- shade_filetypes = { "toggleterm" },
 		shade_terminals = true,
-		shading_factor = 20,
+		shading_factor = 5,
 		start_in_insert = false,
 		insert_mappings = true,
 		persist_size = true,
@@ -23,7 +23,7 @@ local config = function()
 		},
 		highlights = {
 			Normal = {
-				guibg = "#282828",
+				-- guibg = "#282828",
 			},
 		},
 	})
@@ -40,20 +40,37 @@ local config = function()
 	vim.cmd("autocmd! TermOpen term://* lua set_terminal_keymaps()")
 end
 M.lazy = {
-	"akinsho/toggleterm.nvim",
-	events = "BufNew",
-	config = config,
-	keys = {
-		{
-			"<C-\\>",
-			function()
-				local path = vim.fn.expand("%:p:h")
-				return vim.cmd(vim.v.count .. " ToggleTerm dir=" .. path)
-			end,
-			silent = true,
-			noremap = true,
-			desc = "",
+	{
+		"akinsho/toggleterm.nvim",
+		events = "BufNew",
+		config = config,
+		keys = {
+			{
+				"<C-\\>",
+				function()
+					local path = vim.fn.expand("%:p:h")
+					return vim.cmd(vim.v.count .. " ToggleTerm dir=" .. path)
+				end,
+				silent = true,
+				noremap = true,
+				desc = "",
+			},
 		},
+	},
+
+	-- Opens files in from nvim t-buffer to nvim buffer
+	{
+		"willothy/flatten.nvim",
+		config = {
+            window = {
+                open = "alternate"
+            }
+        },
+		-- or pass configuration with
+		-- opts = {  }
+		-- Ensure that it runs first to minimize delay when opening file from terminal
+		lazy = false,
+		priority = 1001,
 	},
 }
 

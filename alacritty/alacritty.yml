@@ -1,5 +1,5 @@
 import:
-  - ~/dotfiles/alacritty/themes/kanagawa.yml
+  - ~/dotfiles/alacritty/themes/gruvbox_light.yml
 env:
   TERM: xterm-256color
 window:

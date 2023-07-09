@@ -28,7 +28,7 @@ local config = {
 			filter_options = {},
 			win_options = {
 				winhighlight = {
-					Normal = "NormalFloat",
+					Normal = "CursorLine",
 					FloatBorder = "FloatBorder",
 				},
 			},
