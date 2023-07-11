@@ -49,16 +49,16 @@ end
 config.kanagawa = function()
 	require("kanagawa").setup({
 		undercurl = true, -- enable undercurls
-		commentStyle = { italic = true },
-		functionStyle = { italic = true },
+		commentStyle = { italic = false },
+		functionStyle = { italic = false },
 		keywordStyle = { bold = true },
 		statementStyle = { bold = true },
-		typeStyle = { bold = true, italic = true },
+		typeStyle = { bold = true, italic = false },
 		variablebuiltinStyle = {},
 		specialReturn = true, -- special highlight for the return keyword
 		specialException = true, -- special highlight for exception handling keywords
 		transparent = false, -- do not set background color
-		dimInactive = false, -- dim inactive window `:h hl-NormalNC`
+		dimInactive = true, -- dim inactive window `:h hl-NormalNC`
 		globalStatus = true,
 	})
 	vim.cmd([=[
