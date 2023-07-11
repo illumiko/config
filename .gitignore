@@ -1,4 +1,4 @@
-/nvim/plugin/packer_compiled.lua
+./nvim/lazy-lock.json
 ./zsh/plugins/
 ./zsh/.zcomp*
 
@@ -50,3 +50,6 @@ flycheck_*.el
 
 # network security
 /network-security.data
+
+#nvim
+
