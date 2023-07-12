@@ -60,7 +60,7 @@ set noshowcmd noruler
 ]])
 -- vim.opt.foldcolumn = "1"
 vim.cmd([[
-set foldlevel=20
+set foldlevel=1
 set foldexpr=nvim_treesitter#foldexpr()
 set foldmethod=expr
 ]])

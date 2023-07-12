@@ -37,6 +37,8 @@ return {
 		end,
 	},
 
+	{ "shortcuts/no-neck-pain.nvim", version = "*" },
+
 	{
 		"andweeb/presence.nvim",
 		config = function()

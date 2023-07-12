@@ -82,7 +82,7 @@ config.gruvbox = function()
 		contrast = "soft", -- can be "hard", "soft" or empty string
 		palette_overrides = {},
 		overrides = {},
-		dim_inactive = false,
+		dim_inactive = true,
 		transparent_mode = false,
 	})
 	vim.cmd([=[
@@ -240,12 +240,12 @@ return {
 	{ "ellisonleao/gruvbox.nvim", lazy = true, config = config.gruvbox },
 	{ "folke/tokyonight.nvim", lazy = false, config = config.tokyonight },
 	{ "olimorris/onedarkpro.nvim", lazy = true },
-	{ "gbprod/nord.nvim", lazy = false, config = config.nord },
+	{ "gbprod/nord.nvim", lazy = true, config = config.nord },
 	{
 		"rockyzhang24/arctic.nvim",
 		branch = "v2",
 	},
-    {"atelierbram/Base2Tone-nvim"},
+	{ "atelierbram/Base2Tone-nvim" },
 	-- "glepnir/zephyr-nvim",
 	{ "catppuccin/nvim", name = "catppuccin", lazy = true, config = config.catppuccin },
 	{ "rebelot/kanagawa.nvim", lazy = true, config = config.kanagawa }, -- kangawa}}}
