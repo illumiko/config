@@ -39,7 +39,7 @@ local config = function()
 	vim.cmd([[
 augroup FormatAutogroup
   autocmd!
-  autocmd FileType go autocmd BufWritePost * FormatWrite
+  autocmd FileType go autocmd InsertLeave * Format
 augroup END
 ]])
 end
