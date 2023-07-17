@@ -1,5 +1,11 @@
 local M = {}
-config = function()
+local config = function()
+	local kind_icons = require("utils.icons").kind
+
+	for _, k in ipairs(vim.tbl_keys(kind_icons)) do
+		vim.cmd("hi CmpItemKind" .. k .. " gui=reverse")
+	end
+
 	local cmp_status_ok, cmp = pcall(require, "cmp")
 	if not cmp_status_ok then
 		return
@@ -11,19 +17,28 @@ config = function()
 		return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
 	end
 
-	local compare = require("cmp.config.compare")
-
 	cmp.setup({
-		snippet = { -- {{{
+		snippet = {
 			expand = function(args)
 				require("luasnip").lsp_expand(args.body)
 			end,
-		}, -- }}}
-		mapping = { -- {{{
+		},
+
+		formatting = {
+			fields = { "kind", "abbr", "menu" },
+			format = function(_, item)
+				item.kind = (" " .. kind_icons[item.kind]) or " "
+				-- item.menu = source_names[entry.source.name] or " "
+				return item
+			end,
+		},
+
+		mapping = {
 			["<C-u>"] = cmp.mapping(cmp.mapping.scroll_docs(-4), { "i", "c" }),
 			["<C-d>"] = cmp.mapping(cmp.mapping.scroll_docs(4), { "i", "c" }),
 			["<C-Space>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
 			["<A-y>"] = cmp.config.disable, -- Specify `cmp.config.disable` if you want to remove the default `<C-y>` mapping.
+
 			["<C-j>"] = cmp.mapping(function(fallback)
 				if cmp.visible() then
 					cmp.select_next_item()
@@ -41,81 +56,41 @@ config = function()
 					fallback()
 				end
 			end, { "i", "s" }),
+
 			["<C-l>"] = cmp.mapping.confirm({
 				behavior = cmp.ConfirmBehavior.Replace,
 				select = true,
 			}),
+
+			["<CR>"] = cmp.mapping.confirm({
+				behavior = cmp.ConfirmBehavior.Replace,
+				select = true,
+			}),
+
 			["<C-e>"] = cmp.mapping({
 				i = cmp.mapping.abort(),
 				c = cmp.mapping.close(),
 			}),
-		}, -- }}}
-		sources = cmp.config.sources({ -- {{{
+		},
+
+		sources = cmp.config.sources({
+			{ name = "nvim_lsp_signature_help" },
 			{ name = "luasnip", group_index = 2, keyword_length = 2 },
-			{
-				name = "nvim_lsp",
-				group_index = 2,
-			},
+			{ name = "nvim_lsp", group_index = 2 },
 			{ name = "nvim_lua", group_index = 2 },
 			{ name = "buffer", group_index = 2, keyword_length = 4 },
 			{ name = "path" },
 			{ name = "neorg" },
 			-- { name = 'ultisnips' }, -- For ultisnips users.
 			-- { name = 'snippy' }, -- For snippy users.
-		}), -- }}}
-		formatting = { -- {{{ the good kind
-			fields = { "kind", "abbr", "menu" },
-			format = function(entry, vim_item)
-				local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50 })(entry, vim_item)
-				local strings = vim.split(kind.kind, "%s", { trimempty = true })
-				kind.kind = " " .. strings[1] .. " "
-				kind.menu = "    (" .. strings[2] .. ")"
+		}),
 
-				return kind
-			end,
-		}, -- }}}
-		sorting = { -- {{{
-			priority_weight = 2,
-			comparators = {
-				-- require("copilot_cmp.comparators").prioritize,
-				-- require("copilot_cmp.comparators").score,
-				compare.offset,
-				compare.exact,
-				-- compare.scopes,
-				compare.score,
-				compare.recently_used,
-				compare.locality,
-				-- compare.kind,
-				compare.sort_text,
-				compare.length,
-				compare.order,
-				-- require("copilot_cmp.comparators").prioritize,
-				-- require("copilot_cmp.comparators").score,
-			},
-		}, -- }}}
-		experimental = { -- {{{
-			ghost_text = false,
-		}, -- }}}
-		confirm_opts = { -- {{{
-			behavior = cmp.ConfirmBehavior.Replace,
-			select = false,
-		}, -- }}}
-		window = { -- {{{
-			documentation = {
-				border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
-				winhighlight = "Normal:NormalFloat,FloatBorder:Normal,CursorLine:PmenuSel,Search:None",
-				max_width = 200,
-			},
-			completion = {
-				-- border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" },
-                border = none,
-				winhighlight = "Normal:NormalFloat,FloatBorder:CmpPmenuBorder,CursorLine:PmenuSel,Search:None",
-				col_offset = -3,
-				side_padding = 0,
-				keyword_length = 2,
-			},
-		}, -- }}}
-		preselect = cmp.PreselectMode.None,
+		experimental = { ghost_text = true },
+
+		confirm_opts = { behavior = cmp.ConfirmBehavior.Replace, select = false },
+
+		window = { documentation = { border = "shadow" }, completion = { side_padding = 0 } },
+		-- preselect = cmp.PreselectMode.None,
 	})
 
 	-- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
@@ -136,6 +111,7 @@ config = function()
 		}),
 	})
 end
+
 M.lazy = {
 	"hrsh7th/nvim-cmp",
 	dependencies = {
@@ -146,6 +122,7 @@ M.lazy = {
 		"hrsh7th/cmp-cmdline", --cmp source cmd
 		"saadparwaiz1/cmp_luasnip", --for snippets
 		"onsails/lspkind-nvim", --customizing cmp
+		"hrsh7th/cmp-nvim-lsp-signature-help",
 	},
 	config = config,
 }

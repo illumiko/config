@@ -67,7 +67,7 @@ M.lazy = {
 	"williamboman/mason-lspconfig.nvim",
 	"lvimuser/lsp-inlayhints.nvim",
 	"RRethy/vim-illuminate",
-	{ "ray-x/lsp_signature.nvim", config = config.lsp_signature },
+	-- { "ray-x/lsp_signature.nvim", config = config.lsp_signature },
 	{
 		"ahmedkhalf/project.nvim",
 		config = function()

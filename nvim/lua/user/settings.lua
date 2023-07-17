@@ -1,6 +1,6 @@
 vim.o.backup = false -- creates a backup file
 -- vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
-vim.o.cmdheight = 1 -- more space in the neovim command line for displaying messages
+vim.o.cmdheight = 0 -- more space in the neovim command line for displaying messages
 -- vim.opt.colorcolumn = "100" -- fixes indentline for now
 vim.o.conceallevel = 0 -- so that `` is visible in markdown files
 vim.o.hidden = true -- required to keep multiple buffers and open multiple buffers
@@ -15,7 +15,7 @@ vim.o.splitright = true -- force all vertical splits to go to the right of curre
 vim.o.swapfile = false -- creates a swapfile
 vim.o.termguicolors = true -- set term gui colors (most terminals support this)
 vim.o.timeoutlen = 100 -- time to wait for a mapped sequence to complete (in milliseconds)
-vim.o.title = false -- set the title of window to the value of the titlestring
+vim.o.title = true -- set the title of window to the value of the titlestring
 vim.o.undodir = vim.fn.stdpath("cache") .. "/undo"
 vim.o.undofile = true -- enable persistent undo
 vim.o.updatetime = 300 -- faster completion
@@ -26,7 +26,6 @@ vim.o.tabstop = 4 -- insert 1 spaces for a tab
 vim.o.smarttab = true
 vim.o.cursorline = true -- highlight the current line
 vim.o.numberwidth = 4 -- set number column width to 2 {default 4}
-vim.o.signcolumn = "yes" -- always show the sign column otherwise it would shift the text each time
 vim.o.wrap = false -- display lines as one long line
 vim.o.spell = false
 vim.o.spelllang = "en"
@@ -37,8 +36,9 @@ vim.o.laststatus = 3
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.breakindent = true
-vim.o.wh = 20
-vim.o.wiw = 100
+vim.cmd("set shortmess+=cCFAI")
+-- vim.o.wh = 20
+-- vim.o.wiw = 100
 -- vim.o.showbreak = string.rep(" ", 3)
 -- Make it so that long lines wrap smartly
 
@@ -55,14 +55,10 @@ vim.opt.fillchars:append({
 vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 vim.cmd([[
 command Journal source ~/Documents/norg/sessions/vp.vim
-set noshowcmd noruler
-"set foldtext=v:folddashes.substitute(getline(v:foldstart),'/\\*\\\|\\*/\\\|{{{\\d\\=','','g')
 ]])
 -- vim.opt.foldcolumn = "1"
 vim.cmd([[
-set foldlevel=1
-set foldexpr=nvim_treesitter#foldexpr()
-set foldmethod=expr
+set noshowcmd noruler
 ]])
 vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 -- vim.o.foldmethod = "marker"

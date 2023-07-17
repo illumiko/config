@@ -42,6 +42,7 @@ u.set_hl_bg("ScrollbarCursor", "Visual") -- Change scroll bar guibg
 vim.cmd([[
 hi SpellBad guifg=none guisp=Red
 hi Todo guibg=none
+hi MDCodeBlock guibg=#232323
 ]])
 --hi NormalFloat guibg=#1C1917 guifg=#c3c3c3
 --hi MDCodeBlock guibg=#111111

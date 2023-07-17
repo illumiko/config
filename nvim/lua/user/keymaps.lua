@@ -122,5 +122,6 @@ end)
 ------------------
 -- better ESC
 ------------------
-imap("jk", "<ESC><cmd>LuaSnipUnlinkCurrent<CR>", opts)
-cmap("jk", "<ESC>", opts)
+-- imap("jk", "<cmd>LuaSnipUnlinkCurrent<CR><ESC>", {silent=true})
+imap("jk", "<ESC>", {silent=true})
+-- cmap("jk", "<ESC>", opts(""))

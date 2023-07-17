@@ -10,6 +10,15 @@ return {
 	"wellle/targets.vim", -- better surround motions
 	"matze/vim-move",
 	"lewis6991/impatient.nvim",
+
+	{
+		"echasnovski/mini.nvim",
+		version = false,
+		config = function()
+			require("mini.surround").setup()
+		end,
+	},
+
 	{
 		-- "echasnovski/mini.animate",
 		-- config = function()
@@ -28,6 +37,7 @@ return {
 			require("stabilize").setup()
 		end,
 	},
+
 	{
 		"mvllow/modes.nvim",
 		config = function()
@@ -68,18 +78,19 @@ return {
 			})
 		end,
 	},
-	{
-		"phaazon/hop.nvim",
-		as = "hop",
-		config = function()
-			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
-		end,
-		keys = {
-			-- { "f", ":HopWordCurrentLine<CR>", desc = "Line hop", noremap = true, silent = true },
-			-- { "F", ":HopChar1CurrentLine<CR>", desc = "Char hop", noremap = true, silent = true },
-			{ "<leader>hl", ":HopLine<CR>", desc = "Line Hop", noremap = true, silent = true },
-			{ "<leader>hc", ":HopChar1<CR>", desc = "Char Hop", noremap = true, silent = true },
-			{ "<leader>hw", ":HopWord<CR>", desc = "Word Hop", noremap = true, silent = true },
-		},
-	},
+
+	-- {
+	-- 	"phaazon/hop.nvim",
+	-- 	as = "hop",
+	-- 	config = function()
+	-- 		require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
+	-- 	end,
+	-- 	keys = {
+	-- 		-- { "f", ":HopWordCurrentLine<CR>", desc = "Line hop", noremap = true, silent = true },
+	-- 		-- { "F", ":HopChar1CurrentLine<CR>", desc = "Char hop", noremap = true, silent = true },
+	-- 		{ "<leader>hl", ":HopLine<CR>", desc = "Line Hop", noremap = true, silent = true },
+	-- 		{ "<leader>hc", ":HopChar1<CR>", desc = "Char Hop", noremap = true, silent = true },
+	-- 		{ "<leader>hw", ":HopWord<CR>", desc = "Word Hop", noremap = true, silent = true },
+	-- 	},
+	-- },
 }

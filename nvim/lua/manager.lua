@@ -28,4 +28,10 @@ if not status_ok then
 end
 
 -- Have packer use a popup window
-lazy.setup("plugin")
+lazy.setup("plugin", {
+	change_detection = {
+		-- automatically check for config file changes and reload the ui
+		enabled = true,
+		notify = false, -- get a notification when changes are found
+	},
+})

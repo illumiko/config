@@ -28,11 +28,12 @@ config.mdcodeblock = {
 }
 
 M.lazy = {
-	{ "jghauser/follow-md-links.nvim" },
-	{ "yaocccc/nvim-hl-mdcodeblock.lua", config = config.mdcodeblock ,ft="norg"},
+	{ "jghauser/follow-md-links.nvim", ft = "markdown" },
+	{ "yaocccc/nvim-hl-mdcodeblock.lua", config = config.mdcodeblock, ft="markdown"},
 	{
 		"nfrid/markdown-togglecheck",
 		dependencies = { "nfrid/treesitter-utils" },
+		ft = "markdown",
 	},
 }
 return M.lazy

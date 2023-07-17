@@ -6,8 +6,8 @@ end
 
 
 M.lazy = {
-    "ggandor/leap.nvim",
-    config = config.leap
+    -- "ggandor/leap.nvim",
+    -- config = config.leap
 }
 
 return M.lazy
