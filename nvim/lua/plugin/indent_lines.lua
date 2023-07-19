@@ -46,9 +46,9 @@ M.config = {
 }
 
 M.lazy = {
-	"echasnovski/mini.indentscope",
-	version = false,
-	config = M.config,
+	-- "echasnovski/mini.indentscope",
+	-- version = false,
+	-- config = M.config,
 }
 
 return M.lazy

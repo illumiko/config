@@ -1,5 +1,4 @@
 {
-  "AutoSave.nvim": { "branch": "main", "commit": "979b6c82f60cfa80f4cf437d77446d0ded0addf0" },
   "Base2Tone-nvim": { "branch": "main", "commit": "c32c1d3dfdc8fb6e91cbf6078c078d6c3eaaa673" },
   "Comment.nvim": { "branch": "master", "commit": "e1fe53117aab24c378d5e6deaad786789c360123" },
   "LuaSnip": { "branch": "master", "commit": "a83e4b1ba7edc6fecdad09e39753a7d5eee1d01c" },
@@ -40,7 +39,6 @@
   "markid": { "branch": "main", "commit": "379f7af033d19744b36b454309006d67675ed2f5" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "f0ce33f4794a2364eb08d09d09380e8b04ec5e6a" },
   "mason.nvim": { "branch": "main", "commit": "7d7efc738e08fc5bee822857db45cb6103f0b0c1" },
-  "mini.indentscope": { "branch": "main", "commit": "f60e9b51a6214c73a170ffc5445ce91560981031" },
   "mini.nvim": { "branch": "main", "commit": "2b37c5e1d2a3f62ba4060a819f17d8d976018928" },
   "mini.pairs": { "branch": "main", "commit": "963b800d0524eadd297199207011b98684205ada" },
   "mini.tabline": { "branch": "main", "commit": "d92d66c47148e6349d501a46d4615548634be192" },
@@ -48,6 +46,7 @@
   "neo-tree.nvim": { "branch": "v2.x", "commit": "8c89efb93b8383666a6f989762c2f610f5f2c930" },
   "neorg": { "branch": "main", "commit": "f9ec5c4fa114decc47367b22d065ccef566d3245" },
   "no-neck-pain.nvim": { "branch": "main", "commit": "6000e12d13188e008e9539085c24ff34794da40b" },
+  "noice.nvim": { "branch": "main", "commit": "bfd2368b3f1fdd5766885b0115238d1f47113c6d" },
   "nord.nvim": { "branch": "main", "commit": "e7d7135a1c5034deea72a5d8d42a25fdb93c85c1" },
   "nui.nvim": { "branch": "main", "commit": "2b2732528e4a79eb8542568bd51d25f710395bd6" },
   "nvim-cmp": { "branch": "main", "commit": "b43bfaf3229d6b39d8baaa567b13c6be0623bf12" },

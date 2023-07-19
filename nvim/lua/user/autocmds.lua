@@ -92,5 +92,14 @@ vim.api.nvim_create_autocmd({ "BufEnter" }, {
 		vim.cmd("set foldlevel=1")
 		vim.cmd("set foldexpr=nvim_treesitter#foldexpr()")
 		vim.cmd("set foldmethod=expr")
+		vim.cmd("set formatoptions-=cro")
+	end,
+})
+
+vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
+	group = augroup("autosave"),
+	pattern = { "*.go", "*.lua", "*.norg" },
+	callback = function()
+		vim.cmd.write()
 	end,
 })

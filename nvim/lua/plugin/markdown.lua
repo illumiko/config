@@ -11,7 +11,7 @@ config.mdcodeblock = {
 		"WinScrolled",
 		"BufEnter",
 	},
-	padding_right = 4, -- always append 4 space at lineend
+	padding_right = 10, -- always append 4 space at lineend
 	timer_delay = 20, -- refresh delay(ms)
 	query_by_ft = { -- special parser query by filetype
 		markdown = { -- filetype
@@ -29,7 +29,7 @@ config.mdcodeblock = {
 
 M.lazy = {
 	{ "jghauser/follow-md-links.nvim", ft = "markdown" },
-	{ "yaocccc/nvim-hl-mdcodeblock.lua", config = config.mdcodeblock, ft="markdown"},
+	{ "yaocccc/nvim-hl-mdcodeblock.lua", config = config.mdcodeblock, ft="markown"},
 	{
 		"nfrid/markdown-togglecheck",
 		dependencies = { "nfrid/treesitter-utils" },

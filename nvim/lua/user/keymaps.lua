@@ -1,14 +1,14 @@
 local imap = require("utils.maps").imap
 local cmap = require("utils.maps").cmap
 
-local opts  = function (meta)
-    return { noremap = true, silent = true, desc = ""}
+local opts = function(meta)
+	return { noremap = true, silent = true, desc = "" }
 end
 
 local ls = require("luasnip")
 vim.g.mapleader = " "
 
-local Binds = {map_type = "",  maps = {} }
+local Binds = { map_type = "", maps = {} }
 
 function Binds:new(map_type, maps)
 	setmetatable({}, Binds)
@@ -16,7 +16,7 @@ function Binds:new(map_type, maps)
 	self.maps = maps
 	self.map_type = map_type
 
-	return self
+	return self:bind()
 end
 
 function Binds:bind()
@@ -31,31 +31,29 @@ local visual_keybinds = Binds:new("v", {
 	{ "y", '"+y', opts("") },
 	{ "yi]", '"+yi]', opts("") },
 	{ [[yi']], [["+yi']], opts("") },
-	{ [[yi}]], [["+yi}]], opts("")},
-	{ [[yi"]], [["+yi"]], opts("")},
-	{ [[yi)]], [["+yi)]], opts("")},
+	{ [[yi}]], [["+yi}]], opts("") },
+	{ [[yi"]], [["+yi"]], opts("") },
+	{ [[yi)]], [["+yi)]], opts("") },
 
 	--indent
-	{"<", "<gv", opts("")},
-	{">", ">gv", opts("")},
+	{ "<", "<gv", opts("") },
+	{ ">", ">gv", opts("") },
 })
-visual_keybinds:bind()
-
 local normal_keybinds = Binds:new("n", {
 	{ "<Space>", "<NOP>", opts("") },
 
 	--center after c-d/u
-	{ "<c-d>", "<c-d>zz", opts("")},
+	{ "<c-d>", "<c-d>zz", opts("") },
 	{ "<c-u>", "<c-u>zz", opts("") },
 
 	--better copy
 	{ "Y", '"+y$', opts("") },
 	{ "y", '"+y', opts("") },
 	{ "yi]", '"+yi]', opts("") },
-	{ [[yi']], [["+yi']], opts("")},
-	{ [[yi}]], [["+yi}]], opts("")},
-	{ [[yi"]], [["+yi"]], opts("")},
-	{ [[yi)]], [["+yi)]], opts("")},
+	{ [[yi']], [["+yi']], opts("") },
+	{ [[yi}]], [["+yi}]], opts("") },
+	{ [[yi"]], [["+yi"]], opts("") },
+	{ [[yi)]], [["+yi)]], opts("") },
 
 	--Norg
 	{ "<M-1>", ":e ~/Documents/norg/main/index.norg<CR>", opts("") },
@@ -83,11 +81,13 @@ local normal_keybinds = Binds:new("n", {
 	--I forgot
 	{ "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true } },
 	{ "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true } },
+
+    --window change
+	{ "<c-j>", "<c-w>j", opts("") },
+	{ "<c-k>", "<c-w>k", opts("") },
+	{ "<c-h>", "<c-w>h", opts("") },
+	{ "<c-l>", "<c-w>l", opts("") },
 })
-normal_keybinds:bind()
-
-
-
 
 --TogTerm toggle
 vim.cmd([[ "sets the close key for toggle term
@@ -123,5 +123,5 @@ end)
 -- better ESC
 ------------------
 -- imap("jk", "<cmd>LuaSnipUnlinkCurrent<CR><ESC>", {silent=true})
-imap("jk", "<ESC>", {silent=true})
+imap("jk", "<ESC>", { silent = true })
 -- cmap("jk", "<ESC>", opts(""))
