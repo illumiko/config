@@ -89,9 +89,9 @@ vim.api.nvim_create_autocmd({ "BufEnter" }, {
 	group = augroup("settings on bufenter"),
 	callback = function()
 		vim.cmd("set signcolumn=yes")
-		vim.cmd("set foldlevel=1")
-		vim.cmd("set foldexpr=nvim_treesitter#foldexpr()")
-		vim.cmd("set foldmethod=expr")
+		-- vim.cmd("set foldlevel=1")
+		-- vim.cmd("set foldexpr=nvim_treesitter#foldexpr()")
+		-- vim.cmd("set foldmethod=expr")
 		vim.cmd("set formatoptions-=cro")
 	end,
 })

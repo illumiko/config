@@ -12,6 +12,14 @@ return {
 	"lewis6991/impatient.nvim",
 
 	{
+		"max397574/colortils.nvim",
+		cmd = "Colortils",
+		config = function()
+			require("colortils").setup()
+		end,
+	},
+
+	{
 		"echasnovski/mini.nvim",
 		version = false,
 		config = function()
