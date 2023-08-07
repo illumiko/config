@@ -8,4 +8,4 @@ M.lazy = {
 	"windwp/windline.nvim",
 	config = config,
 }
-return M.lazy
+return {}

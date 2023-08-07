@@ -62,7 +62,6 @@
   "nvim-window": { "branch": "main", "commit": "dd0a6b230003ef35524853d71e5413f88fd2ba74" },
   "playground": { "branch": "master", "commit": "2b81a018a49f8e476341dfcb228b7b808baba68b" },
   "plenary.nvim": { "branch": "master", "commit": "52544825d6b8be677eb395983515ad5e30ae1f2e" },
-  "poimandres.nvim": { "branch": "main", "commit": "6f281c8765fef5aa4d004532861b726b1f73721d" },
   "popup.nvim": { "branch": "master", "commit": "b7404d35d5d3548a82149238289fa71f7f6de4ac" },
   "presence.nvim": { "branch": "main", "commit": "87c857a56b7703f976d3a5ef15967d80508df6e6" },
   "project.nvim": { "branch": "main", "commit": "8c6bad7d22eef1b71144b401c9f74ed01526a4fb" },
@@ -82,6 +81,5 @@
   "vim-table-mode": { "branch": "master", "commit": "9555a3e6e5bcf285ec181b7fc983eea90500feb4" },
   "vimtex": { "branch": "master", "commit": "28c71043604271d37be9582c89128d2acedff065" },
   "which-key.nvim": { "branch": "main", "commit": "e271c28118998c93a14d189af3395812a1aa646c" },
-  "windline.nvim": { "branch": "master", "commit": "66badcb002c91f6d4bfc11726c988441a3aada6c" },
   "zenbones.nvim": { "branch": "main", "commit": "74d444054a7377ec2a32c88130a197cae1439fc2" }
 }
