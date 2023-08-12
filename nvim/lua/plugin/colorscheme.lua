@@ -1,4 +1,31 @@
 local config = {}
+local plugins = {
+	{ "NTBBloodbath/doom-one.nvim", lazy = true, config = config.doom_one },
+	{ "sainnhe/everforest", lazy = true },
+	{ "RishabhRD/gruvy", lazy = true },
+	{ "mcchrish/zenbones.nvim", lazy = true, config = config.zenbones },
+	{ "ellisonleao/gruvbox.nvim", lazy = true, config = config.gruvbox },
+	{ "folke/tokyonight.nvim", lazy = false, config = config.tokyonight },
+	{ "gbprod/nord.nvim", lazy = true, config = config.nord },
+	{ "marko-cerovac/material.nvim", lazy = true, config = config.material },
+	{
+		"rockyzhang24/arctic.nvim",
+		branch = "v2",
+	},
+	{ "atelierbram/Base2Tone-nvim" },
+	-- "glepnir/zephyr-nvim",
+	{ "catppuccin/nvim", name = "catppuccin", lazy = true, config = config.catppuccin },
+	{ "rebelot/kanagawa.nvim", lazy = true, config = config.kanagawa }, -- kangawa}}}
+	{ "tiagovla/tokyodark.nvim", lazy = true, config=config.tokyodark },
+	{ "metalelf0/jellybeans-nvim", lazy = true },
+}
+
+config.tokyodark = function () 
+    vim.g.tokyodark_transparent_background = true
+    vim.g.tokyodark_enable_italic_comment = true
+    vim.g.tokyodark_enable_italic = true
+    vim.g.tokyodark_color_gamma = "1.0"
+end
 
 config.nord = function()
 	require("nord").setup({
@@ -92,12 +119,12 @@ hi TreesitterContext guibg=#222222
 end
 
 config.catppuccin = {
-	flavour = "macchiato", -- latte, frappe, macchiato, mocha
+	flavour = "mocha", -- latte, frappe, macchiato, mocha
 	background = { -- :h background
 		light = "latte",
 		dark = "frappe",
 	},
-	transparent_background = false,
+	transparent_background = true,
 	term_colors = true,
 	dim_inactive = {
 		enabled = true,
@@ -300,23 +327,4 @@ config.material = {
 	custom_highlights = {}, -- Overwrite highlights with your own
 }
 
-return {
-	{ "NTBBloodbath/doom-one.nvim", lazy = true, config = config.doom_one },
-	{ "sainnhe/everforest", lazy = true },
-	{ "RishabhRD/gruvy", lazy = true },
-	{ "mcchrish/zenbones.nvim", lazy = true, config = config.zenbones },
-	{ "ellisonleao/gruvbox.nvim", lazy = true, config = config.gruvbox },
-	{ "folke/tokyonight.nvim", lazy = false, config = config.tokyonight },
-	{ "gbprod/nord.nvim", lazy = true, config = config.nord },
-	{ "marko-cerovac/material.nvim", lazy = true, config = config.material },
-	{
-		"rockyzhang24/arctic.nvim",
-		branch = "v2",
-	},
-	{ "atelierbram/Base2Tone-nvim" },
-	-- "glepnir/zephyr-nvim",
-	{ "catppuccin/nvim", name = "catppuccin", lazy = true, config = config.catppuccin },
-	{ "rebelot/kanagawa.nvim", lazy = true, config = config.kanagawa }, -- kangawa}}}
-	{ "tiagovla/tokyodark.nvim", lazy = true },
-	{ "metalelf0/jellybeans-nvim", lazy = true },
-}
+return plugins
