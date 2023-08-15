@@ -2,7 +2,7 @@
 xset r rate 300 25 #responsive keys
 #xset r rate 100 1 #responsive keys
 set -o vi
-#set bell-style visual
+set bell-style visual
 
 #Exports
 export EDITOR="nvim"
@@ -119,8 +119,8 @@ _open_files_for_editing() {
 # }}}
 
 # Caps as backspacpe
-# xmodmap -e "keycode 66 = BackSpace"
-# setxkbmap -option caps:backspace
+setxkbmap -option caps:backspace
+xmodmap -e "keycode 66 = BackSpace"
 # dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:swapescape']" 
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 eval "$(starship init bash)" #starship prompt

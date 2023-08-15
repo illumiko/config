@@ -1,3 +1,0 @@
-require("manager")
-require("user")
-
