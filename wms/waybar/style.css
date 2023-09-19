@@ -1,0 +1,111 @@
+/* @import '../../.cache/wal/colors-waybar.css'; */
+@import '../../dotfiles/waybar/colors.css';
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: "Maple Mono NF";
+    /* font-weight: bold; */
+    font-size: 30px;
+    padding: 0px 2px;
+    /* margin: 0px 0px; */
+    /* min-height: 50px; */
+}
+#custom-power_profile,
+#custom-weather,
+#custom-music,
+#clock,
+#disk,
+#memory,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#temperature,
+#workspaces,
+#window,
+#tray,
+#backlight {
+    background: @background;
+    font-size: 18px;
+    padding: 0 15px
+}
+
+
+window#waybar {
+    background: @background;
+    color: @foreground-alt;
+}
+#window,#workspaces button{
+    font-size:16px;
+}
+
+tooltip {
+    background: @background;
+    /* border-radius: 10px; */
+    /* border-width: 2px; */
+    border-style: solid;
+    border-color: #11111b;
+}
+
+
+#workspaces button.active {
+    color: @color1;
+    background: @background-alt;
+}
+
+#memory {
+    color: @primary;
+}
+
+#custom-music {
+    font-size: 12px;
+    background :@background;
+    color: @foreground-alt;
+}
+
+#backlight {
+    color: @color4;
+}
+
+#clock {
+    color: @primary;
+    /* border-radius: 10px; */
+    /* margin-left: 10px; */
+    /* border-right: 10px; */
+}
+
+#pulseaudio {
+    color: @foreground-alt;
+}
+#battery {
+    color: @primary;
+    padding:10px;
+    /* border-radius: 10px 10px 10px 10px; */
+    /* margin-right: 10px */
+}
+#network, #pulseaudio {
+    padding: 0px;
+}
+#network {
+    color: @foreground-alt;
+    padding-right: 15px;
+    /* border-radius: 10px 0px 0px 10px; */
+    /* border-radius: 10px 10px 10px 10px; */
+    /* margin-right: 10px */
+}
+
+#bluetooth {
+    color: @background;
+} 
+
+#pulseaudio.microphone {
+    color: @cursor;
+    border-left: 0px;
+    border-right: 0px;
+    /* border-radius: 0px 10px 10px 0px; */
+    /* margin-right: 10px; */
+}
+
+#custom-weather {
+    border-right: 0px;
+}/*}}}*/

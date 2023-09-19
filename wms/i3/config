@@ -1,0 +1,4 @@
+include base.conf
+include autostart.conf
+include window_rules.conf
+include keybinds.conf

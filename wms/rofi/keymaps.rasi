@@ -1,0 +1,14 @@
+configuration {
+    /* removes hjkl binds */
+    kb-remove-to-eol: "";
+    kb-mode-complete: "";
+    kb-accept-entry: "";
+    kb-remove-char-back: "BackSpace";
+    kb-clear-line: "";
+    kb-row-up: "Control+h";
+    kb-row-down: "Control+k";
+    kb-row-left: "Control+j";
+    kb-row-right: "Control+l";
+    kb-accept-entry: "Return";
+}
+
