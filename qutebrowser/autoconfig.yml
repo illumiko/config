@@ -6,5 +6,7 @@
 
 config_version: 2
 settings:
-  content.media.video_capture:
+  colors.webpage.darkmode.enabled:
+    global: false
+  content.notifications.enabled:
     https://discord.com: true

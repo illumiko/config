@@ -1,4 +1,6 @@
-from libqtile import bar, layout, widget
+from libqtile import bar, layout, widget, hook
+import os
+import subprocess
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
@@ -139,9 +141,9 @@ screens = [
                  ),
                 widget.Battery(
                     foreground = "#60A4A2",
-                    format = '{char} {percent:2.0%} {hour:d}:{min:02d}',
+                    format = 'Bat:{percent:2.0%} {hour:d}:{min:02d}',
                     discharge_char = "",
-                    full_char = "",
+                    full_char = "󰁹",
                 )
                 # widget.QuickExit(),
             ],
@@ -196,3 +198,12 @@ wl_input_rules = None
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
 wmname = "LG3D"
+
+
+# I wrote the hook below auto minimize = True line in the default config file.
+# This doesn't matter. But if you are new and confused, now you know :)
+
+@hook.subscribe.startup_once
+def autostart():
+    home = os.path.expanduser('~/dotfiles/wms/qtile/autostart.sh')
+    subprocess.Popen([home])

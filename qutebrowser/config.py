@@ -159,7 +159,7 @@ c.input.insert_mode.auto_load = True
 
 # Padding (in pixels) around text for tabs.
 # Type: Padding
-c.tabs.padding = {'bottom': 8, 'top': 8, 'left': 5, 'right': 5}
+c.tabs.padding = {'bottom': 8, 'top': 8, 'left': 5, 'right': 3}
 
 # Position of the tab bar.
 # Type: Position
@@ -173,7 +173,7 @@ c.tabs.position = 'left'
 # Width (in pixels or as percentage of the window) of the tab bar if
 # it's vertical.
 # Type: PercOrInt
-c.tabs.width = '10%'
+c.tabs.width = '8%'
 
 # Minimum width (in pixels) of tabs (-1 for the default minimum size
 # behavior). This setting only applies when tabs are horizontal. This
@@ -193,11 +193,11 @@ c.tabs.max_width = 1000
 # Page to open if :open -t/-b/-w is used without URL. Use `about:blank`
 # for a blank page.
 # Type: FuzzyUrl
-c.url.default_page = '~/Documents/Projects/Personal/homepage/dev/index.html'
+# c.url.default_page = '~/Documents/Projects/Personal/homepage/dev/index.html'
 
 # Page(s) to open at the start.
 # Type: List of FuzzyUrl, or FuzzyUrl
-c.url.start_pages = '~/Documents/Projects/Personal/homepage/dev/index.html'
+# c.url.start_pages = '~/Documents/Projects/Personal/homepage/dev/index.html'
 
 # Text color of the completion widget. May be a single color to use for
 # all columns or a list of three colors, one for each column.
@@ -575,7 +575,7 @@ c.colors.webpage.darkmode.enabled = True
 c.colors.webpage.darkmode.algorithm = "lightness-cielab"
 c.colors.webpage.darkmode.threshold.text = 150
 c.colors.webpage.darkmode.threshold.background = 100
-c.colors.webpage.darkmode.policy.images = 'always'
+c.colors.webpage.darkmode.policy.images = 'never'
 c.colors.webpage.darkmode.grayscale.images = 0.35
 c. tabs.new_position.related = "next"
 c. tabs.new_position.unrelated = "next"
