@@ -35,6 +35,7 @@ keys = [
     Key([mod, "control"], "j", lazy.layout.grow_down(), desc="Grow window down"),
     Key([mod, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
     Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
+    Key([mod], 'period', lazy.next_screen(), desc='Next monitor'),
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
@@ -46,6 +47,7 @@ keys = [
         desc="Toggle between split and unsplit sides of stack",
     ),
     Key([mod], "Return", lazy.spawn("kitty"), desc="Launch terminal"),
+    Key([mod], "c", lazy.spawn("flameshot gui"), desc="Launch terminal"),
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod,"shift"], "x", lazy.window.kill(), desc="Kill focused window"),
@@ -83,15 +85,16 @@ for i in groups:
     )
 
 layouts = [
-    layout.Zoomy(),
+    layout.MonadTall(margin=10),
     layout.MonadWide(),
+    layout.Zoomy(),
+    layout.Floating(),
     # layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
     # layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
     # layout.Matrix(),
-    # layout.MonadTall(),
     # layout.RatioTile(),
     # layout.Tile(),
     # layout.TreeTab(
@@ -152,6 +155,10 @@ screens = [
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
     ),
+    Screen(
+        wallpaper = wallpaper,
+        wallpaper_mode = "fill",
+    )
 ]
 
 # Drag floating layouts.
