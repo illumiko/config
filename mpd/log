@@ -162,3 +162,169 @@ Nov 17 02:59 : player: played "Ephemeral/Mr.Kitty - From Liquid.flac"
 Nov 17 03:00 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
 Nov 17 03:00 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
 Nov 17 03:00 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 17 03:02 : update: added Ephemeral/Mr.Kitty - The View Isn't the Same.flac
+Nov 17 03:02 : update: added Ephemeral/Mr.Kitty - Trauma.flac
+Nov 17 03:02 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 17 03:04 : update: added Ephemeral/Mr.Kitty - Wait.flac
+Nov 17 03:05 : player: played "Ephemeral/Mr.Kitty - From Liquid.flac"
+Nov 17 03:06 : update: added Ephemeral/Mr.Kitty - Whip.flac
+Nov 17 03:12 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 17 03:16 : player: played "Ephemeral/Mr.Kitty - My Weak Side.flac"
+Nov 17 03:20 : player: played "Ephemeral/Mr.Kitty - Disconnect Lover.flac"
+Nov 17 03:24 : player: played "Ephemeral/Mr.Kitty - Molt.flac"
+Nov 17 03:29 : player: played "Ephemeral/Mr.Kitty - Melting Core.flac"
+Nov 17 03:32 : player: played "Ephemeral/Mr.Kitty - Empty Phases.flac"
+Nov 17 03:36 : player: played "Ephemeral/Mr.Kitty - I Want to Hurt Myself.flac"
+Nov 17 08:28 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 17 08:29 : player: played "Ephemeral/Mr.Kitty - Be Alive.flac"
+Nov 17 08:29 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 17 08:33 : player: played "Ephemeral/Mr.Kitty - Wait.flac"
+Nov 17 08:37 : player: played "Ephemeral/Mr.Kitty - From Liquid.flac"
+Nov 17 08:41 : player: played "Ephemeral/Mr.Kitty - My Weak Side.flac"
+Nov 17 08:42 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 17 08:45 : player: played "Ephemeral/Mr.Kitty - Disconnect Lover.flac"
+Nov 17 08:49 : player: played "Ephemeral/Mr.Kitty - The View Isn't the Same.flac"
+Nov 17 08:54 : player: played "Ephemeral/Mr.Kitty - Molt.flac"
+Nov 17 08:57 : player: played "Ephemeral/Mr.Kitty - Trauma.flac"
+Nov 17 09:01 : player: played "Ephemeral/Mr.Kitty - Melting Core.flac"
+Nov 17 09:05 : player: played "Ephemeral/Mr.Kitty - Empty Phases.flac"
+Nov 17 09:08 : player: played "Ephemeral/Mr.Kitty - I Want to Hurt Myself.flac"
+Nov 17 09:12 : player: played "Ephemeral/Mr.Kitty - Rain.flac"
+Nov 17 09:16 : player: played "Ephemeral/Mr.Kitty - Be Alive.flac"
+Nov 17 09:20 : player: played "Ephemeral/Mr.Kitty - 0% Angel.flac"
+Nov 17 09:24 : player: played "Ephemeral/Mr.Kitty - Destruction of Us.flac"
+Nov 17 09:28 : player: played "Ephemeral/Mr.Kitty - Cyst.flac"
+Nov 17 09:32 : player: played "Ephemeral/Mr.Kitty - Bullet.flac"
+Nov 17 09:36 : player: played "Ephemeral/Mr.Kitty - Immurement.flac"
+Nov 17 09:40 : player: played "Ephemeral/Mr.Kitty - In Your Arms.flac"
+Nov 17 09:43 : player: played "Ephemeral/Mr.Kitty - Died on the Land.flac"
+Nov 17 09:47 : player: played "Ephemeral/Mr.Kitty - Home.flac"
+Nov 17 09:50 : player: played "Ephemeral/Mr.Kitty - Anguish.flac"
+Nov 17 09:53 : update: added 2018 - Dear/1-02 Banana Bread.flac
+Nov 17 09:53 : update: added 2018 - Dear/1-01 Just Add Water.flac
+Nov 17 09:54 : update: added 2018 - Dear/1-03 Dear.flac
+Nov 17 09:56 : update: added 2018 - Dear/1-04 Talk to Me.flac
+Nov 17 10:03 : player: played "Ephemeral/Mr.Kitty - Bloodletting.flac"
+Nov 17 10:03 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 17 10:07 : player: played "2018 - Dear/1-01 Just Add Water.flac"
+Nov 17 10:12 : player: played "2018 - Dear/1-02 Banana Bread.flac"
+Nov 17 10:17 : player: played "2018 - Dear/1-03 Dear.flac"
+Nov 17 10:22 : player: played "2018 - Dear/1-04 Talk to Me.flac"
+Nov 17 10:27 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 17 10:31 : player: played "2018 - Dear/1-01 Just Add Water.flac"
+Nov 17 10:36 : player: played "2018 - Dear/1-02 Banana Bread.flac"
+Nov 17 10:41 : player: played "2018 - Dear/1-03 Dear.flac"
+Nov 17 10:46 : player: played "2018 - Dear/1-04 Talk to Me.flac"
+Nov 17 10:46 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 17 10:51 : player: played "2018 - Dear/1-04 Talk to Me.flac"
+Nov 17 10:55 : player: played "2018 - Dear/1-01 Just Add Water.flac"
+Nov 17 11:00 : player: played "2018 - Dear/1-02 Banana Bread.flac"
+Nov 17 11:04 : player: played "2018 - Dear/1-03 Dear.flac"
+Nov 17 11:09 : player: played "2018 - Dear/1-04 Talk to Me.flac"
+Nov 17 11:13 : player: played "2018 - Dear/1-01 Just Add Water.flac"
+Nov 17 11:18 : player: played "2018 - Dear/1-02 Banana Bread.flac"
+Nov 17 11:23 : player: played "2018 - Dear/1-03 Dear.flac"
+Nov 17 14:02 : update: added 2019 - Hollywood's Bleeding/01 - Hollywood's Bleeding.flac
+Nov 17 14:02 : update: added 2019 - Hollywood's Bleeding/02 - Saint-Tropez.flac
+Nov 17 14:04 : update: added 2019 - Hollywood's Bleeding/03 - Enemies (feat. DaBaby).flac
+Nov 17 14:05 : update: added 2019 - Hollywood's Bleeding/04 - Allergic.flac
+Nov 17 14:07 : update: added 2019 - Hollywood's Bleeding/05 - A Thousand Bad Times.flac
+Nov 17 14:09 : update: added 2019 - Hollywood's Bleeding/06 - Circles.flac
+Nov 17 14:12 : update: added 2019 - Hollywood's Bleeding/07 - Die For Me (feat. Future & Halsey).flac
+Nov 17 14:13 : update: added 2019 - Hollywood's Bleeding/08 - On The Road (feat. Meek Mill & Lil Baby).flac
+Nov 17 14:15 : update: added 2019 - Hollywood's Bleeding/09 - Take What You Want (feat. Ozzy Osbourne & Travis Scott).flac
+Nov 17 14:17 : update: added 2019 - Hollywood's Bleeding/10 - I'm Gonna Be.flac
+Nov 17 14:18 : update: added 2019 - Hollywood's Bleeding/11 - Staring At The Sun (feat. SZA).flac
+Nov 17 14:20 : update: added 2019 - Hollywood's Bleeding/12 - Sunflower (Spider-Man_ Into the Spider-Verse).flac
+Nov 17 14:21 : update: added 2019 - Hollywood's Bleeding/13 - Internet.flac
+Nov 17 14:22 : update: added 2019 - Hollywood's Bleeding/14 - Goodbyes (feat. Young Thug).flac
+Nov 17 14:24 : update: added 2019 - Hollywood's Bleeding/15 - Myself.flac
+Nov 17 14:26 : update: added 2019 - Hollywood's Bleeding/16 - I Know.flac
+Nov 17 14:27 : update: added 2019 - Hollywood's Bleeding/17 - Wow.flac
+Nov 17 16:01 : player: played "2018 - Dear/1-04 Talk to Me.flac"
+Nov 17 16:01 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 17 16:04 : player: played "2019 - Hollywood's Bleeding/01 - Hollywood's Bleeding.flac"
+Nov 17 16:06 : player: played "2019 - Hollywood's Bleeding/02 - Saint-Tropez.flac"
+Nov 17 16:10 : player: played "2019 - Hollywood's Bleeding/03 - Enemies (feat. DaBaby).flac"
+Nov 17 16:12 : player: played "2019 - Hollywood's Bleeding/04 - Allergic.flac"
+Nov 17 16:16 : player: played "2019 - Hollywood's Bleeding/05 - A Thousand Bad Times.flac"
+Nov 17 16:19 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 17 16:20 : player: played "2019 - Hollywood's Bleeding/06 - Circles.flac"
+Nov 17 16:24 : player: played "2019 - Hollywood's Bleeding/07 - Die For Me (feat. Future & Halsey).flac"
+Nov 17 16:27 : player: played "2019 - Hollywood's Bleeding/08 - On The Road (feat. Meek Mill & Lil Baby).flac"
+Nov 17 18:27 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 17 18:30 : player: played "2019 - Hollywood's Bleeding/09 - Take What You Want (feat. Ozzy Osbourne & Travis Scott).flac"
+Nov 17 18:33 : player: played "2019 - Hollywood's Bleeding/10 - I'm Gonna Be.flac"
+Nov 17 18:36 : player: played "2019 - Hollywood's Bleeding/11 - Staring At The Sun (feat. SZA).flac"
+Nov 17 18:39 : player: played "2019 - Hollywood's Bleeding/12 - Sunflower (Spider-Man_ Into the Spider-Verse).flac"
+Nov 17 18:41 : player: played "2019 - Hollywood's Bleeding/13 - Internet.flac"
+Nov 17 18:44 : player: played "2019 - Hollywood's Bleeding/14 - Goodbyes (feat. Young Thug).flac"
+Nov 17 18:46 : player: played "2019 - Hollywood's Bleeding/15 - Myself.flac"
+Nov 17 18:49 : player: played "2019 - Hollywood's Bleeding/16 - I Know.flac"
+Nov 17 18:51 : player: played "2019 - Hollywood's Bleeding/17 - Wow.flac"
+Nov 17 18:54 : player: played "2019 - Hollywood's Bleeding/01 - Hollywood's Bleeding.flac"
+Nov 17 18:56 : player: played "2019 - Hollywood's Bleeding/02 - Saint-Tropez.flac"
+Nov 17 19:00 : player: played "2019 - Hollywood's Bleeding/03 - Enemies (feat. DaBaby).flac"
+Nov 17 19:02 : player: played "2019 - Hollywood's Bleeding/04 - Allergic.flac"
+Nov 17 19:06 : player: played "2019 - Hollywood's Bleeding/05 - A Thousand Bad Times.flac"
+Nov 17 19:10 : player: played "2019 - Hollywood's Bleeding/06 - Circles.flac"
+Nov 17 19:14 : player: played "2019 - Hollywood's Bleeding/07 - Die For Me (feat. Future & Halsey).flac"
+Nov 17 19:17 : player: played "2019 - Hollywood's Bleeding/08 - On The Road (feat. Meek Mill & Lil Baby).flac"
+Nov 17 19:21 : player: played "2019 - Hollywood's Bleeding/09 - Take What You Want (feat. Ozzy Osbourne & Travis Scott).flac"
+Nov 17 19:24 : player: played "2019 - Hollywood's Bleeding/10 - I'm Gonna Be.flac"
+Nov 17 19:27 : player: played "2019 - Hollywood's Bleeding/11 - Staring At The Sun (feat. SZA).flac"
+Nov 17 19:30 : player: played "2019 - Hollywood's Bleeding/12 - Sunflower (Spider-Man_ Into the Spider-Verse).flac"
+Nov 17 19:32 : player: played "2019 - Hollywood's Bleeding/13 - Internet.flac"
+Nov 17 19:35 : player: played "2019 - Hollywood's Bleeding/14 - Goodbyes (feat. Young Thug).flac"
+Nov 17 19:37 : player: played "2019 - Hollywood's Bleeding/15 - Myself.flac"
+Nov 17 19:40 : player: played "2019 - Hollywood's Bleeding/16 - I Know.flac"
+Nov 17 19:42 : player: played "2019 - Hollywood's Bleeding/17 - Wow.flac"
+Nov 17 19:45 : player: played "2019 - Hollywood's Bleeding/01 - Hollywood's Bleeding.flac"
+Nov 17 19:47 : player: played "2019 - Hollywood's Bleeding/02 - Saint-Tropez.flac"
+Nov 17 19:51 : player: played "2019 - Hollywood's Bleeding/03 - Enemies (feat. DaBaby).flac"
+Nov 17 19:53 : player: played "2019 - Hollywood's Bleeding/04 - Allergic.flac"
+Nov 17 19:57 : player: played "2019 - Hollywood's Bleeding/05 - A Thousand Bad Times.flac"
+Nov 17 20:01 : player: played "2019 - Hollywood's Bleeding/06 - Circles.flac"
+Nov 17 20:05 : player: played "2019 - Hollywood's Bleeding/07 - Die For Me (feat. Future & Halsey).flac"
+Nov 17 20:08 : player: played "2019 - Hollywood's Bleeding/08 - On The Road (feat. Meek Mill & Lil Baby).flac"
+Nov 17 20:31 : player: played "2019 - Hollywood's Bleeding/09 - Take What You Want (feat. Ozzy Osbourne & Travis Scott).flac"
+Nov 17 20:32 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 17 20:36 : player: played "Ephemeral/Mr.Kitty - Wait.flac"
+Nov 17 20:40 : player: played "Ephemeral/Mr.Kitty - From Liquid.flac"
+Nov 17 20:44 : player: played "Ephemeral/Mr.Kitty - My Weak Side.flac"
+Nov 17 20:48 : player: played "Ephemeral/Mr.Kitty - Disconnect Lover.flac"
+Nov 17 20:52 : player: played "Ephemeral/Mr.Kitty - The View Isn't the Same.flac"
+Nov 17 20:56 : player: played "Ephemeral/Mr.Kitty - Molt.flac"
+Nov 17 21:00 : player: played "Ephemeral/Mr.Kitty - Trauma.flac"
+Nov 18 16:14 : player: played "Ephemeral/Mr.Kitty - Melting Core.flac"
+Nov 18 16:15 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 18 16:15 : player: played "Ephemeral/Mr.Kitty - Wait.flac"
+Nov 18 16:16 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 18 16:17 : update: added Singles 2023-08-11/Alexander Stewart - i wish you cheated.flac
+Nov 18 16:20 : player: played "Singles 2023-08-11/Alexander Stewart - i wish you cheated.flac"
+Nov 18 16:24 : player: played "2018 - Dear/1-01 Just Add Water.flac"
+Nov 18 16:29 : player: played "2018 - Dear/1-04 Talk to Me.flac"
+Nov 18 16:33 : player: played "2018 - Dear/1-03 Dear.flac"
+Nov 18 16:37 : player: played "Ephemeral/Mr.Kitty - 0% Angel.flac"
+Nov 18 16:42 : player: played "Ephemeral/Mr.Kitty - I Did It All for You.flac"
+Nov 18 16:46 : player: played "Ephemeral/Mr.Kitty - The View Isn't the Same.flac"
+Nov 18 16:49 : player: played "Singles 2023-08-11/Alexander Stewart - i wish you cheated.flac"
+Nov 18 16:54 : player: played "2018 - Dear/1-01 Just Add Water.flac"
+Nov 18 16:58 : player: played "2018 - Dear/1-04 Talk to Me.flac"
+Nov 18 17:03 : player: played "2018 - Dear/1-03 Dear.flac"
+Nov 18 17:07 : player: played "Ephemeral/Mr.Kitty - 0% Angel.flac"
+Nov 18 17:12 : player: played "Ephemeral/Mr.Kitty - I Did It All for You.flac"
+Nov 18 17:16 : player: played "Ephemeral/Mr.Kitty - The View Isn't the Same.flac"
+Nov 18 23:12 : player: played "Singles 2023-08-11/Alexander Stewart - i wish you cheated.flac"
+Nov 23 21:32 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 23 21:32 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 23 21:34 : player: played "Singles 2023-08-11/Alexander Stewart - i wish you cheated.flac"
+Nov 23 21:38 : player: played "2018 - Dear/1-01 Just Add Water.flac"
+Nov 23 21:43 : player: played "2018 - Dear/1-04 Talk to Me.flac"
+Nov 23 21:44 : player: played "2018 - Dear/1-03 Dear.flac"
+Nov 23 21:47 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 23 21:51 : player: played "2018 - Dear/1-03 Dear.flac"
+Nov 23 21:55 : player: played "Ephemeral/Mr.Kitty - 0% Angel.flac"
+Nov 23 22:00 : player: played "Ephemeral/Mr.Kitty - I Did It All for You.flac"
+Nov 23 22:04 : player: played "Ephemeral/Mr.Kitty - The View Isn't the Same.flac"
+Nov 23 22:07 : player: played "Singles 2023-08-11/Alexander Stewart - i wish you cheated.flac"

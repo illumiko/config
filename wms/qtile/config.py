@@ -5,13 +5,32 @@ from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
+#
+# Vars
+#
+
+colors = {
+        "active":"#ff5563",
+        "active2":"#2b7b82",
+        "active_":"#000000",
+}
+
+
+#
+# Defaults & Wallpaper
+#
+
 mod = "mod4"
 terminal = guess_terminal()
 wallpaper = "~/dotfiles/wallpaper/Wallpaper/cities/home.jpeg"
-default_padding  = 40
+default_padding  = 10
 
 default_bg = "#222222"
 primary = "#ff5563"
+
+#
+# Key mapping
+#
 
 keys = [
     # A list of available commands that can be bound to keys can be found
@@ -36,6 +55,7 @@ keys = [
     Key([mod, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
     Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
     Key([mod], 'period', lazy.next_screen(), desc='Next monitor'),
+    Key([mod], "f", lazy.window.toggle_maximize(), desc="Toggle maximize"),
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
@@ -57,6 +77,10 @@ keys = [
     Key([mod, "shift"], "R", lazy.restart(), desc="Spawn a command using a prompt widget"),
     # Key([mod, "shift"], r, cmd_reload_config(), desc="")
 ]
+
+#
+# Workspaces
+#
 
 groups = [Group(i) for i in "123456789"]
 
@@ -83,10 +107,13 @@ for i in groups:
             #     desc="move focused window to group {}".format(i.name)),
         ]
     )
+#
+# Layouts
+#
 
 layouts = [
     layout.MonadTall(margin=10),
-    layout.MonadWide(),
+    layout.MonadWide(margin=10),
     layout.Zoomy(),
     layout.Floating(),
     # layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
@@ -106,6 +133,10 @@ layouts = [
     # layout.VerticalTile(),
 ]
 
+#
+# bar
+#
+
 widget_defaults = dict(
     font="Maple Mono NF Regular",
     fontsize=15,
@@ -120,12 +151,13 @@ screens = [
         bottom=bar.Bar(
             [
                 widget.GroupBox(
-                    # active = "#FF556E",
-                    highlight_method="line",
-                    this_current_screen_border = "#ff5563",
+                    highlight_method="block",
+                    this_current_screen_border = colors['active'],
+                    this_screen_border = colors['active_'],
+                    other_current_screen_border = colors['active2'],
+                    other_screen_border = colors['active_'],
                 ),
-                widget.CurrentLayout(padding=default_padding),
-                widget.Prompt(background="#ff556e",foreground="#222222"),
+                widget.Prompt(background="#ff556e",foreground="#111111"),
                 # widget.Pomodoro(),
                 widget.WindowName(foreground="#000000"),
                 widget.Chord(
@@ -136,18 +168,20 @@ screens = [
                 ),
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
-                widget.Systray(),
                 widget.PulseVolume(),
                 widget.Clock(
                     format="%Y-%m-%d %a %I:%M %p",
                     padding = default_padding,
                  ),
+                widget.BatteryIcon(scale=1),
                 widget.Battery(
                     foreground = "#60A4A2",
                     format = 'Bat:{percent:2.0%} {hour:d}:{min:02d}',
                     discharge_char = "",
                     full_char = "󰁹",
-                )
+                ),
+                widget.CurrentLayout(padding=default_padding),
+                widget.Systray(padding= default_padding),
                 # widget.QuickExit(),
             ],
             24,
@@ -209,6 +243,10 @@ wmname = "LG3D"
 
 # I wrote the hook below auto minimize = True line in the default config file.
 # This doesn't matter. But if you are new and confused, now you know :)
+
+#
+# Autostart
+#
 
 @hook.subscribe.startup_once
 def autostart():
