@@ -328,3 +328,9 @@ Nov 23 21:55 : player: played "Ephemeral/Mr.Kitty - 0% Angel.flac"
 Nov 23 22:00 : player: played "Ephemeral/Mr.Kitty - I Did It All for You.flac"
 Nov 23 22:04 : player: played "Ephemeral/Mr.Kitty - The View Isn't the Same.flac"
 Nov 23 22:07 : player: played "Singles 2023-08-11/Alexander Stewart - i wish you cheated.flac"
+Nov 24 13:07 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 24 22:54 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 24 22:54 : player: played "Ephemeral/Mr.Kitty - The View Isn't the Same.flac"
+Nov 24 22:54 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Nov 24 22:58 : player: played "Ephemeral/Mr.Kitty - Wait.flac"
+Nov 24 23:02 : player: played "Ephemeral/Mr.Kitty - From Liquid.flac"

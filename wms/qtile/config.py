@@ -9,11 +9,18 @@ from libqtile.utils import guess_terminal
 # Vars
 #
 
+# a0 - active followed by priority number; 0 being highest
+# b0 - block
 colors = {
-        "active":"#ff5563",
-        "active2":"#2b7b82",
-        "active_":"#000000",
+        "a":"#fb4934",
+        "a2":"#83a598",
+        "a_":"#222222",
+        "bg":"#32302f",
+        # "b0":"#427b58",
+        # "b0":"#076678",
+        "b1":"#8f3f71",
 }
+gap = 15
 
 
 #
@@ -22,7 +29,7 @@ colors = {
 
 mod = "mod4"
 terminal = guess_terminal()
-wallpaper = "~/dotfiles/wallpaper/Wallpaper/cities/home.jpeg"
+wallpaper = "~/dotfiles/wallpaper/Wallpaper/not_anime/wp7568896-fog-forest-mountain-photography-wallpapers.jpg"
 default_padding  = 10
 
 default_bg = "#222222"
@@ -83,6 +90,8 @@ keys = [
 #
 
 groups = [Group(i) for i in "123456789"]
+# groups = [Group(i) for i in "123456789"]
+
 
 for i in groups:
     keys.extend(
@@ -138,9 +147,10 @@ layouts = [
 #
 
 widget_defaults = dict(
-    font="Maple Mono NF Regular",
-    fontsize=15,
-    padding=3,
+    font="Maple Mono NF",
+    # font = "GoMono Nerd Font Mono",
+    fontsize=16,
+    padding=5,
 )
 extension_defaults = widget_defaults.copy()
 
@@ -151,15 +161,16 @@ screens = [
         bottom=bar.Bar(
             [
                 widget.GroupBox(
-                    highlight_method="block",
-                    this_current_screen_border = colors['active'],
-                    this_screen_border = colors['active_'],
-                    other_current_screen_border = colors['active2'],
-                    other_screen_border = colors['active_'],
+                    highlight_method="line",
+                    highlight_color = [ colors['bg'], colors['bg']],
+                    this_current_screen_border = colors['a'],
+                    this_screen_border = colors['a_'],
+                    other_current_screen_border = colors['a2'],
+                    other_screen_border = colors['a_'],
                 ),
-                widget.Prompt(background="#ff556e",foreground="#111111"),
+                widget.Prompt(background=colors['a'],foreground=colors['bg']),
                 # widget.Pomodoro(),
-                widget.WindowName(foreground="#000000"),
+                widget.WindowName(foreground=colors['a2']),
                 widget.Chord(
                     chords_colors={
                         "launch": ("#ff0000", "#ffffff"),
@@ -168,23 +179,79 @@ screens = [
                 ),
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
-                widget.PulseVolume(),
-                widget.Clock(
-                    format="%Y-%m-%d %a %I:%M %p",
-                    padding = default_padding,
-                 ),
-                widget.BatteryIcon(scale=1),
-                widget.Battery(
-                    foreground = "#60A4A2",
-                    format = 'Bat:{percent:2.0%} {hour:d}:{min:02d}',
-                    discharge_char = "",
-                    full_char = "󰁹",
+                widget.Spacer(length=gap),
+                widget.TextBox(
+                    fmt="󰕾",
+                    markup = True,
+                    foreground = colors['a'],
+                    fontsize=20
                 ),
-                widget.CurrentLayout(padding=default_padding),
+                widget.PulseVolume(),
+                widget.Spacer(length=gap),
+
+                widget.TextBox(
+                    fmt="󰃶",
+                    markup = True,
+                    foreground = colors['a'],
+                    fontsize=20
+                ),
+                widget.Clock(
+                    format="%Y-%m-%d %a",
+                 ),
+
+                widget.Spacer(length=gap),
+
+                widget.TextBox(
+                    fmt="",
+                    markup = True,
+                    foreground = colors['a'],
+                    fontsize=20
+                ),
+                widget.Clock(
+                    format="%I:%M %p",
+                 ),
+
+
+                widget.Spacer(length=gap),
+                # widget.BatteryIcon(scale=1),
+
+                widget.TextBox(
+                    fmt="󱊣",
+                    foreground = colors['a'],
+                ),
+                widget.Battery(
+                    # padding = default_padding,
+                    format = '{percent:2.0%}',
+                    discharge_char = '󰂌',
+                    full_char = '󱊣',
+                    charge_char = '󰂄',
+                    empty_char = '󰂎',
+                    show_short_text = True,
+                ),
+
+                widget.Spacer(length=gap),
+
+                widget.TextBox(
+                    fmt="󰂌",
+                    foreground = colors['a'],
+                ),
+                widget.Battery(
+                    format = '{hour:d}:{min:02d}',
+                ),
+                widget.Spacer(length=gap),
+                widget.TextBox(
+                        fmt="",
+                        foreground = colors['a'],
+                        fontsize=30
+                ),
+                widget.CurrentLayout(padding=default_padding,),
+                widget.Spacer(length=gap),
                 widget.Systray(padding= default_padding),
                 # widget.QuickExit(),
             ],
-            24,
+            30,
+            # background = "#00000000"
+            background = colors['bg']
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
