@@ -2,8 +2,8 @@ sw_volume: 100
 audio_device_state:1:My ALSA Device
 audio_device_state:1:my_fifo
 state: pause
-current: 2
-time: 19.047000
+current: 4
+time: 18.796000
 random: 0
 repeat: 1
 single: 0
@@ -12,32 +12,15 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Ephemeral/Mr.Kitty - Wait.flac
-1:Ephemeral/Mr.Kitty - From Liquid.flac
-2:Ephemeral/Mr.Kitty - My Weak Side.flac
-3:Ephemeral/Mr.Kitty - Disconnect Lover.flac
-4:Ephemeral/Mr.Kitty - The View Isn't the Same.flac
-5:Ephemeral/Mr.Kitty - Molt.flac
-6:Ephemeral/Mr.Kitty - Trauma.flac
-7:Ephemeral/Mr.Kitty - Melting Core.flac
-8:Ephemeral/Mr.Kitty - Empty Phases.flac
-9:Ephemeral/Mr.Kitty - I Want to Hurt Myself.flac
-10:Ephemeral/Mr.Kitty - Rain.flac
-11:Ephemeral/Mr.Kitty - Be Alive.flac
-12:Ephemeral/Mr.Kitty - 0% Angel.flac
-13:Ephemeral/Mr.Kitty - Destruction of Us.flac
-14:Ephemeral/Mr.Kitty - Cyst.flac
-15:Ephemeral/Mr.Kitty - Bullet.flac
-16:Ephemeral/Mr.Kitty - Immurement.flac
-17:Ephemeral/Mr.Kitty - In Your Arms.flac
-18:Ephemeral/Mr.Kitty - Died on the Land.flac
-19:Ephemeral/Mr.Kitty - Home.flac
-20:Ephemeral/Mr.Kitty - Anguish.flac
-21:Ephemeral/Mr.Kitty - Bloodletting.flac
-22:Ephemeral/Mr.Kitty - Not Dead Yet.flac
-23:Ephemeral/Mr.Kitty - I Want to Hurt You.flac
-24:Ephemeral/Mr.Kitty - Whip.flac
-25:Ephemeral/Mr.Kitty - Hornet.flac
-26:Ephemeral/Mr.Kitty - Sanctum of Ash.flac
-27:Ephemeral/Mr.Kitty - I Did It All for You.flac
+0:The Neighbourhood - I Love You/1 - The Neighbourhood - How.flac
+1:The Neighbourhood - I Love You/2 - The Neighbourhood - Afraid.flac
+2:The Neighbourhood - I Love You/3 - The Neighbourhood - Everybody's Watching Me (Uh Oh).flac
+3:The Neighbourhood - I Love You/4 - The Neighbourhood - Sweater Weather.flac
+4:The Neighbourhood - I Love You/5 - The Neighbourhood - Let It Go.flac
+5:The Neighbourhood - I Love You/6 - The Neighbourhood - Alleyways.flac
+6:The Neighbourhood - I Love You/7 - The Neighbourhood - W.D.Y.W.F.M_.flac
+7:The Neighbourhood - I Love You/8 - The Neighbourhood - Flawless.flac
+8:The Neighbourhood - I Love You/9 - The Neighbourhood - Female Robbery.flac
+9:The Neighbourhood - I Love You/10 - The Neighbourhood - Staying Up.flac
+10:The Neighbourhood - I Love You/11 - The Neighbourhood - Float.flac
 playlist_end

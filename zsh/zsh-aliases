@@ -4,7 +4,7 @@
 # alias g='lazygit'
 # alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
 
-
+alias discord="flatpak run com.discordapp.Discord"
 alias PJC="cd ~/Documents/Projects/course/" #dir shortcut 
 alias PJP="cd ~/Documents/Projects/personal/" #dir shortcut 
 alias PJT="cd ~/Documents/Projects/testing/" #dir shortcut 
@@ -32,6 +32,9 @@ alias ls="ls -X1h --color=always"
 alias ytmusic='/usr/bin/qtws /usr/share/qtws-apps/youtube-music/youtube-music.qtws --disable-seccomp-filter-sandbox --register-pepper-plugins="/usr/lib/qt/plugins/ppapi/libwidevinecdmadapter.so; application/x-ppapi-widevine-cdm"'
 alias mp="ncmpcpp"
 alias blt="bluetoothctl"
+#tablet-monitor swap
+alias MM='xsetwacom set "UGTABLET 6 inch PenTablet stylus" MapToOutput eDP'
+alias SM='xsetwacom set "UGTABLET 6 inch PenTablet stylus" MapToOutput HDMI-A-0'
 
 
 

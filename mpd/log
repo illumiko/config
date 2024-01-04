@@ -334,3 +334,60 @@ Nov 24 22:54 : player: played "Ephemeral/Mr.Kitty - The View Isn't the Same.flac
 Nov 24 22:54 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
 Nov 24 22:58 : player: played "Ephemeral/Mr.Kitty - Wait.flac"
 Nov 24 23:02 : player: played "Ephemeral/Mr.Kitty - From Liquid.flac"
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection terminated
+
+Dec 01 17:04 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Connection refused
+Dec 01 17:04 : player: played "Ephemeral/Mr.Kitty - My Weak Side.flac"
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection terminated
+
+Dec 01 17:04 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Connection refused
+Dec 01 17:04 : player: played "Ephemeral/Mr.Kitty - Wait.flac"
+Dec 01 17:06 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 01 17:10 : player: played "Ephemeral/Mr.Kitty - Wait.flac"
+Dec 01 17:13 : player: played "Ephemeral/Mr.Kitty - From Liquid.flac"
+Dec 01 17:17 : player: played "Ephemeral/Mr.Kitty - My Weak Side.flac"
+Dec 01 17:22 : player: played "Ephemeral/Mr.Kitty - Disconnect Lover.flac"
+Dec 01 17:26 : player: played "Ephemeral/Mr.Kitty - The View Isn't the Same.flac"
+Dec 02 07:41 : update: added The Neighbourhood - I Love You/1 - The Neighbourhood - How.flac
+Dec 02 07:41 : update: added The Neighbourhood - I Love You/10 - The Neighbourhood - Staying Up.flac
+Dec 02 07:43 : update: added The Neighbourhood - I Love You/11 - The Neighbourhood - Float.flac
+Dec 02 07:45 : update: added The Neighbourhood - I Love You/2 - The Neighbourhood - Afraid.flac
+Dec 02 07:47 : update: added The Neighbourhood - I Love You/3 - The Neighbourhood - Everybody's Watching Me (Uh Oh).flac
+Dec 02 07:49 : update: added The Neighbourhood - I Love You/4 - The Neighbourhood - Sweater Weather.flac
+Dec 02 07:50 : update: added The Neighbourhood - I Love You/5 - The Neighbourhood - Let It Go.flac
+Dec 02 07:52 : update: added The Neighbourhood - I Love You/6 - The Neighbourhood - Alleyways.flac
+Dec 02 07:54 : update: added The Neighbourhood - I Love You/7 - The Neighbourhood - W.D.Y.W.F.M_.flac
+Dec 02 07:56 : update: added The Neighbourhood - I Love You/8 - The Neighbourhood - Flawless.flac
+Dec 02 07:58 : update: added The Neighbourhood - I Love You/9 - The Neighbourhood - Female Robbery.flac
+Dec 02 08:21 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 02 08:26 : player: played "The Neighbourhood - I Love You/1 - The Neighbourhood - How.flac"
+Dec 02 08:31 : player: played "The Neighbourhood - I Love You/2 - The Neighbourhood - Afraid.flac"
+Dec 02 08:35 : player: played "The Neighbourhood - I Love You/3 - The Neighbourhood - Everybody's Watching Me (Uh Oh).flac"
+Dec 02 08:39 : player: played "The Neighbourhood - I Love You/4 - The Neighbourhood - Sweater Weather.flac"
+Dec 02 08:42 : player: played "The Neighbourhood - I Love You/5 - The Neighbourhood - Let It Go.flac"
+Dec 02 08:46 : player: played "The Neighbourhood - I Love You/6 - The Neighbourhood - Alleyways.flac"
+Dec 02 08:51 : player: played "The Neighbourhood - I Love You/7 - The Neighbourhood - W.D.Y.W.F.M_.flac"
+Dec 02 08:55 : player: played "The Neighbourhood - I Love You/8 - The Neighbourhood - Flawless.flac"
+Dec 02 09:19 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 02 09:22 : player: played "The Neighbourhood - I Love You/9 - The Neighbourhood - Female Robbery.flac"
+Dec 02 09:26 : player: played "The Neighbourhood - I Love You/10 - The Neighbourhood - Staying Up.flac"
+Dec 02 09:31 : player: played "The Neighbourhood - I Love You/11 - The Neighbourhood - Float.flac"
+Dec 02 09:35 : player: played "Ephemeral/Mr.Kitty - Wait.flac"
+Dec 02 09:39 : player: played "Ephemeral/Mr.Kitty - From Liquid.flac"
+Dec 02 09:43 : player: played "Ephemeral/Mr.Kitty - My Weak Side.flac"
+Dec 02 09:47 : player: played "Ephemeral/Mr.Kitty - Disconnect Lover.flac"
+Dec 05 16:16 : player: played "Ephemeral/Mr.Kitty - The View Isn't the Same.flac"
+Dec 08 14:35 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 08 14:35 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 08 14:35 : player: played "The Neighbourhood - I Love You/1 - The Neighbourhood - How.flac"
+Dec 08 14:35 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 08 14:40 : player: played "The Neighbourhood - I Love You/1 - The Neighbourhood - How.flac"
+Dec 08 14:44 : player: played "The Neighbourhood - I Love You/2 - The Neighbourhood - Afraid.flac"
+Dec 08 14:48 : player: played "The Neighbourhood - I Love You/3 - The Neighbourhood - Everybody's Watching Me (Uh Oh).flac"
+Dec 08 14:52 : player: played "The Neighbourhood - I Love You/4 - The Neighbourhood - Sweater Weather.flac"
+Dec 11 21:34 : player: played "The Neighbourhood - I Love You/5 - The Neighbourhood - Let It Go.flac"
+Dec 27 23:04 : player: played "The Neighbourhood - I Love You/5 - The Neighbourhood - Let It Go.flac"
+ALSA lib pulse.c:242:(pulse_connect) PulseAudio: Unable to connect: Connection terminated
+
+Dec 31 20:07 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Connection refused
+Jan 04 00:45 : player: played "The Neighbourhood - I Love You/5 - The Neighbourhood - Let It Go.flac"
