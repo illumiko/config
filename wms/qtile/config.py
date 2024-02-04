@@ -29,7 +29,7 @@ gap = 15
 
 mod = "mod4"
 terminal = guess_terminal()
-wallpaper = "~/dotfiles/wallpaper/Wallpaper/rando/oregairu.jpg"
+wallpaper = "~/dotfiles/wallpaper/Wallpaper/yourname/6.png"
 default_padding  = 10
 
 default_bg = "#222222"
