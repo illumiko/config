@@ -121,15 +121,15 @@ for i in groups:
 #
 
 layouts = [
+    layout.Bsp(margin=15),
+    layout.Zoomy(),
     layout.MonadTall(margin=10),
     layout.MonadWide(margin=10),
-    layout.Zoomy(),
     layout.Floating(),
     # layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
     # layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
-    # layout.Bsp(),
     # layout.Matrix(),
     # layout.RatioTile(),
     # layout.Tile(),
@@ -160,6 +160,13 @@ screens = [
         wallpaper_mode = "fill",
         bottom=bar.Bar(
             [
+                widget.Spacer(length=gap),
+                widget.TextBox(
+                        fmt="",
+                        foreground = colors['a'],
+                        fontsize=30
+                ),
+                widget.CurrentLayout(padding=default_padding,),
                 widget.GroupBox(
                     highlight_method="line",
                     highlight_color = [ colors['bg'], colors['bg']],
@@ -238,13 +245,6 @@ screens = [
                 widget.Battery(
                     format = '{hour:d}:{min:02d}',
                 ),
-                widget.Spacer(length=gap),
-                widget.TextBox(
-                        fmt="",
-                        foreground = colors['a'],
-                        fontsize=30
-                ),
-                widget.CurrentLayout(padding=default_padding,),
                 widget.Spacer(length=gap),
                 widget.Systray(padding= default_padding),
                 # widget.QuickExit(),
@@ -262,6 +262,13 @@ screens = [
 
         bottom=bar.Bar(
             [
+                widget.Spacer(length=gap),
+                widget.TextBox(
+                        fmt="",
+                        foreground = colors['a'],
+                        fontsize=30
+                ),
+                widget.CurrentLayout(padding=default_padding,),
                 widget.GroupBox(
                     highlight_method="line",
                     highlight_color = [ colors['bg'], colors['bg']],
@@ -341,14 +348,6 @@ screens = [
                     format = '{hour:d}:{min:02d}',
                 ),
                 widget.Spacer(length=gap),
-                widget.TextBox(
-                        fmt="",
-                        foreground = colors['a'],
-                        fontsize=30
-                ),
-                widget.CurrentLayout(padding=default_padding,),
-                widget.Spacer(length=gap),
-                widget.Systray(padding= default_padding),
                 # widget.QuickExit(),
             ],
             30,
