@@ -83,6 +83,46 @@ keys = [
     Key([mod], "d", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
     Key([mod, "shift"], "R", lazy.restart(), desc="Spawn a command using a prompt widget"),
     # Key([mod, "shift"], r, cmd_reload_config(), desc="")
+    Key(
+    [mod],
+    "q",
+    lazy.group["7"].toscreen(),
+    desc="Switch to group {}".format("7"),
+    ),
+    # mod1 + shift + letter of group = switch to & move focused window to group
+    Key(
+        [mod, "shift"],
+        "q",
+        lazy.window.togroup("7", switch_group=True),
+        desc="Switch to & move focused window to group {}".format("7"),
+    ),
+
+    Key(
+    [mod],
+    "w",
+    lazy.group["8"].toscreen(),
+    desc="Switch to group {}".format("8"),
+    ),
+    # mod1 + shift + letter of group = switch to & move focused window to group
+    Key(
+        [mod, "shift"],
+        "w",
+        lazy.window.togroup("8", switch_group=True),
+        desc="Switch to & move focused window to group {}".format("8"),
+    ),
+    Key(
+    [mod],
+    "e",
+    lazy.group["9"].toscreen(),
+    desc="Switch to group {}".format("9"),
+    ),
+    # mod1 + shift + letter of group = switch to & move focused window to group
+    Key(
+        [mod, "shift"],
+        "e",
+        lazy.window.togroup("9", switch_group=True),
+        desc="Switch to & move focused window to group {}".format("9"),
+    ),
 ]
 
 #
@@ -92,6 +132,19 @@ keys = [
 groups = [Group(i) for i in "123456789"]
 # groups = [Group(i) for i in "123456789"]
 
+## Doesnt work as intended:
+def letter_to_number(key_pressed):
+    if key_pressed.isalpha():
+        to_number = {
+                "q":"7",
+                "w":"8",
+                "e":"9"
+        }
+        key_want = to_number[key_pressed]
+        return key_want
+    else:
+        return key_pressed
+
 
 for i in groups:
     keys.extend(
@@ -99,16 +152,16 @@ for i in groups:
             # mod1 + letter of group = switch to group
             Key(
                 [mod],
-                i.name,
-                lazy.group[i.name].toscreen(),
-                desc="Switch to group {}".format(i.name),
+                letter_to_number(i.name),
+                lazy.group[letter_to_number(i.name)].toscreen(),
+                desc="Switch to group {}".format(letter_to_number(i.name)),
             ),
             # mod1 + shift + letter of group = switch to & move focused window to group
             Key(
                 [mod, "shift"],
                 i.name,
                 lazy.window.togroup(i.name, switch_group=True),
-                desc="Switch to & move focused window to group {}".format(i.name),
+                desc="Switch to & move focused window to group {}".format(letter_to_number(i.name)),
             ),
             # Or, use below if you prefer not to switch to that group.
             # # mod1 + shift + letter of group = move focused window to group

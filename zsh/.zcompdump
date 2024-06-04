@@ -1,4 +1,4 @@
-#files: 808	version: 5.9
+#files: 813	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -148,6 +148,7 @@ _comps=(
 'ceilometer' '_openstack'
 'certtool' '_gnutls'
 'cftp' '_twisted'
+'chafa' '_chafa'
 'chage' '_users'
 'chattr' '_chattr'
 'chcon' '_chcon'
@@ -795,6 +796,7 @@ _comps=(
 'mpc' '_mpc'
 'mplayer' '_mplayer'
 'mpstat' '_sysstat'
+'mpv' '_mpv'
 'mr' '_myrepos'
 'mrd' '_mtools'
 'mread' '_mtools'
@@ -1097,6 +1099,8 @@ _comps=(
 'schedtool' '_schedtool'
 'scons' '_scons'
 'scp' '_ssh'
+'scrcpy' '_scrcpy'
+'scrcpy.exe' '_scrcpy'
 'screen' '_screen'
 'script' '_script'
 'scriptreplay' '_script'
@@ -1497,6 +1501,7 @@ _comps=(
 'ypwhich' '_yp'
 'ypxfr' '_yp'
 'ytalk' '_other_accounts'
+'yt-dlp' '_yt-dlp'
 'zargs' '_zargs'
 'zcalc' '_zcalc'
 '-zcalc-line-' '_zcalc_line'
@@ -1659,14 +1664,15 @@ bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
 autoload -Uz _bluetoothctl _bootctl _busctl _bwrap _cargo \
-            _coredumpctl _curl _dotnet _flatpak _hostnamectl \
-            _img2sixel _journalctl _kernel-install _kitty _libinput \
-            _localectl _loginctl _machinectl _mkinitcpio _networkctl \
-            _oomctl _pacman _paru _pulseaudio _resolvectl \
-            _sd_hosts_or_user_at_host _sd_machines _sd_outputmodes _sd_unit_files _starship \
-            _systemctl _systemd _systemd-analyze _systemd-delta _systemd-inhibit \
-            _systemd-nspawn _systemd-path _systemd-run _systemd-tmpfiles _timedatectl \
-            _udevadm _udisks2 _wpctl _cdr _all_labels \
+            _chafa _coredumpctl _curl _dotnet _flatpak \
+            _hostnamectl _img2sixel _journalctl _kernel-install _kitty \
+            _libinput _localectl _loginctl _machinectl _mkinitcpio \
+            _mpv _networkctl _oomctl _pacman _paru \
+            _pip _pulseaudio _resolvectl _scrcpy _sd_hosts_or_user_at_host \
+            _sd_machines _sd_outputmodes _sd_unit_files _starship _systemctl \
+            _systemd _systemd-analyze _systemd-delta _systemd-inhibit _systemd-nspawn \
+            _systemd-path _systemd-run _systemd-tmpfiles _timedatectl _udevadm \
+            _udisks2 _wpctl _yt-dlp _cdr _all_labels \
             _all_matches _alternative _approximate _arg_compile _arguments \
             _bash_completions _cache_invalid _call_function _combination _complete \
             _complete_debug _complete_help _complete_help_generic _complete_tag _comp_locale \
