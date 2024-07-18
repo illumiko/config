@@ -36,6 +36,9 @@ alias blt="bluetoothctl"
 alias MM='xsetwacom set "UGTABLET 6 inch PenTablet stylus" MapToOutput eDP'
 alias SM='xsetwacom set "UGTABLET 6 inch PenTablet stylus" MapToOutput HDMI-A-0'
 
+fzf_cd(){cd $(fzf --walker=dir --walker-root=$HOME)}
+alias cdf="fzf_cd"
+
 
 
 alias cp="cp -i"

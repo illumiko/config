@@ -1,13 +1,14 @@
 from libqtile import bar, layout, widget, hook
+from libqtile.backend.wayland import InputConfig
 import os
 import subprocess
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
-#
-# Vars
-#
+#######################################
+# Defaults
+#######################################
 
 # a0 - active followed by priority number; 0 being highest
 # b0 - block
@@ -21,12 +22,6 @@ colors = {
         "b1":"#8f3f71",
 }
 gap = 15
-
-
-#
-# Defaults & Wallpaper
-#
-
 mod = "mod4"
 terminal = guess_terminal()
 wallpaper = "~/dotfiles/wallpaper/Wallpaper/yourname/6.png"
@@ -35,9 +30,9 @@ default_padding  = 10
 default_bg = "#222222"
 primary = "#ff5563"
 
-#
+#######################################
 # Key mapping
-#
+#######################################
 
 keys = [
     # A list of available commands that can be bound to keys can be found
@@ -125,9 +120,9 @@ keys = [
     ),
 ]
 
-#
-# Workspaces
-#
+#######################################
+# Workspace
+#######################################
 
 groups = [Group(i) for i in "123456789"]
 # groups = [Group(i) for i in "123456789"]
@@ -169,9 +164,10 @@ for i in groups:
             #     desc="move focused window to group {}".format(i.name)),
         ]
     )
-#
+
+#######################################
 # Layouts
-#
+#######################################
 
 layouts = [
     layout.Bsp(margin=15),
@@ -195,9 +191,10 @@ layouts = [
     # layout.VerticalTile(),
 ]
 
-#
-# bar
-#
+
+#######################################
+# Bars || Screen || Widgets
+#######################################
 
 widget_defaults = dict(
     font="Maple Mono NF",
@@ -206,210 +203,108 @@ widget_defaults = dict(
     padding=5,
 )
 extension_defaults = widget_defaults.copy()
+widgets = [
+        widget.CurrentScreen(),
+        widget.Spacer(length=gap),
+        widget.TextBox(
+                fmt="",
+                foreground = colors['a'],
+                fontsize=30
+        ),
+        widget.CurrentLayout(padding=default_padding,),
+        widget.GroupBox(
+            highlight_method="line",
+            highlight_color = [ colors['bg'], colors['bg']],
+            this_current_screen_border = colors['a'],
+            this_screen_border = colors['a_'],
+            other_current_screen_border = colors['a2'],
+            other_screen_border = colors['a_'],
+        ),
+        widget.Prompt(background=colors['a'],foreground=colors['bg']),
+        # widget.Pomodoro(),
+        widget.WindowName(foreground=colors['a2']),
+        widget.Chord(
+            chords_colors={
+                "launch": ("#ff0000", "#ffffff"),
+            },
+            name_transform=lambda name: name.upper(),
+        ),
+        # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
+        # widget.StatusNotifier(),
+        widget.Spacer(length=gap),
+        widget.TextBox(
+            fmt="󰕾",
+            markup = True,
+            foreground = colors['a'],
+            fontsize=20
+        ),
+        widget.Volume(),
+        widget.Spacer(length=gap),
+
+        widget.TextBox(
+            fmt="󰃶",
+            markup = True,
+            foreground = colors['a'],
+            fontsize=20
+        ),
+        widget.Clock(
+            format="%Y-%m-%d %a",
+         ),
+
+        widget.Spacer(length=gap),
+
+        widget.TextBox(
+            fmt="",
+            markup = True,
+            foreground = colors['a'],
+            fontsize=20
+        ),
+        widget.Clock(
+            format="%I:%M %p",
+         ),
+
+
+        widget.Spacer(length=gap),
+        # widget.BatteryIcon(scale=1),
+
+        widget.TextBox(
+            fmt="󱊣",
+            foreground = colors['a'],
+        ),
+        widget.Battery(
+            # padding = default_padding,
+            format = '{percent:2.0%}',
+            discharge_char = '󰂌',
+            full_char = '󱊣',
+            charge_char = '󰂄',
+            empty_char = '󰂎',
+            show_short_text = True,
+        ),
+
+        widget.Spacer(length=gap),
+
+        widget.TextBox(
+            fmt="󰂌",
+            foreground = colors['a'],
+        ),
+        widget.Battery(
+            format = '{hour:d}:{min:02d}',
+        ),
+        widget.Spacer(length=gap),
+        widget.Systray(padding= default_padding),
+        # widget.QuickExit(),
+        ]
 
 screens = [
     Screen(
         wallpaper = wallpaper,
         wallpaper_mode = "fill",
-        bottom=bar.Bar(
-            [
-                widget.Spacer(length=gap),
-                widget.TextBox(
-                        fmt="",
-                        foreground = colors['a'],
-                        fontsize=30
-                ),
-                widget.CurrentLayout(padding=default_padding,),
-                widget.GroupBox(
-                    highlight_method="line",
-                    highlight_color = [ colors['bg'], colors['bg']],
-                    this_current_screen_border = colors['a'],
-                    this_screen_border = colors['a_'],
-                    other_current_screen_border = colors['a2'],
-                    other_screen_border = colors['a_'],
-                ),
-                widget.Prompt(background=colors['a'],foreground=colors['bg']),
-                # widget.Pomodoro(),
-                widget.WindowName(foreground=colors['a2']),
-                widget.Chord(
-                    chords_colors={
-                        "launch": ("#ff0000", "#ffffff"),
-                    },
-                    name_transform=lambda name: name.upper(),
-                ),
-                # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
-                # widget.StatusNotifier(),
-                widget.Spacer(length=gap),
-                widget.TextBox(
-                    fmt="󰕾",
-                    markup = True,
-                    foreground = colors['a'],
-                    fontsize=20
-                ),
-                widget.PulseVolume(),
-                widget.Spacer(length=gap),
-
-                widget.TextBox(
-                    fmt="󰃶",
-                    markup = True,
-                    foreground = colors['a'],
-                    fontsize=20
-                ),
-                widget.Clock(
-                    format="%Y-%m-%d %a",
-                 ),
-
-                widget.Spacer(length=gap),
-
-                widget.TextBox(
-                    fmt="",
-                    markup = True,
-                    foreground = colors['a'],
-                    fontsize=20
-                ),
-                widget.Clock(
-                    format="%I:%M %p",
-                 ),
-
-
-                widget.Spacer(length=gap),
-                # widget.BatteryIcon(scale=1),
-
-                widget.TextBox(
-                    fmt="󱊣",
-                    foreground = colors['a'],
-                ),
-                widget.Battery(
-                    # padding = default_padding,
-                    format = '{percent:2.0%}',
-                    discharge_char = '󰂌',
-                    full_char = '󱊣',
-                    charge_char = '󰂄',
-                    empty_char = '󰂎',
-                    show_short_text = True,
-                ),
-
-                widget.Spacer(length=gap),
-
-                widget.TextBox(
-                    fmt="󰂌",
-                    foreground = colors['a'],
-                ),
-                widget.Battery(
-                    format = '{hour:d}:{min:02d}',
-                ),
-                widget.Spacer(length=gap),
-                widget.Systray(padding= default_padding),
-                # widget.QuickExit(),
-            ],
-            30,
-            # background = "#00000000"
-            background = colors['bg']
-            # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
-            # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
-        ),
+        top=bar.Bar(widgets , 30,),
     ),
     Screen(
         wallpaper = wallpaper,
         wallpaper_mode = "fill",
-
-        bottom=bar.Bar(
-            [
-                widget.Spacer(length=gap),
-                widget.TextBox(
-                        fmt="",
-                        foreground = colors['a'],
-                        fontsize=30
-                ),
-                widget.CurrentLayout(padding=default_padding,),
-                widget.GroupBox(
-                    highlight_method="line",
-                    highlight_color = [ colors['bg'], colors['bg']],
-                    this_current_screen_border = colors['a'],
-                    this_screen_border = colors['a_'],
-                    other_current_screen_border = colors['a2'],
-                    other_screen_border = colors['a_'],
-                ),
-                widget.Prompt(background=colors['a'],foreground=colors['bg']),
-                # widget.Pomodoro(),
-                widget.WindowName(foreground=colors['a2']),
-                widget.Chord(
-                    chords_colors={
-                        "launch": ("#ff0000", "#ffffff"),
-                    },
-                    name_transform=lambda name: name.upper(),
-                ),
-                # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
-                # widget.StatusNotifier(),
-                widget.Spacer(length=gap),
-                widget.TextBox(
-                    fmt="󰕾",
-                    markup = True,
-                    foreground = colors['a'],
-                    fontsize=20
-                ),
-                widget.PulseVolume(),
-                widget.Spacer(length=gap),
-
-                widget.TextBox(
-                    fmt="󰃶",
-                    markup = True,
-                    foreground = colors['a'],
-                    fontsize=20
-                ),
-                widget.Clock(
-                    format="%Y-%m-%d %a",
-                 ),
-
-                widget.Spacer(length=gap),
-
-                widget.TextBox(
-                    fmt="",
-                    markup = True,
-                    foreground = colors['a'],
-                    fontsize=20
-                ),
-                widget.Clock(
-                    format="%I:%M %p",
-                 ),
-
-
-                widget.Spacer(length=gap),
-                # widget.BatteryIcon(scale=1),
-
-                widget.TextBox(
-                    fmt="󱊣",
-                    foreground = colors['a'],
-                ),
-                widget.Battery(
-                    # padding = default_padding,
-                    format = '{percent:2.0%}',
-                    discharge_char = '󰂌',
-                    full_char = '󱊣',
-                    charge_char = '󰂄',
-                    empty_char = '󰂎',
-                    show_short_text = True,
-                ),
-
-                widget.Spacer(length=gap),
-
-                widget.TextBox(
-                    fmt="󰂌",
-                    foreground = colors['a'],
-                ),
-                widget.Battery(
-                    format = '{hour:d}:{min:02d}',
-                ),
-                widget.Spacer(length=gap),
-                # widget.QuickExit(),
-            ],
-            30,
-            # background = "#00000000"
-            background = colors['bg']
-            # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
-            # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
-        ),
-    )
+        top=bar.Bar(widgets, 30, background = colors['bg']))
 ]
 
 # Drag floating layouts.
@@ -434,6 +329,8 @@ floating_layout = layout.Floating(
         Match(wm_class="ssh-askpass"),  # ssh-askpass
         Match(title="branchdialog"),  # gitk
         Match(title="pinentry"),  # GPG key password entry
+        Match(title="dunst"),
+        Match(title="Dunst"),
     ]
 )
 auto_fullscreen = True
@@ -445,7 +342,15 @@ reconfigure_screens = True
 auto_minimize = True
 
 # When using the Wayland backend, this can be used to configure input devices.
-wl_input_rules = None
+wl_input_rules = {
+        "type:keyboard": InputConfig(
+            kb_repeat_delay=290, 
+            kb_repeat_rate=70,
+            kb_options = "caps:backspace",
+            sensitivity = 0.5,
+
+            ),
+}
 
 # XXX: Gasp! We're lying here. In fact, nobody really uses or cares about this
 # string besides java UI toolkits; you can see several discussions on the
@@ -469,3 +374,4 @@ wmname = "LG3D"
 def autostart():
     home = os.path.expanduser('~/dotfiles/wms/qtile/autostart.sh')
     subprocess.Popen([home])
+    subprocess.run(["systemctl","--user","import-environment","XDG_SESSION_PATH","WAYLAND_DISPLAY",])
