@@ -2,5 +2,5 @@
 @define-color primary  #60A4A2;
 @define-color color1   #FF556E;
 /* @define-color secondary # */
-@define-color background rgba(12,12,12,0.4);
+@define-color background rgba(12,12,12,0.95);
 @define-color foreground-alt   #c5c9c5;
