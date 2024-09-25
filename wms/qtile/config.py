@@ -24,7 +24,7 @@ colors = {
 gap = 15
 mod = "mod4"
 terminal = guess_terminal()
-wallpaper = "~/dotfiles/wallpaper/Wallpaper/yourname/6.png"
+wallpaper = "~/dotfiles/wallpaper/Wallpaper/cities/masked_person_looking.png"
 default_padding  = 10
 
 default_bg = "#222222"
@@ -43,6 +43,10 @@ keys = [
     Key([mod], "j", lazy.layout.down(), desc="Move focus down"),
     Key([mod], "k", lazy.layout.up(), desc="Move focus up"),
     Key([mod], "space", lazy.layout.next(), desc="Move window focus to other window"),
+    Key([mod], "F4",lazy.spawn("brightnessctl -c 'backlight' set 10%+")),
+    Key([mod], "F5",lazy.spawn("brightnessctl -c 'backlight' set 10%-")),
+    Key([mod], "F2",lazy.spawn("amixer -c 1 -- sset Master playback 5%-")),
+    Key([mod], "F3",lazy.spawn("amixer -c 1 -- sset Master playback 5%+")),
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
     Key([mod, "shift"], "h", lazy.layout.shuffle_left(), desc="Move window to the left"),
@@ -170,11 +174,11 @@ for i in groups:
 #######################################
 
 layouts = [
-    layout.Bsp(margin=15),
-    layout.Zoomy(),
-    layout.MonadTall(margin=10),
-    layout.MonadWide(margin=10),
-    layout.Floating(),
+    layout.Bsp(margin=15, border_width=3,border_focus="#ffffff"),
+    layout.Zoomy(border_width=5),
+    layout.MonadTall(margin=10,border_width=5),
+    layout.MonadWide(margin=10,border_width=5),
+    layout.Floating(border_width=5),
     # layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
     # layout.Max(),
     # Try more layouts by unleashing below layouts.
@@ -203,108 +207,107 @@ widget_defaults = dict(
     padding=5,
 )
 extension_defaults = widget_defaults.copy()
-widgets = [
-        widget.CurrentScreen(),
-        widget.Spacer(length=gap),
-        widget.TextBox(
-                fmt="",
+def widgets():
+    return [
+            widget.CurrentScreen(active_text="",inactive_text=""),
+            widget.Spacer(length=gap),
+            widget.TextBox(
+                    fmt="",
+                    foreground = colors['a'],
+                    fontsize=30
+            ),
+            widget.CurrentLayout(padding=default_padding,),
+            widget.GroupBox(
+                highlight_method="line",
+                highlight_color = [ colors['bg'], colors['bg']],
+                this_current_screen_border = colors['a'],
+                this_screen_border = colors['a_'],
+                other_current_screen_border = colors['a2'],
+                other_screen_border = colors['a_'],
+            ),
+            widget.Prompt(background=colors['a'],foreground=colors['bg']),
+            # widget.Pomodoro(),
+            widget.WindowName(foreground=colors['a2']),
+            widget.Chord(
+                chords_colors={
+                    "launch": ("#ff0000", "#ffffff"),
+                },
+                name_transform=lambda name: name.upper(),
+            ),
+            # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
+            # widget.StatusNotifier(),
+            widget.Spacer(length=gap),
+            widget.TextBox(
+                fmt="󰕾",
+                markup = True,
                 foreground = colors['a'],
-                fontsize=30
-        ),
-        widget.CurrentLayout(padding=default_padding,),
-        widget.GroupBox(
-            highlight_method="line",
-            highlight_color = [ colors['bg'], colors['bg']],
-            this_current_screen_border = colors['a'],
-            this_screen_border = colors['a_'],
-            other_current_screen_border = colors['a2'],
-            other_screen_border = colors['a_'],
-        ),
-        widget.Prompt(background=colors['a'],foreground=colors['bg']),
-        # widget.Pomodoro(),
-        widget.WindowName(foreground=colors['a2']),
-        widget.Chord(
-            chords_colors={
-                "launch": ("#ff0000", "#ffffff"),
-            },
-            name_transform=lambda name: name.upper(),
-        ),
-        # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
-        # widget.StatusNotifier(),
-        widget.Spacer(length=gap),
-        widget.TextBox(
-            fmt="󰕾",
-            markup = True,
-            foreground = colors['a'],
-            fontsize=20
-        ),
-        widget.Volume(),
-        widget.Spacer(length=gap),
+                fontsize=20
+            ),
+            widget.Volume(),
+            widget.Spacer(length=gap),
 
-        widget.TextBox(
-            fmt="󰃶",
-            markup = True,
-            foreground = colors['a'],
-            fontsize=20
-        ),
-        widget.Clock(
-            format="%Y-%m-%d %a",
-         ),
+            widget.TextBox(
+                fmt="󰃶",
+                markup = True,
+                foreground = colors['a'],
+                fontsize=20
+            ),
+            widget.Clock(
+                format="%Y-%m-%d %a",
+             ),
 
-        widget.Spacer(length=gap),
+            widget.Spacer(length=gap),
 
-        widget.TextBox(
-            fmt="",
-            markup = True,
-            foreground = colors['a'],
-            fontsize=20
-        ),
-        widget.Clock(
-            format="%I:%M %p",
-         ),
+            widget.TextBox(
+                fmt="",
+                markup = True,
+                foreground = colors['a'],
+                fontsize=20
+            ),
+            widget.Clock(
+                format="%I:%M %p",
+             ),
 
 
-        widget.Spacer(length=gap),
-        # widget.BatteryIcon(scale=1),
+            widget.Spacer(length=gap),
+            # widget.BatteryIcon(scale=1),
 
-        widget.TextBox(
-            fmt="󱊣",
-            foreground = colors['a'],
-        ),
-        widget.Battery(
-            # padding = default_padding,
-            format = '{percent:2.0%}',
-            discharge_char = '󰂌',
-            full_char = '󱊣',
-            charge_char = '󰂄',
-            empty_char = '󰂎',
-            show_short_text = True,
-        ),
+            widget.TextBox(
+                fmt="󱊣",
+                foreground = colors['a'],
+            ),
+            widget.Battery(
+                # padding = default_padding,
+                format = '{percent:2.0%}',
+                discharge_char = '󰂌',
+                full_char = '󱊣',
+                charge_char = '󰂄',
+                empty_char = '󰂎',
+                show_short_text = True,
+            ),
 
-        widget.Spacer(length=gap),
+            widget.Spacer(length=gap),
 
-        widget.TextBox(
-            fmt="󰂌",
-            foreground = colors['a'],
-        ),
-        widget.Battery(
-            format = '{hour:d}:{min:02d}',
-        ),
-        widget.Spacer(length=gap),
-        widget.Systray(padding= default_padding),
-        # widget.QuickExit(),
-        ]
+            widget.TextBox(
+                fmt="󰂌",
+                foreground = colors['a'],
+            ),
+            widget.Battery(
+                format = '{hour:d}:{min:02d}',
+            ),
+            # widget.QuickExit(),
+            ]
 
 screens = [
     Screen(
         wallpaper = wallpaper,
         wallpaper_mode = "fill",
-        top=bar.Bar(widgets , 30,),
+        top=bar.Bar(widgets() , 30,),
     ),
     Screen(
         wallpaper = wallpaper,
         wallpaper_mode = "fill",
-        top=bar.Bar(widgets, 30, background = colors['bg']))
+        top=bar.Bar(widgets(), 30))
 ]
 
 # Drag floating layouts.
