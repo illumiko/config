@@ -12,15 +12,30 @@ from libqtile.utils import guess_terminal
 
 # a0 - active followed by priority number; 0 being highest
 # b0 - block
-colors = {
-        "a":"#fb4934",
-        "a2":"#83a598",
-        "a_":"#222222",
-        "bg":"#32302f",
-        # "b0":"#427b58",
-        # "b0":"#076678",
-        "b1":"#8f3f71",
-}
+theme = 1
+colors = {}
+if theme == 0:
+    colors = {
+            "a":"#fb4934",
+            "a2":"#83a598",
+            "a_":"#222222",
+            "fg":"#000000",
+            "bg":"#ffffff",
+            # "b0":"#427b58",
+            # "b0":"#076678",
+            "b1":"#8f3f71",
+    }
+elif theme == 1:
+    colors = {
+            "a":"#fb4934",
+            "a2":"#83a598",
+            "a_":"#222222",
+            "bg":"#000000",
+            "fg":"#ffffff",
+            # "b0":"#427b58",
+            # "b0":"#076678",
+            "b1":"#8f3f71",
+    }
 gap = 15
 mod = "mod4"
 terminal = guess_terminal()
@@ -31,7 +46,7 @@ default_bg = "#222222"
 primary = "#ff5563"
 
 #######################################
-# Key mapping
+# Keybinds
 #######################################
 
 keys = [
@@ -79,7 +94,7 @@ keys = [
     Key([mod,"shift"], "x", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    Key([mod], "d", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
+    Key([mod], "d", lazy.spawn("rofi -show run -m -1"), desc="Spawn a command using a prompt widget"),
     Key([mod, "shift"], "R", lazy.restart(), desc="Spawn a command using a prompt widget"),
     # Key([mod, "shift"], r, cmd_reload_config(), desc="")
     Key(
@@ -243,7 +258,7 @@ def widgets():
                 foreground = colors['a'],
                 fontsize=20
             ),
-            widget.Volume(),
+            widget.Volume( foreground=colors['fg']),
             widget.Spacer(length=gap),
 
             widget.TextBox(
@@ -254,6 +269,7 @@ def widgets():
             ),
             widget.Clock(
                 format="%Y-%m-%d %a",
+                foreground=colors['fg']
              ),
 
             widget.Spacer(length=gap),
@@ -266,6 +282,7 @@ def widgets():
             ),
             widget.Clock(
                 format="%I:%M %p",
+                foreground=colors['fg']
              ),
 
 
@@ -284,6 +301,7 @@ def widgets():
                 charge_char = '󰂄',
                 empty_char = '󰂎',
                 show_short_text = True,
+                foreground=colors['fg']
             ),
 
             widget.Spacer(length=gap),
@@ -294,6 +312,7 @@ def widgets():
             ),
             widget.Battery(
                 format = '{hour:d}:{min:02d}',
+                foreground=colors['fg']
             ),
             # widget.QuickExit(),
             ]
@@ -302,12 +321,12 @@ screens = [
     Screen(
         wallpaper = wallpaper,
         wallpaper_mode = "fill",
-        top=bar.Bar(widgets() , 30,),
+        bottom=bar.Bar(widgets() , 30,background=colors['bg']),
     ),
     Screen(
         wallpaper = wallpaper,
         wallpaper_mode = "fill",
-        top=bar.Bar(widgets(), 30))
+        bottom=bar.Bar(widgets(), 30))
 ]
 
 # Drag floating layouts.
