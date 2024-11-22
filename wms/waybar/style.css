@@ -26,7 +26,7 @@
 #tray,
 #backlight {
     /* font-size: 18px; */
-    padding: 0 15px
+    padding: 0 15px;
 }
 
 
@@ -96,7 +96,7 @@ tooltip {
 }
 
 #bluetooth {
-    color: @background;
+    color: #ffffff;
 } 
 
 #pulseaudio.microphone {

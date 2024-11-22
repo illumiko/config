@@ -13,7 +13,7 @@
     // "margin-left": 15,
     "fixed-center":true,
     // "width":500,
-    "modules-left": ["memory","hyprland/window"],
+    "modules-left": ["memory","bluetooth"],
     "modules-center":["clock"],
     "modules-right": ["hyprland/workspaces", "custom/power_profile","pulseaudio","battery","network","tray"],
     // "modules-center": ["clock","custom/music","network", "custom/power_profile","battery","backlight","pulseaudio","tray"],
@@ -178,12 +178,14 @@
         "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
     },
 
-    "bluetooth": {
-	    "format": "x",
-	    "format-disabled": "", // an empty format will hide the module
-	    "format-connected": " {num_connections}",
-	    "tooltip-format": "{device_alias}",
-	    "tooltip-format-connected": " {device_enumerate}",
-	    "tooltip-format-enumerate-connected": "{device_alias}"
-    }
+"bluetooth": {
+    "format": " {status}",
+	"format-disabled": "", // an empty format will hide the module
+	"format-connected": " {num_connections} connected",
+	// "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+}
 }
