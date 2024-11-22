@@ -58,7 +58,7 @@ window {
     fullscreen:                  false;
     width:                       100%;
     x-offset:                    0px;
-    y-offset:                    1px;
+    y-offset:                    0px;
 
     children:                    [ horibox ];
 
@@ -111,7 +111,7 @@ inputbar {
     margin:                      0px;
     padding:                     8px;
     border:                      0px solid;
-    border-radius:               4px;
+    border-radius:               0px;
     border-color:                @border-colour;
     background-color:            @alternate-background;
     text-color:                  @foreground-colour;
