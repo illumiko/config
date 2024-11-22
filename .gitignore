@@ -1,6 +1,6 @@
-./nvim/lazy-lock.json
-./zsh/plugins/
-./zsh/.zcomp*
+nvim/lazy-lock.json
+zsh/plugins/
+zsh/.zcompdump
 nvim
 mpd/log
 mpd/database
