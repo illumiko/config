@@ -11,25 +11,25 @@ window:
     x: 10
     y: 10
 font:
-  size: 8
+  size: 18
   offset:
     x: 0
     y: 0
   normal:
-    family: Maple Mono NF
+    # family: Comic Shanns Regular
+    # style: Normal
+    family: Comic Code Ligatures
     style: Normal
-      #   family: Comic Code Ligatures Nerd font
-      #   style: Normal
   bold:
-    family: Maple Mono NF
+    # family: Maple Mono NF
+    # style: Bold
+    family: Comic Code Ligatures
     style: Bold
-      #   family: Comic Code Ligatures Nerd Font
-      #   style: Bold
   italic:
-  # family: Comic Code Ligatures Nerd Font
-  # style: italic
-    family: Maple Mono NF
+    family: Comic Code Ligatures
     style: italic
+    # family: Maple Mono NF
+    # style: italic
 shell:
   program: /bin/zsh
 
