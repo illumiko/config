@@ -88,7 +88,7 @@ tooltip {
 }
 #network {
     color: @foreground-alt;
-    padding-right: 15px;
+    padding-right: 0px;
     padding-bottom: 0px;
     /* border-radius: 10px 0px 0px 10px; */
     /* border-radius: 10px 10px 10px 10px; */
@@ -110,3 +110,8 @@ tooltip {
 #custom-weather {
     border-right: 0px;
 }/*}}}*/
+#custom-notification {
+    padding: 0 10px;
+    font-size: 20px;
+
+}
