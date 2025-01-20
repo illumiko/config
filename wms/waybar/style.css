@@ -24,14 +24,16 @@
 #workspaces,
 #window,
 #tray,
+#custom-notification
 #backlight {
     /* font-size: 18px; */
     padding: 0 15px;
+    background: @background;
 }
 
 
 window#waybar {
-    background: @background;
+    background: rgba(0,0,0,0);
     color: @foreground-alt;
 }
 #window,#workspaces button{
@@ -99,6 +101,8 @@ tooltip {
     color: #ffffff;
 } 
 
+.red {color: #ffffff;}
+
 #pulseaudio.microphone {
     color: @cursor;
     border-left: 0px;
@@ -113,5 +117,9 @@ tooltip {
 #custom-notification {
     padding: 0 10px;
     font-size: 20px;
+    background: @background;
 
+}
+#custom-power_profile {
+padding:0 20px;
 }
