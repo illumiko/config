@@ -39,7 +39,7 @@ elif theme == 1:
 gap = 15
 mod = "mod4"
 terminal = guess_terminal()
-wallpaper = "~/dotfiles/wallpaper/Wallpaper/cities/masked_person_looking.png"
+wallpaper = "~/dotfiles/wallpaper/Wallpaper/cities/random_forest.jpg"
 default_padding  = 10
 
 default_bg = "#222222"
@@ -216,7 +216,8 @@ layouts = [
 #######################################
 
 widget_defaults = dict(
-    font="Maple Mono NF",
+    # font="Maple Mono NF",
+    font="Comic Code Regular",
     # font = "GoMono Nerd Font Mono",
     fontsize=16,
     padding=5,
