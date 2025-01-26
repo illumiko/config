@@ -6,6 +6,7 @@ wallpaper
 mpd/log
 mpd/database
 mpd/state
+wms/qtile/__pycache__/
 
 # -*- mode: gitignore; -*-
 *~
