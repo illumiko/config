@@ -1,5 +1,6 @@
 {
     "layer": "bottom",
+    "reload_style_on_change": true,
     "position": "bottom",
     "mod": "dock",
     "exclusive": true,

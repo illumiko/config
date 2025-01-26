@@ -275,7 +275,7 @@ button {
 }
 button selected {
     background-color:            var(selected-normal-background);
-    text-color:                  var(selected-normal-foreground);
+    text-color:                  @foreground-colour;
 }
 
 /*****----- Message -----*****/

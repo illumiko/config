@@ -1,5 +1,5 @@
 /* @import '../../.cache/wal/colors-waybar.css'; */
-@import '../../dotfiles/wms/waybar/colors.css';
+@import './colors.css';
 * {
     border: none;
     border-radius: 0px;
