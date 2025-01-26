@@ -12,7 +12,7 @@ from libqtile.utils import guess_terminal
 
 # a0 - active followed by priority number; 0 being highest
 # b0 - block
-theme = 1
+theme = 0
 colors = {}
 if theme == 0:
     colors = {
