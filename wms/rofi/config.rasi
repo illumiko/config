@@ -18,7 +18,9 @@ configuration {
     display-window:             "";
 	drun-display-format:        "{name}";
 	window-format:              "{w} · {c} · {t}";
+    font: "Comic Code 12";
 }
+
 
 /*****----- Global Properties -----*****/
 @import                          "colors.rasi"

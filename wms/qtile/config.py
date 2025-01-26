@@ -1,5 +1,5 @@
 from libqtile import bar, layout, widget, hook
-from libqtile.backend.wayland import InputConfig
+# from libqtile.backend.wayland import InputConfig
 import os
 import subprocess
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
@@ -217,9 +217,9 @@ layouts = [
 
 widget_defaults = dict(
     # font="Maple Mono NF",
-    font="Comic Code Regular",
-    # font = "GoMono Nerd Font Mono",
-    fontsize=16,
+    font="Comic Code Medium",
+    # font = "Monofur Nerd Font",
+    fontsize=12,
     padding=5,
 )
 extension_defaults = widget_defaults.copy()
@@ -324,10 +324,10 @@ screens = [
         wallpaper_mode = "fill",
         bottom=bar.Bar(widgets() , 30,background=colors['bg']),
     ),
-    Screen(
-        wallpaper = wallpaper,
-        wallpaper_mode = "fill",
-        bottom=bar.Bar(widgets(), 30))
+    # Screen(
+    #     wallpaper = wallpaper,
+    #     wallpaper_mode = "fill",
+    #     bottom=bar.Bar(widgets(), 30))
 ]
 
 # Drag floating layouts.
@@ -365,15 +365,15 @@ reconfigure_screens = True
 auto_minimize = True
 
 # When using the Wayland backend, this can be used to configure input devices.
-wl_input_rules = {
-        "type:keyboard": InputConfig(
-            kb_repeat_delay=290, 
-            kb_repeat_rate=70,
-            kb_options = "caps:backspace",
-            sensitivity = 0.5,
-
-            ),
-}
+# wl_input_rules = {
+#         "type:keyboard": InputConfig(
+#             kb_repeat_delay=290, 
+#             kb_repeat_rate=70,
+#             kb_options = "caps:backspace",
+#             sensitivity = 0.5,
+#
+#             ),
+# }
 
 # XXX: Gasp! We're lying here. In fact, nobody really uses or cares about this
 # string besides java UI toolkits; you can see several discussions on the
