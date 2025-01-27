@@ -203,7 +203,7 @@ def widgets():
                 # ),
                 # widget.QuickExit(),
                 ]
-        if get_ram_capacity_linux() == 8:
+    elif get_ram_capacity_linux() == 7:
             wid = [
                     widget.CurrentScreen(active_text="  ",inactive_text="  ",active_color=colors['a2'], background = colors['bg']),
                     widget.TextBox(
@@ -276,8 +276,6 @@ def widgets():
 
 
                     widget.Spacer(length=gap),
-                     widget.BatteryIcon(scale=1),
-
                      widget.TextBox(
                          fmt="󱊣",
                          foreground = colors['a'],
@@ -303,7 +301,6 @@ def widgets():
                          format = '{hour:d}:{min:02d}',
                          foreground=colors['fg']
                      ),
-                     widget.QuickExit(),
                     ]
             
     return wid
