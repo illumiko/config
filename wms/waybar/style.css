@@ -29,6 +29,7 @@
     /* font-size: 18px; */
     padding: 0 15px;
     background: @background;
+    color: @foreground-alt;
 }
 
 
@@ -38,7 +39,6 @@ window#waybar {
 }
 #window,#workspaces button{
     /* font-size:16px; */
-    color: white;
 }
 
 tooltip {
@@ -70,7 +70,7 @@ tooltip {
 }
 
 #clock {
-    color: @primary;
+    color: @foreground-alt;
     /* border-radius: 10px; */
     /* margin-left: 10px; */
     /* border-right: 10px; */
@@ -81,7 +81,7 @@ tooltip {
     padding:0px;
 }
 #battery {
-    color: @primary;
+    color: @color1;
     padding-left: 20px;
     padding-right: 20px;
     /* border-radius: 10px 10px 10px 10px; */
@@ -91,7 +91,7 @@ tooltip {
     padding-right: 20px;
 }
 #network {
-    color: @foreground-alt;
+    color: @primary;
     padding: 0;
     /* border-radius: 10px 0px 0px 10px; */
     /* border-radius: 10px 10px 10px 10px; */
@@ -99,13 +99,12 @@ tooltip {
 }
 
 #bluetooth {
-    color: #ffffff;
+    color: @primary;
 } 
 
 .red {color: #ffffff;}
 
 #pulseaudio{
-    color: @cursor;
     border-left: 0px;
     border-right: 0px;
     padding-left: 15px;

@@ -7,7 +7,7 @@
     "spacing": 0,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "height": 50,
+    "height": 0,
     "margin-bottom": 0,
     "margin-right":10,
     "margin-left":10,
@@ -146,16 +146,16 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "<span font='20' rise='-3500'>{icon}</span> {capacity}%",
-        "format-charging": "<span font='16' rise='-3500'></span> {capacity}%",
-        "format-plugged": "<span font='16' rise='-3500'></span> {capacity}%",
+        "format": "<span font='18' rise='-2500'>{icon}</span> {capacity}%",
+        "format-charging": "<span font='16' rise='-2500'></span> {capacity}%",
+        "format-plugged": "<span font='16' rise='-2500'></span> {capacity}%",
         "format-alt": "{time} {icon}",
         "format-icons": ["", "", "", "", ""]
     },
 
     "pulseaudio": {
         "inverval": 1,
-        "format": "<span font='20' rise='-4500'>{icon} </span>{volume}%",
+        "format": "<span font='16' rise='-2500'>{icon} </span>{volume}%",
         "tooltip": false,
         "format-muted": " Muted",
         "on-click": "pamixer -t",
