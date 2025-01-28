@@ -39,7 +39,7 @@ elif theme == 1:
         "b1": "#8f3f71",
     }
 gap = 15
-wallpaper = "~/dotfiles/wallpaper/Wallpaper/cities/random_forest.jpg"
+wallpaper = "~/dotfiles/wallpaper/Wallpaper/steinsGate/6.jpg"
 default_padding = 10
 
 default_bg = "#222222"

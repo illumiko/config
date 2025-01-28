@@ -28,7 +28,7 @@ alias pomodoro="go run ~/Documents/Projects/personal/godoro/main.go"
 # alias nv="/home/illumiko/.local/share/bob/nvim-bin/nvim"
 # alias nvim="/home/illumiko/.local/share/bob/nvim-bin/nvim"
 alias em="emacs"
-alias ls="ls -X1h --color=always"
+alias ls="ls -X1h"
 alias ytmusic='/usr/bin/qtws /usr/share/qtws-apps/youtube-music/youtube-music.qtws --disable-seccomp-filter-sandbox --register-pepper-plugins="/usr/lib/qt/plugins/ppapi/libwidevinecdmadapter.so; application/x-ppapi-widevine-cdm"'
 alias mp="ncmpcpp"
 alias blt="bluetoothctl"
@@ -105,7 +105,7 @@ Darwin)
 	;;
 
 Linux)
-	alias ls='ls --color=auto'
+	alias ls='ls -X1h --color=auto'
 	;;
 
 CYGWIN* | MINGW32* | MSYS* | MINGW*)
