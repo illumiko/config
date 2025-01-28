@@ -7,7 +7,7 @@
     "spacing": 0,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "height": 5,
+    "height": 50,
     "margin-bottom": 0,
     "margin-right":10,
     "margin-left":10,
@@ -16,10 +16,10 @@
     // "margin-left": 15,
     "fixed-center":true,
     // "width":500,
-    "modules-left": ["custom/notification","bluetooth"],
+    "modules-left": ["custom/notification","hyprland/workspaces"],
     "modules-center":["clock"],
-    "modules-right": ["hyprland/workspaces", "custom/power_profile","pulseaudio","battery","network","tray", ],
-    // "modules-center": ["clock","custom/music","network", "custom/power_profile","battery","backlight","pulseaudio","tray"],
+    "modules-right": ["custom/power_profile","pulseaudio","battery","network","bluetooth","tray"],
+    // "modules-center": ["clock","custom/music","network",, "custom/power_profile","battery","backlight","pulseaudio","tray"],
     "hyprland/window": {
         "format": "{}",
         "separate-outputs": false,
@@ -48,22 +48,22 @@
         // "ignored-players": ["firefox"]
     },
     "hyprland/workspaces": {
-        "format": " {icon} ",
+        "format": " <span font='20'>{icon}</span>  ",
         "all-outputs":false,
         "on-click": "activate",
         "active-only":false,
         "sort-by-number": false,
         // "persistent-workspaces":{
-        // "*":5,
+        // "*":9,
         // },
         "format-icons": {
-            "1": "1",
-            "2": "2",
-            "3": "3",
-            "5": "q",
+            "1": "",
+            "2": "",
+            "3": "󱠏",
+            "5": "󰙯",
             "6": "w",
-            "7": "e",
-            "8": "a",
+            "7": "",
+            "8": "󰑋",
             "9": "s",
             // "5": "V",
             // "6": "VI",
@@ -146,16 +146,16 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
+        "format": "<span font='20' rise='-3500'>{icon}</span> {capacity}%",
+        "format-charging": "<span font='16' rise='-3500'></span> {capacity}%",
+        "format-plugged": "<span font='16' rise='-3500'></span> {capacity}%",
         "format-alt": "{time} {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""]
     },
 
     "pulseaudio": {
         "inverval": 1,
-        "format": "{icon} {volume}%",
+        "format": "<span font='20' rise='-4500'>{icon} </span>{volume}%",
         "tooltip": false,
         "format-muted": " Muted",
         "on-click": "pamixer -t",
@@ -175,7 +175,7 @@
 
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": " ",
+        "format-wifi": "<span font='20'>󰤨</span>",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{essid} - {ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
