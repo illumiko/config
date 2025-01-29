@@ -3,7 +3,7 @@ from libqtile import bar, layout, widget, hook
 # from libqtile.backend.wayland import InputConfig
 import os
 import subprocess
-from mods.keys import keys
+from mods.keys import keys, groups
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
@@ -53,6 +53,7 @@ primary = "#ff5563"
 #######################################
 # Workspace
 #######################################
+# groups = [ Group("a"), Group("b"), Group("c"), ]
 
 #######################################
 # Layouts
