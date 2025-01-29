@@ -48,7 +48,7 @@
         // "ignored-players": ["firefox"]
     },
     "hyprland/workspaces": {
-        "format": " <span font='20'>{icon}</span>  ",
+        "format": " <span font='20'><b>{icon}</b></span>  ",
         "all-outputs":false,
         "on-click": "activate",
         "active-only":false,
@@ -61,7 +61,7 @@
             "2": "",
             "3": "󱠏",
             "5": "󰙯",
-            "6": "w",
+            "6": "󱓧",
             "7": "",
             "8": "󰑋",
             "9": "s",
