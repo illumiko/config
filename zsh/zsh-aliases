@@ -107,7 +107,7 @@ Darwin)
 	;;
 
 Linux)
-	alias ls='ls -X1h --color=auto'
+	alias ls='ls -aXrh --color=auto'
 	;;
 
 CYGWIN* | MINGW32* | MSYS* | MINGW*)

@@ -307,10 +307,10 @@ screens = [
         wallpaper_mode="fill",
         bottom=bar.Bar(widgets(), 30, background=colors["bg"]),
     ),
-    # Screen(
-    #     wallpaper = wallpaper,
-    #     wallpaper_mode = "fill",
-    #     bottom=bar.Bar(widgets(), 30))
+    Screen(
+        wallpaper = wallpaper,
+        wallpaper_mode = "fill",
+        bottom=bar.Bar(widgets(), 30,background=colors['bg']))
 ]
 
 
