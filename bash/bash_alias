@@ -27,5 +27,4 @@ alias blt="bluetoothctl"
 
 
 alias cp="cp -i"
-alias mv='mv -i'
 alias rm='rm -i'
